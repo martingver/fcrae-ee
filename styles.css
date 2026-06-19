@@ -967,8 +967,17 @@ input {
 }
 
 .join-form label:nth-child(3),
+.join-form .check-field,
+.join-form .spam-note,
+.join-form .form-status,
 .join-form button {
   grid-column: 1 / -1;
+}
+
+.button:disabled,
+button:disabled {
+  cursor: wait;
+  opacity: 0.68;
 }
 
 .site-footer {
@@ -2045,6 +2054,10 @@ input {
 
 .form-status[data-status="success"] {
   color: #176b37;
+}
+
+.form-status[data-status="pending"] {
+  color: #5d6673;
 }
 
 .call-card {

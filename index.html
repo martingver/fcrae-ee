@@ -72,7 +72,7 @@
       <section class="match-board" id="mangud" aria-labelledby="mangud-title">
         <div class="match-card match-feature">
           <p class="section-kicker">Järgmine kodumäng</p>
-          <h2 id="next-match-title">Andmeid uuendatakse</h2>
+          <h2 id="next-match-title">Kalendri andmed uuenevad</h2>
           <div class="versus">
             <div>
               <img class="club-logo" id="next-home-logo" src="assets/rae-spordikool-logo.png" alt="Rae Spordikool">
@@ -85,7 +85,7 @@
             </div>
           </div>
           <div class="match-meta">
-            <span id="next-date">Kalender laeb</span>
+            <span id="next-date">Vaata täielikku kalendrit jalgpall.ee-st</span>
             <span id="next-venue">Jüri staadion</span>
           </div>
           <a class="button button-primary" id="next-link" href="https://jalgpall.ee" target="_blank" rel="noreferrer">Vaata mänguinfot</a>
@@ -98,13 +98,17 @@
               <option value="all">Kõik</option>
             </select>
           </div>
-          <div class="result-list" id="result-list"></div>
+          <div class="result-list" id="result-list">
+            <p class="data-note">Viimased tulemused ilmuvad siia automaatselt jalgpall.ee cache'i põhjal.</p>
+          </div>
           <p class="data-note" id="data-note">Andmed: jalgpall.ee cache</p>
         </div>
 
         <div class="match-card calendar-card">
           <p class="section-kicker">Võistkonnad</p>
-          <div class="team-source-list" id="team-source-list"></div>
+          <div class="team-source-list" id="team-source-list">
+            <p class="data-note">Võistkondade nimekiri uueneb jalgpall.ee andmete põhjal.</p>
+          </div>
           <a class="text-link" href="/voistkonnad/">Vaata kõiki võistkondi</a>
         </div>
       </section>
@@ -123,7 +127,9 @@
           <label>Staatus<select id="calendar-status"><option value="upcoming">Tulevad mängud</option><option value="finished">Tulemused</option><option value="all">Kõik mängud</option></select></label>
           <label>Koht<select id="calendar-place"><option value="all">Kodu ja võõrsil</option><option value="Kodu">Kodumängud</option><option value="Võõrsil">Võõrsil</option></select></label>
         </div>
-        <div class="fixture-list" id="calendar-list"></div>
+        <div class="fixture-list" id="calendar-list">
+          <p class="empty-state">Kalendri andmeid uuendatakse. Vaata ajutiselt täielikku infot jalgpall.ee lehelt.</p>
+        </div>
       </section>
 
       <section class="vision section-light" id="klubi">
@@ -250,7 +256,7 @@
             <article><strong>Noortetöö toetaja</strong><span>Panusta noorte arengusse ja Rae jalgpalli tulevikku.</span></article>
             <article><strong>Peatoetaja</strong><span>Klubi strateegiline partner, lai nähtavus ja ühine edulugu.</span></article>
           </div>
-          <a class="button button-primary" href="mailto:info@fcrae.ee?subject=Toetajapakettide%20huvi">Küsi toetajapakette</a>
+          <a class="button button-primary" href="/toetajad/?modal=toetaja">Küsi toetajapakette</a>
         </div>
       </section>
 
@@ -286,11 +292,17 @@
           <h2>Liitu FC Rae kogukonnaga</h2>
           <p>Saa esimesena teada kodumängudest, noortetöö uudistest, fännikaubast, üritustest ja klubi arengutest.</p>
         </div>
-        <form class="join-form" action="mailto:info@fcrae.ee" method="post" enctype="text/plain">
-          <label>Nimi<input name="nimi" autocomplete="name"></label>
-          <label>E-post<input name="email" type="email" autocomplete="email"></label>
-          <label>Huvi<select name="huvi"><option>Fänniklubi</option><option>Vabatahtlik</option><option>Toetaja</option><option>Fännikaup</option></select></label>
+        <form class="join-form" data-mail-form="contact" novalidate>
+          <label>Nimi <span>*</span><input name="name" required autocomplete="name"></label>
+          <label>E-post <span>*</span><input name="email" type="email" required autocomplete="email"></label>
+          <label>Huvi<select name="topic"><option>Fänniklubi</option><option>Vabatahtlik</option><option>Toetaja</option><option>Fännikaup</option></select></label>
+          <input type="hidden" name="message" value="Soovin liituda FC Rae kogukonnaga.">
+          <input class="form-trap" name="website" tabindex="-1" autocomplete="off" hidden>
+          <input type="hidden" name="renderedAt" data-rendered-at>
+          <label class="check-field"><input name="consent" type="checkbox" required> Nõustun, et FC Rae SK MTÜ võib minuga ühendust võtta minu päringuga seoses. <span>*</span></label>
           <button class="button button-dark" type="submit">Saada huvi</button>
+          <p class="spam-note">Rämpsposti kaitse on sisse lülitatud.</p>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </section>
     </main>

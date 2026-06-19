@@ -28,6 +28,8 @@ const decodeHtml = (value = "") =>
 
 const stripTags = (value = "") => decodeHtml(value.replace(/<[^>]*>/g, " "));
 
+const birthYearOnly = (value = "") => value.match(/\d{4}/)?.[0] ?? "";
+
 const toIsoDate = (date, time = "00:00") => {
   const [day, month, year] = date.split(".");
   return `${year}-${month}-${day}T${time}:00+03:00`;
@@ -111,7 +113,7 @@ const parsePlayers = (html, team) => {
       position: cells[1] ?? "",
       name: cells[2] ?? "",
       number: cells[3] ?? "",
-      birthDate: cells[4] ?? "",
+      birthDate: birthYearOnly(cells[4] ?? ""),
       citizenship: cells[5] ?? "",
       club: cells[8] ?? "",
       cupGoals: stats?.cupGoals ?? 0,

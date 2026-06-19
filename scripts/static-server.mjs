@@ -19,6 +19,13 @@ const types = {
 
 createServer(async (request, response) => {
   const url = new URL(request.url ?? "/", `http://localhost:${port}`);
+
+  if (url.pathname === "/api/forms/contact.php") {
+    response.writeHead(503, { "content-type": "application/json; charset=utf-8" });
+    response.end(JSON.stringify({ ok: false, error: "local_static_server" }));
+    return;
+  }
+
   const safePath = normalize(decodeURIComponent(url.pathname)).replace(/^(\.\.[/\\])+/, "");
   let filePath = join(root, safePath === "/" ? "index.html" : safePath);
 

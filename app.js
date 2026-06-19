@@ -187,6 +187,7 @@ const setupSponsorModal = () => {
   const openButtons = document.querySelectorAll("[data-open-sponsor-modal]");
   const closeButtons = modal.querySelectorAll("[data-close-sponsor-modal]");
   const firstInput = modal.querySelector("input, select, textarea, button");
+  const params = new URLSearchParams(window.location.search);
 
   const open = () => {
     modal.hidden = false;
@@ -200,6 +201,7 @@ const setupSponsorModal = () => {
   };
 
   openButtons.forEach((button) => button.addEventListener("click", open));
+  if (params.get("modal") === "toetaja") open();
   closeButtons.forEach((button) => button.addEventListener("click", close));
   modal.addEventListener("click", (event) => {
     if (event.target === modal) close();
@@ -224,6 +226,13 @@ const setupMailForms = () => {
       if (message && !message.value) message.value = "Soovin liituda FC Rae fänniklubiga.";
     }
 
+    if (form.dataset.mailForm === "contact" && topic === "treening") {
+      const topicSelect = form.querySelector('select[name="topic"]');
+      const message = form.querySelector('textarea[name="message"]');
+      if (topicSelect) topicSelect.value = "Lapse trenni panemine";
+      if (message && !message.value) message.value = "Soovin küsida lapse jalgpallitrenni kohta.";
+    }
+
     const renderedAt = String(Date.now());
     form.querySelectorAll("[data-rendered-at]").forEach((input) => {
       input.value = renderedAt;
@@ -232,6 +241,7 @@ const setupMailForms = () => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const status = form.querySelector(".form-status");
+      const submitButton = form.querySelector('button[type="submit"]');
       const data = new FormData(form);
       const startedAt = Number(data.get("renderedAt") || renderedAt);
       const message = String(data.get("message") || "");
@@ -241,6 +251,17 @@ const setupMailForms = () => {
         if (!status) return;
         status.textContent = text;
         status.dataset.status = type;
+      };
+
+      const setFallbackStatus = (text, mailtoUrl) => {
+        if (!status) return;
+        status.textContent = "";
+        status.dataset.status = "error";
+        status.append(document.createTextNode(`${text} `));
+        const link = document.createElement("a");
+        link.href = mailtoUrl;
+        link.textContent = "Ava meiliprogramm";
+        status.append(link);
       };
 
       if (String(data.get("website") || "").trim()) {
@@ -265,6 +286,9 @@ const setupMailForms = () => {
       }
 
       const type = form.dataset.mailForm;
+      const payload = Object.fromEntries(data.entries());
+      payload.type = type;
+
       const subject = type === "sponsor"
         ? `FC Rae toetajapaketi päring: ${data.get("company")}`
         : `FC Rae kontaktivorm: ${data.get("topic")}`;
@@ -295,8 +319,37 @@ const setupMailForms = () => {
             `Saadetud: ${new Date().toLocaleString("et-EE")}`
           ];
 
-      setStatus(type === "sponsor" ? "Aitäh! Võtame sinuga peagi ühendust." : "Aitäh! Sinu sõnum on valmis saatmiseks.", "success");
-      window.location.href = `mailto:info@fcrae.ee?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+      const mailtoUrl = `mailto:info@fcrae.ee?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+
+      setStatus("Saadan...", "pending");
+      if (submitButton) submitButton.disabled = true;
+
+      fetch("/api/forms/contact.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(async (response) => {
+          const result = await response.json().catch(() => ({}));
+          if (!response.ok || !result.ok) throw new Error(result.error || "send_failed");
+
+          setStatus(
+            type === "sponsor"
+              ? "Aitäh! Võtame sinuga peagi ühendust ja saadame toetajapakettide info."
+              : "Aitäh! Sinu sõnum on saadetud. Vastame esimesel võimalusel.",
+            "success"
+          );
+          form.reset();
+          form.querySelectorAll("[data-rendered-at]").forEach((input) => {
+            input.value = String(Date.now());
+          });
+        })
+        .catch(() => {
+          setFallbackStatus("Serveripoolne saatmine ebaõnnestus.", mailtoUrl);
+        })
+        .finally(() => {
+          if (submitButton) submitButton.disabled = false;
+        });
     });
   });
 };
