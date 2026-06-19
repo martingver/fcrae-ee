@@ -40,20 +40,34 @@ const fallbackData = {
 
 const formatDate = (match) => `${match.date} kell ${match.time}`;
 
+const routes = {
+  home: "/",
+  club: "/klubi/",
+  teams: "/voistkonnad/",
+  youth: "/noored/",
+  matches: "/mangud/",
+  community: "/kogukond/",
+  supporters: "/toetajad/",
+  contact: "/kontakt/",
+  shop: "https://4teams.ee/klubi-varustus/rae-spordikool/",
+  register: "https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239",
+  fanclub: "/#fanniklubi"
+};
+
 const byDateAsc = (a, b) => new Date(a.startsAt) - new Date(b.startsAt);
 const byDateDesc = (a, b) => new Date(b.startsAt) - new Date(a.startsAt);
 
 const teamPageUrl = (teamId) => ({
-  "rae-i": "meeskond-rae-i.html",
-  "rae-ii": "meeskond-rae-ii.html",
-  u11: "voistkond-u11.html",
-  "u13-ii": "voistkond-u13-ii.html",
-  "u13-i": "voistkond-u13-i.html",
-  u14: "voistkond-u14.html",
-  u15: "voistkond-u15.html",
-  u16: "voistkond-u16.html",
-  u17: "voistkond-u17.html"
-})[teamId] ?? `mangud.html`;
+  "rae-i": "/voistkonnad/rae-i/",
+  "rae-ii": "/voistkonnad/rae-ii/",
+  u11: "/voistkonnad/u11/",
+  "u13-ii": "/voistkonnad/u13-ii/",
+  "u13-i": "/voistkonnad/u13-i/",
+  u14: "/voistkonnad/u14/",
+  u15: "/voistkonnad/u15/",
+  u16: "/voistkonnad/u16/",
+  u17: "/voistkonnad/u17/"
+})[teamId] ?? routes.matches;
 
 const parseScore = (score = "") => {
   const match = score.match(/(\d+)\s*-\s*(\d+)/);
@@ -63,6 +77,25 @@ const parseScore = (score = "") => {
 const parseEtDate = (value = "") => {
   const [day, month, year] = value.split(".");
   return day && month && year ? new Date(`${year}-${month}-${day}T00:00:00`) : null;
+};
+
+const birthYear = (value = "") => value.match(/\d{4}/)?.[0] ?? "";
+
+const contactName = (team) => {
+  const coach = (team?.headCoach || "").replace(/\s+\d.*$/, "").trim();
+  if (coach) return coach;
+  const [local] = (team?.email || "info").split("@");
+  return local
+    .split(/[._-]+/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ") || "FC Rae";
+};
+
+const teamKind = (team) => {
+  if (team?.id === "rae-i") return "Esindusmeeskond";
+  if (team?.id === "rae-ii") return "Duubelvõistkond";
+  return "Noortevõistkond";
 };
 
 const raeScore = (match) => {
@@ -78,13 +111,58 @@ const raeScore = (match) => {
 
 const getData = async () => {
   try {
-    const response = await fetch("data/jalgpall-cache.json", { cache: "no-store" });
+    const response = await fetch("/data/jalgpall-cache.json", { cache: "no-store" });
     if (!response.ok) throw new Error("Cache unavailable");
     const data = await response.json();
     return data.matches?.length ? data : fallbackData;
   } catch {
     return fallbackData;
   }
+};
+
+const setupMobileMenu = () => {
+  const header = document.querySelector(".site-header");
+  const nav = document.querySelector(".main-nav");
+  if (!header || !nav || document.querySelector(".menu-toggle")) return;
+
+  const toggle = document.createElement("button");
+  toggle.className = "menu-toggle";
+  toggle.type = "button";
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", "mobile-menu");
+  toggle.innerHTML = "<span></span><span></span><span></span><strong>Menüü</strong>";
+
+  const panel = document.createElement("div");
+  panel.className = "mobile-menu";
+  panel.id = "mobile-menu";
+  panel.hidden = true;
+
+  const clonedNav = nav.cloneNode(true);
+  clonedNav.className = "mobile-nav";
+  panel.append(clonedNav);
+
+  const actions = document.querySelector(".header-actions");
+  if (actions) {
+    const clonedActions = actions.cloneNode(true);
+    clonedActions.className = "mobile-actions";
+    panel.append(clonedActions);
+  }
+
+  header.append(toggle, panel);
+  toggle.addEventListener("click", () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    header.classList.toggle("menu-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+
+  panel.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      panel.hidden = true;
+      header.classList.remove("menu-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+  });
 };
 
 const renderNextMatch = (data) => {
@@ -280,7 +358,7 @@ const renderMatchesPage = (data) => {
 const playerTemplate = (player) => `
   <a class="player-row" href="${player.jalgpallEeUrl ?? "https://jalgpall.ee"}" target="_blank" rel="noreferrer">
     <strong>${player.number || "–"}</strong>
-    <span>${player.name}<small>${player.position || "Mängija"} · ${player.birthDate || ""}</small></span>
+    <span>${player.name}<small>${player.position || "Mängija"} · ${birthYear(player.birthDate)}</small></span>
   </a>
 `;
 
@@ -297,11 +375,6 @@ const renderTeamFacts = (team, matches, players) => {
   if (!list) return;
 
   const now = new Date();
-  const youngest = players
-    .map((player) => ({ ...player, parsedBirthDate: parseEtDate(player.birthDate) }))
-    .filter((player) => player.parsedBirthDate)
-    .sort((a, b) => b.parsedBirthDate - a.parsedBirthDate)[0];
-
   const finished = matches.filter((match) => match.status === "finished" && parseScore(match.score));
   const highestScoring = finished
     .map((match) => ({ match, scoreData: raeScore(match) }))
@@ -316,16 +389,90 @@ const renderTeamFacts = (team, matches, players) => {
   const nextHome = matches
     .filter((match) => match.status === "upcoming" && match.homeAway === "Kodu" && new Date(match.startsAt) >= now)
     .sort(byDateAsc)[0];
+  const nextMatch = matches
+    .filter((match) => match.status === "upcoming" && new Date(match.startsAt) >= now)
+    .sort(byDateAsc)[0];
 
   const facts = [
     factTemplate("Koosseis", `${players.length || team?.playerCount || 0} mängijat`, team?.level || ""),
-    youngest ? factTemplate("Noorim mängija", youngest.name, youngest.birthDate) : "",
-    biggestWin ? factTemplate("Suurim Rae võit", biggestWin.match.score, `${biggestWin.match.homeTeam} — ${biggestWin.match.awayTeam}`) : "",
+    nextMatch ? factTemplate("Järgmine mäng", nextMatch.date, nextMatch.opponent) : "",
     highestScoring ? factTemplate("Resultatiivseim mäng", `${highestScoring.scoreData.totalGoals} väravat`, `${highestScoring.match.score} · ${highestScoring.match.date}`) : "",
-    nextHome ? factTemplate("Järgmine kodumäng", nextHome.date, nextHome.opponent) : ""
+    nextHome ? factTemplate("Kodumängud", team?.venue || "Jüri staadion", nextHome.opponent) : "",
+    biggestWin ? factTemplate("Suurim Rae võit", biggestWin.match.score, `${biggestWin.match.homeTeam} — ${biggestWin.match.awayTeam}`) : ""
   ].filter(Boolean);
 
   list.innerHTML = facts.length ? facts.join("") : `<p class="empty-state">Fun factid tekivad siis, kui võistkonnal on cache'is piisavalt mänge ja mängijaid.</p>`;
+};
+
+const outcome = (match) => {
+  const score = raeScore(match);
+  if (!score) return { label: "Tulemus", className: "" };
+  if (score.forGoals > score.againstGoals) return { label: "Võit", className: "is-win" };
+  if (score.forGoals === score.againstGoals) return { label: "Viik", className: "is-draw" };
+  return { label: "Kaotus", className: "is-loss" };
+};
+
+const teamUpcomingTemplate = (match, featured = false) => `
+  <a class="team-match-row ${featured ? "is-featured" : ""} ${match.homeAway === "Kodu" ? "is-home" : "is-away"}" href="${match.jalgpallEeUrl ?? "https://jalgpall.ee"}" target="_blank" rel="noreferrer">
+    <span class="match-date">${match.date}<small>${match.time}</small></span>
+    <div>
+      <strong>${match.homeTeam} — ${match.awayTeam}</strong>
+      <small>${match.competition || "Võistlus"} · ${match.venue || ""}</small>
+    </div>
+    <span class="place-badge">${match.homeAway}</span>
+  </a>
+`;
+
+const teamResultTemplate = (match) => {
+  const result = outcome(match);
+  return `
+    <a class="team-result-row" href="${match.jalgpallEeUrl ?? "https://jalgpall.ee"}" target="_blank" rel="noreferrer">
+      <span>${match.date}<small>${match.team}</small></span>
+      <strong>${match.homeTeam}</strong>
+      <b>${match.score ?? ""}</b>
+      <strong>${match.awayTeam}</strong>
+      <em class="${result.className}">${result.label}</em>
+    </a>
+  `;
+};
+
+const setupTeamChrome = (team) => {
+  const hero = document.querySelector(".team-subhero");
+  if (!hero || document.querySelector(".team-tabs")) return;
+
+  document.querySelector(".team-overview")?.setAttribute("id", "ulevaade");
+  const dataColumns = document.querySelectorAll(".team-data > div");
+  dataColumns[0]?.setAttribute("id", "mangud");
+  dataColumns[1]?.setAttribute("id", "tulemused");
+  document.querySelector(".roster-section")?.setAttribute("id", "koosseis");
+  document.querySelector(".site-footer")?.setAttribute("id", "kontakt");
+
+  const tabs = document.createElement("nav");
+  tabs.className = "team-tabs";
+  tabs.setAttribute("aria-label", "Võistkonna lehe menüü");
+  tabs.innerHTML = `
+    <a href="#ulevaade">Ülevaade</a>
+    <a href="#mangud">Mängud</a>
+    <a href="#tulemused">Tulemused</a>
+    <a href="#koosseis">Koosseis</a>
+    <a href="#kontakt">Kontakt</a>
+  `;
+  hero.after(tabs);
+
+  const roster = document.querySelector(".roster-section");
+  if (roster && !document.querySelector(".team-join-cta")) {
+    const cta = document.createElement("section");
+    cta.className = "team-join-cta";
+    cta.innerHTML = `
+      <div>
+        <span>FC Rae</span>
+        <h2>Tahad liituda?</h2>
+        <p>FC Rae ootab uusi jalgpallihuvilisi. Lisa laps trenni ja saa osa meie kogukonnast.</p>
+      </div>
+      <a class="button button-primary" href="${routes.register}" target="_blank" rel="noreferrer">Lisa laps trenni</a>
+    `;
+    roster.after(cta);
+  }
 };
 
 const renderTeamPage = (data) => {
@@ -346,13 +493,15 @@ const renderTeamPage = (data) => {
     setText("#team-name", team.name);
     setText("#team-short", team.shortName);
     setText("#team-venue", team.venue || "Jüri staadion");
-    setText("#team-coach", team.headCoach || "Täpsustamisel");
+    setText("#team-coach", contactName(team));
     setText("#team-email", team.email || "info@fcrae.ee");
     setText("#team-player-count", String(players.length || team.playerCount || 0));
-    setText("#team-hero-title", `${team.shortName} võistkonna leht`);
-    setText("#team-hero-copy", `${team.name} mängud, tulemused, mängijad ja hooaja faktid jalgpall.ee andmete põhjal.`);
+    setText("#team-hero-title", team.name);
+    setText("#team-hero-copy", "Võistkonna mängud, tulemused ja koosseis. Andmed uuenevad jalgpall.ee põhjal.");
+    setText("#team-kind", teamKind(team));
     const sourceLink = document.querySelector("#team-source-link");
     if (sourceLink) sourceLink.href = team.sourceUrl;
+    setupTeamChrome(team);
   }
 
   const upcomingList = document.querySelector("#team-upcoming");
@@ -364,11 +513,11 @@ const renderTeamPage = (data) => {
   const results = matches.filter((match) => match.status === "finished").sort(byDateDesc).slice(0, 6);
 
   if (upcomingList) {
-    upcomingList.innerHTML = upcoming.length ? upcoming.map(fixtureTemplate).join("") : `<p class="empty-state">Tulevaid mänge ei leitud.</p>`;
+    upcomingList.innerHTML = upcoming.length ? upcoming.map((match, index) => teamUpcomingTemplate(match, index === 0)).join("") : `<p class="empty-state">Tulevaid mänge ei leitud.</p>`;
   }
 
   if (resultList) {
-    resultList.innerHTML = results.length ? results.map(fixtureTemplate).join("") : `<p class="empty-state">Tulemusi ei leitud.</p>`;
+    resultList.innerHTML = results.length ? results.map(teamResultTemplate).join("") : `<p class="empty-state">Tulemusi ei leitud.</p>`;
   }
 
   if (roster) {
@@ -377,6 +526,8 @@ const renderTeamPage = (data) => {
 
   renderTeamFacts(team, matches, players);
 };
+
+setupMobileMenu();
 
 getData().then((data) => {
   renderNextMatch(data);

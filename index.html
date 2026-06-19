@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
     <title>FC Rae — Rae valla jalgpallikogukond</title>
     <meta name="description" content="FC Rae koondab Rae valla jalgpalli: noored, Rae I ja Rae II meeskonnad, mängude kalender, tulemused, fänniklubi, toetajad ja kogukond.">
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -14,22 +15,22 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#avaleht" aria-label="FC Rae avaleht">
+      <a class="brand" href="/" aria-label="FC Rae avaleht">
         <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
       </a>
       <nav class="main-nav" aria-label="Peamenüü">
-        <a href="visioon.html">Klubi</a>
-        <a href="voistkonnad.html">Meeskonnad</a>
-        <a href="noored.html">Noored</a>
-        <a href="mangud.html">Mängud</a>
-        <a href="#kogukond">Kogukond</a>
-        <a href="toetajad.html">Toetajad</a>
+        <a href="/klubi/">Klubi</a>
+        <a href="/voistkonnad/">Meeskonnad</a>
+        <a href="/noored/">Noored</a>
+        <a href="/mangud/">Mängud</a>
+        <a href="/kogukond/">Kogukond</a>
+        <a href="/toetajad/">Toetajad</a>
         <a href="https://4teams.ee/klubi-varustus/rae-spordikool/" target="_blank" rel="noreferrer">Fännikaup</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="/kontakt/">Kontakt</a>
       </nav>
       <div class="header-actions">
         <a class="button button-primary" href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer">Lisa laps trenni</a>
-        <a class="button button-ghost" href="#fanniklubi">Liitu fänniklubiga</a>
+        <a class="button button-ghost" href="/#fanniklubi">Liitu fänniklubiga</a>
       </div>
     </header>
 
@@ -89,7 +90,7 @@
         <div class="match-card calendar-card">
           <p class="section-kicker">Võistkonnad</p>
           <div class="team-source-list" id="team-source-list"></div>
-          <a class="text-link" href="voistkonnad.html">Vaata kõiki võistkondi</a>
+          <a class="text-link" href="/voistkonnad/">Vaata kõiki võistkondi</a>
         </div>
       </section>
 
@@ -100,7 +101,7 @@
             <h2 id="fixtures-title">Rae mängud ühest kohast.</h2>
             <p>Kalender kasutab jalgpall.ee cache'i ning kuvab nii esinduse, duubli kui noortevõistkondade mängud. Avalik leht ei koorma jalgpall.ee-d iga külastusega.</p>
           </div>
-          <a class="button button-dark" href="mangud.html">Vaata kõiki mänge</a>
+          <a class="button button-dark" href="/mangud/">Vaata kõiki mänge</a>
         </div>
         <div class="fixture-controls" aria-label="Kalendri filtrid">
           <label>Võistkond<select id="calendar-team"><option value="all">Kõik võistkonnad</option></select></label>
@@ -115,7 +116,7 @@
           <p class="section-kicker dark">Meie visioon</p>
           <h2>Üks klubi. Üks kogukond. Üks Rae.</h2>
           <p>FC Rae visioon on kujuneda Eesti üheks suurimaks ja mõjukamaks kogukondlikuks jalgpalliklubiks. Meie tugevus peab olema inimestes, kes tunnevad, et see on nende klubi.</p>
-          <a class="inline-cta" href="visioon.html">Loe visiooni</a>
+          <a class="inline-cta" href="/klubi/">Loe visiooni</a>
         </div>
         <div class="stat-strip">
           <div><strong>500–1000</strong><span>noorsportlast</span></div>
@@ -147,7 +148,7 @@
               <div>
                 <h3>Rae I</h3>
                 <p>Esindusmeeskond ja klubi sportliku ambitsiooni nähtav kandja.</p>
-                <a href="meeskond-rae-i.html">Vaata võistkonda</a>
+                <a href="/voistkonnad/rae-i/">Vaata võistkonda</a>
               </div>
             </article>
             <article class="image-card">
@@ -155,7 +156,7 @@
               <div>
                 <h3>Rae II</h3>
                 <p>Arengukeskkond, kus järgmised mängijad saavad täiskasvanute jalgpalli kogemuse.</p>
-                <a href="meeskond-rae-ii.html">Vaata võistkonda</a>
+                <a href="/voistkonnad/rae-ii/">Vaata võistkonda</a>
               </div>
             </article>
           </div>
@@ -181,7 +182,7 @@
           </div>
           <div class="youth-actions">
             <a class="button button-dark" href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer">Lisa laps trenni</a>
-            <a class="inline-cta" href="noored.html">Vaata noorte infot</a>
+            <a class="inline-cta" href="/noored/">Vaata noorte infot</a>
           </div>
         </div>
       </section>
