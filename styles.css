@@ -54,7 +54,8 @@ img {
 }
 
 .brand img {
-  width: 74px;
+  width: 84px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.18));
 }
 
 .main-nav {
@@ -1402,7 +1403,7 @@ input {
   }
 
   .brand img {
-    width: 90px;
+    width: 96px;
   }
 
   .header-actions,
