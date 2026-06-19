@@ -1737,6 +1737,47 @@ input {
   line-height: 1.65;
 }
 
+.seo-team-fallback {
+  display: grid;
+  gap: 18px;
+  width: min(1320px, calc(100% - 44px));
+  margin: -36px auto 80px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--black);
+}
+
+.seo-team-fallback h2,
+.seo-team-fallback h3,
+.seo-team-fallback p {
+  margin: 0;
+}
+
+.seo-team-fallback h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.seo-team-fallback h3 {
+  margin-top: 10px;
+  color: var(--gold-dark);
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.seo-team-fallback ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: #3e444d;
+  line-height: 1.55;
+}
+
 .community-subhero {
   background:
     linear-gradient(90deg, rgba(9, 10, 12, 0.96), rgba(9, 10, 12, 0.62)),
