@@ -402,6 +402,7 @@ input {
 }
 
 .fixture-row {
+  position: relative;
   display: grid;
   grid-template-columns: 120px 1fr auto auto;
   gap: 18px;
@@ -409,6 +410,33 @@ input {
   padding: 16px 0;
   border-bottom: 1px solid var(--line);
   color: var(--black);
+}
+
+.fixture-row::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 14px;
+  bottom: 14px;
+  width: 4px;
+  border-radius: 999px;
+  background: var(--line);
+}
+
+.fixture-row.is-home::before {
+  background: var(--gold);
+}
+
+.fixture-row.is-away::before {
+  background: #8c96a3;
+}
+
+.fixture-row.is-home {
+  background: linear-gradient(90deg, rgba(242, 194, 48, 0.08), transparent 42%);
+}
+
+.fixture-row.is-away {
+  background: linear-gradient(90deg, rgba(140, 150, 163, 0.08), transparent 42%);
 }
 
 .fixture-row strong {
@@ -430,6 +458,22 @@ input {
   color: var(--black);
   font-size: 0.76rem;
   font-weight: 900;
+}
+
+.place-badge {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 86px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #eef1f4;
+  color: #20242a !important;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.is-home .place-badge {
+  background: rgba(242, 194, 48, 0.24);
 }
 
 .vision {
@@ -768,7 +812,7 @@ input {
   gap: 12px;
 }
 
-.shop-items article {
+.shop-items a {
   position: relative;
   overflow: hidden;
   display: grid;
@@ -781,19 +825,32 @@ input {
     linear-gradient(145deg, rgba(242, 194, 48, 0.08), rgba(21, 24, 29, 0.98)),
     linear-gradient(145deg, #24272d, #15181d);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+
+.shop-items a:hover {
+  transform: translateY(-3px);
+  border-color: rgba(242, 194, 48, 0.55);
 }
 
 .shop-items img {
   position: absolute;
-  right: 14px;
-  top: 18px;
-  width: 74px;
-  opacity: 0.3;
-  transform: rotate(-8deg);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 8px 16px 28px;
+  opacity: 0.82;
 }
 
 .shop-items span {
   position: relative;
+  z-index: 1;
+  display: inline-flex;
+  padding: 6px 9px;
+  border-radius: 4px;
+  background: rgba(9, 10, 12, 0.78);
   color: var(--gold);
   font-weight: 900;
 }
@@ -1185,6 +1242,7 @@ input {
   grid-template-columns: 110px 1fr 100px 100px;
 }
 
+.teams-page,
 .team-overview,
 .supporter-page,
 .package-page,
@@ -1193,6 +1251,70 @@ input {
   grid-template-columns: 0.82fr 1.18fr;
   gap: clamp(28px, 6vw, 82px);
   padding: 78px clamp(22px, 7vw, 110px);
+}
+
+.teams-page {
+  display: block;
+}
+
+.teams-page-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.team-list-card {
+  display: grid;
+  gap: 16px;
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--black);
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.team-list-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(242, 194, 48, 0.75);
+  box-shadow: 0 18px 45px rgba(22, 24, 28, 0.12);
+}
+
+.team-list-card > span {
+  color: var(--gold-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.team-list-card strong {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 0.94;
+  letter-spacing: -0.05em;
+}
+
+.team-list-card p {
+  margin: 0;
+  color: #4b525b;
+  font-weight: 800;
+}
+
+.team-list-card div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.team-list-card small {
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #f0f1f2;
+  color: #333941;
+  font-weight: 900;
 }
 
 .team-facts,
@@ -1236,6 +1358,53 @@ input {
   grid-template-columns: 1fr 1fr;
   gap: clamp(24px, 5vw, 64px);
   padding: 0 clamp(22px, 7vw, 110px) 82px;
+}
+
+.team-highlights {
+  display: grid;
+  grid-template-columns: 0.42fr 1.58fr;
+  gap: clamp(28px, 6vw, 82px);
+  padding: 0 clamp(22px, 7vw, 110px) 72px;
+}
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  align-self: start;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.fact-grid article {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 160px;
+  padding: 20px;
+  background: var(--white);
+}
+
+.fact-grid span {
+  color: var(--gold-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.fact-grid strong {
+  color: var(--black);
+  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+}
+
+.fact-grid small {
+  color: #68717c;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 .roster-section {
@@ -1369,7 +1538,9 @@ input {
   .youth-faq-page,
   .group-grid,
   .parent-guide,
+  .teams-page,
   .team-overview,
+  .team-highlights,
   .team-data,
   .roster-section,
   .supporter-page,
@@ -1388,6 +1559,8 @@ input {
   .team-cards,
   .value-grid,
   .player-list,
+  .teams-page-list,
+  .fact-grid,
   .team-facts,
   .info-grid {
     grid-template-columns: 1fr;
@@ -1456,6 +1629,8 @@ input {
   .sponsor-grid,
   .package-grid,
   .shop-items,
+  .teams-page-list,
+  .fact-grid,
   .location-list,
   .join-form {
     grid-template-columns: 1fr;
