@@ -335,7 +335,7 @@ const setupMailForms = () => {
 
           setStatus(
             type === "sponsor"
-              ? "Aitäh! Võtame sinuga peagi ühendust ja saadame toetajapakettide info."
+              ? "Aitäh! Võtame sinuga peagi ühendust ja saadame toetajainfo."
               : "Aitäh! Sinu sõnum on saadetud. Vastame esimesel võimalusel.",
             "success"
           );
