@@ -1368,8 +1368,7 @@ button:disabled {
   z-index: 7;
   width: min(1180px, calc(100% - 44px));
   margin: -42px auto 0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 10px 10px 0 0;
@@ -1378,6 +1377,7 @@ button:disabled {
 }
 
 .team-tabs a {
+  flex: 1 0 118px;
   min-height: 54px;
   display: grid;
   place-items: center;
@@ -1711,6 +1711,97 @@ button:disabled {
   color: #4a5059;
 }
 
+.league-table-section {
+  display: grid;
+  grid-template-columns: 0.52fr 1.48fr;
+  gap: clamp(24px, 5vw, 64px);
+  padding: 0 clamp(22px, 7vw, 110px) 56px;
+}
+
+.league-table-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--black);
+  box-shadow: 0 18px 42px rgba(9, 10, 12, 0.06);
+}
+
+.league-table-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(105deg, #fff9df, #ffffff 62%);
+}
+
+.league-table-top span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--gold-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.league-table-top strong {
+  color: var(--black);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.15;
+}
+
+.league-table-wrap {
+  overflow-x: auto;
+}
+
+.league-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.league-table th,
+.league-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.league-table th {
+  background: #f6f7f8;
+  color: #59616b;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.league-table th:nth-child(2),
+.league-table td:nth-child(2) {
+  min-width: 240px;
+  text-align: left;
+}
+
+.league-table a {
+  color: inherit;
+  font-weight: 900;
+}
+
+.league-table tr.is-rae {
+  background: rgba(242, 194, 48, 0.16);
+}
+
+.league-table tr.is-rae td:first-child,
+.league-table tr.is-rae td:last-child {
+  color: var(--gold-dark);
+  font-weight: 900;
+}
+
 .team-join-cta {
   width: min(1320px, calc(100% - 44px));
   margin: -36px auto 80px;
@@ -1980,8 +2071,16 @@ button:disabled {
   font-weight: 900;
 }
 
-.form-grid label span,
-.check-field span {
+.field-label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  color: #20242a;
+}
+
+.field-label span,
+.check-field .check-text span,
+.join-form .check-field > span {
   color: #d22d2d;
 }
 
@@ -2021,6 +2120,10 @@ button:disabled {
   width: 16px;
   min-height: 16px;
   margin-top: 2px;
+}
+
+.check-text {
+  color: #3e444d;
 }
 
 .form-trap {
@@ -2202,32 +2305,6 @@ button:disabled {
   line-height: 1.45;
 }
 
-.supporter-bottom-cta {
-  width: min(1320px, calc(100% - 44px));
-  margin: 0 auto 78px;
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  align-items: center;
-  gap: 28px;
-  padding: clamp(24px, 4vw, 34px);
-  border-radius: 12px;
-  background:
-    radial-gradient(circle at 0% 50%, rgba(242, 194, 48, 0.17), transparent 34%),
-    linear-gradient(145deg, #171a1f, #0d0f12);
-  color: var(--white);
-}
-
-.supporter-bottom-cta strong {
-  font-size: clamp(1.35rem, 2.6vw, 2rem);
-  line-height: 1.18;
-}
-
-.supporter-bottom-cta p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.65;
-}
-
 .modal-open {
   overflow: hidden;
 }
@@ -2329,6 +2406,7 @@ button:disabled {
   .team-highlights,
   .team-data,
   .roster-section,
+  .league-table-section,
   .supporter-page,
   .package-page,
   .contact-page,
@@ -2356,14 +2434,12 @@ button:disabled {
   .value-card-grid,
   .impact-grid,
   .partner-benefits,
-  .benefit-list,
-  .supporter-bottom-cta {
+  .benefit-list {
     grid-template-columns: 1fr;
   }
 
   .team-tabs {
     overflow-x: auto;
-    grid-template-columns: repeat(5, minmax(118px, 1fr));
   }
 
   .team-result-row {
@@ -2470,8 +2546,7 @@ button:disabled {
   .contact-cta-grid,
   .partner-value,
   .partner-benefits,
-  .partner-impact,
-  .supporter-bottom-cta {
+  .partner-impact {
     width: auto;
     margin-left: 0;
     margin-right: 0;
@@ -2488,8 +2563,7 @@ button:disabled {
     padding-bottom: 42px;
   }
 
-  .form-actions-line,
-  .supporter-bottom-cta {
+  .form-actions-line {
     align-items: stretch;
     grid-template-columns: 1fr;
   }

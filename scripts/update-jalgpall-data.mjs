@@ -163,6 +163,51 @@ const parseMeta = (html) => {
   };
 };
 
+const parseStandings = (html, team) => {
+  const tableBlocks = [...html.matchAll(/<p class="title">([\s\S]*?)<\/p>[\s\S]*?<table[^>]*game-stats[^>]*>([\s\S]*?)<\/table>/g)];
+  const relevant = tableBlocks.find(([, , table]) => table.includes(`/voistlused/${team.leagueId}/team/${team.teamId}`) || table.includes(`/${team.teamId}?season=${team.season}`));
+  if (!relevant) return null;
+
+  const [, titleHtml, tableHtml] = relevant;
+  const rows = [...tableHtml.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)]
+    .map((rowMatch) => {
+      const rawCells = [...rowMatch[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((cell) => cell[1]);
+      const cells = rawCells.map((cell) => stripTags(cell));
+      const teamCell = rawCells.find((cell) => /\/team\/\d+/.test(cell)) ?? "";
+      const teamUrl = teamCell.match(/href="([^"]+)"/)?.[1];
+      const teamId = Number.parseInt(teamUrl?.match(/team\/(\d+)/)?.[1] ?? "", 10);
+      const goals = cells[7] ?? "";
+      const [goalsFor, goalsAgainst] = goals.split(":").map((value) => Number.parseInt(value, 10) || 0);
+
+      if (!cells[0] || !cells[2]) return null;
+
+      return {
+        position: Number.parseInt(cells[0], 10) || 0,
+        teamId: Number.isFinite(teamId) ? teamId : null,
+        teamName: cells[2],
+        teamUrl: teamUrl ? `${BASE_URL}${teamUrl}` : null,
+        matches: Number.parseInt(cells[3], 10) || 0,
+        wins: Number.parseInt(cells[4], 10) || 0,
+        draws: Number.parseInt(cells[5], 10) || 0,
+        losses: Number.parseInt(cells[6], 10) || 0,
+        goals,
+        goalsFor,
+        goalsAgainst,
+        points: Number.parseInt(cells[8], 10) || 0,
+        isRaeTeam: teamId === team.teamId || cells[2].includes("Rae Spordikool")
+      };
+    })
+    .filter(Boolean);
+
+  return {
+    teamId: team.id,
+    leagueId: team.leagueId,
+    title: stripTags(titleHtml),
+    sourceUrl: `${BASE_URL}/voistlused/${team.leagueId}/liigad?season=${team.season}`,
+    rows
+  };
+};
+
 async function fetchTeam(team) {
   const url = `${BASE_URL}/voistlused/${team.leagueId}/team/${team.teamId}?season=${team.season}`;
   const response = await fetch(url, { headers: { "user-agent": "fcrae.ee data cache updater" } });
@@ -172,6 +217,15 @@ async function fetchTeam(team) {
   const upcoming = rowMatches(html, "upcoming-game").map((row) => parseUpcoming(row, team)).filter(Boolean);
   const previous = rowMatches(html, "prev-game").map((row) => parsePrevious(row, team)).filter(Boolean);
   const players = parsePlayers(html, team);
+  let standings = null;
+
+  if (team.id === "rae-i") {
+    const standingsUrl = `${BASE_URL}/voistlused/${team.leagueId}/liigad?season=${team.season}`;
+    const standingsResponse = await fetch(standingsUrl, { headers: { "user-agent": "fcrae.ee data cache updater" } });
+    if (standingsResponse.ok) {
+      standings = parseStandings(await standingsResponse.text(), team);
+    }
+  }
 
   return {
     team: {
@@ -183,7 +237,8 @@ async function fetchTeam(team) {
       playerCount: players.length
     },
     matches: [...upcoming, ...previous],
-    players
+    players,
+    standings
   };
 }
 
@@ -203,7 +258,8 @@ const payload = {
   source: "https://jalgpall.ee",
   teams: results.map((result) => result.team),
   matches: results.flatMap((result) => result.matches).sort((a, b) => new Date(a.startsAt) - new Date(b.startsAt)),
-  players: results.flatMap((result) => result.players)
+  players: results.flatMap((result) => result.players),
+  standings: Object.fromEntries(results.filter((result) => result.standings).map((result) => [result.team.id, result.standings]))
 };
 
 await mkdir("data", { recursive: true });

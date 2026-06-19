@@ -298,7 +298,6 @@ const setupMailForms = () => {
             `Kontaktisik: ${data.get("contact")}`,
             `E-post: ${data.get("email")}`,
             `Telefon: ${data.get("phone") || "-"}`,
-            `Huvipakkuv koostöövorm: ${data.get("package")}`,
             "",
             `Sõnum:`,
             message || "-",
@@ -618,11 +617,57 @@ const teamResultTemplate = (match) => {
   `;
 };
 
+const standingsTemplate = (standings) => {
+  const rows = standings?.rows ?? [];
+  if (!rows.length) return `<p class="empty-state">Liigatabeli andmeid ei leitud.</p>`;
+
+  return `
+    <div class="league-table-top">
+      <div>
+        <span>Liiga</span>
+        <strong>${standings.title || "Liigatabel"}</strong>
+      </div>
+      <a class="inline-cta" href="${standings.sourceUrl ?? "https://jalgpall.ee"}" target="_blank" rel="noreferrer">Täielik tabel EJL-is</a>
+    </div>
+    <div class="league-table-wrap">
+      <table class="league-table">
+        <thead>
+          <tr>
+            <th>Koht</th>
+            <th>Võistkond</th>
+            <th>M</th>
+            <th>Võ</th>
+            <th>Vi</th>
+            <th>K</th>
+            <th>Väravad</th>
+            <th>P</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map((row) => `
+            <tr class="${row.isRaeTeam ? "is-rae" : ""}">
+              <td>${row.position}</td>
+              <td><a href="${row.teamUrl ?? standings.sourceUrl ?? "https://jalgpall.ee"}" target="_blank" rel="noreferrer">${row.teamName}</a></td>
+              <td>${row.matches}</td>
+              <td>${row.wins}</td>
+              <td>${row.draws}</td>
+              <td>${row.losses}</td>
+              <td>${row.goals}</td>
+              <td><strong>${row.points}</strong></td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+};
+
 const setupTeamChrome = (team) => {
   const hero = document.querySelector(".team-subhero");
   if (!hero || document.querySelector(".team-tabs")) return;
 
   document.querySelector(".team-overview")?.setAttribute("id", "ulevaade");
+  document.querySelector(".league-table-section")?.setAttribute("id", "liigatabel");
   const dataColumns = document.querySelectorAll(".team-data > div");
   dataColumns[0]?.setAttribute("id", "mangud");
   dataColumns[1]?.setAttribute("id", "tulemused");
@@ -633,8 +678,12 @@ const setupTeamChrome = (team) => {
   tabs.className = "team-tabs";
   tabs.setAttribute("aria-label", "Võistkonna lehe menüü");
   const pagePath = window.location.pathname;
+  const standingsTab = document.querySelector(".league-table-section")
+    ? `<a href="${pagePath}#liigatabel">Liigatabel</a>`
+    : "";
   tabs.innerHTML = `
     <a href="${pagePath}#ulevaade">Ülevaade</a>
+    ${standingsTab}
     <a href="${pagePath}#mangud">Mängud</a>
     <a href="${pagePath}#tulemused">Tulemused</a>
     <a href="${pagePath}#koosseis">Koosseis</a>
@@ -691,6 +740,7 @@ const renderTeamPage = (data) => {
   const upcomingList = document.querySelector("#team-upcoming");
   const resultList = document.querySelector("#team-results");
   const roster = document.querySelector("#team-roster");
+  const standings = document.querySelector("#team-standings");
   const now = new Date();
 
   const upcoming = matches.filter((match) => match.status === "upcoming" && new Date(match.startsAt) >= now).sort(byDateAsc).slice(0, 6);
@@ -707,6 +757,10 @@ const renderTeamPage = (data) => {
   if (roster) {
     const sortedPlayers = [...players].sort((a, b) => shirtNumber(a) - shirtNumber(b) || a.name.localeCompare(b.name, "et"));
     roster.innerHTML = sortedPlayers.length ? sortedPlayers.map(playerTemplate).join("") : `<p class="empty-state">Mängijate nimekirja ei leitud.</p>`;
+  }
+
+  if (standings) {
+    standings.innerHTML = standingsTemplate(data.standings?.[teamId]);
   }
 
   renderTeamFacts(team, matches, players);

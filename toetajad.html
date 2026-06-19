@@ -133,11 +133,6 @@
         </div>
       </section>
 
-      <section class="supporter-bottom-cta">
-        <strong>FC Rae otsib pikaajalisi partnereid, kes tahavad kasvatada Rae jalgpalli koos meiega.</strong>
-        <p>Partnerlus annab ettevõttele kohaliku nähtavuse ja positiivse seose noorte, perede ning kogukonna toetamisega.</p>
-        <button class="button button-primary" type="button" data-open-sponsor-modal>Räägime koostööst</button>
-      </section>
     </main>
 
     <div class="modal-backdrop" data-sponsor-modal hidden>
@@ -150,24 +145,14 @@
         </div>
         <form class="sponsor-form" data-mail-form="sponsor" novalidate>
           <div class="form-grid">
-            <label>Ettevõtte nimi <span>*</span><input name="company" required placeholder="Ettevõtte nimi"></label>
-            <label>Kontaktisik <span>*</span><input name="contact" required placeholder="Kontaktisiku nimi"></label>
-            <label>E-post <span>*</span><input name="email" type="email" required placeholder="mailiaadress@domeen.ee"></label>
+            <label><span class="field-label">Ettevõtte nimi <span>*</span></span><input name="company" required placeholder="Ettevõtte nimi"></label>
+            <label><span class="field-label">Kontaktisik <span>*</span></span><input name="contact" required placeholder="Kontaktisiku nimi"></label>
+            <label><span class="field-label">E-post <span>*</span></span><input name="email" type="email" required placeholder="mailiaadress@domeen.ee"></label>
             <label>Telefon<input name="phone" placeholder="Sinu telefoninumber"></label>
-            <label class="full-field">Huvipakkuv koostöövorm <span>*</span>
-              <select name="package" required>
-                <option value="">Vali koostöövorm</option>
-                <option>Noortetöö toetamine</option>
-                <option>Kodumängud ja kogukond</option>
-                <option>Vorm / nähtavus / bränding</option>
-                <option>Pikaajaline partnerlus</option>
-                <option>Ei tea veel, soovin nõu</option>
-              </select>
-            </label>
             <label class="full-field">Sõnum / kommentaar<textarea name="message" placeholder="Kirjuta siia oma küsimused või soovid..."></textarea></label>
             <input class="form-trap" name="website" tabindex="-1" autocomplete="off" hidden>
             <input type="hidden" name="renderedAt" data-rendered-at>
-            <label class="check-field full-field"><input name="consent" type="checkbox" required> Nõustun, et FC Rae SK MTÜ võib minuga ühendust võtta minu päringuga seoses. <span>*</span></label>
+            <label class="check-field full-field"><input name="consent" type="checkbox" required><span class="check-text">Nõustun, et FC Rae SK MTÜ võib minuga ühendust võtta minu päringuga seoses. <span>*</span></span></label>
           </div>
           <p class="spam-note">Rämpsposti kaitse on sisse lülitatud.</p>
           <button class="button button-primary" type="submit">Saada päring</button>
