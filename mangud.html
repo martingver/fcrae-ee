@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mängud | FC Rae</title>
+    <meta name="description" content="FC Rae mängude kalender ja tulemused Rae I, Rae II ning noortevõistkondade kohta.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/fcrae-logo-transparent.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="FC Rae avaleht">
+        <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      </a>
+      <nav class="main-nav" aria-label="Peamenüü">
+        <a href="visioon.html">Klubi</a>
+        <a href="meeskond-rae-i.html">Meeskonnad</a>
+        <a href="noored.html">Noored</a>
+        <a href="mangud.html">Mängud</a>
+        <a href="index.html#kogukond">Kogukond</a>
+        <a href="toetajad.html">Toetajad</a>
+        <a href="https://4teams.ee/klubi-varustus/rae-spordikool/" target="_blank" rel="noreferrer">Fännikaup</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-primary" href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer">Lisa laps trenni</a>
+        <a class="button button-ghost" href="index.html#fanniklubi">Liitu fänniklubiga</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="subhero matches-subhero">
+        <div>
+          <p class="eyebrow">Mängud ja tulemused</p>
+          <h1>Kogu Rae jalgpalli kalender ühes vaates.</h1>
+        </div>
+        <p>Avaleht näitab lühivaadet. Siin saad filtreerida võistkonda, tulemusi, tulevaid mänge ja kodumänge. Andmed tulevad jalgpall.ee cache'ist.</p>
+      </section>
+
+      <section class="matches-page section-light">
+        <div class="fixtures-heading">
+          <div>
+            <p class="section-kicker dark">Kalender</p>
+            <h2>Vali võistkond ja mängu tüüp.</h2>
+            <p id="matches-summary">Andmed laevad.</p>
+          </div>
+          <a class="button button-dark" href="https://jalgpall.ee" target="_blank" rel="noreferrer">Jalgpall.ee</a>
+        </div>
+        <div class="fixture-controls">
+          <label>Võistkond<select id="matches-team"><option value="all">Kõik võistkonnad</option></select></label>
+          <label>Staatus<select id="matches-status"><option value="upcoming">Tulevad mängud</option><option value="finished">Tulemused</option><option value="all">Kõik mängud</option></select></label>
+          <label>Koht<select id="matches-place"><option value="all">Kodu ja võõrsil</option><option value="Kodu">Kodumängud</option><option value="Võõrsil">Võõrsil</option></select></label>
+        </div>
+        <div class="fixture-list big-list" id="matches-page-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="kontakt">
+      <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      <div><strong>FC Rae SK MTÜ</strong><p>Rae valla jalgpalliklubi. Meie kodu on Jüri staadion.</p></div>
+      <div><strong>Kontakt</strong><p><a href="mailto:info@fcrae.ee">info@fcrae.ee</a><br>Jüri staadion, Laste 3, Jüri<br>Registrikood: 80670097</p></div>
+      <div><strong>Jälgi meid</strong><p><a href="https://www.facebook.com/p/Rae-Spordikool-Jalgpall-61574186321681/?locale=et_EE" target="_blank" rel="noreferrer">Facebook</a><br><a href="https://fcrae.ee" target="_blank" rel="noreferrer">fcrae.ee</a></p></div>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>

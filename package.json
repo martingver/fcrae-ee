@@ -1,0 +1,10 @@
+{
+  "name": "fcrae-ee-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update:data": "node scripts/update-jalgpall-data.mjs",
+    "serve": "node scripts/static-server.mjs"
+  }
+}

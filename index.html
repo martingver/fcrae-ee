@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FC Rae — Rae valla jalgpallikogukond</title>
+    <meta name="description" content="FC Rae koondab Rae valla jalgpalli: noored, Rae I ja Rae II meeskonnad, mängude kalender, tulemused, fänniklubi, toetajad ja kogukond.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/fcrae-logo-transparent.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#avaleht" aria-label="FC Rae avaleht">
+        <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      </a>
+      <nav class="main-nav" aria-label="Peamenüü">
+        <a href="visioon.html">Klubi</a>
+        <a href="meeskond-rae-i.html">Meeskonnad</a>
+        <a href="noored.html">Noored</a>
+        <a href="mangud.html">Mängud</a>
+        <a href="#kogukond">Kogukond</a>
+        <a href="toetajad.html">Toetajad</a>
+        <a href="https://4teams.ee/klubi-varustus/rae-spordikool/" target="_blank" rel="noreferrer">Fännikaup</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-primary" href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer">Lisa laps trenni</a>
+        <a class="button button-ghost" href="#fanniklubi">Liitu fänniklubiga</a>
+      </div>
+    </header>
+
+    <main id="avaleht">
+      <section class="hero">
+        <div class="hero-media">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/u11-medalid.jpg">
+            <img src="assets/algajad-hall.jpg" alt="FC Rae noored ja treener jalgpallihallis">
+          </picture>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Rae Spordikooli jalgpallipere</p>
+          <h1>FC Rae — Rae valla <span>jalgpallikogukond</span></h1>
+          <p class="hero-lead">Ehitame koos klubi, kus lapsed arenevad, kodumängudest saavad sündmused ja Rae jalgpallil on tugev hääl.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer">Lisa laps trenni</a>
+            <a class="button button-dark" href="#mangud">Vaata mänge</a>
+            <a class="button button-blue" href="#toetajad">Tule toetajaks</a>
+          </div>
+          <div class="hero-note">Koduväljak: Jüri staadion, Laste 3</div>
+        </div>
+      </section>
+
+      <section class="match-board" id="mangud" aria-labelledby="mangud-title">
+        <div class="match-card match-feature">
+          <p class="section-kicker">Järgmine kodumäng</p>
+          <h2 id="next-match-title">Andmeid uuendatakse</h2>
+          <div class="versus">
+            <div>
+              <img class="club-logo" id="next-home-logo" src="assets/rae-spordikool-logo.png" alt="Rae Spordikool">
+              <strong id="next-home">Rae Spordikool</strong>
+            </div>
+            <span>vs</span>
+            <div>
+              <img class="club-logo" id="next-away-logo" src="assets/rae-spordikool-logo.png" alt="Rae Spordikool">
+              <strong id="next-away">Vastane</strong>
+            </div>
+          </div>
+          <div class="match-meta">
+            <span id="next-date">Kalender laeb</span>
+            <span id="next-venue">Jüri staadion</span>
+          </div>
+          <a class="button button-primary" id="next-link" href="https://jalgpall.ee" target="_blank" rel="noreferrer">Vaata mänguinfot</a>
+        </div>
+
+        <div class="match-card results-card">
+          <div class="card-topline">
+            <p class="section-kicker">Viimased tulemused</p>
+            <select id="team-filter" aria-label="Vali võistkond">
+              <option value="all">Kõik</option>
+            </select>
+          </div>
+          <div class="result-list" id="result-list"></div>
+          <p class="data-note" id="data-note">Andmed: jalgpall.ee cache</p>
+        </div>
+
+        <div class="match-card calendar-card">
+          <p class="section-kicker">Võistkonnad</p>
+          <div class="team-source-list" id="team-source-list"></div>
+          <a class="text-link" href="https://jalgpall.ee" target="_blank" rel="noreferrer">Täielik kalender jalgpall.ee-s</a>
+        </div>
+      </section>
+
+      <section class="fixtures section-light" id="kalender" aria-labelledby="fixtures-title">
+        <div class="fixtures-heading">
+          <div>
+            <p class="section-kicker dark">Mängukalender</p>
+            <h2 id="fixtures-title">Rae mängud ühest kohast.</h2>
+            <p>Kalender kasutab jalgpall.ee cache'i ning kuvab nii esinduse, duubli kui noortevõistkondade mängud. Avalik leht ei koorma jalgpall.ee-d iga külastusega.</p>
+          </div>
+          <a class="button button-dark" href="https://jalgpall.ee" target="_blank" rel="noreferrer">Ava jalgpall.ee</a>
+        </div>
+        <div class="fixture-controls" aria-label="Kalendri filtrid">
+          <label>Võistkond<select id="calendar-team"><option value="all">Kõik võistkonnad</option></select></label>
+          <label>Staatus<select id="calendar-status"><option value="upcoming">Tulevad mängud</option><option value="finished">Tulemused</option><option value="all">Kõik mängud</option></select></label>
+          <label>Koht<select id="calendar-place"><option value="all">Kodu ja võõrsil</option><option value="Kodu">Kodumängud</option><option value="Võõrsil">Võõrsil</option></select></label>
+        </div>
+        <div class="fixture-list" id="calendar-list"></div>
+      </section>
+
+      <section class="vision section-light" id="klubi">
+        <div class="section-copy">
+          <p class="section-kicker dark">Meie visioon</p>
+          <h2>Üks klubi. Üks kogukond. Üks Rae.</h2>
+          <p>FC Rae visioon on kujuneda Eesti üheks suurimaks ja mõjukamaks kogukondlikuks jalgpalliklubiks. Meie tugevus peab olema inimestes, kes tunnevad, et see on nende klubi.</p>
+          <a class="inline-cta" href="visioon.html">Loe visiooni</a>
+        </div>
+        <div class="stat-strip">
+          <div><strong>500–1000</strong><span>noorsportlast</span></div>
+          <div><strong>1000+</strong><span>liiget ja toetajat</span></div>
+          <div><strong>2030</strong><span>siht: Esiliiga</span></div>
+        </div>
+      </section>
+
+      <section class="values section-light" aria-labelledby="values-title">
+        <div>
+          <p class="section-kicker dark">Väärtused</p>
+          <h2 id="values-title">Mille järgi klubi kasvab.</h2>
+        </div>
+        <div class="value-grid">
+          <article><strong>Kogukond</strong><span>Me ei ehita ainult võistkondi, vaid Rae valla jalgpallipere.</span></article>
+          <article><strong>Areng</strong><span>Iga laps, treener ja mängija peab saama võimaluse paremaks saada.</span></article>
+          <article><strong>Aus mäng</strong><span>Austus vastase, kohtuniku, treeneri, kaaslase ja kogukonna vastu.</span></article>
+          <article><strong>Rae uhkus</strong><span>Esindame oma kodukohta väärikalt väljakul ja väljaku kõrval.</span></article>
+        </div>
+      </section>
+
+      <section class="split-section" id="meeskonnad">
+        <div class="dark-panel">
+          <p class="section-kicker">Meeskonnad</p>
+          <h2>Rae I ja Rae II annavad noortele nähtava sihi.</h2>
+          <div class="team-cards">
+            <article class="image-card">
+              <img src="assets/u15-saal.jpg" alt="FC Rae noortevõistkond medalitega">
+              <div>
+                <h3>Rae I</h3>
+                <p>Esindusmeeskond ja klubi sportliku ambitsiooni nähtav kandja.</p>
+                <a href="meeskond-rae-i.html">Vaata võistkonda</a>
+              </div>
+            </article>
+            <article class="image-card">
+              <img src="assets/algajad-hall.jpg" alt="FC Rae noored halliturniiril">
+              <div>
+                <h3>Rae II</h3>
+                <p>Arengukeskkond, kus järgmised mängijad saavad täiskasvanute jalgpalli kogemuse.</p>
+                <a href="meeskond-rae-ii.html">Vaata võistkonda</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="youth-panel" id="noored">
+          <p class="section-kicker dark">Noored</p>
+          <h2>Too laps FC Rae jalgpallitreeningule</h2>
+          <div class="youth-grid">
+            <div><strong>Poisid</strong><span>U7–U19</span></div>
+            <div><strong>Tüdrukud</strong><span>U7–U19</span></div>
+            <div><strong>Algajad</strong><span>6+ aastat</span></div>
+          </div>
+          <p>Treeningud Jüris, Karulaugu, Järveküla, Peetri, Lagedi ja Vaida piirkonnas. Koos Rae Spordikooli ja Rae Huvialakooli spordiosakonna juhendajatega.</p>
+          <div class="youth-faq">
+            <details>
+              <summary>Millises vanuses saab alustada?</summary>
+              <p>Algajatele sobib üldjuhul 6+ vanus. Täpne grupp sõltub lapse vanusest ja treeningkohast.</p>
+            </details>
+            <details>
+              <summary>Mida trenni kaasa võtta?</summary>
+              <p>Sportlik riietus, joogipudel ja väljakule sobivad jalanõud. Treener täpsustab grupi järgi.</p>
+            </details>
+          </div>
+          <div class="youth-actions">
+            <a class="button button-dark" href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer">Lisa laps trenni</a>
+            <a class="inline-cta" href="noored.html">Vaata noorte infot</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="community" id="kogukond">
+        <div class="section-copy invert">
+          <p class="section-kicker">Kogukond</p>
+          <h2>FC Rae on rohkem kui jalgpall.</h2>
+          <p>Kodumängud, vabatahtlikud, lapsevanemad, fänniklubi ja kohalikud ettevõtted teevad klubist Rae valla ühise spordipere.</p>
+        </div>
+        <div class="community-grid">
+          <article>
+            <img src="assets/u11-medalid.jpg" alt="FC Rae noored medalitega">
+            <h3>Fänniklubi</h3>
+            <p>Ole esimeste seas, kes saab teada kodumängudest ja klubi tegemistest.</p>
+          </article>
+          <article>
+            <img src="assets/algajad-hall.jpg" alt="FC Rae noored hallis">
+            <h3>Kodumängud</h3>
+            <p>Tule Jüri staadionile ja loo koos meiega kodumängu tunne.</p>
+          </article>
+          <article>
+            <img src="assets/u15-saal.jpg" alt="FC Rae võistkond">
+            <h3>Vabatahtlikud</h3>
+            <p>Iga panus loeb: mängupäevad, üritused ja kogukonna tegevused.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="supporters section-light" id="toetajad">
+        <div class="supporter-logos">
+          <p class="section-kicker dark">Toetajad</p>
+          <h2>Meie partnerid</h2>
+          <a class="sponsor-main" href="https://www.repligen.com" target="_blank" rel="noreferrer" aria-label="Repligen">
+            <span>Peasponsor</span>
+            <img src="assets/repligen-logo.svg" alt="Repligen">
+          </a>
+          <div class="sponsor-grid">
+            <a href="https://www.rae.ee" target="_blank" rel="noreferrer"><img src="assets/rae-vald-logo.svg" alt="Rae vald"></a>
+            <div>Stenmarein</div>
+            <div>Premial</div>
+          </div>
+        </div>
+        <div class="packages">
+          <p class="section-kicker dark">Toetajapaketid</p>
+          <h2>Kasvata Rae jalgpalli nähtavust koos meiega.</h2>
+          <div class="package-grid">
+            <article><strong>Kogukonna toetaja</strong><span>Toeta klubi ja näita, et sul on süda Rae jalgpalli edule.</span></article>
+            <article><strong>Kodumängu partner</strong><span>Sinu bränd kodumängude juures ja digikanalites.</span></article>
+            <article><strong>Noortetöö toetaja</strong><span>Panusta noorte arengusse ja Rae jalgpalli tulevikku.</span></article>
+            <article><strong>Peatoetaja</strong><span>Klubi strateegiline partner, lai nähtavus ja ühine edulugu.</span></article>
+          </div>
+          <a class="button button-primary" href="mailto:info@fcrae.ee?subject=Toetajapakettide%20huvi">Küsi toetajapakette</a>
+        </div>
+      </section>
+
+      <section class="shop-strip" id="fannikaup">
+        <div>
+          <p class="section-kicker">Fännikaup</p>
+          <h2>Kanna klubi värve uhkusega.</h2>
+          <a class="button button-primary" href="https://4teams.ee/klubi-varustus/rae-spordikool/" target="_blank" rel="noreferrer">Vaata fännikaupa</a>
+        </div>
+        <div class="shop-items">
+          <article><img src="assets/fcrae-logo-transparent.png" alt=""><span>Sall</span></article>
+          <article><img src="assets/fcrae-logo-transparent.png" alt=""><span>Hoodie</span></article>
+          <article><img src="assets/rae-spordikool-logo.png" alt=""><span>T-särk</span></article>
+          <article><img src="assets/fcrae-logo-transparent.png" alt=""><span>Nokamüts</span></article>
+        </div>
+      </section>
+
+      <section class="join section-light" id="fanniklubi">
+        <div class="section-copy">
+          <p class="section-kicker dark">Fänniklubi</p>
+          <h2>Liitu FC Rae kogukonnaga</h2>
+          <p>Saa esimesena teada kodumängudest, noortetöö uudistest, fännikaubast, üritustest ja klubi arengutest.</p>
+        </div>
+        <form class="join-form" action="mailto:info@fcrae.ee" method="post" enctype="text/plain">
+          <label>Nimi<input name="nimi" autocomplete="name"></label>
+          <label>E-post<input name="email" type="email" autocomplete="email"></label>
+          <label>Huvi<select name="huvi"><option>Fänniklubi</option><option>Vabatahtlik</option><option>Toetaja</option><option>Fännikaup</option></select></label>
+          <button class="button button-dark" type="submit">Saada huvi</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="kontakt">
+      <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      <div>
+        <strong>FC Rae SK MTÜ</strong>
+        <p>Rae valla jalgpalliklubi. Meie kodu on Jüri staadion.</p>
+      </div>
+      <div>
+        <strong>Kontakt</strong>
+        <p><a href="mailto:info@fcrae.ee">info@fcrae.ee</a><br>Jüri staadion, Laste 3, Jüri<br>Registrikood: 80670097</p>
+      </div>
+      <div>
+        <strong>Jälgi meid</strong>
+        <p><a href="https://www.facebook.com/p/Rae-Spordikool-Jalgpall-61574186321681/?locale=et_EE" target="_blank" rel="noreferrer">Facebook</a><br><a href="https://fcrae.ee" target="_blank" rel="noreferrer">fcrae.ee</a></p>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
