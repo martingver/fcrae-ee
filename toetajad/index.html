@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/">
     <title>Toetajad | FC Rae</title>
-    <meta name="description" content="FC Rae toetajad ja toetajapaketid kohalikele ettevõtetele.">
+    <meta name="description" content="FC Rae toetajad, partnerlus ja koostöövormid kohalikele ettevõtetele.">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/fcrae-logo-transparent.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,37 +15,50 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="FC Rae avaleht"><img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK"></a>
+      <a class="brand" href="/" aria-label="FC Rae avaleht">
+        <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      </a>
       <nav class="main-nav" aria-label="Peamenüü">
         <a href="/klubi/">Klubi</a>
         <a href="/voistkonnad/">Meeskonnad</a>
         <a href="/noored/">Noored</a>
         <a href="/mangud/">Mängud</a>
         <a href="/kogukond/">Kogukond</a>
-        <a href="/toetajad/">Toetajad</a>
+        <a href="/toetajad/" aria-current="page">Toetajad</a>
         <a href="https://4teams.ee/klubi-varustus/rae-spordikool/" target="_blank" rel="noreferrer">Fännikaup</a>
         <a href="/kontakt/">Kontakt</a>
       </nav>
       <div class="header-actions">
-        <a class="button button-primary" href="mailto:info@fcrae.ee?subject=Toetajapakettide%20huvi">Küsi pakette</a>
+        <button class="button button-primary" type="button" data-open-sponsor-modal>Küsi pakette</button>
         <a class="button button-ghost" href="/#fanniklubi">Liitu fänniklubiga</a>
       </div>
     </header>
+
     <main>
-      <section class="subhero supporters-subhero">
+      <section class="subhero supporters-subhero supporters-hero">
         <div>
           <p class="eyebrow">Toetajad</p>
-          <h1>Rae jalgpall kasvab koos kohalike ettevõtetega.</h1>
+          <h1>Toeta Rae jalgpalli tulevikku.</h1>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-open-sponsor-modal>Küsi toetajapakette</button>
+            <a class="button button-ghost" href="/toetajad/#meie-toetajad">Vaata meie toetajaid</a>
+          </div>
         </div>
-        <p>Toetaja ei osta ainult logopinda. Ta aitab luua lastele paremat treeningkeskkonda, kodumängude kultuuri ja Rae valla oma jalgpallilugu.</p>
+        <p>FC Rae partnerlus ei ole lihtsalt logo kodulehel. See on võimalus toetada noorte arengut, tervislikke eluviise ja Rae valla jalgpallikogukonna kasvu.</p>
       </section>
-      <section class="supporter-page section-light">
-        <div>
-          <p class="section-kicker dark">Praegused toetajad</p>
+
+      <section class="supporter-page section-light" id="meie-toetajad">
+        <div class="section-copy">
+          <p class="section-kicker dark">Meie toetajad</p>
           <h2>Usaldus ja kohaliku kogukonna tugi.</h2>
+          <p>FC Rae kasvab koos ettevõtete ja partneritega, kes näevad kohaliku spordi väärtust laste, perede ja kogukonna jaoks.</p>
+          <button class="inline-cta as-button" type="button" data-open-sponsor-modal>Tule meie toetajaks</button>
         </div>
         <div class="supporter-wall">
-          <a class="sponsor-main" href="https://www.repligen.com" target="_blank" rel="noreferrer" aria-label="Repligen"><span>Peasponsor</span><img src="assets/repligen-logo.svg" alt="Repligen"></a>
+          <a class="sponsor-main" href="https://www.repligen.com" target="_blank" rel="noreferrer" aria-label="Repligen">
+            <span>Peasponsor</span>
+            <img src="assets/repligen-logo.svg" alt="Repligen">
+          </a>
           <div class="sponsor-grid">
             <a href="https://www.rae.ee" target="_blank" rel="noreferrer"><img src="assets/rae-vald-logo.svg" alt="Rae vald"></a>
             <div>Stenmarein</div>
@@ -53,22 +66,110 @@
           </div>
         </div>
       </section>
-      <section class="package-page section-light">
-        <div class="section-copy">
-          <p class="section-kicker dark">Paketid</p>
-          <h2>Leia ettevõttele sobiv viis panustada.</h2>
-          <p>Pakettide täpne sisu sünnib koostöös. Fookus võib olla noortetööl, kodumängul, kogukonnaüritusel või pikaajalisel nähtavusel.</p>
-          <a class="button button-primary" href="mailto:info@fcrae.ee?subject=Toetajapakettide%20huvi">Küsi toetajapakette</a>
-        </div>
-        <div class="package-grid package-grid-large">
-          <article><strong>Kogukonna toetaja</strong><span>Logo toetajate lehel, tänu sotsiaalmeedias ja võimalus panustada loosiauhindade või teenustega.</span></article>
-          <article><strong>Kodumängu partner</strong><span>Nähtavus konkreetse kodumängu kommunikatsioonis, staadionil ja mängupäeva sisus.</span></article>
-          <article><strong>Noortetöö toetaja</strong><span>Panus varustusse, treeningvahenditesse, turniiridesse, laagritesse või stipendiumitesse.</span></article>
-          <article><strong>Peatoetaja</strong><span>Strateegiline koostöö, suurim nähtavus ja ühine lugu FC Rae arengus.</span></article>
+
+      <section class="partner-value section-light">
+        <p class="section-kicker dark">Partnerlus</p>
+        <h2>Miks olla FC Rae partner?</h2>
+        <div class="value-card-grid">
+          <article><span>◎</span><strong>Kohalik nähtavus</strong><p>Jõuad Rae valla perede, lapsevanemate, kogukonnaliikmete ja jalgpallihuvilisteni.</p></article>
+          <article><span>♡</span><strong>Positiivne maine</strong><p>Seod oma ettevõtte noorte, tervislike eluviiside ja kogukonna toetamisega.</p></article>
+          <article><span>▥</span><strong>Äriline väärtus</strong><p>Võimalus teha FC Rae kogukonnale eripakkumisi, kampaaniaid ja koostöid.</p></article>
+          <article><span>◇</span><strong>Pikaajaline partnerlus</strong><p>Ehitame läbipaistvaid ja kestvaid suhteid ettevõtetega, kes tahavad päriselt panustada.</p></article>
         </div>
       </section>
+
+      <section class="partner-benefits section-light">
+        <div class="section-copy">
+          <p class="section-kicker dark">Väärtus</p>
+          <h2>Mida partner vastu saab?</h2>
+        </div>
+        <div class="benefit-list">
+          <span>Nähtavus FC Rae kodulehel</span>
+          <span>Võimalusel sotsiaalmeedia nähtavus</span>
+          <span>Kodumängude ja mängupäeva kommunikatsioon</span>
+          <span>Õigus kasutada FC Rae toetaja staatust</span>
+          <span>Kogukonnale eripakkumised kokkuleppel</span>
+          <span>Valitud koostöövormides särgi või trükiste nähtavus</span>
+          <span>Positiivne seos noorte ja kohaliku jalgpalli toetamisega</span>
+        </div>
+      </section>
+
+      <section class="partner-impact section-light">
+        <p class="section-kicker dark">Panus</p>
+        <h2>Kuhu Sinu panus läheb?</h2>
+        <div class="impact-grid">
+          <article><strong>Noortetöö</strong><p>Treeningud, grupid, varustus, võistlused ja noorte areng igal tasemel.</p></article>
+          <article><strong>Esindusvõistkonnad</strong><p>Rae I ja Rae II sportlik areng ning võimaluste parandamine.</p></article>
+          <article><strong>Treenerid</strong><p>Treenerite koolitamine ja arendamine, parem kvaliteet treeningutel.</p></article>
+          <article><strong>Laagrid ja turniirid</strong><p>Noorte laagrite, turniiride ja reiside toetamine, rohkem kogemusi.</p></article>
+          <article><strong>Kogukond</strong><p>Kodumängud, sündmused ja fännikultuuri arendamine Rae vallas.</p></article>
+        </div>
+      </section>
+
+      <section class="package-page section-light">
+        <div class="section-copy">
+          <p class="section-kicker dark">Koostöövormid</p>
+          <h2>Leia ettevõttele sobiv viis panustada.</h2>
+          <p>Pakettide täpne sisu sünnib koostöös. Fookus võib olla noortetööl, kodumängul, kogukonnaüritusel või pikaajalisel nähtavusel.</p>
+          <button class="button button-primary" type="button" data-open-sponsor-modal>Küsi toetajapakette</button>
+        </div>
+        <div class="package-grid package-grid-large">
+          <article><strong>Kogukonna toetaja</strong><span>Toetad kohalikke lapsi ja Rae jalgpallikogukonna arengut.</span></article>
+          <article><strong>Kodumängu partner</strong><span>Sinu ettevõte on seotud kodumängude ja kogukonna sündmustega.</span></article>
+          <article><strong>Noortetöö toetaja</strong><span>Aitad parandada laste treeningtingimusi, varustust ja võimalusi.</span></article>
+          <article><strong>Peapartner</strong><span>Pikaajaline ja nähtav koostöö FC Rae kasvuloo kõrval.</span></article>
+        </div>
+      </section>
+
+      <section class="supporter-bottom-cta">
+        <strong>FC Rae otsib pikaajalisi partnereid, kes tahavad olla osa tugeva kogukonnaklubi ülesehitamisest.</strong>
+        <p>Partnerlus annab ettevõttele kohaliku nähtavuse, positiivse seose noorte ja kogukonna toetamisega ning võimaluse jõuda FC Rae perede ja toetajateni.</p>
+        <button class="button button-primary" type="button" data-open-sponsor-modal>Küsi toetajapakette</button>
+      </section>
     </main>
-    <footer class="site-footer"><img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK"><div><strong>FC Rae SK MTÜ</strong><p>Rae valla jalgpalliklubi.</p></div><div><strong>Kontakt</strong><p><a href="mailto:info@fcrae.ee">info@fcrae.ee</a><br>Jüri staadion, Laste 3, Jüri</p></div><div><strong>Lingid</strong><p><a href="/klubi/">Visioon</a><br><a href="/noored/">Noored</a></p></div></footer>
+
+    <div class="modal-backdrop" data-sponsor-modal hidden>
+      <section class="sponsor-modal" role="dialog" aria-modal="true" aria-labelledby="sponsor-modal-title">
+        <button class="modal-close" type="button" aria-label="Sulge" data-close-sponsor-modal>×</button>
+        <div class="form-intro">
+          <h2 id="sponsor-modal-title">Küsi toetajapakette</h2>
+          <strong>Hakka FC Rae toetajaks</strong>
+          <p>Täida vorm ja saadame sulle toetajapakettide info ning leiame sobiva koostöövormi.</p>
+        </div>
+        <form class="sponsor-form" data-mail-form="sponsor" novalidate>
+          <div class="form-grid">
+            <label>Ettevõtte nimi <span>*</span><input name="company" required placeholder="Ettevõtte nimi"></label>
+            <label>Kontaktisik <span>*</span><input name="contact" required placeholder="Kontaktisiku nimi"></label>
+            <label>E-post <span>*</span><input name="email" type="email" required placeholder="mailiaadress@domeen.ee"></label>
+            <label>Telefon<input name="phone" placeholder="Sinu telefoninumber"></label>
+            <label class="full-field">Huvipakkuv koostöövorm <span>*</span>
+              <select name="package" required>
+                <option value="">Vali koostöövorm</option>
+                <option>Kogukonna toetaja</option>
+                <option>Kodumängu partner</option>
+                <option>Noortetöö toetaja</option>
+                <option>Peapartner / strateegiline partner</option>
+                <option>Ei tea veel / soovin nõu</option>
+              </select>
+            </label>
+            <label class="full-field">Sõnum / kommentaar<textarea name="message" placeholder="Kirjuta siia oma küsimused või soovid..."></textarea></label>
+            <input class="form-trap" name="website" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="renderedAt" data-rendered-at>
+            <label class="check-field full-field"><input name="consent" type="checkbox" required> Nõustun, et FC Rae võib minu andmeid kasutada minu päringule vastamiseks. <span>*</span></label>
+          </div>
+          <p class="spam-note">Rämpsposti kaitse on sisse lülitatud.</p>
+          <button class="button button-primary" type="submit">Saada päring</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      <div><strong>FC Rae SK MTÜ</strong><p>Rae valla jalgpalliklubi.</p></div>
+      <div><strong>Kontakt</strong><p><a href="mailto:info@fcrae.ee">info@fcrae.ee</a><br>Jüri staadion, Laste 3, Jüri<br>Registrikood: 80670097</p></div>
+      <div><strong>Lingid</strong><p><a href="/klubi/">Visioon</a><br><a href="/noored/">Noored</a><br><a href="/mangud/">Mängud</a><br><a href="https://4teams.ee/klubi-varustus/rae-spordikool/" target="_blank" rel="noreferrer">Fännikaup</a><br><a href="/kontakt/">Kontakt</a></p></div>
+    </footer>
     <script src="app.js" defer></script>
   </body>
 </html>

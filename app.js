@@ -165,6 +165,117 @@ const setupMobileMenu = () => {
   });
 };
 
+const setupSponsorModal = () => {
+  const modal = document.querySelector("[data-sponsor-modal]");
+  if (!modal) return;
+
+  const openButtons = document.querySelectorAll("[data-open-sponsor-modal]");
+  const closeButtons = modal.querySelectorAll("[data-close-sponsor-modal]");
+  const firstInput = modal.querySelector("input, select, textarea, button");
+
+  const open = () => {
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    setTimeout(() => firstInput?.focus(), 0);
+  };
+
+  const close = () => {
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+  };
+
+  openButtons.forEach((button) => button.addEventListener("click", open));
+  closeButtons.forEach((button) => button.addEventListener("click", close));
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) close();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !modal.hidden) close();
+  });
+};
+
+const setupMailForms = () => {
+  const forms = document.querySelectorAll("[data-mail-form]");
+  if (!forms.length) return;
+
+  forms.forEach((form) => {
+    const renderedAt = String(Date.now());
+    form.querySelectorAll("[data-rendered-at]").forEach((input) => {
+      input.value = renderedAt;
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const status = form.querySelector(".form-status");
+      const data = new FormData(form);
+      const startedAt = Number(data.get("renderedAt") || renderedAt);
+      const message = String(data.get("message") || "");
+      const linkCount = (message.match(/https?:\/\//gi) || []).length;
+
+      const setStatus = (text, type = "error") => {
+        if (!status) return;
+        status.textContent = text;
+        status.dataset.status = type;
+      };
+
+      if (String(data.get("website") || "").trim()) {
+        setStatus("Aitäh! Sinu päring on vastu võetud.", "success");
+        return;
+      }
+
+      if (Date.now() - startedAt < 4000) {
+        setStatus("Palun proovi mõne sekundi pärast uuesti.");
+        return;
+      }
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        setStatus("Palun täida kohustuslikud väljad.");
+        return;
+      }
+
+      if (linkCount > 2) {
+        setStatus("Sõnumis on liiga palju linke. Palun saada lühem tekst või kirjuta otse info@fcrae.ee.");
+        return;
+      }
+
+      const type = form.dataset.mailForm;
+      const subject = type === "sponsor"
+        ? `FC Rae toetajapaketi päring: ${data.get("company")}`
+        : `FC Rae kontaktivorm: ${data.get("topic")}`;
+      const bodyLines = type === "sponsor"
+        ? [
+            `Ettevõte: ${data.get("company")}`,
+            `Kontaktisik: ${data.get("contact")}`,
+            `E-post: ${data.get("email")}`,
+            `Telefon: ${data.get("phone") || "-"}`,
+            `Huvipakkuv koostöövorm: ${data.get("package")}`,
+            "",
+            `Sõnum:`,
+            message || "-",
+            "",
+            "Nõusolek: jah",
+            `Saadetud: ${new Date().toLocaleString("et-EE")}`
+          ]
+        : [
+            `Nimi: ${data.get("name")}`,
+            `E-post: ${data.get("email")}`,
+            `Telefon: ${data.get("phone") || "-"}`,
+            `Teema: ${data.get("topic")}`,
+            "",
+            `Sõnum:`,
+            message,
+            "",
+            "Nõusolek: jah",
+            `Saadetud: ${new Date().toLocaleString("et-EE")}`
+          ];
+
+      setStatus(type === "sponsor" ? "Aitäh! Võtame sinuga peagi ühendust." : "Aitäh! Sinu sõnum on valmis saatmiseks.", "success");
+      window.location.href = `mailto:info@fcrae.ee?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+    });
+  });
+};
+
 const renderNextMatch = (data) => {
   if (!document.querySelector("#next-match-title")) return;
   const now = new Date();
@@ -528,6 +639,8 @@ const renderTeamPage = (data) => {
 };
 
 setupMobileMenu();
+setupSponsorModal();
+setupMailForms();
 
 getData().then((data) => {
   renderNextMatch(data);

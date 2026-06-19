@@ -74,6 +74,10 @@ img {
   color: var(--gold);
 }
 
+.main-nav a[aria-current="page"] {
+  color: var(--gold);
+}
+
 .header-actions,
 .hero-actions {
   display: flex;
@@ -167,6 +171,11 @@ img {
   font-weight: 900;
   font-size: 0.9rem;
   transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease;
+  cursor: pointer;
+}
+
+button.button {
+  font-family: inherit;
 }
 
 .button:active {
@@ -1315,7 +1324,12 @@ input {
 .contact-subhero {
   background:
     linear-gradient(90deg, rgba(9, 10, 12, 0.96), rgba(9, 10, 12, 0.62)),
-    url("assets/u11-medalid.jpg") center / cover;
+    url("assets/u15-saal.jpg") center / cover;
+}
+
+.contact-hero,
+.supporters-hero {
+  min-height: 440px;
 }
 
 .matches-page {
@@ -1783,6 +1797,408 @@ input {
   font-weight: 900;
 }
 
+.contact-directory {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  padding: 64px clamp(22px, 7vw, 110px) 36px;
+}
+
+.contact-directory article,
+.contact-form-panel,
+.partner-value,
+.partner-benefits,
+.partner-impact {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--black);
+}
+
+.contact-directory article {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-height: 230px;
+  padding: 24px;
+}
+
+.contact-directory strong {
+  font-size: 1.02rem;
+  font-weight: 900;
+  line-height: 1.22;
+}
+
+.contact-directory p {
+  margin: 0;
+  color: #4a5059;
+  line-height: 1.65;
+}
+
+.contact-directory a:not(.inline-cta) {
+  color: inherit;
+}
+
+.contact-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--black);
+  font-weight: 900;
+}
+
+.inline-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.inline-cta.as-button {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact-form-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 28px;
+  padding: 36px clamp(22px, 7vw, 110px) 72px;
+}
+
+.contact-form-panel {
+  padding: clamp(24px, 4vw, 38px);
+}
+
+.form-intro {
+  margin-bottom: 24px;
+}
+
+.form-intro h2 {
+  margin: 0 0 12px;
+  color: var(--black);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.02;
+}
+
+.form-intro p {
+  max-width: 620px;
+  margin: 0;
+  color: #4a5059;
+  line-height: 1.7;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.form-grid label {
+  display: grid;
+  gap: 8px;
+  color: #20242a;
+  font-weight: 900;
+}
+
+.form-grid label span,
+.check-field span {
+  color: #d22d2d;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0 12px;
+  background: #fff;
+  color: var(--black);
+  font: inherit;
+}
+
+.form-grid textarea {
+  min-height: 132px;
+  padding-top: 12px;
+  resize: vertical;
+}
+
+.full-field {
+  grid-column: 1 / -1;
+}
+
+.check-field {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 10px;
+  color: #3e444d;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.check-field input {
+  width: 16px;
+  min-height: 16px;
+  margin-top: 2px;
+}
+
+.form-trap {
+  position: absolute;
+  left: -100vw;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.form-actions-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.spam-note {
+  margin: 0;
+  color: #68717c;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.form-status {
+  margin: 14px 0 0;
+  color: #b02a2a;
+  font-weight: 900;
+}
+
+.form-status[data-status="success"] {
+  color: #176b37;
+}
+
+.call-card {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(242, 194, 48, 0.2), transparent 42%),
+    linear-gradient(145deg, #171a1f, #0d0f12);
+  color: var(--white);
+}
+
+.call-card h2 {
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.call-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+}
+
+.contact-cta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 clamp(22px, 7vw, 110px) 78px;
+}
+
+.contact-cta-grid a {
+  min-height: 150px;
+  display: grid;
+  align-content: end;
+  gap: 10px;
+  padding: 22px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #171a1f, #0d0f12);
+  color: var(--white);
+}
+
+.contact-cta-grid strong {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.contact-cta-grid span {
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.5;
+}
+
+.supporters-hero .hero-actions {
+  margin-top: 26px;
+}
+
+.partner-value,
+.partner-benefits,
+.partner-impact {
+  width: min(1320px, calc(100% - 44px));
+  margin: 0 auto 18px;
+  padding: clamp(24px, 4vw, 34px);
+}
+
+.partner-value h2,
+.partner-impact h2 {
+  margin: 0 0 22px;
+  color: var(--black);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.04;
+}
+
+.value-card-grid,
+.impact-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.value-card-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.impact-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.value-card-grid article,
+.impact-grid article {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-height: 180px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfbfa;
+}
+
+.value-card-grid span {
+  color: var(--gold-dark);
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.value-card-grid strong,
+.impact-grid strong {
+  font-size: 1.12rem;
+  font-weight: 900;
+}
+
+.value-card-grid p,
+.impact-grid p {
+  margin: 0;
+  color: #4a5059;
+  line-height: 1.65;
+}
+
+.partner-benefits {
+  display: grid;
+  grid-template-columns: 0.46fr 1.54fr;
+  gap: 28px;
+}
+
+.benefit-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.benefit-list span {
+  min-height: 82px;
+  display: grid;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfbfa;
+  color: #30343a;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.supporter-bottom-cta {
+  width: min(1320px, calc(100% - 44px));
+  margin: 0 auto 78px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 28px;
+  padding: clamp(24px, 4vw, 34px);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 0% 50%, rgba(242, 194, 48, 0.17), transparent 34%),
+    linear-gradient(145deg, #171a1f, #0d0f12);
+  color: var(--white);
+}
+
+.supporter-bottom-cta strong {
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  line-height: 1.18;
+}
+
+.supporter-bottom-cta p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(6, 7, 9, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.modal-backdrop[hidden] {
+  display: none;
+}
+
+.sponsor-modal {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: min(92dvh, 860px);
+  overflow: auto;
+  padding: clamp(24px, 4vw, 34px);
+  border-radius: 14px;
+  background: var(--white);
+  color: var(--black);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.38);
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f2f4;
+  color: var(--black);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.sponsor-form .button {
+  width: 100%;
+  margin-top: 14px;
+}
+
 .documents-strip {
   padding: 64px clamp(22px, 7vw, 110px);
   background: #0d0f12;
@@ -1854,7 +2270,15 @@ input {
   .teams-page-list,
   .fact-grid,
   .team-facts,
-  .info-grid {
+  .info-grid,
+  .contact-directory,
+  .contact-form-section,
+  .contact-cta-grid,
+  .value-card-grid,
+  .impact-grid,
+  .partner-benefits,
+  .benefit-list,
+  .supporter-bottom-cta {
     grid-template-columns: 1fr;
   }
 
@@ -1874,6 +2298,18 @@ input {
   .team-result-row em {
     grid-row: 1 / span 2;
     grid-column: 3;
+  }
+
+  .contact-directory {
+    padding-top: 42px;
+  }
+
+  .contact-form-section {
+    padding-top: 24px;
+  }
+
+  .call-card {
+    min-height: 300px;
   }
 }
 
@@ -1944,8 +2380,54 @@ input {
   .fact-grid,
   .location-list,
   .community-feature-grid,
+  .form-grid,
+  .benefit-list,
   .join-form {
     grid-template-columns: 1fr;
+  }
+
+  .contact-directory,
+  .contact-form-section,
+  .contact-cta-grid,
+  .partner-value,
+  .partner-benefits,
+  .partner-impact,
+  .supporter-bottom-cta {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .contact-directory,
+  .contact-form-section,
+  .contact-cta-grid,
+  .partner-value,
+  .partner-benefits,
+  .partner-impact {
+    padding-bottom: 42px;
+  }
+
+  .form-actions-line,
+  .supporter-bottom-cta {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions-line {
+    flex-direction: column;
+  }
+
+  .modal-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .sponsor-modal {
+    width: 100%;
+    max-height: 92dvh;
+    border-radius: 18px 18px 0 0;
   }
 
   .team-subhero {

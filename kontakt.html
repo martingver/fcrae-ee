@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/">
-    <title>Kontakt ja klubi info | FC Rae</title>
-    <meta name="description" content="FC Rae kontakt, koduväljak, registriinfo ja klubi info.">
+    <title>Kontakt | FC Rae</title>
+    <meta name="description" content="Võta ühendust FC Raega: üldkontakt, spordidirektor, noortetöö, mängud ja klubi info.">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/fcrae-logo-transparent.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,9 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="FC Rae avaleht"><img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK"></a>
+      <a class="brand" href="/" aria-label="FC Rae avaleht">
+        <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      </a>
       <nav class="main-nav" aria-label="Peamenüü">
         <a href="/klubi/">Klubi</a>
         <a href="/voistkonnad/">Meeskonnad</a>
@@ -24,41 +26,118 @@
         <a href="/kogukond/">Kogukond</a>
         <a href="/toetajad/">Toetajad</a>
         <a href="https://4teams.ee/klubi-varustus/rae-spordikool/" target="_blank" rel="noreferrer">Fännikaup</a>
-        <a href="/kontakt/">Kontakt</a>
+        <a href="/kontakt/" aria-current="page">Kontakt</a>
       </nav>
       <div class="header-actions">
         <a class="button button-primary" href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer">Lisa laps trenni</a>
-        <a class="button button-ghost" href="mailto:info@fcrae.ee">Kirjuta</a>
+        <a class="button button-ghost" href="/#fanniklubi">Liitu fänniklubiga</a>
       </div>
     </header>
+
     <main>
-      <section class="subhero contact-subhero">
+      <section class="subhero contact-subhero contact-hero">
         <div>
-          <p class="eyebrow">Kontakt ja klubi info</p>
-          <h1>FC Rae kodu on Jüri staadion.</h1>
+          <p class="eyebrow">Kontakt</p>
+          <h1>Võta ühendust FC Raega.</h1>
         </div>
-        <p>Kui soovid lapse trenni panna, toetajaks tulla, kodumängudel kaasa lüüa või klubiga ühendust võtta, kirjuta meile.</p>
+        <p>Küsimused treeningute, mängude, koostöö või klubi kohta — aitame leida õige inimese ja vastuse.</p>
       </section>
-      <section class="contact-page section-light">
-        <div class="contact-card">
-          <p class="section-kicker dark">Kontakt</p>
-          <h2>info@fcrae.ee</h2>
-          <p>Jüri staadion, Laste 3, Jüri<br>Registrikood: 80670097</p>
-          <a class="button button-primary" href="mailto:info@fcrae.ee">Saada kiri</a>
-        </div>
-        <div class="info-grid">
-          <article><strong>Noortetöö</strong><span>ARNO registreerimine ja treeninggruppide info.</span><a href="/noored/">Noorte leht</a></article>
-          <article><strong>Mängud</strong><span>Kalender, tulemused ja võistkondade filtrid.</span><a href="/mangud/">Mängude leht</a></article>
-          <article><strong>Toetajad</strong><span>Paketid, kodumängu partnerlus ja koostöö.</span><a href="/toetajad/">Toetajate leht</a></article>
-          <article><strong>Klubi</strong><span>Visioon, väärtused ja Rae jalgpallikogukond.</span><a href="/klubi/">Visioon</a></article>
-        </div>
+
+      <section class="contact-directory section-light" aria-label="FC Rae kontaktid">
+        <article>
+          <span class="contact-icon">✉</span>
+          <strong>FC Rae üldkontakt</strong>
+          <p><a href="mailto:info@fcrae.ee">info@fcrae.ee</a><br>Jüri staadion, Laste 3, Jüri<br>Registrikood: 80670097</p>
+          <a class="inline-cta" href="mailto:info@fcrae.ee">Saada e-kiri</a>
+        </article>
+        <article>
+          <span class="contact-icon">☎</span>
+          <strong>Spordidirektor<br>Martti Pent</strong>
+          <p><a href="tel:+37255920532">55920532</a><br><a href="mailto:martti.pent@jyri.edu.ee">martti.pent@jyri.edu.ee</a></p>
+          <div class="inline-link-row">
+            <a class="inline-cta" href="tel:+37255920532">Helista</a>
+            <a class="inline-cta" href="mailto:martti.pent@jyri.edu.ee">Saada e-kiri</a>
+          </div>
+        </article>
+        <article>
+          <span class="contact-icon">⚑</span>
+          <strong>Noortetöö ja registreerimine</strong>
+          <p>ARNO registreerimine ja noortetöö info.</p>
+          <a class="inline-cta" href="/noored/">Noorte leht</a>
+        </article>
+        <article>
+          <span class="contact-icon">▦</span>
+          <strong>Mängud ja võistkonnad</strong>
+          <p>Kalender, tulemused ja kõik võistkonnad.</p>
+          <a class="inline-cta" href="/mangud/">Mängude leht</a>
+        </article>
+        <article>
+          <span class="contact-icon">◇</span>
+          <strong>Klubi ja kogukond</strong>
+          <p>Visioon, väärtused ja meie jalgpallikogukond.</p>
+          <a class="inline-cta" href="/klubi/">Klubi leht</a>
+        </article>
       </section>
-      <section class="documents-strip">
-        <p class="section-kicker">Läbipaistvus</p>
-        <h2>Dokumendid ja treenerite info saab järgmises etapis lisada siia.</h2>
+
+      <section class="contact-form-section section-light">
+        <form class="contact-form-panel" data-mail-form="contact" novalidate>
+          <div class="form-intro">
+            <p class="section-kicker dark">Üldkontakt</p>
+            <h2>Saada meile sõnum</h2>
+            <p>Kui sul on küsimus treeningute, mängude, koostöö või klubi kohta, kirjuta meile.</p>
+          </div>
+          <div class="form-grid">
+            <label>Nimi <span>*</span><input name="name" required placeholder="Sinu nimi"></label>
+            <label>E-post <span>*</span><input name="email" type="email" required placeholder="Sinu e-post"></label>
+            <label>Telefon<input name="phone" placeholder="Sinu telefoninumber"></label>
+            <label>Teema <span>*</span>
+              <select name="topic" required>
+                <option value="">Vali teema</option>
+                <option>Lapse trenni panemine</option>
+                <option>Mängud ja võistkonnad</option>
+                <option>Fännikaup</option>
+                <option>Toetajad / koostöö</option>
+                <option>Üldine küsimus</option>
+              </select>
+            </label>
+            <label class="full-field">Sõnum <span>*</span><textarea name="message" required placeholder="Kirjuta oma sõnum siia..."></textarea></label>
+            <input class="form-trap" name="website" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="renderedAt" data-rendered-at>
+            <label class="check-field full-field"><input name="consent" type="checkbox" required> Nõustun, et FC Rae võib minu andmeid kasutada minu päringule vastamiseks. <span>*</span></label>
+          </div>
+          <div class="form-actions-line">
+            <p class="spam-note">Rämpsposti kaitse on sisse lülitatud.</p>
+            <button class="button button-primary" type="submit">Saada sõnum</button>
+          </div>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+        <aside class="call-card">
+          <span class="contact-icon">☎</span>
+          <h2>Eelistad helistada?</h2>
+          <p>Võta ühendust otse. Ole meeles, et treeningute ja mängude ajal ei pruugi me kohe vastata.</p>
+          <a class="button button-primary" href="tel:+37255920532">55920532</a>
+          <div>
+            <strong>Aadress</strong>
+            <p>Jüri staadion<br>Laste 3, Jüri<br>Rae vald, Harjumaa</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="contact-cta-grid section-light" aria-label="Kiirlingid">
+        <a href="https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239" target="_blank" rel="noreferrer"><strong>Lisa laps trenni</strong><span>Alusta ARNO registreerimisest.</span></a>
+        <a href="/voistkonnad/"><strong>Vaata võistkondi</strong><span>Rae I, Rae II ja noortevõistkonnad.</span></a>
+        <a href="/#fanniklubi"><strong>Liitu fänniklubiga</strong><span>Saa osa kodumängudest ja klubi uudistest.</span></a>
+        <a href="/toetajad/"><strong>Toetajaks</strong><span>Leia ettevõttele sobiv viis panustada.</span></a>
       </section>
     </main>
-    <footer class="site-footer"><img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK"><div><strong>FC Rae SK MTÜ</strong><p>Rae valla jalgpalliklubi.</p></div><div><strong>Kontakt</strong><p><a href="mailto:info@fcrae.ee">info@fcrae.ee</a><br>Jüri staadion, Laste 3, Jüri</p></div><div><strong>Jälgi meid</strong><p><a href="https://www.facebook.com/p/Rae-Spordikool-Jalgpall-61574186321681/?locale=et_EE" target="_blank" rel="noreferrer">Facebook</a></p></div></footer>
+
+    <footer class="site-footer">
+      <img src="assets/fcrae-logo-transparent.png" alt="FC Rae SK">
+      <div><strong>FC Rae SK MTÜ</strong><p>Rae valla jalgpalliklubi.<br>Koostöös Rae Spordikooliga.</p></div>
+      <div><strong>Kontakt</strong><p><a href="mailto:info@fcrae.ee">info@fcrae.ee</a><br>Jüri staadion, Laste 3, Jüri<br>Registrikood: 80670097</p></div>
+      <div><strong>Jälgi meid</strong><p><a href="https://www.facebook.com/p/Rae-Spordikool-Jalgpall-61574186321681/?locale=et_EE" target="_blank" rel="noreferrer">Facebook</a></p></div>
+    </footer>
     <script src="app.js" defer></script>
   </body>
 </html>
