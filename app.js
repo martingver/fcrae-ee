@@ -579,12 +579,13 @@ const setupTeamChrome = (team) => {
   const tabs = document.createElement("nav");
   tabs.className = "team-tabs";
   tabs.setAttribute("aria-label", "Võistkonna lehe menüü");
+  const pagePath = window.location.pathname;
   tabs.innerHTML = `
-    <a href="#ulevaade">Ülevaade</a>
-    <a href="#mangud">Mängud</a>
-    <a href="#tulemused">Tulemused</a>
-    <a href="#koosseis">Koosseis</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="${pagePath}#ulevaade">Ülevaade</a>
+    <a href="${pagePath}#mangud">Mängud</a>
+    <a href="${pagePath}#tulemused">Tulemused</a>
+    <a href="${pagePath}#koosseis">Koosseis</a>
+    <a href="${pagePath}#kontakt">Kontakt</a>
   `;
   hero.after(tabs);
 
