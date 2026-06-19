@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T16:58:47.652Z",
+  "updatedAt": "2026-06-19T20:02:37.472Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5115,6 +5115,21 @@
         },
         {
           "position": 2,
+          "teamId": 6347,
+          "teamName": "Tallinna FC Starmedia",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
+          "matches": 12,
+          "wins": 8,
+          "draws": 2,
+          "losses": 2,
+          "goals": "42:21",
+          "goalsFor": 42,
+          "goalsAgainst": 21,
+          "points": 26,
+          "isRaeTeam": false
+        },
+        {
+          "position": 3,
           "teamId": 2327,
           "teamName": "JK Tallinna Kalev III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
@@ -5126,21 +5141,6 @@
           "goalsFor": 49,
           "goalsAgainst": 18,
           "points": 25,
-          "isRaeTeam": false
-        },
-        {
-          "position": 3,
-          "teamId": 6347,
-          "teamName": "Tallinna FC Starmedia",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
-          "matches": 11,
-          "wins": 7,
-          "draws": 2,
-          "losses": 2,
-          "goals": "39:21",
-          "goalsFor": 39,
-          "goalsAgainst": 21,
-          "points": 23,
           "isRaeTeam": false
         },
         {
@@ -5238,18 +5238,33 @@
           "teamId": 152,
           "teamName": "FC Kose",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
-          "matches": 11,
+          "matches": 12,
           "wins": 4,
           "draws": 2,
-          "losses": 5,
-          "goals": "27:35",
+          "losses": 6,
+          "goals": "27:38",
           "goalsFor": 27,
-          "goalsAgainst": 35,
+          "goalsAgainst": 38,
           "points": 14,
           "isRaeTeam": false
         },
         {
           "position": 11,
+          "teamId": 188,
+          "teamName": "Raasiku FC Joker",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
+          "matches": 12,
+          "wins": 3,
+          "draws": 2,
+          "losses": 7,
+          "goals": "18:30",
+          "goalsFor": 18,
+          "goalsAgainst": 30,
+          "points": 11,
+          "isRaeTeam": false
+        },
+        {
+          "position": 12,
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
@@ -5264,7 +5279,7 @@
           "isRaeTeam": false
         },
         {
-          "position": 12,
+          "position": 13,
           "teamId": 6173,
           "teamName": "Viljandi JK Tulevik U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6173?season=2026",
@@ -5279,32 +5294,17 @@
           "isRaeTeam": false
         },
         {
-          "position": 13,
-          "teamId": 188,
-          "teamName": "Raasiku FC Joker",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
-          "matches": 11,
-          "wins": 2,
-          "draws": 2,
-          "losses": 7,
-          "goals": "15:28",
-          "goalsFor": 15,
-          "goalsAgainst": 28,
-          "points": 8,
-          "isRaeTeam": false
-        },
-        {
           "position": 14,
           "teamId": 4913,
           "teamName": "JK Kuusalu Kalev",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4913?season=2026",
-          "matches": 11,
+          "matches": 12,
           "wins": 0,
           "draws": 0,
-          "losses": 11,
-          "goals": "5:57",
-          "goalsFor": 5,
-          "goalsAgainst": 57,
+          "losses": 12,
+          "goals": "7:60",
+          "goalsFor": 7,
+          "goalsAgainst": 60,
           "points": 0,
           "isRaeTeam": false
         }
