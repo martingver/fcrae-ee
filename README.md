@@ -21,8 +21,8 @@ Repo sisaldab GitHub Actions töövoogu `.github/workflows/update-jalgpall-data.
 
 ## Vormid
 
-Kontaktivorm, fänniklubi huvi ja toetajapaketi modal saadavad vaikimisi päringu serveripoolsesse endpointi `api/forms/contact.php`, mis valideerib väljad, kontrollib honeypot'i, täitmise aega, linkide arvu ja lihtsat IP-põhist rate limitit ning saadab kirja aadressile `info@fcrae.ee`.
+Kontaktivorm, fänniklubi huvi ja toetajapaketi modal proovivad saata päringu serveripoolsesse endpointi `/api/forms/contact`. Endpoint peab valideerima väljad, kontrollima honeypot'i, täitmise aega, linkide arvu ja IP-põhist rate limitit ning saatma kirja aadressile `info@fcrae.ee`.
 
-Kui serveripoolne saatmine ebaõnnestub või PHP `mail()` ei ole serveris seadistatud, kuvab frontend kasutajale `mailto:` fallback-lingi. Kohalik `npm run serve` tagastab sellele endpointile teadlikult 503 JSON-vastuse, et fallbacki oleks lihtne testida.
+Praegune avalik hosting on staatiline ja ei käivita PHP-d. Kui serveripoolne saatmine ebaõnnestub või endpoint puudub, kuvab frontend kasutajale `mailto:` fallback-lingi. Kohalik `npm run serve` tagastab sellele endpointile teadlikult 503 JSON-vastuse, et fallbacki oleks lihtne testida.
 
 Fännikaup viitab seniks 4Teamsi Rae Spordikooli varustuse lehele: https://4teams.ee/klubi-varustus/rae-spordikool/.

@@ -324,7 +324,7 @@ const setupMailForms = () => {
       setStatus("Saadan...", "pending");
       if (submitButton) submitButton.disabled = true;
 
-      fetch("/api/forms/contact.php", {
+      fetch("/api/forms/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
