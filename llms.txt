@@ -1,0 +1,37 @@
+# FC Rae
+
+FC Rae SK MTÜ on Rae valla jalgpalliklubi ja kogukondlik jalgpallipere.
+Leht koondab klubi visiooni, noortetöö, võistkonnad, mängud, toetajad, fännikauba ja kontaktid.
+
+## Olulised lehed
+
+- Avaleht: https://fcrae.ee/
+- Klubi ja visioon: https://fcrae.ee/klubi/
+- Noortetöö ja treeningule registreerimine: https://fcrae.ee/noored/
+- Mängud ja tulemused: https://fcrae.ee/mangud/
+- Võistkonnad: https://fcrae.ee/voistkonnad/
+- Kogukond: https://fcrae.ee/kogukond/
+- Toetajad ja partnerlus: https://fcrae.ee/toetajad/
+- Kontakt: https://fcrae.ee/kontakt/
+
+## Võistkonnad
+
+- Rae I: https://fcrae.ee/voistkonnad/rae-i/
+- Rae II: https://fcrae.ee/voistkonnad/rae-ii/
+- U11: https://fcrae.ee/voistkonnad/u11/
+- U13 I: https://fcrae.ee/voistkonnad/u13-i/
+- U13 II: https://fcrae.ee/voistkonnad/u13-ii/
+- U14: https://fcrae.ee/voistkonnad/u14/
+- U15: https://fcrae.ee/voistkonnad/u15/
+- U16: https://fcrae.ee/voistkonnad/u16/
+- U17: https://fcrae.ee/voistkonnad/u17/
+
+## Agentidele
+
+Leht on avalikult loetav, robots.txt lubab indekseerimise ning sitemap.xml annab indekseeritavad URL-id.
+Võistkonna lehtedel on lisaks JavaScriptiga uuenevale vaatele noscript HTML-fallback, kus on võistkonna kirjeldus, mängud, tulemused ja koosseis.
+
+## Kontakt
+
+- E-post: info@fcrae.ee
+- Staadion: Jüri staadion, Laste 3, Jüri
