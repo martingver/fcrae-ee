@@ -81,6 +81,19 @@ const parseEtDate = (value = "") => {
 
 const birthYear = (value = "") => value.match(/\d{4}/)?.[0] ?? "";
 
+const cleanTeamName = (value = "") => value.replace(/\s*\|\s*$/, "").trim();
+
+const shirtNumber = (player) => {
+  const number = Number.parseInt(player?.number, 10);
+  return Number.isFinite(number) ? number : 9999;
+};
+
+const playerGoals = (player) => {
+  const value = player?.goals ?? player?.goalsScored ?? player?.goalCount;
+  const number = Number.parseInt(value, 10);
+  return Number.isFinite(number) ? number : 0;
+};
+
 const contactName = (team) => {
   const coach = (team?.headCoach || "").replace(/\s+\d.*$/, "").trim();
   if (coach) return coach;
@@ -486,33 +499,26 @@ const renderTeamFacts = (team, matches, players) => {
   if (!list) return;
 
   const now = new Date();
-  const finished = matches.filter((match) => match.status === "finished" && parseScore(match.score));
-  const highestScoring = finished
-    .map((match) => ({ match, scoreData: raeScore(match) }))
-    .filter((item) => item.scoreData)
-    .sort((a, b) => b.scoreData.totalGoals - a.scoreData.totalGoals)[0];
+  const topScorers = [...players]
+    .map((player) => ({ player, goals: playerGoals(player) }))
+    .filter((item) => item.goals > 0)
+    .sort((a, b) => b.goals - a.goals || shirtNumber(a.player) - shirtNumber(b.player));
 
-  const biggestWin = finished
-    .map((match) => ({ match, scoreData: raeScore(match) }))
-    .filter((item) => item.scoreData && item.scoreData.forGoals > item.scoreData.againstGoals)
-    .sort((a, b) => (b.scoreData.forGoals - b.scoreData.againstGoals) - (a.scoreData.forGoals - a.scoreData.againstGoals))[0];
-
-  const nextHome = matches
-    .filter((match) => match.status === "upcoming" && match.homeAway === "Kodu" && new Date(match.startsAt) >= now)
-    .sort(byDateAsc)[0];
   const nextMatch = matches
     .filter((match) => match.status === "upcoming" && new Date(match.startsAt) >= now)
     .sort(byDateAsc)[0];
+  const topScorerText = topScorers.length
+    ? `${topScorers.slice(0, 2).map((item) => item.player.name).join(" + ")} — ${topScorers[0].goals}`
+    : "Avaldamisel";
 
   const facts = [
     factTemplate("Koosseis", `${players.length || team?.playerCount || 0} mängijat`, team?.level || ""),
-    nextMatch ? factTemplate("Järgmine mäng", nextMatch.date, nextMatch.opponent) : "",
-    highestScoring ? factTemplate("Resultatiivseim mäng", `${highestScoring.scoreData.totalGoals} väravat`, `${highestScoring.match.score} · ${highestScoring.match.date}`) : "",
-    nextHome ? factTemplate("Kodumängud", team?.venue || "Jüri staadion", nextHome.opponent) : "",
-    biggestWin ? factTemplate("Suurim Rae võit", biggestWin.match.score, `${biggestWin.match.homeTeam} — ${biggestWin.match.awayTeam}`) : ""
-  ].filter(Boolean);
+    nextMatch ? factTemplate("Järgmine mäng", nextMatch.date, `vs ${nextMatch.opponent}`) : factTemplate("Järgmine mäng", "Avaldamisel"),
+    factTemplate("Enim väravaid", topScorerText),
+    factTemplate("Koduväljak", team?.venue || "Jüri staadion")
+  ];
 
-  list.innerHTML = facts.length ? facts.join("") : `<p class="empty-state">Fun factid tekivad siis, kui võistkonnal on cache'is piisavalt mänge ja mängijaid.</p>`;
+  list.innerHTML = facts.length ? facts.join("") : `<p class="empty-state">Hooaja kiirvaade tekib siis, kui võistkonnal on cache'is piisavalt mänge ja mängijaid.</p>`;
 };
 
 const outcome = (match) => {
@@ -520,7 +526,7 @@ const outcome = (match) => {
   if (!score) return { label: "Tulemus", className: "" };
   if (score.forGoals > score.againstGoals) return { label: "Võit", className: "is-win" };
   if (score.forGoals === score.againstGoals) return { label: "Viik", className: "is-draw" };
-  return { label: "Kaotus", className: "is-loss" };
+  return { label: "Tulemus", className: "is-neutral" };
 };
 
 const teamUpcomingTemplate = (match, featured = false) => `
@@ -601,15 +607,16 @@ const renderTeamPage = (data) => {
   };
 
   if (team) {
-    setText("#team-name", team.name);
+    const teamName = cleanTeamName(team.name);
+    setText("#team-name", teamName);
     setText("#team-short", team.shortName);
     setText("#team-venue", team.venue || "Jüri staadion");
     setText("#team-coach", contactName(team));
     setText("#team-email", team.email || "info@fcrae.ee");
     setText("#team-player-count", String(players.length || team.playerCount || 0));
-    setText("#team-hero-title", team.name);
+    setText("#team-hero-title", teamName);
     setText("#team-hero-copy", "Võistkonna mängud, tulemused ja koosseis. Andmed uuenevad jalgpall.ee põhjal.");
-    setText("#team-kind", teamKind(team));
+    setText("#team-kind", `${teamKind(team)} · ${team.shortName}`);
     const sourceLink = document.querySelector("#team-source-link");
     if (sourceLink) sourceLink.href = team.sourceUrl;
     setupTeamChrome(team);
@@ -632,7 +639,8 @@ const renderTeamPage = (data) => {
   }
 
   if (roster) {
-    roster.innerHTML = players.length ? players.map(playerTemplate).join("") : `<p class="empty-state">Mängijate nimekirja ei leitud.</p>`;
+    const sortedPlayers = [...players].sort((a, b) => shirtNumber(a) - shirtNumber(b) || a.name.localeCompare(b.name, "et"));
+    roster.innerHTML = sortedPlayers.length ? sortedPlayers.map(playerTemplate).join("") : `<p class="empty-state">Mängijate nimekirja ei leitud.</p>`;
   }
 
   renderTeamFacts(team, matches, players);

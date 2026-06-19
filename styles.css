@@ -1357,30 +1357,46 @@ input {
 .team-tabs {
   position: relative;
   z-index: 7;
-  width: min(1320px, calc(100% - 44px));
-  margin: -62px auto 0;
+  width: min(1180px, calc(100% - 44px));
+  margin: -42px auto 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 12px 12px 0 0;
+  border-radius: 10px 10px 0 0;
   background: linear-gradient(145deg, #171a1f, #0f1115);
-  box-shadow: 0 28px 70px rgba(9, 10, 12, 0.34);
+  box-shadow: 0 18px 46px rgba(9, 10, 12, 0.28);
 }
 
 .team-tabs a {
-  min-height: 74px;
+  min-height: 54px;
   display: grid;
   place-items: center;
-  border-bottom: 4px solid transparent;
+  position: relative;
   color: rgba(255, 255, 255, 0.82);
   font-weight: 900;
 }
 
+.team-tabs a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 42px;
+  height: 3px;
+  border-radius: 999px;
+  background: transparent;
+  transform: translateX(-50%);
+}
+
 .team-tabs a:first-child,
 .team-tabs a:hover {
-  border-bottom-color: var(--gold);
   color: var(--gold);
+}
+
+.team-tabs a:first-child::after,
+.team-tabs a:hover::after {
+  background: var(--gold);
 }
 
 .team-overview {
@@ -1491,7 +1507,13 @@ input {
   font-weight: 900;
   letter-spacing: -0.04em;
   line-height: 1.08;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+#team-email {
+  font-size: clamp(0.98rem, 1.25vw, 1.2rem);
+  letter-spacing: -0.02em;
 }
 
 .team-data {
@@ -1672,9 +1694,12 @@ input {
   background: #dfe3e8;
 }
 
-.team-result-row em.is-loss {
-  background: #ef4444;
-  color: var(--white);
+.team-result-row em.is-neutral {
+  width: auto;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #eef0f2;
+  color: #4a5059;
 }
 
 .team-join-cta {
@@ -2284,7 +2309,7 @@ input {
 
   .team-tabs {
     overflow-x: auto;
-    grid-template-columns: repeat(5, minmax(142px, 1fr));
+    grid-template-columns: repeat(5, minmax(118px, 1fr));
   }
 
   .team-result-row {
@@ -2442,7 +2467,7 @@ input {
   }
 
   .team-tabs a {
-    min-height: 60px;
+    min-height: 50px;
   }
 
   .team-match-row,
