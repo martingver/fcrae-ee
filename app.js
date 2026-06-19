@@ -51,7 +51,7 @@ const routes = {
   contact: "/kontakt/",
   shop: "https://4teams.ee/klubi-varustus/rae-spordikool/",
   register: "https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239",
-  fanclub: "/#fanniklubi"
+  fanclub: "/kontakt/?teema=fanniklubi#kontaktivorm"
 };
 
 const byDateAsc = (a, b) => new Date(a.startsAt) - new Date(b.startsAt);
@@ -110,6 +110,8 @@ const teamKind = (team) => {
   if (team?.id === "rae-ii") return "Duubelvõistkond";
   return "Noortevõistkond";
 };
+
+const showsTopScorer = (team) => ["rae-i", "rae-ii", "u15", "u16", "u17"].includes(team?.id);
 
 const raeScore = (match) => {
   const score = parseScore(match.score);
@@ -211,7 +213,17 @@ const setupMailForms = () => {
   const forms = document.querySelectorAll("[data-mail-form]");
   if (!forms.length) return;
 
+  const params = new URLSearchParams(window.location.search);
+  const topic = params.get("teema");
+
   forms.forEach((form) => {
+    if (form.dataset.mailForm === "contact" && topic === "fanniklubi") {
+      const topicSelect = form.querySelector('select[name="topic"]');
+      const message = form.querySelector('textarea[name="message"]');
+      if (topicSelect) topicSelect.value = "Fänniklubi";
+      if (message && !message.value) message.value = "Soovin liituda FC Rae fänniklubiga.";
+    }
+
     const renderedAt = String(Date.now());
     form.querySelectorAll("[data-rendered-at]").forEach((input) => {
       input.value = renderedAt;
@@ -514,7 +526,7 @@ const renderTeamFacts = (team, matches, players) => {
   const facts = [
     factTemplate("Koosseis", `${players.length || team?.playerCount || 0} mängijat`, team?.level || ""),
     nextMatch ? factTemplate("Järgmine mäng", nextMatch.date, `vs ${nextMatch.opponent}`) : factTemplate("Järgmine mäng", "Avaldamisel"),
-    factTemplate("Enim väravaid", topScorerText),
+    ...(showsTopScorer(team) && topScorers.length ? [factTemplate("Enim väravaid", topScorerText)] : []),
     factTemplate("Koduväljak", team?.venue || "Jüri staadion")
   ];
 

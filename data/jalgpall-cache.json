@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T08:26:31.835Z",
+  "updatedAt": "2026-06-19T15:04:16.344Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -142,8 +142,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 13,
-      "resultCount": 9,
+      "upcomingCount": 12,
+      "resultCount": 10,
       "playerCount": 26
     },
     {
@@ -1324,7 +1324,7 @@
     {
       "teamId": "u16",
       "team": "U16",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U16.III",
       "date": "19.06.2026",
       "time": "13:00",
@@ -1333,6 +1333,7 @@
       "awayTeam": "Rae Spordikool (11)",
       "opponent": "FC Tallinn II (11)",
       "homeAway": "Võõrsil",
+      "score": "3 - 8",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189888"
     },
     {
@@ -2410,6 +2411,9 @@
       "birthDate": "10.03.2000",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/26172/team/6795"
     },
     {
@@ -2421,6 +2425,9 @@
       "birthDate": "06.07.2005",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36478/team/6795"
     },
     {
@@ -2432,6 +2439,9 @@
       "birthDate": "13.03.2003",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/28720/team/6795"
     },
     {
@@ -2443,6 +2453,9 @@
       "birthDate": "03.11.2007",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/42594/team/6795"
     },
     {
@@ -2454,6 +2467,9 @@
       "birthDate": "05.12.2004",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 3,
+      "leagueGoals": 4,
+      "goals": 7,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36481/team/6795"
     },
     {
@@ -2465,6 +2481,9 @@
       "birthDate": "12.04.2006",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/34525/team/6795"
     },
     {
@@ -2476,6 +2495,9 @@
       "birthDate": "22.06.2005",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/35915/team/6795"
     },
     {
@@ -2487,6 +2509,9 @@
       "birthDate": "30.09.2008",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/42604/team/6795"
     },
     {
@@ -2498,6 +2523,9 @@
       "birthDate": "06.08.2007",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 1,
+      "leagueGoals": 8,
+      "goals": 9,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/42614/team/6795"
     },
     {
@@ -2509,6 +2537,9 @@
       "birthDate": "23.04.2005",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 1,
+      "leagueGoals": 0,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/34192/team/6795"
     },
     {
@@ -2520,6 +2551,9 @@
       "birthDate": "28.04.2006",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36642/team/6795"
     },
     {
@@ -2531,6 +2565,9 @@
       "birthDate": "16.07.2003",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/34179/team/6795"
     },
     {
@@ -2542,6 +2579,9 @@
       "birthDate": "21.06.1986",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/8257/team/6795"
     },
     {
@@ -2553,6 +2593,9 @@
       "birthDate": "07.11.2008",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/42767/team/6795"
     },
     {
@@ -2564,6 +2607,9 @@
       "birthDate": "29.07.2003",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 3,
+      "leagueGoals": 6,
+      "goals": 9,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/38392/team/6795"
     },
     {
@@ -2575,6 +2621,9 @@
       "birthDate": "13.08.2006",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 1,
+      "leagueGoals": 5,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36477/team/6795"
     },
     {
@@ -2586,6 +2635,9 @@
       "birthDate": "17.03.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49236/team/7118"
     },
     {
@@ -2597,6 +2649,9 @@
       "birthDate": "11.04.2006",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/41241/team/7118"
     },
     {
@@ -2608,6 +2663,9 @@
       "birthDate": "31.01.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/7118"
     },
     {
@@ -2619,6 +2677,9 @@
       "birthDate": "10.07.1987",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/6624/team/7118"
     },
     {
@@ -2630,6 +2691,9 @@
       "birthDate": "31.01.1987",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/8665/team/7118"
     },
     {
@@ -2641,6 +2705,9 @@
       "birthDate": "02.03.2000",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/24959/team/7118"
     },
     {
@@ -2652,6 +2719,9 @@
       "birthDate": "03.11.2005",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/29425/team/7118"
     },
     {
@@ -2663,6 +2733,9 @@
       "birthDate": "19.03.1991",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/19936/team/7118"
     },
     {
@@ -2674,6 +2747,9 @@
       "birthDate": "23.01.1990",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/7893/team/7118"
     },
     {
@@ -2685,6 +2761,9 @@
       "birthDate": "22.01.1984",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/4297/team/7118"
     },
     {
@@ -2696,6 +2775,9 @@
       "birthDate": "22.07.2001",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/35974/team/7118"
     },
     {
@@ -2707,6 +2789,9 @@
       "birthDate": "18.08.1992",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/12537/team/7118"
     },
     {
@@ -2718,6 +2803,9 @@
       "birthDate": "13.03.2009",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/42771/team/7118"
     },
     {
@@ -2729,6 +2817,9 @@
       "birthDate": "05.04.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49064/team/7118"
     },
     {
@@ -2740,6 +2831,9 @@
       "birthDate": "11.12.2008",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50283/team/7118"
     },
     {
@@ -2751,6 +2845,9 @@
       "birthDate": "11.12.2008",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50282/team/7118"
     },
     {
@@ -2762,6 +2859,9 @@
       "birthDate": "28.01.2005",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36486/team/7118"
     },
     {
@@ -2773,6 +2873,9 @@
       "birthDate": "12.09.1990",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/7918/team/7118"
     },
     {
@@ -2784,6 +2887,9 @@
       "birthDate": "17.02.1992",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/22174/team/7118"
     },
     {
@@ -2795,6 +2901,9 @@
       "birthDate": "23.06.1991",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/8638/team/7118"
     },
     {
@@ -2806,6 +2915,9 @@
       "birthDate": "08.12.2008",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/44271/team/7118"
     },
     {
@@ -2817,6 +2929,9 @@
       "birthDate": "22.05.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50298/team/7118"
     },
     {
@@ -2828,6 +2943,9 @@
       "birthDate": "16.04.2005",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/39483/team/7118"
     },
     {
@@ -2839,6 +2957,9 @@
       "birthDate": "16.04.2005",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/39482/team/7118"
     },
     {
@@ -2850,6 +2971,9 @@
       "birthDate": "26.08.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60184/team/6515"
     },
     {
@@ -2861,6 +2985,9 @@
       "birthDate": "22.12.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66692/team/6515"
     },
     {
@@ -2872,6 +2999,9 @@
       "birthDate": "18.08.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63453/team/6515"
     },
     {
@@ -2883,6 +3013,9 @@
       "birthDate": "14.03.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/65752/team/6515"
     },
     {
@@ -2894,6 +3027,9 @@
       "birthDate": "08.12.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57446/team/6515"
     },
     {
@@ -2905,6 +3041,9 @@
       "birthDate": "20.11.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/64651/team/6515"
     },
     {
@@ -2916,6 +3055,9 @@
       "birthDate": "23.03.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63414/team/6515"
     },
     {
@@ -2927,6 +3069,9 @@
       "birthDate": "14.02.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63412/team/6515"
     },
     {
@@ -2938,6 +3083,9 @@
       "birthDate": "02.09.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/64142/team/6515"
     },
     {
@@ -2949,6 +3097,9 @@
       "birthDate": "27.05.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/64012/team/6515"
     },
     {
@@ -2960,6 +3111,9 @@
       "birthDate": "17.07.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/64004/team/6515"
     },
     {
@@ -2971,6 +3125,9 @@
       "birthDate": "10.06.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63421/team/6515"
     },
     {
@@ -2982,6 +3139,9 @@
       "birthDate": "10.01.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/64080/team/6515"
     },
     {
@@ -2993,6 +3153,9 @@
       "birthDate": "03.05.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63459/team/6515"
     },
     {
@@ -3004,6 +3167,9 @@
       "birthDate": "29.03.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63692/team/6515"
     },
     {
@@ -3015,6 +3181,9 @@
       "birthDate": "28.04.2016",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63466/team/6515"
     },
     {
@@ -3026,6 +3195,9 @@
       "birthDate": "18.11.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66172/team/6512"
     },
     {
@@ -3037,6 +3209,9 @@
       "birthDate": "18.11.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62359/team/6512"
     },
     {
@@ -3048,6 +3223,9 @@
       "birthDate": "03.04.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69333/team/6512"
     },
     {
@@ -3059,6 +3237,9 @@
       "birthDate": "30.08.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61665/team/6512"
     },
     {
@@ -3070,6 +3251,9 @@
       "birthDate": "19.11.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61635/team/6512"
     },
     {
@@ -3081,6 +3265,9 @@
       "birthDate": "08.09.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57442/team/6512"
     },
     {
@@ -3092,6 +3279,9 @@
       "birthDate": "28.11.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69161/team/6512"
     },
     {
@@ -3103,6 +3293,9 @@
       "birthDate": "06.12.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60232/team/6512"
     },
     {
@@ -3114,6 +3307,9 @@
       "birthDate": "15.03.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61555/team/6512"
     },
     {
@@ -3125,6 +3321,9 @@
       "birthDate": "31.10.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62648/team/6512"
     },
     {
@@ -3136,6 +3335,9 @@
       "birthDate": "25.05.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/63400/team/6512"
     },
     {
@@ -3147,6 +3349,9 @@
       "birthDate": "21.04.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62343/team/6512"
     },
     {
@@ -3158,6 +3363,9 @@
       "birthDate": "16.10.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69200/team/6512"
     },
     {
@@ -3169,6 +3377,9 @@
       "birthDate": "19.05.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/56566/team/6512"
     },
     {
@@ -3180,6 +3391,9 @@
       "birthDate": "18.08.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62369/team/6512"
     },
     {
@@ -3191,6 +3405,9 @@
       "birthDate": "31.08.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/64566/team/5885"
     },
     {
@@ -3202,6 +3419,9 @@
       "birthDate": "14.10.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57250/team/5885"
     },
     {
@@ -3213,6 +3433,9 @@
       "birthDate": "19.12.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61328/team/5885"
     },
     {
@@ -3224,6 +3447,9 @@
       "birthDate": "21.09.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60587/team/5885"
     },
     {
@@ -3235,6 +3461,9 @@
       "birthDate": "15.08.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60387/team/5885"
     },
     {
@@ -3246,6 +3475,9 @@
       "birthDate": "30.01.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61397/team/5885"
     },
     {
@@ -3257,6 +3489,9 @@
       "birthDate": "15.05.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57650/team/5885"
     },
     {
@@ -3268,6 +3503,9 @@
       "birthDate": "27.03.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60780/team/5885"
     },
     {
@@ -3279,6 +3517,9 @@
       "birthDate": "09.05.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60462/team/5885"
     },
     {
@@ -3290,6 +3531,9 @@
       "birthDate": "05.01.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61446/team/5885"
     },
     {
@@ -3301,6 +3545,9 @@
       "birthDate": "05.03.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/56724/team/5885"
     },
     {
@@ -3312,6 +3559,9 @@
       "birthDate": "30.03.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61681/team/5885"
     },
     {
@@ -3323,6 +3573,9 @@
       "birthDate": "21.11.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54012/team/5885"
     },
     {
@@ -3334,6 +3587,9 @@
       "birthDate": "04.11.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60900/team/5885"
     },
     {
@@ -3345,6 +3601,9 @@
       "birthDate": "23.08.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61011/team/5885"
     },
     {
@@ -3356,6 +3615,9 @@
       "birthDate": "23.04.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62364/team/5885"
     },
     {
@@ -3367,6 +3629,9 @@
       "birthDate": "08.01.2015",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61670/team/5885"
     },
     {
@@ -3378,6 +3643,9 @@
       "birthDate": "15.12.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/59859/team/5885"
     },
     {
@@ -3389,6 +3657,9 @@
       "birthDate": "03.01.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/60266/team/5885"
     },
     {
@@ -3400,6 +3671,9 @@
       "birthDate": "22.11.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66582/team/5885"
     },
     {
@@ -3411,6 +3685,9 @@
       "birthDate": "16.11.2014",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61654/team/5885"
     },
     {
@@ -3422,6 +3699,9 @@
       "birthDate": "01.02.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 12,
+      "goals": 12,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/58482/team/5884"
     },
     {
@@ -3433,6 +3713,9 @@
       "birthDate": "17.09.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69249/team/5884"
     },
     {
@@ -3444,6 +3727,9 @@
       "birthDate": "14.01.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61008/team/5884"
     },
     {
@@ -3455,6 +3741,9 @@
       "birthDate": "19.01.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61375/team/5884"
     },
     {
@@ -3466,6 +3755,9 @@
       "birthDate": "18.01.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/53985/team/5884"
     },
     {
@@ -3477,6 +3769,9 @@
       "birthDate": "08.08.2012",
       "citizenship": "Venemaa",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50457/team/5884"
     },
     {
@@ -3488,6 +3783,9 @@
       "birthDate": "28.08.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62613/team/5884"
     },
     {
@@ -3499,6 +3797,9 @@
       "birthDate": "04.09.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54449/team/5884"
     },
     {
@@ -3510,6 +3811,9 @@
       "birthDate": "18.07.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54441/team/5884"
     },
     {
@@ -3521,6 +3825,9 @@
       "birthDate": "10.03.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57517/team/5884"
     },
     {
@@ -3532,6 +3839,9 @@
       "birthDate": "16.11.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69394/team/5884"
     },
     {
@@ -3543,6 +3853,9 @@
       "birthDate": "10.09.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57433/team/5884"
     },
     {
@@ -3554,6 +3867,9 @@
       "birthDate": "24.03.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57856/team/5884"
     },
     {
@@ -3565,6 +3881,9 @@
       "birthDate": "28.12.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48845/team/5884"
     },
     {
@@ -3576,6 +3895,9 @@
       "birthDate": "19.08.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54826/team/5884"
     },
     {
@@ -3587,6 +3909,9 @@
       "birthDate": "18.07.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61043/team/5884"
     },
     {
@@ -3598,6 +3923,9 @@
       "birthDate": "13.07.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54268/team/5884"
     },
     {
@@ -3609,6 +3937,9 @@
       "birthDate": "21.07.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 8,
+      "goals": 8,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/53935/team/5884"
     },
     {
@@ -3620,6 +3951,9 @@
       "birthDate": "18.07.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57181/team/5884"
     },
     {
@@ -3631,6 +3965,9 @@
       "birthDate": "",
       "citizenship": "",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54366/team/5884"
     },
     {
@@ -3642,6 +3979,9 @@
       "birthDate": "20.07.2013",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57004/team/5884"
     },
     {
@@ -3653,6 +3993,9 @@
       "birthDate": "16.10.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66042/team/5883"
     },
     {
@@ -3664,6 +4007,9 @@
       "birthDate": "10.07.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/55550/team/5883"
     },
     {
@@ -3675,6 +4021,9 @@
       "birthDate": "20.04.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48598/team/5883"
     },
     {
@@ -3686,6 +4035,9 @@
       "birthDate": "22.12.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54728/team/5883"
     },
     {
@@ -3697,6 +4049,9 @@
       "birthDate": "18.10.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57248/team/5883"
     },
     {
@@ -3708,6 +4063,9 @@
       "birthDate": "18.10.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57247/team/5883"
     },
     {
@@ -3719,6 +4077,9 @@
       "birthDate": "22.06.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57195/team/5883"
     },
     {
@@ -3730,6 +4091,9 @@
       "birthDate": "09.03.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 6,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57555/team/5883"
     },
     {
@@ -3741,6 +4105,9 @@
       "birthDate": "01.08.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66046/team/5883"
     },
     {
@@ -3752,6 +4119,9 @@
       "birthDate": "14.06.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51202/team/5883"
     },
     {
@@ -3763,6 +4133,9 @@
       "birthDate": "19.01.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54943/team/5883"
     },
     {
@@ -3774,6 +4147,9 @@
       "birthDate": "20.03.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 7,
+      "goals": 7,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/55791/team/5883"
     },
     {
@@ -3785,6 +4161,9 @@
       "birthDate": "03.06.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51974/team/5883"
     },
     {
@@ -3796,6 +4175,9 @@
       "birthDate": "27.01.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 11,
+      "goals": 11,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51631/team/5883"
     },
     {
@@ -3807,6 +4189,9 @@
       "birthDate": "20.08.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/52048/team/5883"
     },
     {
@@ -3818,6 +4203,9 @@
       "birthDate": "03.11.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50496/team/5883"
     },
     {
@@ -3829,6 +4217,9 @@
       "birthDate": "15.06.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69893/team/5883"
     },
     {
@@ -3840,6 +4231,9 @@
       "birthDate": "17.08.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/59875/team/5883"
     },
     {
@@ -3851,6 +4245,9 @@
       "birthDate": "06.11.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57711/team/5883"
     },
     {
@@ -3862,6 +4259,9 @@
       "birthDate": "14.08.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/55966/team/5883"
     },
     {
@@ -3873,6 +4273,9 @@
       "birthDate": "18.07.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57215/team/5883"
     },
     {
@@ -3884,6 +4287,9 @@
       "birthDate": "01.11.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/57972/team/5883"
     },
     {
@@ -3895,6 +4301,9 @@
       "birthDate": "29.03.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50678/team/5883"
     },
     {
@@ -3906,6 +4315,9 @@
       "birthDate": "07.08.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49213/team/6511"
     },
     {
@@ -3917,6 +4329,9 @@
       "birthDate": "28.12.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 11,
+      "goals": 11,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51912/team/6511"
     },
     {
@@ -3928,6 +4343,9 @@
       "birthDate": "31.01.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/6511"
     },
     {
@@ -3939,6 +4357,9 @@
       "birthDate": "01.06.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69117/team/6511"
     },
     {
@@ -3950,6 +4371,9 @@
       "birthDate": "02.11.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48290/team/6511"
     },
     {
@@ -3961,6 +4385,9 @@
       "birthDate": "24.03.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48946/team/6511"
     },
     {
@@ -3972,6 +4399,9 @@
       "birthDate": "13.12.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/59426/team/6511"
     },
     {
@@ -3983,6 +4413,9 @@
       "birthDate": "15.11.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50345/team/6511"
     },
     {
@@ -3994,6 +4427,9 @@
       "birthDate": "19.08.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/53903/team/6511"
     },
     {
@@ -4005,6 +4441,9 @@
       "birthDate": "14.05.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50324/team/6511"
     },
     {
@@ -4016,6 +4455,9 @@
       "birthDate": "13.04.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50292/team/6511"
     },
     {
@@ -4027,6 +4469,9 @@
       "birthDate": "17.02.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45929/team/6511"
     },
     {
@@ -4038,6 +4483,9 @@
       "birthDate": "19.12.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69286/team/6511"
     },
     {
@@ -4049,6 +4497,9 @@
       "birthDate": "30.09.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49068/team/6511"
     },
     {
@@ -4060,6 +4511,9 @@
       "birthDate": "11.10.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48966/team/6511"
     },
     {
@@ -4071,6 +4525,9 @@
       "birthDate": "05.04.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49064/team/6511"
     },
     {
@@ -4082,6 +4539,9 @@
       "birthDate": "17.11.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/56131/team/6511"
     },
     {
@@ -4093,6 +4553,9 @@
       "birthDate": "19.01.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45341/team/6511"
     },
     {
@@ -4104,6 +4567,9 @@
       "birthDate": "19.07.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69295/team/6511"
     },
     {
@@ -4115,6 +4581,9 @@
       "birthDate": "16.04.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45763/team/6511"
     },
     {
@@ -4126,6 +4595,9 @@
       "birthDate": "12.09.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49095/team/6511"
     },
     {
@@ -4137,6 +4609,9 @@
       "birthDate": "15.02.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50310/team/6511"
     },
     {
@@ -4148,6 +4623,9 @@
       "birthDate": "06.11.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49476/team/6511"
     },
     {
@@ -4159,6 +4637,9 @@
       "birthDate": "23.02.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/65634/team/6511"
     },
     {
@@ -4170,6 +4651,9 @@
       "birthDate": "22.05.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50298/team/6511"
     },
     {
@@ -4181,6 +4665,9 @@
       "birthDate": "24.09.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49179/team/6511"
     },
     {
@@ -4192,6 +4679,9 @@
       "birthDate": "07.08.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49213/team/7012"
     },
     {
@@ -4203,6 +4693,9 @@
       "birthDate": "17.03.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49236/team/7012"
     },
     {
@@ -4214,6 +4707,9 @@
       "birthDate": "18.04.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/55931/team/7012"
     },
     {
@@ -4225,6 +4721,9 @@
       "birthDate": "28.12.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 17,
+      "goals": 17,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51912/team/7012"
     },
     {
@@ -4236,6 +4735,9 @@
       "birthDate": "31.01.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 8,
+      "goals": 8,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/7012"
     },
     {
@@ -4247,6 +4749,9 @@
       "birthDate": "22.12.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54728/team/7012"
     },
     {
@@ -4258,6 +4763,9 @@
       "birthDate": "02.11.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48290/team/7012"
     },
     {
@@ -4269,6 +4777,9 @@
       "birthDate": "01.08.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66046/team/7012"
     },
     {
@@ -4280,6 +4791,9 @@
       "birthDate": "19.01.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54943/team/7012"
     },
     {
@@ -4291,6 +4805,9 @@
       "birthDate": "19.08.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/53903/team/7012"
     },
     {
@@ -4302,6 +4819,9 @@
       "birthDate": "14.05.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50324/team/7012"
     },
     {
@@ -4313,6 +4833,9 @@
       "birthDate": "28.12.2009",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/43899/team/7012"
     },
     {
@@ -4324,6 +4847,9 @@
       "birthDate": "13.04.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50292/team/7012"
     },
     {
@@ -4335,6 +4861,9 @@
       "birthDate": "17.02.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45929/team/7012"
     },
     {
@@ -4346,6 +4875,9 @@
       "birthDate": "15.10.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/44430/team/7012"
     },
     {
@@ -4357,6 +4889,9 @@
       "birthDate": "30.09.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 6,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49068/team/7012"
     },
     {
@@ -4368,6 +4903,9 @@
       "birthDate": "05.04.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49064/team/7012"
     },
     {
@@ -4379,6 +4917,9 @@
       "birthDate": "27.01.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51631/team/7012"
     },
     {
@@ -4390,6 +4931,9 @@
       "birthDate": "19.01.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45341/team/7012"
     },
     {
@@ -4401,6 +4945,9 @@
       "birthDate": "16.04.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45763/team/7012"
     },
     {
@@ -4412,6 +4959,9 @@
       "birthDate": "12.09.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49095/team/7012"
     },
     {
@@ -4423,6 +4973,9 @@
       "birthDate": "15.02.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50310/team/7012"
     },
     {
@@ -4434,6 +4987,9 @@
       "birthDate": "06.11.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49476/team/7012"
     },
     {
@@ -4445,6 +5001,9 @@
       "birthDate": "16.07.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49495/team/7012"
     },
     {
@@ -4456,6 +5015,9 @@
       "birthDate": "13.10.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50962/team/7012"
     },
     {
@@ -4467,6 +5029,9 @@
       "birthDate": "23.02.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/65634/team/7012"
     },
     {
@@ -4478,6 +5043,9 @@
       "birthDate": "22.05.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50298/team/7012"
     },
     {
@@ -4489,6 +5057,9 @@
       "birthDate": "14.08.2010",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45842/team/7012"
     },
     {
@@ -4500,6 +5071,9 @@
       "birthDate": "24.09.2011",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 6,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49179/team/7012"
     },
     {
@@ -4511,6 +5085,9 @@
       "birthDate": "29.03.2012",
       "citizenship": "Eesti",
       "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50678/team/7012"
     }
   ]

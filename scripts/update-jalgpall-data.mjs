@@ -97,11 +97,14 @@ const parsePrevious = (row, team) => {
 };
 
 const parsePlayers = (html, team) => {
+  const scoringStats = parseScoringStats(html);
   const tab = html.match(/<li data-tab="tab10">([\s\S]*?)<\/li>\s*<\/ul>/)?.[1] ?? "";
   const tbody = tab.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? "";
   return [...tbody.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((rowMatch) => {
     const cells = [...rowMatch[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((cell) => stripTags(cell[1]));
     const playerUrl = rowMatch[1].match(/href="(\/voistlused\/player\/[^"]+)"/)?.[1];
+    const absolutePlayerUrl = playerUrl ? `${BASE_URL}${playerUrl}` : null;
+    const stats = scoringStats.get(absolutePlayerUrl) ?? scoringStats.get(cells[2]);
     return {
       teamId: team.id,
       team: team.shortName,
@@ -111,9 +114,35 @@ const parsePlayers = (html, team) => {
       birthDate: cells[4] ?? "",
       citizenship: cells[5] ?? "",
       club: cells[8] ?? "",
-      jalgpallEeUrl: playerUrl ? `${BASE_URL}${playerUrl}` : null
+      cupGoals: stats?.cupGoals ?? 0,
+      leagueGoals: stats?.leagueGoals ?? 0,
+      goals: stats?.goals ?? 0,
+      jalgpallEeUrl: absolutePlayerUrl
     };
   }).filter((player) => player.name);
+};
+
+const parseScoringStats = (html) => {
+  const tab = html.match(/<li data-tab="tab01">([\s\S]*?)<\/li>/)?.[1] ?? "";
+  const stats = new Map();
+
+  [...tab.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].forEach((rowMatch) => {
+    const row = rowMatch[1];
+    const cells = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((cell) => stripTags(cell[1]));
+    const playerUrl = row.match(/href="(\/voistlused\/player\/[^"]+)"/)?.[1];
+    if (cells.length < 5 || !cells[1]) return;
+
+    const entry = {
+      cupGoals: Number.parseInt(cells[2], 10) || 0,
+      leagueGoals: Number.parseInt(cells[3], 10) || 0,
+      goals: Number.parseInt(cells[4], 10) || 0
+    };
+
+    stats.set(cells[1], entry);
+    if (playerUrl) stats.set(`${BASE_URL}${playerUrl}`, entry);
+  });
+
+  return stats;
 };
 
 const parseMeta = (html) => {
