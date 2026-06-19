@@ -757,6 +757,13 @@ input {
   width: min(330px, 80%);
 }
 
+.sponsor-grid img {
+  width: auto;
+  max-width: 86%;
+  max-height: 58px;
+  object-fit: contain;
+}
+
 .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
