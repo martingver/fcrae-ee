@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T14:28:55.371Z",
+  "updatedAt": "2026-06-20T19:55:37.788Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5133,6 +5133,21 @@
         },
         {
           "position": 4,
+          "teamId": 3125,
+          "teamName": "Võru FC Helios",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
+          "matches": 12,
+          "wins": 7,
+          "draws": 2,
+          "losses": 3,
+          "goals": "36:26",
+          "goalsFor": 36,
+          "goalsAgainst": 26,
+          "points": 23,
+          "isRaeTeam": false
+        },
+        {
+          "position": 5,
           "teamId": 4046,
           "teamName": "Paide Linnameeskond III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
@@ -5144,21 +5159,6 @@
           "goalsFor": 53,
           "goalsAgainst": 18,
           "points": 22,
-          "isRaeTeam": false
-        },
-        {
-          "position": 5,
-          "teamId": 3125,
-          "teamName": "Võru FC Helios",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
-          "matches": 11,
-          "wins": 6,
-          "draws": 2,
-          "losses": 3,
-          "goals": "31:26",
-          "goalsFor": 31,
-          "goalsAgainst": 26,
-          "points": 20,
           "isRaeTeam": false
         },
         {
@@ -5271,13 +5271,13 @@
           "teamId": 6173,
           "teamName": "Viljandi JK Tulevik U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6173?season=2026",
-          "matches": 11,
+          "matches": 12,
           "wins": 2,
           "draws": 2,
-          "losses": 7,
-          "goals": "25:33",
+          "losses": 8,
+          "goals": "25:38",
           "goalsFor": 25,
-          "goalsAgainst": 33,
+          "goalsAgainst": 38,
           "points": 8,
           "isRaeTeam": false
         },
