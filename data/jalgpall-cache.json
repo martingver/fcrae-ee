@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T14:31:27.600Z",
+  "updatedAt": "2026-06-21T20:00:53.904Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -89,7 +89,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 5,
-      "resultCount": 9,
+      "resultCount": 8,
       "playerCount": 21
     },
     {
@@ -1380,21 +1380,6 @@
       "homeAway": "Kodu",
       "score": "3 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192036"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "finished",
-      "competition": "U13.III",
-      "date": "21.06.2026",
-      "time": "11:00",
-      "startsAt": "2026-06-21T11:00:00+03:00",
-      "homeTeam": "Rakvere JK Tarvas (14)",
-      "awayTeam": "Rae Spordikool I (14)",
-      "opponent": "Rakvere JK Tarvas (14)",
-      "homeAway": "Võõrsil",
-      "score": "2 - 4",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190320"
     },
     {
       "teamId": "rae-i",
@@ -5119,6 +5104,21 @@
         },
         {
           "position": 2,
+          "teamId": 2327,
+          "teamName": "JK Tallinna Kalev III",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
+          "matches": 12,
+          "wins": 9,
+          "draws": 1,
+          "losses": 2,
+          "goals": "61:18",
+          "goalsFor": 61,
+          "goalsAgainst": 18,
+          "points": 28,
+          "isRaeTeam": false
+        },
+        {
+          "position": 3,
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
@@ -5133,7 +5133,7 @@
           "isRaeTeam": false
         },
         {
-          "position": 3,
+          "position": 4,
           "teamId": 4046,
           "teamName": "Paide Linnameeskond III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
@@ -5144,21 +5144,6 @@
           "goals": "56:19",
           "goalsFor": 56,
           "goalsAgainst": 19,
-          "points": 25,
-          "isRaeTeam": false
-        },
-        {
-          "position": 4,
-          "teamId": 2327,
-          "teamName": "JK Tallinna Kalev III",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 11,
-          "wins": 8,
-          "draws": 1,
-          "losses": 2,
-          "goals": "49:18",
-          "goalsFor": 49,
-          "goalsAgainst": 18,
           "points": 25,
           "isRaeTeam": false
         },
@@ -5272,13 +5257,13 @@
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
-          "matches": 11,
+          "matches": 12,
           "wins": 3,
           "draws": 1,
-          "losses": 7,
-          "goals": "22:43",
+          "losses": 8,
+          "goals": "22:55",
           "goalsFor": 22,
-          "goalsAgainst": 43,
+          "goalsAgainst": 55,
           "points": 10,
           "isRaeTeam": false
         },
