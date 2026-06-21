@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T19:55:37.788Z",
+  "updatedAt": "2026-06-21T05:17:15.802Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -17,7 +17,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 16,
-      "resultCount": 17,
+      "resultCount": 18,
       "playerCount": 16
     },
     {
@@ -1352,6 +1352,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189207"
     },
     {
+      "teamId": "rae-i",
+      "team": "Rae I",
+      "status": "finished",
+      "competition": "II.B.S/E",
+      "date": "20.06.2026",
+      "time": "13:00",
+      "startsAt": "2026-06-20T13:00:00+03:00",
+      "homeTeam": "Ida-Viru JK Noova",
+      "awayTeam": "Rae Spordikool",
+      "opponent": "Ida-Viru JK Noova",
+      "homeAway": "Võõrsil",
+      "score": "2 - 6",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187776"
+    },
+    {
       "teamId": "u15",
       "team": "U15",
       "status": "finished",
@@ -2456,8 +2471,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 3,
-      "leagueGoals": 4,
-      "goals": 7,
+      "leagueGoals": 5,
+      "goals": 8,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36481/team/6795"
     },
     {
@@ -2596,8 +2611,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 3,
-      "leagueGoals": 6,
-      "goals": 9,
+      "leagueGoals": 8,
+      "goals": 11,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/38392/team/6795"
     },
     {
@@ -5091,14 +5106,14 @@
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
-          "matches": 11,
-          "wins": 9,
+          "matches": 12,
+          "wins": 10,
           "draws": 2,
           "losses": 0,
-          "goals": "48:26",
-          "goalsFor": 48,
-          "goalsAgainst": 26,
-          "points": 29,
+          "goals": "54:28",
+          "goalsFor": 54,
+          "goalsAgainst": 28,
+          "points": 32,
           "isRaeTeam": true
         },
         {
@@ -5181,13 +5196,13 @@
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
-          "matches": 11,
+          "matches": 12,
           "wins": 5,
           "draws": 1,
-          "losses": 5,
-          "goals": "20:29",
-          "goalsFor": 20,
-          "goalsAgainst": 29,
+          "losses": 6,
+          "goals": "22:35",
+          "goalsFor": 22,
+          "goalsAgainst": 35,
           "points": 16,
           "isRaeTeam": false
         },
