@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T14:14:34.193Z",
+  "updatedAt": "2026-06-28T19:44:18.128Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 16,
-      "resultCount": 18,
+      "upcomingCount": 15,
+      "resultCount": 19,
       "playerCount": 16
     },
     {
@@ -1399,7 +1399,7 @@
     {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "VKV",
       "date": "28.06.2026",
       "time": "18:00",
@@ -1408,6 +1408,7 @@
       "awayTeam": "Pärnu JK Poseidon",
       "opponent": "Pärnu JK Poseidon",
       "homeAway": "Kodu",
+      "score": "1 - 3",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/194811"
     },
     {
@@ -2611,9 +2612,9 @@
       "birthDate": "2003",
       "citizenship": "Eesti",
       "club": "ETM",
-      "cupGoals": 3,
+      "cupGoals": 4,
       "leagueGoals": 8,
-      "goals": 11,
+      "goals": 12,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/38392/team/6795"
     },
     {
