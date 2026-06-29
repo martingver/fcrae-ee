@@ -35,7 +35,8 @@ const fallbackData = {
       jalgpallEeUrl: "https://jalgpall.ee/voistlused/538/team/6795?season=2026"
     }
   ],
-  players: []
+  players: [],
+  videos: []
 };
 
 const formatDate = (match) => `${match.date} kell ${match.time}`;
@@ -56,6 +57,7 @@ const routes = {
 
 const byDateAsc = (a, b) => new Date(a.startsAt) - new Date(b.startsAt);
 const byDateDesc = (a, b) => new Date(b.startsAt) - new Date(a.startsAt);
+const byVideoDateDesc = (a, b) => new Date(b.date) - new Date(a.date);
 
 const teamPageUrl = (teamId) => ({
   "rae-i": "/voistkonnad/rae-i/",
@@ -113,6 +115,10 @@ const teamKind = (team) => {
 
 const showsTopScorer = (team) => ["rae-i", "rae-ii", "u15", "u16", "u17"].includes(team?.id);
 
+const publicVideosForTeam = (data, teamId) => (data.videos ?? [])
+  .filter((video) => video.teamId === teamId && video.visibility === "public")
+  .sort(byVideoDateDesc);
+
 const raeScore = (match) => {
   const score = parseScore(match.score);
   if (!score) return null;
@@ -125,13 +131,27 @@ const raeScore = (match) => {
 };
 
 const getData = async () => {
+  const readVideos = async () => {
+    try {
+      const response = await fetch("/data/videos.json", { cache: "no-store" });
+      if (!response.ok) throw new Error("Videos unavailable");
+      const data = await response.json();
+      return Array.isArray(data.videos) ? data.videos : [];
+    } catch {
+      return [];
+    }
+  };
+
   try {
-    const response = await fetch("/data/jalgpall-cache.json", { cache: "no-store" });
+    const [response, videos] = await Promise.all([
+      fetch("/data/jalgpall-cache.json", { cache: "no-store" }),
+      readVideos()
+    ]);
     if (!response.ok) throw new Error("Cache unavailable");
     const data = await response.json();
-    return data.matches?.length ? data : fallbackData;
+    return data.matches?.length ? { ...data, videos } : { ...fallbackData, videos };
   } catch {
-    return fallbackData;
+    return { ...fallbackData, videos: await readVideos() };
   }
 };
 
@@ -662,6 +682,73 @@ const standingsTemplate = (standings) => {
   `;
 };
 
+const videoDate = (value = "") => {
+  const [year, month, day] = value.split("-");
+  return year && month && day ? `${day}.${month}.${year}` : value;
+};
+
+const videoTemplate = (video) => `
+  <article class="video-card">
+    <div class="video-frame" data-video-frame>
+      <button class="video-play-button" type="button" data-video-embed-url="${video.url}" aria-label="Kuva video: ${video.title}">
+        <span></span>
+        <strong>Kuva video siin</strong>
+      </button>
+    </div>
+    <div class="video-card-body">
+      <span>${video.competition || "Video"} · ${videoDate(video.date)}</span>
+      <h3>${video.title}</h3>
+      <p>${video.tags?.length ? video.tags.join(" · ") : "Täismäng"}</p>
+      <a class="inline-cta" href="${video.url}" target="_blank" rel="noreferrer">Ava Veos</a>
+    </div>
+  </article>
+`;
+
+const ensureTeamVideoSection = (videos) => {
+  if (!videos.length || document.querySelector(".team-video-section")) return;
+  const roster = document.querySelector(".roster-section");
+  if (!roster) return;
+
+  const section = document.createElement("section");
+  section.className = "team-video-section section-light";
+  section.id = "videod";
+  section.innerHTML = `
+    <div class="section-copy">
+      <p class="section-kicker dark">Videod</p>
+      <h2>Võistkonna videod.</h2>
+      <p>Siia kogume avalikud Veo mänguvideod. Privaatsete videote jaoks saab hiljem lisada tiimiala PIN-kaitsega.</p>
+    </div>
+    <div class="video-grid" id="team-videos"></div>
+  `;
+  roster.before(section);
+};
+
+const renderTeamVideos = (videos) => {
+  const list = document.querySelector("#team-videos");
+  if (!list) return;
+  list.innerHTML = videos.length ? videos.map(videoTemplate).join("") : `<p class="empty-state">Avalikke videoid ei ole veel lisatud.</p>`;
+};
+
+const setupVideoEmbeds = () => {
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-video-embed-url]");
+    if (!button) return;
+    const url = button.dataset.videoEmbedUrl;
+    const frame = button.closest("[data-video-frame]");
+    if (!url || !frame) return;
+
+    frame.innerHTML = `
+      <iframe
+        title="FC Rae Veo video"
+        src="${url}"
+        loading="lazy"
+        allow="fullscreen; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    `;
+  });
+};
+
 const setupTeamChrome = (team) => {
   const hero = document.querySelector(".team-subhero");
   if (!hero || document.querySelector(".team-tabs")) return;
@@ -671,6 +758,7 @@ const setupTeamChrome = (team) => {
   const dataColumns = document.querySelectorAll(".team-data > div");
   dataColumns[0]?.setAttribute("id", "mangud");
   dataColumns[1]?.setAttribute("id", "tulemused");
+  document.querySelector(".team-video-section")?.setAttribute("id", "videod");
   document.querySelector(".roster-section")?.setAttribute("id", "koosseis");
   document.querySelector(".site-footer")?.setAttribute("id", "kontakt");
 
@@ -681,11 +769,15 @@ const setupTeamChrome = (team) => {
   const standingsTab = document.querySelector(".league-table-section")
     ? `<a href="${pagePath}#liigatabel">Liigatabel</a>`
     : "";
+  const videosTab = document.querySelector(".team-video-section")
+    ? `<a href="${pagePath}#videod">Videod</a>`
+    : "";
   tabs.innerHTML = `
     <a href="${pagePath}#ulevaade">Ülevaade</a>
     ${standingsTab}
     <a href="${pagePath}#mangud">Mängud</a>
     <a href="${pagePath}#tulemused">Tulemused</a>
+    ${videosTab}
     <a href="${pagePath}#koosseis">Koosseis</a>
     <a href="${pagePath}#kontakt">Kontakt</a>
   `;
@@ -715,6 +807,7 @@ const renderTeamPage = (data) => {
   const team = data.teams.find((item) => item.id === teamId);
   const matches = data.matches.filter((match) => match.teamId === teamId);
   const players = data.players.filter((player) => player.teamId === teamId);
+  const videos = publicVideosForTeam(data, teamId);
 
   const setText = (selector, value) => {
     const node = document.querySelector(selector);
@@ -734,6 +827,7 @@ const renderTeamPage = (data) => {
     setText("#team-kind", `${teamKind(team)} · ${team.shortName}`);
     const sourceLink = document.querySelector("#team-source-link");
     if (sourceLink) sourceLink.href = team.sourceUrl;
+    ensureTeamVideoSection(videos);
     setupTeamChrome(team);
   }
 
@@ -763,12 +857,14 @@ const renderTeamPage = (data) => {
     standings.innerHTML = standingsTemplate(data.standings?.[teamId]);
   }
 
+  renderTeamVideos(videos);
   renderTeamFacts(team, matches, players);
 };
 
 setupMobileMenu();
 setupSponsorModal();
 setupMailForms();
+setupVideoEmbeds();
 
 getData().then((data) => {
   renderNextMatch(data);

@@ -1,0 +1,72 @@
+{
+  "updatedAt": "2026-06-29T00:00:00+03:00",
+  "source": "manual",
+  "videos": [
+    {
+      "id": "parnu-summer-cup-2026-06-25",
+      "teamId": "u13-i",
+      "date": "2026-06-25",
+      "competition": "Pärnu Summer Cup",
+      "title": "Mäng 25.06",
+      "provider": "veo",
+      "url": "https://app.veo.co/matches/20260625-match-25-jun-2026-v6117c84/",
+      "visibility": "public",
+      "tags": ["turniir", "täismäng"]
+    },
+    {
+      "id": "parnu-summer-cup-2026-06-26-1",
+      "teamId": "u13-i",
+      "date": "2026-06-26",
+      "competition": "Pärnu Summer Cup",
+      "title": "Mäng 26.06",
+      "provider": "veo",
+      "url": "https://app.veo.co/matches/20260626-match-26-jun-2026-v3678467/",
+      "visibility": "public",
+      "tags": ["turniir", "täismäng"]
+    },
+    {
+      "id": "parnu-summer-cup-2026-06-26-2",
+      "teamId": "u13-i",
+      "date": "2026-06-26",
+      "competition": "Pärnu Summer Cup",
+      "title": "Mäng 26.06 II",
+      "provider": "veo",
+      "url": "https://app.veo.co/matches/20260626-untitled-recording-2026-06-26_12-43-35-vc4b48a0/",
+      "visibility": "public",
+      "tags": ["turniir", "täismäng"]
+    },
+    {
+      "id": "parnu-summer-cup-2026-06-27-1",
+      "teamId": "u13-i",
+      "date": "2026-06-27",
+      "competition": "Pärnu Summer Cup",
+      "title": "Mäng 27.06",
+      "provider": "veo",
+      "url": "https://app.veo.co/matches/20260627-match-27-jun-2026-vffdadc0/",
+      "visibility": "public",
+      "tags": ["turniir", "täismäng"]
+    },
+    {
+      "id": "parnu-summer-cup-2026-06-27-2",
+      "teamId": "u13-i",
+      "date": "2026-06-27",
+      "competition": "Pärnu Summer Cup",
+      "title": "Mäng 27.06 II",
+      "provider": "veo",
+      "url": "https://app.veo.co/matches/20260627-match-27-jun-2026-v515a376/",
+      "visibility": "public",
+      "tags": ["turniir", "täismäng"]
+    },
+    {
+      "id": "parnu-summer-cup-2026-06-28",
+      "teamId": "u13-i",
+      "date": "2026-06-28",
+      "competition": "Pärnu Summer Cup",
+      "title": "Mäng 28.06",
+      "provider": "veo",
+      "url": "https://app.veo.co/matches/20260628-match-28-jun-2026-vbf526fa/",
+      "visibility": "public",
+      "tags": ["turniir", "täismäng"]
+    }
+  ]
+}
