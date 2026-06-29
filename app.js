@@ -688,20 +688,23 @@ const videoDate = (value = "") => {
 };
 
 const videoTemplate = (video) => `
-  <article class="video-card">
-    <div class="video-frame" data-video-frame>
-      <button class="video-play-button" type="button" data-video-embed-url="${video.url}" aria-label="Kuva video: ${video.title}">
-        <span></span>
-        <strong>Kuva video siin</strong>
-      </button>
+  <a class="video-card" href="${video.url}" target="_blank" rel="noreferrer">
+    <div class="video-thumb">
+      ${video.thumbnail ? `<img src="${video.thumbnail}" alt="${video.title}" loading="lazy">` : ""}
+      <span class="video-provider">Veo</span>
+      <span class="video-play-mark" aria-hidden="true"></span>
     </div>
     <div class="video-card-body">
       <span>${video.competition || "Video"} · ${videoDate(video.date)}</span>
       <h3>${video.title}</h3>
+      <div class="video-meta">
+        ${video.score ? `<strong>${video.score}</strong>` : ""}
+        ${video.opponent ? `<small>vs ${video.opponent}</small>` : ""}
+      </div>
       <p>${video.tags?.length ? video.tags.join(" · ") : "Täismäng"}</p>
-      <a class="inline-cta" href="${video.url}" target="_blank" rel="noreferrer">Ava Veos</a>
+      <em>Ava Veos</em>
     </div>
-  </article>
+  </a>
 `;
 
 const ensureTeamVideoSection = (videos) => {
@@ -727,26 +730,6 @@ const renderTeamVideos = (videos) => {
   const list = document.querySelector("#team-videos");
   if (!list) return;
   list.innerHTML = videos.length ? videos.map(videoTemplate).join("") : `<p class="empty-state">Avalikke videoid ei ole veel lisatud.</p>`;
-};
-
-const setupVideoEmbeds = () => {
-  document.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-video-embed-url]");
-    if (!button) return;
-    const url = button.dataset.videoEmbedUrl;
-    const frame = button.closest("[data-video-frame]");
-    if (!url || !frame) return;
-
-    frame.innerHTML = `
-      <iframe
-        title="FC Rae Veo video"
-        src="${url}"
-        loading="lazy"
-        allow="fullscreen; picture-in-picture"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-    `;
-  });
 };
 
 const setupTeamChrome = (team) => {
@@ -864,7 +847,6 @@ const renderTeamPage = (data) => {
 setupMobileMenu();
 setupSponsorModal();
 setupMailForms();
-setupVideoEmbeds();
 
 getData().then((data) => {
   renderNextMatch(data);
