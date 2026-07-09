@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T04:11:30.358Z",
+  "updatedAt": "2026-07-09T09:57:19.982Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1440,20 +1440,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189898"
     },
     {
-      "teamId": "u15",
-      "team": "U15",
-      "status": "upcoming",
-      "competition": "U15.III",
-      "date": "01.08.2026",
-      "time": "14:00",
-      "startsAt": "2026-08-01T14:00:00+03:00",
-      "homeTeam": "Rae Spordikool (12)",
-      "awayTeam": "Viljandi JK Tulevik Kollane (12)",
-      "opponent": "Viljandi JK Tulevik Kollane (12)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192042"
-    },
-    {
       "teamId": "rae-ii",
       "team": "Rae II",
       "status": "upcoming",
@@ -1494,6 +1480,20 @@
       "opponent": "JK Tallinna Kalev III",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187790"
+    },
+    {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "upcoming",
+      "competition": "U15.III",
+      "date": "03.08.2026",
+      "time": "12:00",
+      "startsAt": "2026-08-03T12:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "Viljandi JK Tulevik Kollane (12)",
+      "opponent": "Viljandi JK Tulevik Kollane (12)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192042"
     },
     {
       "teamId": "u13-ii",
