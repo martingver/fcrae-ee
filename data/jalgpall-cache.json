@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T08:32:19.425Z",
+  "updatedAt": "2026-07-16T14:19:20.489Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -36,7 +36,7 @@
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 9,
       "resultCount": 9,
-      "playerCount": 24
+      "playerCount": 27
     },
     {
       "id": "u11",
@@ -106,7 +106,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 0,
+      "upcomingCount": 11,
       "resultCount": 8,
       "playerCount": 21
     },
@@ -1566,6 +1566,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190329"
     },
     {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "09.08.2026",
+      "time": "13:00",
+      "startsAt": "2026-08-09T13:00:00+03:00",
+      "homeTeam": "Pakri SK (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Pakri SK (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195164"
+    },
+    {
       "teamId": "u15",
       "team": "U15",
       "status": "upcoming",
@@ -1634,6 +1648,20 @@
       "opponent": "Rakvere FC Freedom",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188309"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "16.08.2026",
+      "time": "11:30",
+      "startsAt": "2026-08-16T11:30:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "JK Tallinna Kalev III (13)",
+      "opponent": "JK Tallinna Kalev III (13)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195167"
     },
     {
       "teamId": "u15",
@@ -1718,6 +1746,20 @@
       "opponent": "Läänemaa JK (12)",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192052"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "22.08.2026",
+      "time": "13:00",
+      "startsAt": "2026-08-22T13:00:00+03:00",
+      "homeTeam": "Võru FC Helios (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Võru FC Helios (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195177"
     },
     {
       "teamId": "u13-ii",
@@ -1888,6 +1930,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190587"
     },
     {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "29.08.2026",
+      "time": "15:00",
+      "startsAt": "2026-08-29T15:00:00+03:00",
+      "homeTeam": "Jalgpallikool Phoenix (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Jalgpallikool Phoenix (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195183"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -1914,6 +1970,20 @@
       "opponent": "Raasiku FC Joker Aruküla (14)",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190339"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "05.09.2026",
+      "time": "11:00",
+      "startsAt": "2026-09-05T11:00:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Saue JK (13)",
+      "opponent": "Saue JK (13)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195189"
     },
     {
       "teamId": "rae-ii",
@@ -2000,6 +2070,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187829"
     },
     {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "12.09.2026",
+      "time": "12:00",
+      "startsAt": "2026-09-12T12:00:00+03:00",
+      "homeTeam": "Tartu FC Helios (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Tartu FC Helios (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195193"
+    },
+    {
       "teamId": "u16",
       "team": "U16",
       "status": "upcoming",
@@ -2082,6 +2166,20 @@
       "opponent": "FC Tallinna Wolves",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188336"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "19.09.2026",
+      "time": "11:00",
+      "startsAt": "2026-09-19T11:00:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Viimsi MRJK (13)",
+      "opponent": "Viimsi MRJK (13)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195200"
     },
     {
       "teamId": "u16",
@@ -2182,6 +2280,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188340"
     },
     {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "27.09.2026",
+      "time": "10:00",
+      "startsAt": "2026-09-27T10:00:00+03:00",
+      "homeTeam": "Harju JK Laagri (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Harju JK Laagri (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195202"
+    },
+    {
       "teamId": "u15",
       "team": "U15",
       "status": "upcoming",
@@ -2280,6 +2392,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190608"
     },
     {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "04.10.2026",
+      "time": "15:00",
+      "startsAt": "2026-10-04T15:00:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Tartu JK Tammeka Valge (13)",
+      "opponent": "Tartu JK Tammeka Valge (13)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195211"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -2292,6 +2418,20 @@
       "opponent": "FC Elva U21",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187855"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "10.10.2026",
+      "time": "14:00",
+      "startsAt": "2026-10-10T14:00:00+03:00",
+      "homeTeam": "Pärnu JK Vaprus Kollane (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Pärnu JK Vaprus Kollane (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195216"
     },
     {
       "teamId": "u16",
@@ -2376,6 +2516,20 @@
       "opponent": "Ida-Viru JK Noova",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187868"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "18.10.2026",
+      "time": "17:30",
+      "startsAt": "2026-10-18T17:30:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Nõmme Kalju FC I (13)",
+      "opponent": "Nõmme Kalju FC I (13)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195222"
     },
     {
       "teamId": "rae-i",
@@ -2704,6 +2858,20 @@
     {
       "teamId": "rae-ii",
       "team": "Rae II",
+      "position": "K",
+      "name": "Taavi Kaarmaa",
+      "number": "60",
+      "birthDate": "1993",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/12883/team/7118"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
       "position": "R",
       "name": "Randel Kaasik",
       "number": "20",
@@ -2803,6 +2971,20 @@
       "teamId": "rae-ii",
       "team": "Rae II",
       "position": "PK",
+      "name": "Margo Parkala",
+      "number": "50",
+      "birthDate": "1996",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/17968/team/7118"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "position": "PK",
       "name": "Remon Piil",
       "number": "47",
       "birthDate": "2009",
@@ -2826,6 +3008,20 @@
       "leagueGoals": 0,
       "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49064/team/7118"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "position": "R",
+      "name": "Gren Kevin Raudsep",
+      "number": "10",
+      "birthDate": "2005",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/39487/team/7118"
     },
     {
       "teamId": "rae-ii",
