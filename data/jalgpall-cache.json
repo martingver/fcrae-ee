@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T03:34:13.936Z",
+  "updatedAt": "2026-07-17T08:26:20.761Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -36,7 +36,7 @@
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 9,
       "resultCount": 9,
-      "playerCount": 27
+      "playerCount": 29
     },
     {
       "id": "u11",
@@ -2886,6 +2886,20 @@
     {
       "teamId": "rae-ii",
       "team": "Rae II",
+      "position": "K",
+      "name": "Kaur Tristan Kommussaar",
+      "number": "30",
+      "birthDate": "2005",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/34204/team/7118"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
       "position": "PK",
       "name": "Oliver Koorem",
       "number": "66",
@@ -2952,6 +2966,20 @@
       "leagueGoals": 0,
       "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/35974/team/7118"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "position": "K",
+      "name": "Karl Oskar Nurk",
+      "number": "80",
+      "birthDate": "2005",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/30135/team/7118"
     },
     {
       "teamId": "rae-ii",
