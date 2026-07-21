@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T08:42:21.826Z",
+  "updatedAt": "2026-07-21T14:19:06.375Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1454,20 +1454,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188299"
     },
     {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.III",
-      "date": "02.08.2026",
-      "time": "15:00",
-      "startsAt": "2026-08-02T15:00:00+03:00",
-      "homeTeam": "Rae Spordikool I (14)",
-      "awayTeam": "Harku United FC (14)",
-      "opponent": "Harku United FC (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190325"
-    },
-    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -1494,6 +1480,20 @@
       "opponent": "Viljandi JK Tulevik Kollane (12)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192042"
+    },
+    {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.III",
+      "date": "05.08.2026",
+      "time": "16:00",
+      "startsAt": "2026-08-05T16:00:00+03:00",
+      "homeTeam": "Rae Spordikool I (14)",
+      "awayTeam": "Harku United FC (14)",
+      "opponent": "Harku United FC (14)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190325"
     },
     {
       "teamId": "u13-ii",
