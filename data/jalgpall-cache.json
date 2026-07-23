@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T14:28:31.407Z",
+  "updatedAt": "2026-07-23T19:43:54.578Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 15,
-      "resultCount": 19,
+      "upcomingCount": 14,
+      "resultCount": 20,
       "playerCount": 16
     },
     {
@@ -1414,7 +1414,7 @@
     {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "KV",
       "date": "23.07.2026",
       "time": "19:00",
@@ -1423,6 +1423,7 @@
       "awayTeam": "Rae Spordikool",
       "opponent": "Harju JK Laagri",
       "homeAway": "Võõrsil",
+      "score": "8 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/194884"
     },
     {
