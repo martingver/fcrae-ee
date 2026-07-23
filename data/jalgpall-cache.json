@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T08:43:11.721Z",
+  "updatedAt": "2026-07-23T14:28:31.407Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -142,7 +142,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 12,
+      "upcomingCount": 10,
       "resultCount": 10,
       "playerCount": 26
     },
@@ -1426,20 +1426,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/194884"
     },
     {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "01.08.2026",
-      "time": "10:00",
-      "startsAt": "2026-08-01T10:00:00+03:00",
-      "homeTeam": "Rae Spordikool (11)",
-      "awayTeam": "Harju JK Laagri Valge (11)",
-      "opponent": "Harju JK Laagri Valge (11)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189898"
-    },
-    {
       "teamId": "rae-ii",
       "team": "Rae II",
       "status": "upcoming",
@@ -2488,20 +2474,6 @@
       "opponent": "FC Kose",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187859"
-    },
-    {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "18.10.2026",
-      "time": "10:00",
-      "startsAt": "2026-10-18T10:00:00+03:00",
-      "homeTeam": "Harju JK Laagri Valge (11)",
-      "awayTeam": "Rae Spordikool (11)",
-      "opponent": "Harju JK Laagri Valge (11)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189961"
     },
     {
       "teamId": "rae-i",
