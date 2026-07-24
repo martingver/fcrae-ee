@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T14:09:09.296Z",
+  "updatedAt": "2026-07-24T19:44:32.778Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5377,6 +5377,21 @@
         },
         {
           "position": 6,
+          "teamId": 542,
+          "teamName": "FC Elva U21",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
+          "matches": 13,
+          "wins": 6,
+          "draws": 0,
+          "losses": 7,
+          "goals": "31:33",
+          "goalsFor": 31,
+          "goalsAgainst": 33,
+          "points": 18,
+          "isRaeTeam": false
+        },
+        {
+          "position": 7,
           "teamId": 1863,
           "teamName": "Jõgeva SK Noorus-96",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
@@ -5391,7 +5406,7 @@
           "isRaeTeam": false
         },
         {
-          "position": 7,
+          "position": 8,
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
@@ -5406,7 +5421,7 @@
           "isRaeTeam": false
         },
         {
-          "position": 8,
+          "position": 9,
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
@@ -5418,21 +5433,6 @@
           "goalsFor": 22,
           "goalsAgainst": 35,
           "points": 16,
-          "isRaeTeam": false
-        },
-        {
-          "position": 9,
-          "teamId": 542,
-          "teamName": "FC Elva U21",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
-          "matches": 12,
-          "wins": 5,
-          "draws": 0,
-          "losses": 7,
-          "goals": "27:31",
-          "goalsFor": 27,
-          "goalsAgainst": 31,
-          "points": 15,
           "isRaeTeam": false
         },
         {
@@ -5485,13 +5485,13 @@
           "teamId": 6173,
           "teamName": "Viljandi JK Tulevik U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6173?season=2026",
-          "matches": 12,
+          "matches": 13,
           "wins": 2,
           "draws": 2,
-          "losses": 8,
-          "goals": "25:38",
-          "goalsFor": 25,
-          "goalsAgainst": 38,
+          "losses": 9,
+          "goals": "27:42",
+          "goalsFor": 27,
+          "goalsAgainst": 42,
           "points": 8,
           "isRaeTeam": false
         },
