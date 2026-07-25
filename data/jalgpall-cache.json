@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25T08:22:14.877Z",
+  "updatedAt": "2026-07-25T13:59:40.144Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5377,6 +5377,21 @@
         },
         {
           "position": 6,
+          "teamId": 1863,
+          "teamName": "Jõgeva SK Noorus-96",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
+          "matches": 13,
+          "wins": 7,
+          "draws": 0,
+          "losses": 6,
+          "goals": "28:26",
+          "goalsFor": 28,
+          "goalsAgainst": 26,
+          "points": 21,
+          "isRaeTeam": false
+        },
+        {
+          "position": 7,
           "teamId": 542,
           "teamName": "FC Elva U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
@@ -5387,21 +5402,6 @@
           "goals": "31:33",
           "goalsFor": 31,
           "goalsAgainst": 33,
-          "points": 18,
-          "isRaeTeam": false
-        },
-        {
-          "position": 7,
-          "teamId": 1863,
-          "teamName": "Jõgeva SK Noorus-96",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 12,
-          "wins": 6,
-          "draws": 0,
-          "losses": 6,
-          "goals": "21:26",
-          "goalsFor": 21,
-          "goalsAgainst": 26,
           "points": 18,
           "isRaeTeam": false
         },
@@ -5470,13 +5470,13 @@
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
-          "matches": 12,
+          "matches": 13,
           "wins": 3,
           "draws": 1,
-          "losses": 8,
-          "goals": "22:55",
+          "losses": 9,
+          "goals": "22:62",
           "goalsFor": 22,
-          "goalsAgainst": 55,
+          "goalsAgainst": 62,
           "points": 10,
           "isRaeTeam": false
         },
