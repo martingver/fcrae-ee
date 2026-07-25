@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25T13:59:40.144Z",
+  "updatedAt": "2026-07-25T19:32:35.935Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5317,6 +5317,21 @@
         },
         {
           "position": 2,
+          "teamId": 6347,
+          "teamName": "Tallinna FC Starmedia",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
+          "matches": 13,
+          "wins": 9,
+          "draws": 2,
+          "losses": 2,
+          "goals": "47:21",
+          "goalsFor": 47,
+          "goalsAgainst": 21,
+          "points": 29,
+          "isRaeTeam": false
+        },
+        {
+          "position": 3,
           "teamId": 2327,
           "teamName": "JK Tallinna Kalev III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
@@ -5328,21 +5343,6 @@
           "goalsFor": 61,
           "goalsAgainst": 18,
           "points": 28,
-          "isRaeTeam": false
-        },
-        {
-          "position": 3,
-          "teamId": 6347,
-          "teamName": "Tallinna FC Starmedia",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
-          "matches": 12,
-          "wins": 8,
-          "draws": 2,
-          "losses": 2,
-          "goals": "42:21",
-          "goalsFor": 42,
-          "goalsAgainst": 21,
-          "points": 26,
           "isRaeTeam": false
         },
         {
@@ -5425,13 +5425,13 @@
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
-          "matches": 12,
+          "matches": 13,
           "wins": 5,
           "draws": 1,
-          "losses": 6,
-          "goals": "22:35",
+          "losses": 7,
+          "goals": "22:40",
           "goalsFor": 22,
-          "goalsAgainst": 35,
+          "goalsAgainst": 40,
           "points": 16,
           "isRaeTeam": false
         },
