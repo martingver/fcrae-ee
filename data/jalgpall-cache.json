@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T15:10:46.550Z",
+  "updatedAt": "2026-07-27T19:52:35.947Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -36,7 +36,7 @@
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 9,
       "resultCount": 9,
-      "playerCount": 29
+      "playerCount": 30
     },
     {
       "id": "u11",
@@ -3093,6 +3093,20 @@
       "leagueGoals": 0,
       "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/22174/team/7118"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "position": "PK",
+      "name": "Evert Talviste",
+      "number": "12",
+      "birthDate": "2006",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/32013/team/7118"
     },
     {
       "teamId": "rae-ii",
