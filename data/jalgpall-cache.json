@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T14:29:26.691Z",
+  "updatedAt": "2026-07-29T19:40:34.047Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5424,18 +5424,33 @@
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 12,
+          "matches": 13,
           "wins": 6,
           "draws": 0,
-          "losses": 6,
-          "goals": "34:27",
+          "losses": 7,
+          "goals": "34:28",
           "goalsFor": 34,
-          "goalsAgainst": 27,
+          "goalsAgainst": 28,
           "points": 18,
           "isRaeTeam": false
         },
         {
           "position": 9,
+          "teamId": 152,
+          "teamName": "FC Kose",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
+          "matches": 13,
+          "wins": 5,
+          "draws": 2,
+          "losses": 6,
+          "goals": "28:38",
+          "goalsFor": 28,
+          "goalsAgainst": 38,
+          "points": 17,
+          "isRaeTeam": false
+        },
+        {
+          "position": 10,
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
@@ -5447,21 +5462,6 @@
           "goalsFor": 22,
           "goalsAgainst": 40,
           "points": 16,
-          "isRaeTeam": false
-        },
-        {
-          "position": 10,
-          "teamId": 152,
-          "teamName": "FC Kose",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
-          "matches": 12,
-          "wins": 4,
-          "draws": 2,
-          "losses": 6,
-          "goals": "27:38",
-          "goalsFor": 27,
-          "goalsAgainst": 38,
-          "points": 14,
           "isRaeTeam": false
         },
         {
