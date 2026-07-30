@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T08:46:42.142Z",
+  "updatedAt": "2026-07-30T14:29:06.284Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1861,6 +1861,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188319"
     },
     {
+      "teamId": "u16",
+      "team": "U16",
+      "status": "upcoming",
+      "competition": "U16.III",
+      "date": "28.08.2026",
+      "time": "11:30",
+      "startsAt": "2026-08-28T11:30:00+03:00",
+      "homeTeam": "JK Tabasalu (11)",
+      "awayTeam": "Rae Spordikool (11)",
+      "opponent": "JK Tabasalu (11)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189921"
+    },
+    {
       "teamId": "u15",
       "team": "U15",
       "status": "upcoming",
@@ -1873,20 +1887,6 @@
       "opponent": "Läänemaa JK (12)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192057"
-    },
-    {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "29.08.2026",
-      "time": "13:00",
-      "startsAt": "2026-08-29T13:00:00+03:00",
-      "homeTeam": "JK Tabasalu (11)",
-      "awayTeam": "Rae Spordikool (11)",
-      "opponent": "JK Tabasalu (11)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189921"
     },
     {
       "teamId": "u11",
