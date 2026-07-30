@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T14:29:06.284Z",
+  "updatedAt": "2026-07-30T19:48:48.160Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -144,7 +144,7 @@
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 10,
       "resultCount": 10,
-      "playerCount": 26
+      "playerCount": 25
     },
     {
       "id": "u17",
@@ -162,7 +162,7 @@
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 2,
       "resultCount": 11,
-      "playerCount": 30
+      "playerCount": 29
     }
   ],
   "matches": [
@@ -4582,20 +4582,6 @@
       "teamId": "u16",
       "team": "U16",
       "position": "PK",
-      "name": "Karl Kurs",
-      "number": "67",
-      "birthDate": "2011",
-      "citizenship": "Eesti",
-      "club": "ETM",
-      "cupGoals": 0,
-      "leagueGoals": 1,
-      "goals": 1,
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48290/team/6511"
-    },
-    {
-      "teamId": "u16",
-      "team": "U16",
-      "position": "PK",
       "name": "Erik Kuznetsov",
       "number": "10",
       "birthDate": "2011",
@@ -4969,20 +4955,6 @@
       "leagueGoals": 0,
       "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54728/team/7012"
-    },
-    {
-      "teamId": "u17",
-      "team": "U17",
-      "position": "PK",
-      "name": "Karl Kurs",
-      "number": "10",
-      "birthDate": "2011",
-      "citizenship": "Eesti",
-      "club": "ETM",
-      "cupGoals": 0,
-      "leagueGoals": 2,
-      "goals": 2,
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/48290/team/7012"
     },
     {
       "teamId": "u17",
