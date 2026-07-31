@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T09:14:28.717Z",
+  "updatedAt": "2026-07-31T14:32:17.672Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1525,6 +1525,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189216"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.III",
+      "date": "08.08.2026",
+      "time": "15:00",
+      "startsAt": "2026-08-08T15:00:00+03:00",
+      "homeTeam": "Viimsi MRJK Punane (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "Viimsi MRJK Punane (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190329"
+    },
+    {
       "teamId": "u16",
       "team": "U16",
       "status": "upcoming",
@@ -1537,20 +1551,6 @@
       "opponent": "Ida-Virumaa JK Noova (11)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189903"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.III",
-      "date": "08.08.2026",
-      "time": "18:00",
-      "startsAt": "2026-08-08T18:00:00+03:00",
-      "homeTeam": "Viimsi MRJK Punane (14)",
-      "awayTeam": "Rae Spordikool I (14)",
-      "opponent": "Viimsi MRJK Punane (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190329"
     },
     {
       "teamId": "u14",
