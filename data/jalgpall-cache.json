@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T13:51:50.525Z",
+  "updatedAt": "2026-08-01T19:31:22.693Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -34,8 +34,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 9,
-      "resultCount": 9,
+      "upcomingCount": 8,
+      "resultCount": 10,
       "playerCount": 30
     },
     {
@@ -1429,7 +1429,7 @@
     {
       "teamId": "rae-ii",
       "team": "Rae II",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "III.N/E",
       "date": "01.08.2026",
       "time": "18:00",
@@ -1438,6 +1438,7 @@
       "awayTeam": "JK Loo",
       "opponent": "JK Loo",
       "homeAway": "Kodu",
+      "score": "4 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188299"
     },
     {
@@ -2796,8 +2797,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 2,
-      "goals": 2,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/7118"
     },
     {
@@ -2978,8 +2979,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/17968/team/7118"
     },
     {
@@ -3020,8 +3021,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/39487/team/7118"
     },
     {
@@ -3146,8 +3147,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50298/team/7118"
     },
     {
@@ -5378,6 +5379,21 @@
         },
         {
           "position": 7,
+          "teamId": 6554,
+          "teamName": "Ida-Viru JK Noova",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
+          "matches": 14,
+          "wins": 6,
+          "draws": 1,
+          "losses": 7,
+          "goals": "24:40",
+          "goalsFor": 24,
+          "goalsAgainst": 40,
+          "points": 19,
+          "isRaeTeam": false
+        },
+        {
+          "position": 8,
           "teamId": 542,
           "teamName": "FC Elva U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
@@ -5392,22 +5408,22 @@
           "isRaeTeam": false
         },
         {
-          "position": 8,
+          "position": 9,
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 13,
+          "matches": 14,
           "wins": 6,
           "draws": 0,
-          "losses": 7,
-          "goals": "34:28",
+          "losses": 8,
+          "goals": "34:30",
           "goalsFor": 34,
-          "goalsAgainst": 28,
+          "goalsAgainst": 30,
           "points": 18,
           "isRaeTeam": false
         },
         {
-          "position": 9,
+          "position": 10,
           "teamId": 152,
           "teamName": "FC Kose",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
@@ -5419,21 +5435,6 @@
           "goalsFor": 28,
           "goalsAgainst": 38,
           "points": 17,
-          "isRaeTeam": false
-        },
-        {
-          "position": 10,
-          "teamId": 6554,
-          "teamName": "Ida-Viru JK Noova",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
-          "matches": 13,
-          "wins": 5,
-          "draws": 1,
-          "losses": 7,
-          "goals": "22:40",
-          "goalsFor": 22,
-          "goalsAgainst": 40,
-          "points": 16,
           "isRaeTeam": false
         },
         {
