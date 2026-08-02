@@ -17,7 +17,7 @@ Seejärel ava `http://localhost:4173`.
 
 Avalik leht ei päri jalgpall.ee-d iga külastusega, vaid kasutab cache'i. See sobib hiljem GitHub Actions cron'i või deploy-eelse build-sammuna käivitamiseks.
 
-Repo sisaldab GitHub Actions töövoogu `.github/workflows/update-jalgpall-data.yml`, mis uuendab cache'i iga 6 tunni tagant ja commit'ib muutuse tagasi reposse. Sama cache toidab avalehte, mängude lehte ja iga võistkonna alamlehte. Kui olemasolev deploy käivitub push'i peale, liiguvad uued mängud, tulemused, mängijad ja võistkondade fun factid automaatselt ka avalikku veebi.
+Repo sisaldab GitHub Actions töövoogu `.github/workflows/update-jalgpall-data.yml`, mis uuendab cache'i iga 6 tunni tagant ja commit'ib muutuse tagasi reposse. Sama cache toidab avalehte, mängude lehte, iga võistkonna alamlehte ja `kalendrid/*.ics` kalendritellimusi. Kui olemasolev deploy käivitub push'i peale, liiguvad uued mängud, tulemused, mängijad, võistkondade fun factid ja kalendrivoogude muudatused automaatselt ka avalikku veebi.
 
 ## Vormid
 

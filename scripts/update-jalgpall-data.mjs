@@ -1,6 +1,7 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const BASE_URL = "https://jalgpall.ee";
+const SITE_URL = "https://fcrae.ee";
 
 const teams = [
   { id: "rae-i", name: "Rae Spordikool", shortName: "Rae I", level: "Esindusmeeskond", leagueId: 538, teamId: 6795, season: 2026 },
@@ -33,6 +34,117 @@ const birthYearOnly = (value = "") => value.match(/\d{4}/)?.[0] ?? "";
 const toIsoDate = (date, time = "00:00") => {
   const [day, month, year] = date.split(".");
   return `${year}-${month}-${day}T${time}:00+03:00`;
+};
+
+const calendarFileName = (teamId) => `${teamId}.ics`;
+
+const escapeIcsText = (value = "") =>
+  String(value)
+    .replace(/\\/g, "\\\\")
+    .replace(/;/g, "\\;")
+    .replace(/,/g, "\\,")
+    .replace(/\r?\n/g, "\\n");
+
+const foldIcsLine = (line) => {
+  const chunks = [];
+  let rest = line;
+  while (Buffer.byteLength(rest, "utf8") > 74) {
+    let size = 0;
+    let index = 0;
+    for (const char of rest) {
+      const nextSize = size + Buffer.byteLength(char, "utf8");
+      if (nextSize > 74) break;
+      size = nextSize;
+      index += char.length;
+    }
+    chunks.push(rest.slice(0, index));
+    rest = rest.slice(index);
+  }
+  chunks.push(rest);
+  return chunks.map((chunk, index) => (index ? ` ${chunk}` : chunk)).join("\r\n");
+};
+
+const formatIcsDate = (date) =>
+  date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+
+const calendarEvent = (match, team, updatedAt) => {
+  const startsAt = new Date(match.startsAt);
+  const endsAt = new Date(startsAt.getTime() + 2 * 60 * 60 * 1000);
+  const matchId = match.jalgpallEeUrl?.match(/match_info\/(\d+)/)?.[1] ?? `${match.teamId}-${startsAt.getTime()}`;
+  const location = match.venue || (match.homeAway === "Kodu" ? (team?.venueAddress || team?.venue || "Jüri staadion") : "Võõrsilmäng");
+  const summary = `${match.homeTeam} - ${match.awayTeam}`;
+  const description = [
+    `${match.team} · ${match.competition || "Võistlus"}`,
+    `${match.homeAway || ""}mäng`,
+    match.jalgpallEeUrl ? `EJL: ${match.jalgpallEeUrl}` : ""
+  ].filter(Boolean).join("\n");
+
+  return [
+    "BEGIN:VEVENT",
+    `UID:${matchId}@fcrae.ee`,
+    `DTSTAMP:${formatIcsDate(new Date(updatedAt))}`,
+    `DTSTART:${formatIcsDate(startsAt)}`,
+    `DTEND:${formatIcsDate(endsAt)}`,
+    `SUMMARY:${escapeIcsText(summary)}`,
+    `DESCRIPTION:${escapeIcsText(description)}`,
+    `LOCATION:${escapeIcsText(location)}`,
+    match.jalgpallEeUrl ? `URL:${match.jalgpallEeUrl}` : "",
+    "END:VEVENT"
+  ].filter(Boolean);
+};
+
+const calendarPayload = (name, matches, team, updatedAt) => {
+  const lines = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//FC Rae//Mängude kalender//ET",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    `X-WR-CALNAME:${escapeIcsText(name)}`,
+    "X-WR-TIMEZONE:Europe/Tallinn",
+    `URL:${SITE_URL}/kalendrid/${calendarFileName(team?.id ?? "koik-voistkonnad")}`,
+    ...matches.flatMap((match) => calendarEvent(match, team, updatedAt)),
+    "END:VCALENDAR"
+  ];
+
+  return `${lines.map(foldIcsLine).join("\r\n")}\r\n`;
+};
+
+const writeCalendars = async (payload) => {
+  const now = new Date();
+  const upcomingMatches = payload.matches
+    .filter((match) => match.status === "upcoming" && new Date(match.startsAt) >= now)
+    .sort((a, b) => new Date(a.startsAt) - new Date(b.startsAt));
+
+  await mkdir("kalendrid", { recursive: true });
+
+  await writeFile(
+    `kalendrid/${calendarFileName("koik-voistkonnad")}`,
+    calendarPayload("FC Rae kõik võistkonnad", upcomingMatches, null, payload.updatedAt),
+    "utf8"
+  );
+
+  await Promise.all(payload.teams.map((team) => {
+    const teamMatches = upcomingMatches.filter((match) => match.teamId === team.id);
+    return writeFile(
+      `kalendrid/${calendarFileName(team.id)}`,
+      calendarPayload(`FC Rae ${team.shortName}`, teamMatches, team, payload.updatedAt),
+      "utf8"
+    );
+  }));
+};
+
+const readExistingCache = async () => {
+  try {
+    return JSON.parse(await readFile("data/jalgpall-cache.json", "utf8"));
+  } catch {
+    return null;
+  }
+};
+
+const teamSortIndex = (teamId) => {
+  const index = teams.findIndex((team) => team.id === teamId);
+  return index === -1 ? 999 : index;
 };
 
 const rowMatches = (html, className) =>
@@ -253,15 +365,36 @@ for (const team of teams) {
   }
 }
 
+if (!results.length) {
+  const existingPayload = await readExistingCache();
+  if (!existingPayload) {
+    throw new Error("No fresh jalgpall.ee data fetched and no existing cache is available.");
+  }
+  await writeCalendars(existingPayload);
+  console.warn("No fresh jalgpall.ee data fetched. Kept existing cache and regenerated calendar feeds.");
+  process.exit(0);
+}
+
+const existingPayload = await readExistingCache();
+const fetchedTeamIds = new Set(results.map((result) => result.team.id));
+const preservedTeams = (existingPayload?.teams ?? []).filter((team) => !fetchedTeamIds.has(team.id));
+const preservedMatches = (existingPayload?.matches ?? []).filter((match) => !fetchedTeamIds.has(match.teamId));
+const preservedPlayers = (existingPayload?.players ?? []).filter((player) => !fetchedTeamIds.has(player.teamId));
+const fetchedStandings = Object.fromEntries(results.filter((result) => result.standings).map((result) => [result.team.id, result.standings]));
+const preservedStandings = Object.fromEntries(
+  Object.entries(existingPayload?.standings ?? {}).filter(([teamId]) => !fetchedTeamIds.has(teamId))
+);
+
 const payload = {
   updatedAt: new Date().toISOString(),
   source: "https://jalgpall.ee",
-  teams: results.map((result) => result.team),
-  matches: results.flatMap((result) => result.matches).sort((a, b) => new Date(a.startsAt) - new Date(b.startsAt)),
-  players: results.flatMap((result) => result.players),
-  standings: Object.fromEntries(results.filter((result) => result.standings).map((result) => [result.team.id, result.standings]))
+  teams: [...results.map((result) => result.team), ...preservedTeams].sort((a, b) => teamSortIndex(a.id) - teamSortIndex(b.id)),
+  matches: [...results.flatMap((result) => result.matches), ...preservedMatches].sort((a, b) => new Date(a.startsAt) - new Date(b.startsAt)),
+  players: [...results.flatMap((result) => result.players), ...preservedPlayers].sort((a, b) => teamSortIndex(a.teamId) - teamSortIndex(b.teamId)),
+  standings: { ...preservedStandings, ...fetchedStandings }
 };
 
 await mkdir("data", { recursive: true });
 await writeFile("data/jalgpall-cache.json", `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-console.log(`Saved ${payload.teams.length} teams, ${payload.matches.length} matches, ${payload.players.length} players.`);
+await writeCalendars(payload);
+console.log(`Saved ${payload.teams.length} teams, ${payload.matches.length} matches, ${payload.players.length} players and calendar feeds.`);

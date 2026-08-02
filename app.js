@@ -55,6 +55,8 @@ const routes = {
   fanclub: "/kontakt/?teema=fanniklubi#kontaktivorm"
 };
 
+const calendarBaseUrl = "https://fcrae.ee/kalendrid";
+
 const byDateAsc = (a, b) => new Date(a.startsAt) - new Date(b.startsAt);
 const byDateDesc = (a, b) => new Date(b.startsAt) - new Date(a.startsAt);
 const byVideoDateDesc = (a, b) => new Date(b.date) - new Date(a.date);
@@ -70,6 +72,37 @@ const teamPageUrl = (teamId) => ({
   u16: "/voistkonnad/u16/",
   u17: "/voistkonnad/u17/"
 })[teamId] ?? routes.matches;
+
+const calendarSlug = (teamId = "all") => teamId === "all" ? "koik-voistkonnad" : teamId;
+
+const calendarTeamLabel = (data, teamId = "all") => {
+  if (teamId === "all") return "Kõik FC Rae mängud";
+  const team = data.teams.find((item) => item.id === teamId);
+  return team ? `FC Rae ${team.shortName}` : "FC Rae kalender";
+};
+
+const calendarFeedUrl = (teamId = "all") => `${calendarBaseUrl}/${calendarSlug(teamId)}.ics`;
+
+const calendarMenuTemplate = (data, teamId = "all", compact = false) => {
+  const feedUrl = calendarFeedUrl(teamId);
+  const webcalUrl = feedUrl.replace(/^https:/, "webcal:");
+  const label = calendarTeamLabel(data, teamId);
+  const googleUrl = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(feedUrl)}`;
+  const outlookUrl = `https://outlook.live.com/calendar/0/addfromweb?url=${encodeURIComponent(feedUrl)}&name=${encodeURIComponent(label)}`;
+
+  return `
+    <details class="calendar-menu ${compact ? "is-compact" : ""}">
+      <summary>Lisa kalender</summary>
+      <div>
+        <strong>${label}</strong>
+        <a href="${googleUrl}" target="_blank" rel="noreferrer">Google Calendar</a>
+        <a href="${webcalUrl}">Apple / iPhone</a>
+        <a href="${outlookUrl}" target="_blank" rel="noreferrer">Outlook</a>
+        <a href="${feedUrl}" download>Laadi .ics alla</a>
+      </div>
+    </details>
+  `;
+};
 
 const parseScore = (score = "") => {
   const match = score.match(/(\d+)\s*-\s*(\d+)/);
@@ -531,6 +564,10 @@ const renderMatchesPage = (data) => {
   if (!list || !teamSelect || !statusSelect || !placeSelect) return;
 
   const now = new Date();
+  const calendarActions = document.createElement("div");
+  calendarActions.className = "matches-calendar-actions";
+  placeSelect.closest(".fixture-controls")?.after(calendarActions);
+
   data.teams.forEach((team) => {
     const option = document.createElement("option");
     option.value = team.id;
@@ -557,6 +594,8 @@ const renderMatchesPage = (data) => {
     if (summary) {
       summary.textContent = `${matches.length} mängu · andmed uuendatud ${data.updatedAt ? new Date(data.updatedAt).toLocaleString("et-EE") : "fallback andmetest"}`;
     }
+
+    calendarActions.innerHTML = calendarMenuTemplate(data, teamId);
   };
 
   [teamSelect, statusSelect, placeSelect].forEach((control) => control.addEventListener("change", update));
@@ -810,6 +849,12 @@ const renderTeamPage = (data) => {
     setText("#team-kind", `${teamKind(team)} · ${team.shortName}`);
     const sourceLink = document.querySelector("#team-source-link");
     if (sourceLink) sourceLink.href = team.sourceUrl;
+    if (sourceLink && !document.querySelector(".team-calendar-action")) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "team-calendar-action";
+      wrapper.innerHTML = calendarMenuTemplate(data, team.id, true);
+      sourceLink.after(wrapper);
+    }
     ensureTeamVideoSection(videos);
     setupTeamChrome(team);
   }

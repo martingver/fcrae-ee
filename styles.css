@@ -426,6 +426,93 @@ input {
   font-weight: 900;
 }
 
+.calendar-menu {
+  position: relative;
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.calendar-menu summary {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 18px;
+  border-radius: var(--radius);
+  background: var(--gold);
+  color: var(--black);
+  font-weight: 900;
+  cursor: pointer;
+  list-style: none;
+  box-shadow: 0 16px 34px rgba(242, 194, 48, 0.16);
+}
+
+.calendar-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.calendar-menu summary::after {
+  content: "⌄";
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.calendar-menu[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.calendar-menu > div {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 12;
+  min-width: 250px;
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--black);
+  box-shadow: 0 22px 60px rgba(9, 10, 12, 0.18);
+}
+
+.calendar-menu > div strong {
+  padding: 8px 10px 6px;
+  color: #333941;
+  font-size: 0.82rem;
+}
+
+.calendar-menu > div a {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 6px;
+  color: var(--black);
+  font-weight: 900;
+}
+
+.calendar-menu > div a:hover {
+  background: #f4f5f6;
+  color: var(--gold-dark);
+}
+
+.calendar-menu.is-compact {
+  display: block;
+}
+
+.team-calendar-action {
+  margin-top: 12px;
+}
+
+.matches-calendar-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: -2px 0 18px;
+}
+
 .team-source-list {
   display: grid;
 }
@@ -2798,6 +2885,21 @@ body[data-team-page="u13-i"] .team-subhero {
 
   .big-list .fixture-row {
     grid-template-columns: 1fr;
+  }
+
+  .matches-calendar-actions {
+    justify-content: stretch;
+  }
+
+  .calendar-menu,
+  .calendar-menu summary {
+    width: 100%;
+  }
+
+  .calendar-menu > div {
+    position: static;
+    min-width: 0;
+    margin-top: 8px;
   }
 
   .card-topline {
