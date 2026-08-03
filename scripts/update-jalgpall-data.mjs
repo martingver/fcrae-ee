@@ -37,7 +37,6 @@ const toIsoDate = (date, time = "00:00") => {
 };
 
 const calendarFileName = (teamId) => `${teamId}.ics`;
-const googleCalendarFileName = (teamId) => `${teamId}.txt`;
 
 const escapeIcsText = (value = "") =>
   String(value)
@@ -119,21 +118,21 @@ const writeCalendars = async (payload) => {
 
   await mkdir("kalendrid", { recursive: true });
 
-  const writeCalendarPair = async (teamId, name, matches, team) => {
-    const calendarText = calendarPayload(name, matches, team, payloadUpdatedAt);
-    await Promise.all([
-      writeFile(`kalendrid/${calendarFileName(teamId)}`, calendarText, "utf8"),
-      writeFile(`kalendrid/${googleCalendarFileName(teamId)}`, calendarText, "utf8")
-    ]);
-  };
-
   const payloadUpdatedAt = payload.updatedAt;
 
-  await writeCalendarPair("koik-voistkonnad", "FC Rae kõik võistkonnad", upcomingMatches, null);
+  await writeFile(
+    `kalendrid/${calendarFileName("koik-voistkonnad")}`,
+    calendarPayload("FC Rae kõik võistkonnad", upcomingMatches, null, payloadUpdatedAt),
+    "utf8"
+  );
 
   await Promise.all(payload.teams.map((team) => {
     const teamMatches = upcomingMatches.filter((match) => match.teamId === team.id);
-    return writeCalendarPair(team.id, `FC Rae ${team.shortName}`, teamMatches, team);
+    return writeFile(
+      `kalendrid/${calendarFileName(team.id)}`,
+      calendarPayload(`FC Rae ${team.shortName}`, teamMatches, team, payloadUpdatedAt),
+      "utf8"
+    );
   }));
 };
 

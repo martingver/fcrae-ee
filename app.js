@@ -82,14 +82,12 @@ const calendarTeamLabel = (data, teamId = "all") => {
 };
 
 const calendarFeedUrl = (teamId = "all") => `${calendarBaseUrl}/${calendarSlug(teamId)}.ics`;
-const googleCalendarFeedUrl = (teamId = "all") => `${calendarBaseUrl}/${calendarSlug(teamId)}.txt`;
 
 const calendarMenuTemplate = (data, teamId = "all", compact = false) => {
   const feedUrl = calendarFeedUrl(teamId);
-  const googleFeedUrl = googleCalendarFeedUrl(teamId);
   const webcalUrl = feedUrl.replace(/^https:/, "webcal:");
   const label = calendarTeamLabel(data, teamId);
-  const googleUrl = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(googleFeedUrl)}`;
+  const googleUrl = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcalUrl)}`;
   const outlookUrl = `https://outlook.live.com/calendar/0/addfromweb?url=${encodeURIComponent(feedUrl)}&name=${encodeURIComponent(label)}`;
 
   return `
