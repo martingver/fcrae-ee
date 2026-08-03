@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//FC Rae//Mängude kalender//ET
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FC Rae U17
+X-WR-TIMEZONE:Europe/Tallinn
+URL:https://fcrae.ee/kalendrid/u17.ics
+BEGIN:VEVENT
+UID:189216@fcrae.ee
+DTSTAMP:20260803T175943Z
+DTSTART:20260808T090000Z
+DTEND:20260808T110000Z
+SUMMARY:U-17 Rae Spordikool - U-17 Rakvere JK Tarvas
+DESCRIPTION:U17 · U-17.III\nKodumäng\nEJL: https://jalgpall.ee/voistluse
+ d/match_info/189216
+LOCATION:Laste 3\, Jüri 75301
+URL:https://jalgpall.ee/voistlused/match_info/189216
+END:VEVENT
+BEGIN:VEVENT
+UID:189233@fcrae.ee
+DTSTAMP:20260803T175943Z
+DTSTART:20260822T140000Z
+DTEND:20260822T160000Z
+SUMMARY:U-17 Tõrva JK - U-17 Rae Spordikool
+DESCRIPTION:U17 · U-17.III\nVõõrsilmäng\nEJL: https://jalgpall.ee/vois
+ tlused/match_info/189233
+LOCATION:Võõrsilmäng
+URL:https://jalgpall.ee/voistlused/match_info/189233
+END:VEVENT
+END:VCALENDAR

@@ -82,17 +82,19 @@ const calendarTeamLabel = (data, teamId = "all") => {
 };
 
 const calendarFeedUrl = (teamId = "all") => `${calendarBaseUrl}/${calendarSlug(teamId)}.ics`;
+const googleCalendarFeedUrl = (teamId = "all") => `${calendarBaseUrl}/${calendarSlug(teamId)}.txt`;
 
 const calendarMenuTemplate = (data, teamId = "all", compact = false) => {
   const feedUrl = calendarFeedUrl(teamId);
+  const googleFeedUrl = googleCalendarFeedUrl(teamId);
   const webcalUrl = feedUrl.replace(/^https:/, "webcal:");
   const label = calendarTeamLabel(data, teamId);
-  const googleUrl = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(feedUrl)}`;
+  const googleUrl = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(googleFeedUrl)}`;
   const outlookUrl = `https://outlook.live.com/calendar/0/addfromweb?url=${encodeURIComponent(feedUrl)}&name=${encodeURIComponent(label)}`;
 
   return `
     <details class="calendar-menu ${compact ? "is-compact" : ""}">
-      <summary>Lisa kalender</summary>
+      <summary>Lisa kalendrisse</summary>
       <div>
         <strong>${label}</strong>
         <a href="${googleUrl}" target="_blank" rel="noreferrer">Google Calendar</a>
