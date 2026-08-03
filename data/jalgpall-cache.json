@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T10:03:43.912Z",
+  "updatedAt": "2026-08-03T15:13:00.966Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -125,7 +125,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 10,
-      "resultCount": 10,
+      "resultCount": 11,
       "playerCount": 24
     },
     {
@@ -1455,6 +1455,21 @@
       "homeAway": "Kodu",
       "score": "2 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187790"
+    },
+    {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "finished",
+      "competition": "U15.III",
+      "date": "03.08.2026",
+      "time": "12:00",
+      "startsAt": "2026-08-03T12:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "Viljandi JK Tulevik Kollane (12)",
+      "opponent": "Viljandi JK Tulevik Kollane (12)",
+      "homeAway": "Kodu",
+      "score": "2 - 0",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192042"
     },
     {
       "teamId": "u13-i",
@@ -4394,8 +4409,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 11,
-      "goals": 11,
+      "leagueGoals": 13,
+      "goals": 13,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51631/team/5883"
     },
     {
