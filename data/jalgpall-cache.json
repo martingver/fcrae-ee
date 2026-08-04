@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T08:51:41.251Z",
+  "updatedAt": "2026-08-04T14:37:22.901Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1500,20 +1500,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190575"
     },
     {
-      "teamId": "rae-i",
-      "team": "Rae I",
-      "status": "upcoming",
-      "competition": "II.B.S/E",
-      "date": "08.08.2026",
-      "time": "12:00",
-      "startsAt": "2026-08-08T12:00:00+03:00",
-      "homeTeam": "Jõgeva SK Noorus-96",
-      "awayTeam": "Rae Spordikool",
-      "opponent": "Jõgeva SK Noorus-96",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187799"
-    },
-    {
       "teamId": "u17",
       "team": "U17",
       "status": "upcoming",
@@ -1542,20 +1528,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190329"
     },
     {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "08.08.2026",
-      "time": "16:00",
-      "startsAt": "2026-08-08T16:00:00+03:00",
-      "homeTeam": "Rae Spordikool (11)",
-      "awayTeam": "Ida-Virumaa JK Noova (11)",
-      "opponent": "Ida-Virumaa JK Noova (11)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189903"
-    },
-    {
       "teamId": "u14",
       "team": "U14",
       "status": "upcoming",
@@ -1582,6 +1554,20 @@
       "opponent": "Tallinna FC Ajax (12)",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192045"
+    },
+    {
+      "teamId": "u16",
+      "team": "U16",
+      "status": "upcoming",
+      "competition": "U16.III",
+      "date": "09.08.2026",
+      "time": "18:00",
+      "startsAt": "2026-08-09T18:00:00+03:00",
+      "homeTeam": "Rae Spordikool (11)",
+      "awayTeam": "Ida-Virumaa JK Noova (11)",
+      "opponent": "Ida-Virumaa JK Noova (11)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189903"
     },
     {
       "teamId": "rae-ii",
@@ -1722,6 +1708,20 @@
       "opponent": "Paide Linnameeskond III",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187804"
+    },
+    {
+      "teamId": "rae-i",
+      "team": "Rae I",
+      "status": "upcoming",
+      "competition": "II.B.S/E",
+      "date": "19.08.2026",
+      "time": "19:00",
+      "startsAt": "2026-08-19T19:00:00+03:00",
+      "homeTeam": "Jõgeva SK Noorus-96",
+      "awayTeam": "Rae Spordikool",
+      "opponent": "Jõgeva SK Noorus-96",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187799"
     },
     {
       "teamId": "u15",
