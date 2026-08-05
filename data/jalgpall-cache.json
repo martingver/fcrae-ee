@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T08:49:51.521Z",
+  "updatedAt": "2026-08-05T14:30:20.775Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -88,7 +88,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 5,
+      "upcomingCount": 4,
       "resultCount": 9,
       "playerCount": 21
     },
@@ -1472,20 +1472,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192042"
     },
     {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.III",
-      "date": "05.08.2026",
-      "time": "16:00",
-      "startsAt": "2026-08-05T16:00:00+03:00",
-      "homeTeam": "Rae Spordikool I (14)",
-      "awayTeam": "Harku United FC (14)",
-      "opponent": "Harku United FC (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190325"
-    },
-    {
       "teamId": "u13-ii",
       "team": "U13 II",
       "status": "upcoming",
@@ -1710,6 +1696,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187804"
     },
     {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "19.08.2026",
+      "time": "18:00",
+      "startsAt": "2026-08-19T18:00:00+03:00",
+      "homeTeam": "Võru FC Helios (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Võru FC Helios (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195177"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -1736,20 +1736,6 @@
       "opponent": "Läänemaa JK (12)",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192052"
-    },
-    {
-      "teamId": "u14",
-      "team": "U14",
-      "status": "upcoming",
-      "competition": "U14.III-A",
-      "date": "22.08.2026",
-      "time": "13:00",
-      "startsAt": "2026-08-22T13:00:00+03:00",
-      "homeTeam": "Võru FC Helios (13)",
-      "awayTeam": "Rae Spordikool (13)",
-      "opponent": "Võru FC Helios (13)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195177"
     },
     {
       "teamId": "u13-ii",
