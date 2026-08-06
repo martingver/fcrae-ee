@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T08:51:08.763Z",
+  "updatedAt": "2026-08-06T14:32:43.188Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1599,20 +1599,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187784"
     },
     {
-      "teamId": "u11",
-      "team": "U11",
-      "status": "upcoming",
-      "competition": "U11.II",
-      "date": "15.08.2026",
-      "time": "12:00",
-      "startsAt": "2026-08-15T12:00:00+03:00",
-      "homeTeam": "FCI Tallinn (16)",
-      "awayTeam": "Rae Spordikool I (16)",
-      "opponent": "FCI Tallinn (16)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191513"
-    },
-    {
       "teamId": "rae-ii",
       "team": "Rae II",
       "status": "upcoming",
@@ -1653,6 +1639,20 @@
       "opponent": "JK Vasalemma (12)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192049"
+    },
+    {
+      "teamId": "u11",
+      "team": "U11",
+      "status": "upcoming",
+      "competition": "U11.II",
+      "date": "16.08.2026",
+      "time": "12:00",
+      "startsAt": "2026-08-16T12:00:00+03:00",
+      "homeTeam": "FCI Tallinn (16)",
+      "awayTeam": "Rae Spordikool I (16)",
+      "opponent": "FCI Tallinn (16)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191513"
     },
     {
       "teamId": "u13-ii",
