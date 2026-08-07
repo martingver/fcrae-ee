@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T03:14:15.784Z",
+  "updatedAt": "2026-08-07T07:38:51.391Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1627,20 +1627,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195167"
     },
     {
-      "teamId": "u15",
-      "team": "U15",
-      "status": "upcoming",
-      "competition": "U15.III",
-      "date": "16.08.2026",
-      "time": "11:30",
-      "startsAt": "2026-08-16T11:30:00+03:00",
-      "homeTeam": "Rae Spordikool (12)",
-      "awayTeam": "JK Vasalemma (12)",
-      "opponent": "JK Vasalemma (12)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192049"
-    },
-    {
       "teamId": "u11",
       "team": "U11",
       "status": "upcoming",
@@ -1709,6 +1695,20 @@
       "opponent": "Paide Linnameeskond III",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187804"
+    },
+    {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "upcoming",
+      "competition": "U15.III",
+      "date": "18.08.2026",
+      "time": "13:00",
+      "startsAt": "2026-08-18T13:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "JK Vasalemma (12)",
+      "opponent": "JK Vasalemma (12)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192049"
     },
     {
       "teamId": "u14",
