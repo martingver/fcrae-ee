@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T07:11:34.242Z",
+  "updatedAt": "2026-08-08T13:09:55.277Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -71,7 +71,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 10,
-      "resultCount": 7,
+      "resultCount": 8,
       "playerCount": 15
     },
     {
@@ -88,7 +88,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 4,
+      "upcomingCount": 3,
       "resultCount": 10,
       "playerCount": 21
     },
@@ -160,7 +160,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 2,
+      "upcomingCount": 1,
       "resultCount": 11,
       "playerCount": 29
     }
@@ -1487,32 +1487,19 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190325"
     },
     {
-      "teamId": "u17",
-      "team": "U17",
-      "status": "upcoming",
-      "competition": "U-17.III",
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "finished",
+      "competition": "U13.VII",
       "date": "08.08.2026",
-      "time": "12:00",
-      "startsAt": "2026-08-08T12:00:00+03:00",
-      "homeTeam": "U-17 Rae Spordikool",
-      "awayTeam": "U-17 Rakvere JK Tarvas",
-      "opponent": "U-17 Rakvere JK Tarvas",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189216"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.III",
-      "date": "08.08.2026",
-      "time": "15:00",
-      "startsAt": "2026-08-08T15:00:00+03:00",
-      "homeTeam": "Viimsi MRJK Punane (14)",
-      "awayTeam": "Rae Spordikool I (14)",
-      "opponent": "Viimsi MRJK Punane (14)",
+      "time": "10:00",
+      "startsAt": "2026-08-08T10:00:00+03:00",
+      "homeTeam": "Tallinna FC Flora Rohelised (14)",
+      "awayTeam": "Rae Spordikool II (14)",
+      "opponent": "Tallinna FC Flora Rohelised (14)",
       "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190329"
+      "score": "5 - 1",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190575"
     },
     {
       "teamId": "u14",
@@ -5292,6 +5279,21 @@
       "rows": [
         {
           "position": 1,
+          "teamId": 4046,
+          "teamName": "Paide Linnameeskond III",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
+          "matches": 15,
+          "wins": 11,
+          "draws": 1,
+          "losses": 3,
+          "goals": "79:22",
+          "goalsFor": 79,
+          "goalsAgainst": 22,
+          "points": 34,
+          "isRaeTeam": false
+        },
+        {
+          "position": 2,
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
@@ -5306,7 +5308,7 @@
           "isRaeTeam": true
         },
         {
-          "position": 2,
+          "position": 3,
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
@@ -5321,7 +5323,7 @@
           "isRaeTeam": false
         },
         {
-          "position": 3,
+          "position": 4,
           "teamId": 2327,
           "teamName": "JK Tallinna Kalev III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
@@ -5333,21 +5335,6 @@
           "goalsFor": 66,
           "goalsAgainst": 21,
           "points": 32,
-          "isRaeTeam": false
-        },
-        {
-          "position": 4,
-          "teamId": 4046,
-          "teamName": "Paide Linnameeskond III",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
-          "matches": 14,
-          "wins": 10,
-          "draws": 1,
-          "losses": 3,
-          "goals": "66:22",
-          "goalsFor": 66,
-          "goalsAgainst": 22,
-          "points": 31,
           "isRaeTeam": false
         },
         {
@@ -5445,13 +5432,13 @@
           "teamId": 188,
           "teamName": "Raasiku FC Joker",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
-          "matches": 14,
+          "matches": 15,
           "wins": 3,
           "draws": 3,
-          "losses": 8,
-          "goals": "22:36",
+          "losses": 9,
+          "goals": "22:49",
           "goalsFor": 22,
-          "goalsAgainst": 36,
+          "goalsAgainst": 49,
           "points": 12,
           "isRaeTeam": false
         },
