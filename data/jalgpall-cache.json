@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T02:19:25.750Z",
+  "updatedAt": "2026-08-08T07:11:34.242Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -70,7 +70,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 11,
+      "upcomingCount": 10,
       "resultCount": 7,
       "playerCount": 15
     },
@@ -1485,20 +1485,6 @@
       "homeAway": "Kodu",
       "score": "3 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190325"
-    },
-    {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "status": "upcoming",
-      "competition": "U13.VII",
-      "date": "08.08.2026",
-      "time": "10:00",
-      "startsAt": "2026-08-08T10:00:00+03:00",
-      "homeTeam": "Tallinna FC Flora Rohelised (14)",
-      "awayTeam": "Rae Spordikool II (14)",
-      "opponent": "Tallinna FC Flora Rohelised (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190575"
     },
     {
       "teamId": "u17",
