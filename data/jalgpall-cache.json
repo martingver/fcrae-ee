@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T13:15:51.324Z",
+  "updatedAt": "2026-08-09T18:58:44.478Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -34,8 +34,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 8,
-      "resultCount": 10,
+      "upcomingCount": 7,
+      "resultCount": 11,
       "playerCount": 30
     },
     {
@@ -124,8 +124,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 10,
-      "resultCount": 11,
+      "upcomingCount": 9,
+      "resultCount": 12,
       "playerCount": 24
     },
     {
@@ -142,8 +142,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 10,
-      "resultCount": 10,
+      "upcomingCount": 9,
+      "resultCount": 11,
       "playerCount": 25
     },
     {
@@ -1549,7 +1549,7 @@
     {
       "teamId": "u15",
       "team": "U15",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U15.III",
       "date": "09.08.2026",
       "time": "17:00",
@@ -1558,12 +1558,13 @@
       "awayTeam": "Rae Spordikool (12)",
       "opponent": "Tallinna FC Ajax (12)",
       "homeAway": "Võõrsil",
+      "score": "1 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192045"
     },
     {
       "teamId": "u16",
       "team": "U16",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U16.III",
       "date": "09.08.2026",
       "time": "18:00",
@@ -1572,12 +1573,13 @@
       "awayTeam": "Ida-Virumaa JK Noova (11)",
       "opponent": "Ida-Virumaa JK Noova (11)",
       "homeAway": "Kodu",
+      "score": "1 - 4",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189903"
     },
     {
       "teamId": "rae-ii",
       "team": "Rae II",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "III.N/E",
       "date": "09.08.2026",
       "time": "19:00",
@@ -1586,6 +1588,7 @@
       "awayTeam": "Rae Spordikool II",
       "opponent": "Maardu Aliens",
       "homeAway": "Võõrsil",
+      "score": "6 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188304"
     },
     {
@@ -2804,8 +2807,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 3,
-      "goals": 3,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/7118"
     },
     {
@@ -2986,8 +2989,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 1,
-      "goals": 1,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/17968/team/7118"
     },
     {
@@ -4274,8 +4277,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 3,
-      "goals": 3,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54728/team/5883"
     },
     {
@@ -4652,8 +4655,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 1,
-      "goals": 1,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/53903/team/6511"
     },
     {
@@ -5373,14 +5376,14 @@
           "teamId": 3125,
           "teamName": "Võru FC Helios",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
-          "matches": 14,
-          "wins": 8,
+          "matches": 15,
+          "wins": 9,
           "draws": 2,
           "losses": 4,
-          "goals": "39:34",
-          "goalsFor": 39,
-          "goalsAgainst": 34,
-          "points": 26,
+          "goals": "42:35",
+          "goalsFor": 42,
+          "goalsAgainst": 35,
+          "points": 29,
           "isRaeTeam": false
         },
         {
@@ -5415,32 +5418,32 @@
         },
         {
           "position": 8,
-          "teamId": 152,
-          "teamName": "FC Kose",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
-          "matches": 14,
-          "wins": 6,
-          "draws": 2,
-          "losses": 6,
-          "goals": "30:38",
-          "goalsFor": 30,
-          "goalsAgainst": 38,
-          "points": 20,
+          "teamId": 542,
+          "teamName": "FC Elva U21",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
+          "matches": 15,
+          "wins": 7,
+          "draws": 0,
+          "losses": 8,
+          "goals": "36:37",
+          "goalsFor": 36,
+          "goalsAgainst": 37,
+          "points": 21,
           "isRaeTeam": false
         },
         {
           "position": 9,
-          "teamId": 542,
-          "teamName": "FC Elva U21",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
-          "matches": 14,
+          "teamId": 152,
+          "teamName": "FC Kose",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
+          "matches": 15,
           "wins": 6,
-          "draws": 0,
-          "losses": 8,
-          "goals": "33:36",
-          "goalsFor": 33,
-          "goalsAgainst": 36,
-          "points": 18,
+          "draws": 2,
+          "losses": 7,
+          "goals": "31:41",
+          "goalsFor": 31,
+          "goalsAgainst": 41,
+          "points": 20,
           "isRaeTeam": false
         },
         {
@@ -5478,13 +5481,13 @@
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
-          "matches": 14,
+          "matches": 15,
           "wins": 3,
           "draws": 1,
-          "losses": 10,
-          "goals": "25:66",
-          "goalsFor": 25,
-          "goalsAgainst": 66,
+          "losses": 11,
+          "goals": "26:69",
+          "goalsFor": 26,
+          "goalsAgainst": 69,
           "points": 10,
           "isRaeTeam": false
         },
