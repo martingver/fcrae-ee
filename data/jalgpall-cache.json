@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T08:02:17.502Z",
+  "updatedAt": "2026-08-10T13:41:01.242Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -34,7 +34,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 7,
+      "upcomingCount": 6,
       "resultCount": 11,
       "playerCount": 30
     },
@@ -1842,20 +1842,6 @@
       "opponent": "FC Järva-Jaani",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188315"
-    },
-    {
-      "teamId": "rae-ii",
-      "team": "Rae II",
-      "status": "upcoming",
-      "competition": "III.N/E",
-      "date": "26.08.2026",
-      "time": "19:30",
-      "startsAt": "2026-08-26T19:30:00+03:00",
-      "homeTeam": "Rae Spordikool II",
-      "awayTeam": "Rakvere JK Tarvas II",
-      "opponent": "Rakvere JK Tarvas II",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188319"
     },
     {
       "teamId": "u13-i",
