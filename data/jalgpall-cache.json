@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T19:14:27.447Z",
+  "updatedAt": "2026-08-11T02:25:12.938Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5329,32 +5329,32 @@
         },
         {
           "position": 3,
-          "teamId": 6347,
-          "teamName": "Tallinna FC Starmedia",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
-          "matches": 14,
-          "wins": 10,
-          "draws": 2,
-          "losses": 2,
-          "goals": "52:22",
-          "goalsFor": 52,
-          "goalsAgainst": 22,
-          "points": 32,
-          "isRaeTeam": false
-        },
-        {
-          "position": 4,
           "teamId": 2327,
           "teamName": "JK Tallinna Kalev III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 14,
+          "matches": 15,
           "wins": 10,
-          "draws": 2,
+          "draws": 3,
           "losses": 2,
           "goals": "66:21",
           "goalsFor": 66,
           "goalsAgainst": 21,
-          "points": 32,
+          "points": 33,
+          "isRaeTeam": false
+        },
+        {
+          "position": 4,
+          "teamId": 6347,
+          "teamName": "Tallinna FC Starmedia",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
+          "matches": 15,
+          "wins": 10,
+          "draws": 3,
+          "losses": 2,
+          "goals": "52:22",
+          "goalsFor": 52,
+          "goalsAgainst": 22,
+          "points": 33,
           "isRaeTeam": false
         },
         {
