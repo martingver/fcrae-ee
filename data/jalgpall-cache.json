@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T13:43:16.369Z",
+  "updatedAt": "2026-08-12T19:17:33.703Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 13,
-      "resultCount": 21,
+      "upcomingCount": 12,
+      "resultCount": 22,
       "playerCount": 16
     },
     {
@@ -1594,7 +1594,7 @@
     {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "II.B.S/E",
       "date": "12.08.2026",
       "time": "19:00",
@@ -1603,6 +1603,7 @@
       "awayTeam": "Rae Spordikool",
       "opponent": "JK Kuusalu Kalev",
       "homeAway": "Võõrsil",
+      "score": "0 - 7",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187784"
     },
     {
@@ -2737,8 +2738,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 4,
-      "leagueGoals": 8,
-      "goals": 12,
+      "leagueGoals": 11,
+      "goals": 15,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/38392/team/6795"
     },
     {
@@ -2751,8 +2752,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 1,
-      "leagueGoals": 5,
-      "goals": 6,
+      "leagueGoals": 6,
+      "goals": 7,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36477/team/6795"
     },
     {
@@ -5299,6 +5300,21 @@
       "rows": [
         {
           "position": 1,
+          "teamId": 6795,
+          "teamName": "Rae Spordikool",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
+          "matches": 14,
+          "wins": 11,
+          "draws": 3,
+          "losses": 0,
+          "goals": "63:30",
+          "goalsFor": 63,
+          "goalsAgainst": 30,
+          "points": 36,
+          "isRaeTeam": true
+        },
+        {
+          "position": 2,
           "teamId": 4046,
           "teamName": "Paide Linnameeskond III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
@@ -5313,37 +5329,7 @@
           "isRaeTeam": false
         },
         {
-          "position": 2,
-          "teamId": 6795,
-          "teamName": "Rae Spordikool",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
-          "matches": 13,
-          "wins": 10,
-          "draws": 3,
-          "losses": 0,
-          "goals": "56:30",
-          "goalsFor": 56,
-          "goalsAgainst": 30,
-          "points": 33,
-          "isRaeTeam": true
-        },
-        {
           "position": 3,
-          "teamId": 2327,
-          "teamName": "JK Tallinna Kalev III",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 15,
-          "wins": 10,
-          "draws": 3,
-          "losses": 2,
-          "goals": "66:21",
-          "goalsFor": 66,
-          "goalsAgainst": 21,
-          "points": 33,
-          "isRaeTeam": false
-        },
-        {
-          "position": 4,
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
@@ -5354,6 +5340,21 @@
           "goals": "52:22",
           "goalsFor": 52,
           "goalsAgainst": 22,
+          "points": 33,
+          "isRaeTeam": false
+        },
+        {
+          "position": 4,
+          "teamId": 2327,
+          "teamName": "JK Tallinna Kalev III",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
+          "matches": 15,
+          "wins": 10,
+          "draws": 3,
+          "losses": 2,
+          "goals": "66:21",
+          "goalsFor": 66,
+          "goalsAgainst": 21,
           "points": 33,
           "isRaeTeam": false
         },
@@ -5497,13 +5498,13 @@
           "teamId": 4913,
           "teamName": "JK Kuusalu Kalev",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4913?season=2026",
-          "matches": 14,
+          "matches": 15,
           "wins": 1,
           "draws": 0,
-          "losses": 13,
-          "goals": "10:66",
+          "losses": 14,
+          "goals": "10:73",
           "goalsFor": 10,
-          "goalsAgainst": 66,
+          "goalsAgainst": 73,
           "points": 3,
           "isRaeTeam": false
         }
