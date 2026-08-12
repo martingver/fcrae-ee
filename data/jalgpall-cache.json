@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T07:49:12.985Z",
+  "updatedAt": "2026-08-12T13:43:16.369Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1606,20 +1606,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187784"
     },
     {
-      "teamId": "rae-ii",
-      "team": "Rae II",
-      "status": "upcoming",
-      "competition": "III.N/E",
-      "date": "15.08.2026",
-      "time": "18:00",
-      "startsAt": "2026-08-15T18:00:00+03:00",
-      "homeTeam": "Rae Spordikool II",
-      "awayTeam": "Rakvere FC Freedom",
-      "opponent": "Rakvere FC Freedom",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188309"
-    },
-    {
       "teamId": "u14",
       "team": "U14",
       "status": "upcoming",
@@ -1842,6 +1828,20 @@
       "opponent": "JK Vasalemma (12)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192049"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "status": "upcoming",
+      "competition": "III.N/E",
+      "date": "26.08.2026",
+      "time": "19:00",
+      "startsAt": "2026-08-26T19:00:00+03:00",
+      "homeTeam": "Rae Spordikool II",
+      "awayTeam": "Rakvere FC Freedom",
+      "opponent": "Rakvere FC Freedom",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188309"
     },
     {
       "teamId": "u13-i",
