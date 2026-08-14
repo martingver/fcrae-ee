@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T07:47:40.886Z",
+  "updatedAt": "2026-08-14T13:38:45.286Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1607,20 +1607,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187784"
     },
     {
-      "teamId": "u14",
-      "team": "U14",
-      "status": "upcoming",
-      "competition": "U14.III-A",
-      "date": "16.08.2026",
-      "time": "11:30",
-      "startsAt": "2026-08-16T11:30:00+03:00",
-      "homeTeam": "Rae Spordikool (13)",
-      "awayTeam": "JK Tallinna Kalev III (13)",
-      "opponent": "JK Tallinna Kalev III (13)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195167"
-    },
-    {
       "teamId": "u11",
       "team": "U11",
       "status": "upcoming",
@@ -1649,6 +1635,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190579"
     },
     {
+      "teamId": "u16",
+      "team": "U16",
+      "status": "upcoming",
+      "competition": "U16.III",
+      "date": "16.08.2026",
+      "time": "14:00",
+      "startsAt": "2026-08-16T14:00:00+03:00",
+      "homeTeam": "JK Kuusalu Kalev (11)",
+      "awayTeam": "Rae Spordikool (11)",
+      "opponent": "JK Kuusalu Kalev (11)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189908"
+    },
+    {
       "teamId": "u13-i",
       "team": "U13 I",
       "status": "upcoming",
@@ -1661,20 +1661,6 @@
       "opponent": "FCI Tallinn II (14)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190333"
-    },
-    {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "16.08.2026",
-      "time": "15:00",
-      "startsAt": "2026-08-16T15:00:00+03:00",
-      "homeTeam": "JK Kuusalu Kalev (11)",
-      "awayTeam": "Rae Spordikool (11)",
-      "opponent": "JK Kuusalu Kalev (11)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189908"
     },
     {
       "teamId": "rae-i",
@@ -1695,14 +1681,14 @@
       "team": "U14",
       "status": "upcoming",
       "competition": "U14.III-A",
-      "date": "19.08.2026",
-      "time": "18:00",
-      "startsAt": "2026-08-19T18:00:00+03:00",
-      "homeTeam": "Võru FC Helios (13)",
-      "awayTeam": "Rae Spordikool (13)",
-      "opponent": "Võru FC Helios (13)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195177"
+      "date": "17.08.2026",
+      "time": "11:00",
+      "startsAt": "2026-08-17T11:00:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "JK Tallinna Kalev III (13)",
+      "opponent": "JK Tallinna Kalev III (13)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195167"
     },
     {
       "teamId": "rae-i",
@@ -2137,6 +2123,20 @@
       "opponent": "Tallinna FC Starmedia",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187833"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "18.09.2026",
+      "time": "18:00",
+      "startsAt": "2026-09-18T18:00:00+03:00",
+      "homeTeam": "Võru FC Helios (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Võru FC Helios (13)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195177"
     },
     {
       "teamId": "rae-ii",
