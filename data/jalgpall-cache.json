@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T06:55:33.644Z",
+  "updatedAt": "2026-08-15T12:57:03.912Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5483,10 +5483,10 @@
           "teamId": 6173,
           "teamName": "Viljandi JK Tulevik U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6173?season=2026",
-          "matches": 15,
+          "matches": 16,
           "wins": 2,
           "draws": 2,
-          "losses": 11,
+          "losses": 12,
           "goals": "27:46",
           "goalsFor": 27,
           "goalsAgainst": 46,
@@ -5498,14 +5498,14 @@
           "teamId": 4913,
           "teamName": "JK Kuusalu Kalev",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4913?season=2026",
-          "matches": 15,
-          "wins": 1,
+          "matches": 16,
+          "wins": 2,
           "draws": 0,
           "losses": 14,
           "goals": "10:73",
           "goalsFor": 10,
           "goalsAgainst": 73,
-          "points": 3,
+          "points": 6,
           "isRaeTeam": false
         }
       ]
