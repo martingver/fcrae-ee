@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T12:57:03.912Z",
+  "updatedAt": "2026-08-15T18:45:44.682Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -72,7 +72,7 @@
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 10,
       "resultCount": 8,
-      "playerCount": 15
+      "playerCount": 16
     },
     {
       "id": "u13-i",
@@ -3585,6 +3585,20 @@
     {
       "teamId": "u13-ii",
       "team": "U13 II",
+      "position": "PK",
+      "name": "Robert Riisalu",
+      "number": "87",
+      "birthDate": "2015",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/55613/team/6512"
+    },
+    {
+      "teamId": "u13-ii",
+      "team": "U13 II",
       "position": "R",
       "name": "Ruudi Suurkask",
       "number": "67",
@@ -5315,6 +5329,21 @@
         },
         {
           "position": 2,
+          "teamId": 6347,
+          "teamName": "Tallinna FC Starmedia",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
+          "matches": 16,
+          "wins": 11,
+          "draws": 3,
+          "losses": 2,
+          "goals": "57:23",
+          "goalsFor": 57,
+          "goalsAgainst": 23,
+          "points": 36,
+          "isRaeTeam": false
+        },
+        {
+          "position": 3,
           "teamId": 4046,
           "teamName": "Paide Linnameeskond III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
@@ -5326,21 +5355,6 @@
           "goalsFor": 79,
           "goalsAgainst": 22,
           "points": 34,
-          "isRaeTeam": false
-        },
-        {
-          "position": 3,
-          "teamId": 6347,
-          "teamName": "Tallinna FC Starmedia",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
-          "matches": 15,
-          "wins": 10,
-          "draws": 3,
-          "losses": 2,
-          "goals": "52:22",
-          "goalsFor": 52,
-          "goalsAgainst": 22,
-          "points": 33,
           "isRaeTeam": false
         },
         {
@@ -5393,13 +5407,13 @@
           "teamId": 1863,
           "teamName": "Jõgeva SK Noorus-96",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 14,
+          "matches": 15,
           "wins": 7,
           "draws": 1,
-          "losses": 6,
-          "goals": "31:29",
-          "goalsFor": 31,
-          "goalsAgainst": 29,
+          "losses": 7,
+          "goals": "32:34",
+          "goalsFor": 32,
+          "goalsAgainst": 34,
           "points": 22,
           "isRaeTeam": false
         },
