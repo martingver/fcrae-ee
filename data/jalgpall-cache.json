@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T12:58:31.316Z",
+  "updatedAt": "2026-08-16T18:44:59.624Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 12,
-      "resultCount": 22,
+      "upcomingCount": 11,
+      "resultCount": 23,
       "playerCount": 16
     },
     {
@@ -89,7 +89,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 2,
-      "resultCount": 11,
+      "resultCount": 12,
       "playerCount": 21
     },
     {
@@ -1622,9 +1622,24 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190579"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "finished",
+      "competition": "U13.III",
+      "date": "16.08.2026",
+      "time": "15:00",
+      "startsAt": "2026-08-16T15:00:00+03:00",
+      "homeTeam": "Rae Spordikool I (14)",
+      "awayTeam": "FCI Tallinn II (14)",
+      "opponent": "FCI Tallinn II (14)",
+      "homeAway": "Kodu",
+      "score": "1 - 2",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190333"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "II.B.S/E",
       "date": "16.08.2026",
       "time": "17:00",
@@ -1633,6 +1648,7 @@
       "awayTeam": "Paide Linnameeskond III",
       "opponent": "Paide Linnameeskond III",
       "homeAway": "Kodu",
+      "score": "5 - 6",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187804"
     },
     {
@@ -2501,8 +2517,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 5,
-      "goals": 5,
+      "leagueGoals": 6,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/26172/team/6795"
     },
     {
@@ -2613,8 +2629,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 1,
-      "leagueGoals": 8,
-      "goals": 9,
+      "leagueGoals": 9,
+      "goals": 10,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/42614/team/6795"
     },
     {
@@ -2627,8 +2643,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 1,
-      "leagueGoals": 0,
-      "goals": 1,
+      "leagueGoals": 1,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/34192/team/6795"
     },
     {
@@ -2711,8 +2727,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 1,
-      "leagueGoals": 6,
-      "goals": 7,
+      "leagueGoals": 7,
+      "goals": 8,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36477/team/6795"
     },
     {
@@ -5273,21 +5289,36 @@
       "rows": [
         {
           "position": 1,
+          "teamId": 4046,
+          "teamName": "Paide Linnameeskond III",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
+          "matches": 16,
+          "wins": 12,
+          "draws": 1,
+          "losses": 3,
+          "goals": "85:27",
+          "goalsFor": 85,
+          "goalsAgainst": 27,
+          "points": 37,
+          "isRaeTeam": false
+        },
+        {
+          "position": 2,
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
-          "matches": 14,
+          "matches": 15,
           "wins": 11,
           "draws": 3,
-          "losses": 0,
-          "goals": "63:30",
-          "goalsFor": 63,
-          "goalsAgainst": 30,
+          "losses": 1,
+          "goals": "68:36",
+          "goalsFor": 68,
+          "goalsAgainst": 36,
           "points": 36,
           "isRaeTeam": true
         },
         {
-          "position": 2,
+          "position": 3,
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
@@ -5299,21 +5330,6 @@
           "goalsFor": 57,
           "goalsAgainst": 23,
           "points": 36,
-          "isRaeTeam": false
-        },
-        {
-          "position": 3,
-          "teamId": 4046,
-          "teamName": "Paide Linnameeskond III",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
-          "matches": 15,
-          "wins": 11,
-          "draws": 1,
-          "losses": 3,
-          "goals": "79:22",
-          "goalsFor": 79,
-          "goalsAgainst": 22,
-          "points": 34,
           "isRaeTeam": false
         },
         {
@@ -5336,13 +5352,13 @@
           "teamId": 3125,
           "teamName": "Võru FC Helios",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
-          "matches": 15,
+          "matches": 16,
           "wins": 9,
           "draws": 2,
-          "losses": 4,
-          "goals": "42:35",
+          "losses": 5,
+          "goals": "42:37",
           "goalsFor": 42,
-          "goalsAgainst": 35,
+          "goalsAgainst": 37,
           "points": 29,
           "isRaeTeam": false
         },
@@ -5351,18 +5367,33 @@
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
-          "matches": 15,
-          "wins": 7,
+          "matches": 16,
+          "wins": 8,
           "draws": 1,
           "losses": 7,
-          "goals": "26:40",
-          "goalsFor": 26,
+          "goals": "27:40",
+          "goalsFor": 27,
           "goalsAgainst": 40,
-          "points": 22,
+          "points": 25,
           "isRaeTeam": false
         },
         {
           "position": 7,
+          "teamId": 152,
+          "teamName": "FC Kose",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
+          "matches": 16,
+          "wins": 7,
+          "draws": 2,
+          "losses": 7,
+          "goals": "33:41",
+          "goalsFor": 33,
+          "goalsAgainst": 41,
+          "points": 23,
+          "isRaeTeam": false
+        },
+        {
+          "position": 8,
           "teamId": 1863,
           "teamName": "Jõgeva SK Noorus-96",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
@@ -5377,33 +5408,18 @@
           "isRaeTeam": false
         },
         {
-          "position": 8,
+          "position": 9,
           "teamId": 542,
           "teamName": "FC Elva U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
-          "matches": 15,
+          "matches": 16,
           "wins": 7,
           "draws": 0,
-          "losses": 8,
-          "goals": "36:37",
+          "losses": 9,
+          "goals": "36:38",
           "goalsFor": 36,
-          "goalsAgainst": 37,
+          "goalsAgainst": 38,
           "points": 21,
-          "isRaeTeam": false
-        },
-        {
-          "position": 9,
-          "teamId": 152,
-          "teamName": "FC Kose",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
-          "matches": 15,
-          "wins": 6,
-          "draws": 2,
-          "losses": 7,
-          "goals": "31:41",
-          "goalsFor": 31,
-          "goalsAgainst": 41,
-          "points": 20,
           "isRaeTeam": false
         },
         {
@@ -5426,14 +5442,14 @@
           "teamId": 188,
           "teamName": "Raasiku FC Joker",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
-          "matches": 15,
-          "wins": 3,
+          "matches": 16,
+          "wins": 4,
           "draws": 3,
           "losses": 9,
-          "goals": "22:49",
-          "goalsFor": 22,
+          "goals": "28:49",
+          "goalsFor": 28,
           "goalsAgainst": 49,
-          "points": 12,
+          "points": 15,
           "isRaeTeam": false
         },
         {
@@ -5441,13 +5457,13 @@
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
-          "matches": 15,
+          "matches": 16,
           "wins": 3,
           "draws": 1,
-          "losses": 11,
-          "goals": "26:69",
+          "losses": 12,
+          "goals": "26:75",
           "goalsFor": 26,
-          "goalsAgainst": 69,
+          "goalsAgainst": 75,
           "points": 10,
           "isRaeTeam": false
         },
