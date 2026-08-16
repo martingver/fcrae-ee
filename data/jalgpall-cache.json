@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T06:56:49.591Z",
+  "updatedAt": "2026-08-16T12:58:31.316Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -52,7 +52,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 6,
+      "upcomingCount": 5,
       "resultCount": 0,
       "playerCount": 16
     },
@@ -70,8 +70,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 10,
-      "resultCount": 8,
+      "upcomingCount": 9,
+      "resultCount": 9,
       "playerCount": 16
     },
     {
@@ -88,7 +88,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 3,
+      "upcomingCount": 2,
       "resultCount": 11,
       "playerCount": 21
     },
@@ -142,7 +142,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 9,
+      "upcomingCount": 8,
       "resultCount": 11,
       "playerCount": 25
     },
@@ -1607,23 +1607,9 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187784"
     },
     {
-      "teamId": "u11",
-      "team": "U11",
-      "status": "upcoming",
-      "competition": "U11.II",
-      "date": "16.08.2026",
-      "time": "12:00",
-      "startsAt": "2026-08-16T12:00:00+03:00",
-      "homeTeam": "FCI Tallinn (16)",
-      "awayTeam": "Rae Spordikool I (16)",
-      "opponent": "FCI Tallinn (16)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191513"
-    },
-    {
       "teamId": "u13-ii",
       "team": "U13 II",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U13.VII",
       "date": "16.08.2026",
       "time": "13:30",
@@ -1632,35 +1618,8 @@
       "awayTeam": "Ida-Virumaa JK Noova (14)",
       "opponent": "Ida-Virumaa JK Noova (14)",
       "homeAway": "Kodu",
+      "score": "1 - 4",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190579"
-    },
-    {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "16.08.2026",
-      "time": "14:00",
-      "startsAt": "2026-08-16T14:00:00+03:00",
-      "homeTeam": "JK Kuusalu Kalev (11)",
-      "awayTeam": "Rae Spordikool (11)",
-      "opponent": "JK Kuusalu Kalev (11)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189908"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.III",
-      "date": "16.08.2026",
-      "time": "15:00",
-      "startsAt": "2026-08-16T15:00:00+03:00",
-      "homeTeam": "Rae Spordikool I (14)",
-      "awayTeam": "FCI Tallinn II (14)",
-      "opponent": "FCI Tallinn II (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190333"
     },
     {
       "teamId": "rae-i",
