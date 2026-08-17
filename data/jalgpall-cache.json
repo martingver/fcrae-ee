@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T12:25:34.114Z",
+  "updatedAt": "2026-08-17T18:25:42.110Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5320,6 +5320,21 @@
         },
         {
           "position": 3,
+          "teamId": 2327,
+          "teamName": "JK Tallinna Kalev III",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
+          "matches": 16,
+          "wins": 11,
+          "draws": 3,
+          "losses": 2,
+          "goals": "74:21",
+          "goalsFor": 74,
+          "goalsAgainst": 21,
+          "points": 36,
+          "isRaeTeam": false
+        },
+        {
+          "position": 4,
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
@@ -5331,21 +5346,6 @@
           "goalsFor": 57,
           "goalsAgainst": 23,
           "points": 36,
-          "isRaeTeam": false
-        },
-        {
-          "position": 4,
-          "teamId": 2327,
-          "teamName": "JK Tallinna Kalev III",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 15,
-          "wins": 10,
-          "draws": 3,
-          "losses": 2,
-          "goals": "66:21",
-          "goalsFor": 66,
-          "goalsAgainst": 21,
-          "points": 33,
           "isRaeTeam": false
         },
         {
@@ -5428,13 +5428,13 @@
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 15,
+          "matches": 16,
           "wins": 6,
           "draws": 0,
-          "losses": 9,
-          "goals": "35:32",
+          "losses": 10,
+          "goals": "35:40",
           "goalsFor": 35,
-          "goalsAgainst": 32,
+          "goalsAgainst": 40,
           "points": 18,
           "isRaeTeam": false
         },
