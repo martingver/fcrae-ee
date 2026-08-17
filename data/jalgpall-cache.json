@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T06:26:33.412Z",
+  "updatedAt": "2026-08-17T12:25:34.114Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -106,8 +106,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 10,
-      "resultCount": 9,
+      "upcomingCount": 9,
+      "resultCount": 10,
       "playerCount": 21
     },
     {
@@ -1654,7 +1654,7 @@
     {
       "teamId": "u14",
       "team": "U14",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U14.III-A",
       "date": "17.08.2026",
       "time": "11:00",
@@ -1663,6 +1663,7 @@
       "awayTeam": "JK Tallinna Kalev III (13)",
       "opponent": "JK Tallinna Kalev III (13)",
       "homeAway": "Kodu",
+      "score": "3 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195167"
     },
     {
@@ -3903,8 +3904,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 12,
-      "goals": 12,
+      "leagueGoals": 13,
+      "goals": 13,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/58482/team/5884"
     },
     {
@@ -3987,8 +3988,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 5,
-      "goals": 5,
+      "leagueGoals": 7,
+      "goals": 7,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62613/team/5884"
     },
     {
