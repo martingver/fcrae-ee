@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T12:25:46.473Z",
+  "updatedAt": "2026-08-18T18:25:32.938Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -143,7 +143,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 8,
-      "resultCount": 11,
+      "resultCount": 12,
       "playerCount": 25
     },
     {
@@ -1620,6 +1620,21 @@
       "homeAway": "Kodu",
       "score": "1 - 4",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190579"
+    },
+    {
+      "teamId": "u16",
+      "team": "U16",
+      "status": "finished",
+      "competition": "U16.III",
+      "date": "16.08.2026",
+      "time": "14:00",
+      "startsAt": "2026-08-16T14:00:00+03:00",
+      "homeTeam": "JK Kuusalu Kalev (11)",
+      "awayTeam": "Rae Spordikool (11)",
+      "opponent": "JK Kuusalu Kalev (11)",
+      "homeAway": "Võõrsil",
+      "score": "3 - 2",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189908"
     },
     {
       "teamId": "u13-i",
@@ -4562,8 +4577,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 5,
-      "goals": 5,
+      "leagueGoals": 6,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/6511"
     },
     {
