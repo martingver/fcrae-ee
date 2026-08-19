@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T12:25:41.423Z",
+  "updatedAt": "2026-08-19T18:25:05.342Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 11,
-      "resultCount": 23,
+      "upcomingCount": 10,
+      "resultCount": 24,
       "playerCount": 16
     },
     {
@@ -1684,7 +1684,7 @@
     {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "II.B.S/E",
       "date": "19.08.2026",
       "time": "19:00",
@@ -1693,6 +1693,7 @@
       "awayTeam": "Rae Spordikool",
       "opponent": "Jõgeva SK Noorus-96",
       "homeAway": "Võõrsil",
+      "score": "1 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187799"
     },
     {
@@ -5323,13 +5324,13 @@
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
-          "matches": 15,
+          "matches": 16,
           "wins": 11,
           "draws": 3,
-          "losses": 1,
-          "goals": "68:36",
+          "losses": 2,
+          "goals": "68:37",
           "goalsFor": 68,
-          "goalsAgainst": 36,
+          "goalsAgainst": 37,
           "points": 36,
           "isRaeTeam": true
         },
@@ -5395,6 +5396,21 @@
         },
         {
           "position": 7,
+          "teamId": 1863,
+          "teamName": "Jõgeva SK Noorus-96",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
+          "matches": 16,
+          "wins": 8,
+          "draws": 1,
+          "losses": 7,
+          "goals": "33:34",
+          "goalsFor": 33,
+          "goalsAgainst": 34,
+          "points": 25,
+          "isRaeTeam": false
+        },
+        {
+          "position": 8,
           "teamId": 152,
           "teamName": "FC Kose",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
@@ -5406,21 +5422,6 @@
           "goalsFor": 33,
           "goalsAgainst": 41,
           "points": 23,
-          "isRaeTeam": false
-        },
-        {
-          "position": 8,
-          "teamId": 1863,
-          "teamName": "Jõgeva SK Noorus-96",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 15,
-          "wins": 7,
-          "draws": 1,
-          "losses": 7,
-          "goals": "32:34",
-          "goalsFor": 32,
-          "goalsAgainst": 34,
-          "points": 22,
           "isRaeTeam": false
         },
         {
