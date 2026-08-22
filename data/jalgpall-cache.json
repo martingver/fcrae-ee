@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:25:39.182Z",
+  "updatedAt": "2026-08-22T12:26:30.791Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -70,7 +70,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 9,
+      "upcomingCount": 8,
       "resultCount": 9,
       "playerCount": 16
     },
@@ -1710,20 +1710,6 @@
       "homeAway": "Võõrsil",
       "score": "0 - 14",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192052"
-    },
-    {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "status": "upcoming",
-      "competition": "U13.VII",
-      "date": "22.08.2026",
-      "time": "13:30",
-      "startsAt": "2026-08-22T13:30:00+03:00",
-      "homeTeam": "FC Kose (14)",
-      "awayTeam": "Rae Spordikool II (14)",
-      "opponent": "FC Kose (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190586"
     },
     {
       "teamId": "u17",
