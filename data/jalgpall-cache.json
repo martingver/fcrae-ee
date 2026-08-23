@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T18:24:30.631Z",
+  "updatedAt": "2026-08-23T00:26:30.344Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -143,7 +143,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 7,
-      "resultCount": 12,
+      "resultCount": 13,
       "playerCount": 25
     },
     {
@@ -1725,6 +1725,21 @@
       "homeAway": "Võõrsil",
       "score": "1 - 7",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189233"
+    },
+    {
+      "teamId": "u16",
+      "team": "U16",
+      "status": "finished",
+      "competition": "U16.III",
+      "date": "22.08.2026",
+      "time": "17:30",
+      "startsAt": "2026-08-22T17:30:00+03:00",
+      "homeTeam": "Rae Spordikool (11)",
+      "awayTeam": "JK Narva Trans (11)",
+      "opponent": "JK Narva Trans (11)",
+      "homeAway": "Kodu",
+      "score": "0 - 4",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189915"
     },
     {
       "teamId": "rae-i",
