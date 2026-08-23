@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T06:25:48.434Z",
+  "updatedAt": "2026-08-23T12:29:04.129Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -71,7 +71,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 8,
-      "resultCount": 9,
+      "resultCount": 10,
       "playerCount": 16
     },
     {
@@ -1710,6 +1710,21 @@
       "homeAway": "Võõrsil",
       "score": "0 - 14",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192052"
+    },
+    {
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "finished",
+      "competition": "U13.VII",
+      "date": "22.08.2026",
+      "time": "13:30",
+      "startsAt": "2026-08-22T13:30:00+03:00",
+      "homeTeam": "FC Kose (14)",
+      "awayTeam": "Rae Spordikool II (14)",
+      "opponent": "FC Kose (14)",
+      "homeAway": "Võõrsil",
+      "score": "2 - 5",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190586"
     },
     {
       "teamId": "u17",
@@ -5370,6 +5385,21 @@
         },
         {
           "position": 6,
+          "teamId": 1863,
+          "teamName": "Jõgeva SK Noorus-96",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
+          "matches": 17,
+          "wins": 8,
+          "draws": 2,
+          "losses": 7,
+          "goals": "35:36",
+          "goalsFor": 35,
+          "goalsAgainst": 36,
+          "points": 26,
+          "isRaeTeam": false
+        },
+        {
+          "position": 7,
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
@@ -5380,21 +5410,6 @@
           "goals": "27:40",
           "goalsFor": 27,
           "goalsAgainst": 40,
-          "points": 25,
-          "isRaeTeam": false
-        },
-        {
-          "position": 7,
-          "teamId": 1863,
-          "teamName": "Jõgeva SK Noorus-96",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 16,
-          "wins": 8,
-          "draws": 1,
-          "losses": 7,
-          "goals": "33:34",
-          "goalsFor": 33,
-          "goalsAgainst": 34,
           "points": 25,
           "isRaeTeam": false
         },
@@ -5433,14 +5448,14 @@
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 16,
+          "matches": 17,
           "wins": 6,
-          "draws": 0,
+          "draws": 1,
           "losses": 10,
-          "goals": "35:40",
-          "goalsFor": 35,
-          "goalsAgainst": 40,
-          "points": 18,
+          "goals": "37:42",
+          "goalsFor": 37,
+          "goalsAgainst": 42,
+          "points": 19,
           "isRaeTeam": false
         },
         {
