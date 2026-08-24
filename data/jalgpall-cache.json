@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T18:24:28.176Z",
+  "updatedAt": "2026-08-24T00:26:40.049Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -17,7 +17,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 9,
-      "resultCount": 24,
+      "resultCount": 25,
       "playerCount": 16
     },
     {
@@ -1755,6 +1755,21 @@
       "homeAway": "Kodu",
       "score": "0 - 4",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189915"
+    },
+    {
+      "teamId": "rae-i",
+      "team": "Rae I",
+      "status": "finished",
+      "competition": "II.B.S/E",
+      "date": "23.08.2026",
+      "time": "16:30",
+      "startsAt": "2026-08-23T16:30:00+03:00",
+      "homeTeam": "Põlva FC Lootos",
+      "awayTeam": "Rae Spordikool",
+      "opponent": "Põlva FC Lootos",
+      "homeAway": "Võõrsil",
+      "score": "2 - 4",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187814"
     },
     {
       "teamId": "rae-ii",
