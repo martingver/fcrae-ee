@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T06:26:14.701Z",
+  "updatedAt": "2026-08-26T12:26:15.419Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -124,7 +124,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 8,
+      "upcomingCount": 7,
       "resultCount": 13,
       "playerCount": 24
     },
@@ -1785,20 +1785,6 @@
       "homeAway": "Võõrsil",
       "score": "7 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188315"
-    },
-    {
-      "teamId": "u15",
-      "team": "U15",
-      "status": "upcoming",
-      "competition": "U15.III",
-      "date": "26.08.2026",
-      "time": "13:00",
-      "startsAt": "2026-08-26T13:00:00+03:00",
-      "homeTeam": "Rae Spordikool (12)",
-      "awayTeam": "JK Vasalemma (12)",
-      "opponent": "JK Vasalemma (12)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192049"
     },
     {
       "teamId": "rae-ii",
