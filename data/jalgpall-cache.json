@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T12:26:15.419Z",
+  "updatedAt": "2026-08-26T18:55:53.917Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -34,8 +34,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 5,
-      "resultCount": 12,
+      "upcomingCount": 4,
+      "resultCount": 13,
       "playerCount": 30
     },
     {
@@ -125,7 +125,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 7,
-      "resultCount": 13,
+      "resultCount": 14,
       "playerCount": 24
     },
     {
@@ -1787,9 +1787,24 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188315"
     },
     {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "finished",
+      "competition": "U15.III",
+      "date": "26.08.2026",
+      "time": "13:00",
+      "startsAt": "2026-08-26T13:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "JK Vasalemma (12)",
+      "opponent": "JK Vasalemma (12)",
+      "homeAway": "Kodu",
+      "score": "3 - 4",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192049"
+    },
+    {
       "teamId": "rae-ii",
       "team": "Rae II",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "III.N/E",
       "date": "26.08.2026",
       "time": "19:00",
@@ -1798,6 +1813,7 @@
       "awayTeam": "Rakvere FC Freedom",
       "opponent": "Rakvere FC Freedom",
       "homeAway": "Kodu",
+      "score": "5 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188309"
     },
     {
@@ -2876,8 +2892,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 2,
-      "goals": 2,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/7893/team/7118"
     },
     {
@@ -2904,8 +2920,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/35974/team/7118"
     },
     {
@@ -3072,8 +3088,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/32013/team/7118"
     },
     {
@@ -4360,8 +4376,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 9,
-      "goals": 9,
+      "leagueGoals": 11,
+      "goals": 11,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/55791/team/5883"
     },
     {
@@ -4388,8 +4404,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 13,
-      "goals": 13,
+      "leagueGoals": 14,
+      "goals": 14,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51631/team/5883"
     },
     {
