@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T09:22:03.268Z",
+  "updatedAt": "2026-08-27T15:55:57.711Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -88,7 +88,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 2,
+      "upcomingCount": 1,
       "resultCount": 12,
       "playerCount": 21
     },
@@ -1815,20 +1815,6 @@
       "homeAway": "Kodu",
       "score": "5 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188309"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.III",
-      "date": "27.08.2026",
-      "time": "15:30",
-      "startsAt": "2026-08-27T15:30:00+03:00",
-      "homeTeam": "Rae Spordikool I (14)",
-      "awayTeam": "Viljandi JK Tulevik (14)",
-      "opponent": "Viljandi JK Tulevik (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190338"
     },
     {
       "teamId": "u16",
