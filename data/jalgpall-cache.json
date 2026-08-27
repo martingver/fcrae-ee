@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T01:59:25.625Z",
+  "updatedAt": "2026-08-27T09:22:03.268Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -72,7 +72,7 @@
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 8,
       "resultCount": 10,
-      "playerCount": 16
+      "playerCount": 15
     },
     {
       "id": "u13-i",
@@ -3553,20 +3553,6 @@
       "leagueGoals": 0,
       "goals": 0,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62343/team/6512"
-    },
-    {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "position": "PK",
-      "name": "Stefan Preimann",
-      "number": "25",
-      "birthDate": "2014",
-      "citizenship": "Eesti",
-      "club": "ETM",
-      "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/69200/team/6512"
     },
     {
       "teamId": "u13-ii",
