@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T16:23:47.519Z",
+  "updatedAt": "2026-08-28T21:31:31.067Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -143,7 +143,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 6,
-      "resultCount": 13,
+      "resultCount": 14,
       "playerCount": 25
     },
     {
@@ -1830,6 +1830,21 @@
       "homeAway": "Kodu",
       "score": "4 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190338"
+    },
+    {
+      "teamId": "u16",
+      "team": "U16",
+      "status": "finished",
+      "competition": "U16.III",
+      "date": "28.08.2026",
+      "time": "11:30",
+      "startsAt": "2026-08-28T11:30:00+03:00",
+      "homeTeam": "JK Tabasalu (11)",
+      "awayTeam": "Rae Spordikool (11)",
+      "opponent": "JK Tabasalu (11)",
+      "homeAway": "Võõrsil",
+      "score": "0 - 4",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189921"
     },
     {
       "teamId": "u15",
@@ -5351,14 +5366,14 @@
           "teamId": 152,
           "teamName": "FC Kose",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
-          "matches": 17,
+          "matches": 18,
           "wins": 8,
-          "draws": 2,
+          "draws": 3,
           "losses": 7,
-          "goals": "37:42",
-          "goalsFor": 37,
-          "goalsAgainst": 42,
-          "points": 26,
+          "goals": "38:43",
+          "goalsFor": 38,
+          "goalsAgainst": 43,
+          "points": 27,
           "isRaeTeam": false
         },
         {
@@ -5471,14 +5486,14 @@
           "teamId": 4913,
           "teamName": "JK Kuusalu Kalev",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4913?season=2026",
-          "matches": 17,
+          "matches": 18,
           "wins": 2,
-          "draws": 0,
+          "draws": 1,
           "losses": 15,
-          "goals": "11:78",
-          "goalsFor": 11,
-          "goalsAgainst": 78,
-          "points": 6,
+          "goals": "12:79",
+          "goalsFor": 12,
+          "goalsAgainst": 79,
+          "points": 7,
           "isRaeTeam": false
         }
       ]
