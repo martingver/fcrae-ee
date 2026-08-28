@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T03:23:11.326Z",
+  "updatedAt": "2026-08-28T09:24:10.131Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -142,7 +142,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 7,
+      "upcomingCount": 6,
       "resultCount": 13,
       "playerCount": 25
     },
@@ -1830,20 +1830,6 @@
       "homeAway": "Kodu",
       "score": "4 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190338"
-    },
-    {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "28.08.2026",
-      "time": "11:30",
-      "startsAt": "2026-08-28T11:30:00+03:00",
-      "homeTeam": "JK Tabasalu (11)",
-      "awayTeam": "Rae Spordikool (11)",
-      "opponent": "JK Tabasalu (11)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189921"
     },
     {
       "teamId": "u15",
