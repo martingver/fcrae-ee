@@ -6,15 +6,4 @@ METHOD:PUBLISH
 X-WR-CALNAME:FC Rae U13 I
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/u13-i.ics
-BEGIN:VEVENT
-UID:190339@fcrae.ee
-DTSTAMP:20260830T063451Z
-DTSTART:20260830T090000Z
-DTEND:20260830T110000Z
-SUMMARY:Raasiku FC Joker Aruküla (14) - Rae Spordikool I (14)
-DESCRIPTION:U13 I · U13.III\nVõõrsilmäng\nEJL: https://jalgpall.ee/voi
- stlused/match_info/190339
-LOCATION:Võõrsilmäng
-URL:https://jalgpall.ee/voistlused/match_info/190339
-END:VEVENT
 END:VCALENDAR

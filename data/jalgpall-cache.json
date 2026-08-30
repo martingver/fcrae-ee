@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T06:34:51.246Z",
+  "updatedAt": "2026-08-30T12:31:10.194Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -71,7 +71,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 7,
-      "resultCount": 10,
+      "resultCount": 11,
       "playerCount": 15
     },
     {
@@ -88,8 +88,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 1,
-      "resultCount": 13,
+      "upcomingCount": 0,
+      "resultCount": 14,
       "playerCount": 21
     },
     {
@@ -1862,9 +1862,24 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192057"
     },
     {
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "finished",
+      "competition": "U13.VII",
+      "date": "29.08.2026",
+      "time": "14:00",
+      "startsAt": "2026-08-29T14:00:00+03:00",
+      "homeTeam": "Saku Sporting Sinivalge (14)",
+      "awayTeam": "Rae Spordikool II (14)",
+      "opponent": "Saku Sporting Sinivalge (14)",
+      "homeAway": "Võõrsil",
+      "score": "1 - 2",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190587"
+    },
+    {
       "teamId": "u13-i",
       "team": "U13 I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U13.III",
       "date": "30.08.2026",
       "time": "12:00",
@@ -1873,6 +1888,7 @@
       "awayTeam": "Rae Spordikool I (14)",
       "opponent": "Raasiku FC Joker Aruküla (14)",
       "homeAway": "Võõrsil",
+      "score": "3 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190339"
     },
     {
