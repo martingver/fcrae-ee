@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T06:47:46.067Z",
+  "updatedAt": "2026-08-31T12:36:13.071Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -1976,20 +1976,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192059"
     },
     {
-      "teamId": "u11",
-      "team": "U11",
-      "status": "upcoming",
-      "competition": "U11.II",
-      "date": "06.09.2026",
-      "time": "16:30",
-      "startsAt": "2026-09-06T16:30:00+03:00",
-      "homeTeam": "Rae Spordikool I (16)",
-      "awayTeam": "Keila JK Valge (16)",
-      "opponent": "Keila JK Valge (16)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191523"
-    },
-    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -2002,6 +1988,20 @@
       "opponent": "Võru FC Helios",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187829"
+    },
+    {
+      "teamId": "u11",
+      "team": "U11",
+      "status": "upcoming",
+      "competition": "U11.II",
+      "date": "11.09.2026",
+      "time": "18:00",
+      "startsAt": "2026-09-11T18:00:00+03:00",
+      "homeTeam": "Rae Spordikool I (16)",
+      "awayTeam": "Keila JK Valge (16)",
+      "opponent": "Keila JK Valge (16)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191523"
     },
     {
       "teamId": "u14",
@@ -2060,20 +2060,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190596"
     },
     {
-      "teamId": "u11",
-      "team": "U11",
-      "status": "upcoming",
-      "competition": "U11.II",
-      "date": "13.09.2026",
-      "time": "13:30",
-      "startsAt": "2026-09-13T13:30:00+03:00",
-      "homeTeam": "Tallinna FC Flora Rohelised (16)",
-      "awayTeam": "Rae Spordikool I (16)",
-      "opponent": "Tallinna FC Flora Rohelised (16)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191526"
-    },
-    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -2086,6 +2072,20 @@
       "opponent": "Tallinna FC Starmedia",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187833"
+    },
+    {
+      "teamId": "u11",
+      "team": "U11",
+      "status": "upcoming",
+      "competition": "U11.II",
+      "date": "16.09.2026",
+      "time": "14:30",
+      "startsAt": "2026-09-16T14:30:00+03:00",
+      "homeTeam": "Tallinna FC Flora Rohelised (16)",
+      "awayTeam": "Rae Spordikool I (16)",
+      "opponent": "Tallinna FC Flora Rohelised (16)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191526"
     },
     {
       "teamId": "u14",
