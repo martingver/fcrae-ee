@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T06:40:19.183Z",
+  "updatedAt": "2026-09-01T12:35:24.976Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -107,7 +107,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 8,
-      "resultCount": 10,
+      "resultCount": 11,
       "playerCount": 21
     },
     {
@@ -1875,6 +1875,21 @@
       "homeAway": "Võõrsil",
       "score": "1 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190587"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "finished",
+      "competition": "U14.III-A",
+      "date": "29.08.2026",
+      "time": "15:00",
+      "startsAt": "2026-08-29T15:00:00+03:00",
+      "homeTeam": "Jalgpallikool Phoenix (13)",
+      "awayTeam": "Rae Spordikool (13)",
+      "opponent": "Jalgpallikool Phoenix (13)",
+      "homeAway": "Võõrsil",
+      "score": "5 - 4",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195183"
     },
     {
       "teamId": "u13-i",
@@ -3919,8 +3934,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 1,
-      "goals": 1,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61375/team/5884"
     },
     {
@@ -3989,8 +4004,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 5,
-      "goals": 5,
+      "leagueGoals": 7,
+      "goals": 7,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54441/team/5884"
     },
     {
@@ -4115,8 +4130,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 9,
-      "goals": 9,
+      "leagueGoals": 10,
+      "goals": 10,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/53935/team/5884"
     },
     {
