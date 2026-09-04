@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T06:38:16.257Z",
+  "updatedAt": "2026-09-04T12:35:13.250Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -88,7 +88,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 0,
+      "upcomingCount": 7,
       "resultCount": 14,
       "playerCount": 21
     },
@@ -2006,6 +2006,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187829"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "11.09.2026",
+      "time": "16:30",
+      "startsAt": "2026-09-11T16:30:00+03:00",
+      "homeTeam": "Tartu WJK Santos Punane (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "Tartu WJK Santos Punane (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196214"
+    },
+    {
       "teamId": "u11",
       "team": "U11",
       "status": "upcoming",
@@ -2144,6 +2158,20 @@
       "opponent": "Viimsi MRJK (13)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195200"
+    },
+    {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "19.09.2026",
+      "time": "14:00",
+      "startsAt": "2026-09-19T14:00:00+03:00",
+      "homeTeam": "Põhja-Tallinna JK Volta Must (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "Põhja-Tallinna JK Volta Must (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196218"
     },
     {
       "teamId": "u16",
@@ -2286,6 +2314,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190603"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "27.09.2026",
+      "time": "16:30",
+      "startsAt": "2026-09-27T16:30:00+03:00",
+      "homeTeam": "Rae Spordikool I (14)",
+      "awayTeam": "Saku Sporting Sinine (14)",
+      "opponent": "Saku Sporting Sinine (14)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196222"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -2384,6 +2426,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187855"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "04.10.2026",
+      "time": "17:00",
+      "startsAt": "2026-10-04T17:00:00+03:00",
+      "homeTeam": "JK Tabasalu (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "JK Tabasalu (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196225"
+    },
+    {
       "teamId": "u14",
       "team": "U14",
       "status": "upcoming",
@@ -2426,6 +2482,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190612"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "11.10.2026",
+      "time": "16:00",
+      "startsAt": "2026-10-11T16:00:00+03:00",
+      "homeTeam": "Rae Spordikool I (14)",
+      "awayTeam": "Pärnu JK Poseidon Sinine (14)",
+      "opponent": "Pärnu JK Poseidon Sinine (14)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196229"
+    },
+    {
       "teamId": "u15",
       "team": "U15",
       "status": "upcoming",
@@ -2452,6 +2522,20 @@
       "opponent": "FC Kose",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187859"
+    },
+    {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "17.10.2026",
+      "time": "12:00",
+      "startsAt": "2026-10-17T12:00:00+03:00",
+      "homeTeam": "Tallinna JK Augur (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "Tallinna JK Augur (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196232"
     },
     {
       "teamId": "rae-i",
@@ -2508,6 +2592,20 @@
       "opponent": "JK Tallinna Kalev Kratid (14)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190621"
+    },
+    {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "25.10.2026",
+      "time": "16:00",
+      "startsAt": "2026-10-25T16:00:00+03:00",
+      "homeTeam": "Rae Spordikool I (14)",
+      "awayTeam": "Rakvere JK Tarvas (14)",
+      "opponent": "Rakvere JK Tarvas (14)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196236"
     }
   ],
   "players": [
