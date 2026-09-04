@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T12:35:13.250Z",
+  "updatedAt": "2026-09-04T18:27:06.503Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5425,14 +5425,14 @@
           "teamId": 2327,
           "teamName": "JK Tallinna Kalev III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 18,
+          "matches": 19,
           "wins": 11,
-          "draws": 5,
+          "draws": 6,
           "losses": 2,
-          "goals": "76:23",
-          "goalsFor": 76,
-          "goalsAgainst": 23,
-          "points": 38,
+          "goals": "78:25",
+          "goalsFor": 78,
+          "goalsAgainst": 25,
+          "points": 39,
           "isRaeTeam": false
         },
         {
@@ -5470,14 +5470,14 @@
           "teamId": 152,
           "teamName": "FC Kose",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
-          "matches": 18,
+          "matches": 19,
           "wins": 8,
-          "draws": 3,
+          "draws": 4,
           "losses": 7,
-          "goals": "38:43",
-          "goalsFor": 38,
-          "goalsAgainst": 43,
-          "points": 27,
+          "goals": "40:45",
+          "goalsFor": 40,
+          "goalsAgainst": 45,
+          "points": 28,
           "isRaeTeam": false
         },
         {
