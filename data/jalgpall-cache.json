@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T12:30:15.113Z",
+  "updatedAt": "2026-09-05T18:25:24.323Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -35,7 +35,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 3,
-      "resultCount": 13,
+      "resultCount": 14,
       "playerCount": 30
     },
     {
@@ -1922,6 +1922,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187818"
     },
     {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "status": "finished",
+      "competition": "III.N/E",
+      "date": "05.09.2026",
+      "time": "14:00",
+      "startsAt": "2026-09-05T14:00:00+03:00",
+      "homeTeam": "Rae Spordikool II",
+      "awayTeam": "Türi Ganvix JK",
+      "opponent": "Türi Ganvix JK",
+      "homeAway": "Kodu",
+      "score": "4 - 14",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188326"
+    },
+    {
       "teamId": "u16",
       "team": "U16",
       "status": "upcoming",
@@ -2955,8 +2970,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 4,
-      "goals": 4,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/7893/team/7118"
     },
     {
@@ -5487,13 +5502,13 @@
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 18,
+          "matches": 19,
           "wins": 6,
           "draws": 1,
-          "losses": 11,
-          "goals": "39:46",
+          "losses": 12,
+          "goals": "39:48",
           "goalsFor": 39,
-          "goalsAgainst": 46,
+          "goalsAgainst": 48,
           "points": 19,
           "isRaeTeam": false
         },
@@ -5517,14 +5532,14 @@
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
-          "matches": 18,
-          "wins": 3,
+          "matches": 19,
+          "wins": 4,
           "draws": 1,
           "losses": 14,
-          "goals": "28:91",
-          "goalsFor": 28,
+          "goals": "30:91",
+          "goalsFor": 30,
           "goalsAgainst": 91,
-          "points": 10,
+          "points": 13,
           "isRaeTeam": false
         },
         {
