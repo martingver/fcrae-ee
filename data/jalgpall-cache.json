@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T06:34:13.837Z",
+  "updatedAt": "2026-09-05T12:30:15.113Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -34,7 +34,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 4,
+      "upcomingCount": 3,
       "resultCount": 13,
       "playerCount": 30
     },
@@ -106,7 +106,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 8,
+      "upcomingCount": 7,
       "resultCount": 11,
       "playerCount": 21
     },
@@ -1922,34 +1922,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187818"
     },
     {
-      "teamId": "u14",
-      "team": "U14",
-      "status": "upcoming",
-      "competition": "U14.III-A",
-      "date": "05.09.2026",
-      "time": "11:00",
-      "startsAt": "2026-09-05T11:00:00+03:00",
-      "homeTeam": "Rae Spordikool (13)",
-      "awayTeam": "Saue JK (13)",
-      "opponent": "Saue JK (13)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195189"
-    },
-    {
-      "teamId": "rae-ii",
-      "team": "Rae II",
-      "status": "upcoming",
-      "competition": "III.N/E",
-      "date": "05.09.2026",
-      "time": "14:00",
-      "startsAt": "2026-09-05T14:00:00+03:00",
-      "homeTeam": "Rae Spordikool II",
-      "awayTeam": "Türi Ganvix JK",
-      "opponent": "Türi Ganvix JK",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188326"
-    },
-    {
       "teamId": "u16",
       "team": "U16",
       "status": "upcoming",
@@ -2983,8 +2955,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 3,
-      "goals": 3,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/7893/team/7118"
     },
     {
@@ -3081,8 +3053,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49064/team/7118"
     },
     {
@@ -5437,6 +5409,21 @@
         },
         {
           "position": 5,
+          "teamId": 1863,
+          "teamName": "Jõgeva SK Noorus-96",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
+          "matches": 19,
+          "wins": 10,
+          "draws": 2,
+          "losses": 7,
+          "goals": "40:36",
+          "goalsFor": 40,
+          "goalsAgainst": 36,
+          "points": 32,
+          "isRaeTeam": false
+        },
+        {
+          "position": 6,
           "teamId": 3125,
           "teamName": "Võru FC Helios",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
@@ -5448,21 +5435,6 @@
           "goalsFor": 44,
           "goalsAgainst": 40,
           "points": 30,
-          "isRaeTeam": false
-        },
-        {
-          "position": 6,
-          "teamId": 1863,
-          "teamName": "Jõgeva SK Noorus-96",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 18,
-          "wins": 9,
-          "draws": 2,
-          "losses": 7,
-          "goals": "37:36",
-          "goalsFor": 37,
-          "goalsAgainst": 36,
-          "points": 29,
           "isRaeTeam": false
         },
         {
@@ -5500,13 +5472,13 @@
           "teamId": 542,
           "teamName": "FC Elva U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
-          "matches": 18,
+          "matches": 19,
           "wins": 8,
           "draws": 1,
-          "losses": 9,
-          "goals": "42:40",
+          "losses": 10,
+          "goals": "42:43",
           "goalsFor": 42,
-          "goalsAgainst": 40,
+          "goalsAgainst": 43,
           "points": 25,
           "isRaeTeam": false
         },
