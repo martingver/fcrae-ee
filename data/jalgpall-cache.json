@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T06:48:22.779Z",
+  "updatedAt": "2026-09-07T12:35:58.612Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -2072,8 +2072,8 @@
       "status": "upcoming",
       "competition": "U13.VII",
       "date": "13.09.2026",
-      "time": "10:00",
-      "startsAt": "2026-09-13T10:00:00+03:00",
+      "time": "14:15",
+      "startsAt": "2026-09-13T14:15:00+03:00",
       "homeTeam": "JK Tallinna Kalev IV (14)",
       "awayTeam": "Rae Spordikool II (14)",
       "opponent": "JK Tallinna Kalev IV (14)",
@@ -2151,20 +2151,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195200"
     },
     {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.D",
-      "date": "19.09.2026",
-      "time": "14:00",
-      "startsAt": "2026-09-19T14:00:00+03:00",
-      "homeTeam": "Põhja-Tallinna JK Volta Must (14)",
-      "awayTeam": "Rae Spordikool I (14)",
-      "opponent": "Põhja-Tallinna JK Volta Must (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196218"
-    },
-    {
       "teamId": "u16",
       "team": "U16",
       "status": "upcoming",
@@ -2177,6 +2163,20 @@
       "opponent": "Nõmme Kalju FC (11)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189939"
+    },
+    {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "19.09.2026",
+      "time": "17:00",
+      "startsAt": "2026-09-19T17:00:00+03:00",
+      "homeTeam": "Põhja-Tallinna JK Volta Must (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "Põhja-Tallinna JK Volta Must (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196218"
     },
     {
       "teamId": "u13-ii",
