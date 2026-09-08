@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T06:38:35.822Z",
+  "updatedAt": "2026-09-08T12:35:38.724Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -160,7 +160,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 0,
+      "upcomingCount": 6,
       "resultCount": 13,
       "playerCount": 29
     }
@@ -2207,6 +2207,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192070"
     },
     {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
+      "date": "20.09.2026",
+      "time": "14:00",
+      "startsAt": "2026-09-20T14:00:00+03:00",
+      "homeTeam": "U-17 Võru FC Helios",
+      "awayTeam": "U-17 Rae Spordikool",
+      "opponent": "U-17 Võru FC Helios",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196450"
+    },
+    {
       "teamId": "u11",
       "team": "U11",
       "status": "upcoming",
@@ -2247,6 +2261,20 @@
       "opponent": "Tallinna FC Flora Valged (11)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189947"
+    },
+    {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
+      "date": "26.09.2026",
+      "time": "10:00",
+      "startsAt": "2026-09-26T10:00:00+03:00",
+      "homeTeam": "U-17 Rae Spordikool",
+      "awayTeam": "U-17 FC Tallinna Ajax",
+      "opponent": "U-17 FC Tallinna Ajax",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196454"
     },
     {
       "teamId": "rae-ii",
@@ -2345,6 +2373,20 @@
       "opponent": "FC Eston Villa ja Põhja-Tallinna JK Volta ÜM",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188345"
+    },
+    {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
+      "date": "03.10.2026",
+      "time": "14:30",
+      "startsAt": "2026-10-03T14:30:00+03:00",
+      "homeTeam": "U-17 Rae Spordikool",
+      "awayTeam": "U-17 Jõhvi FC Phoenix",
+      "opponent": "U-17 Jõhvi FC Phoenix",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196458"
     },
     {
       "teamId": "u16",
@@ -2515,6 +2557,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187859"
     },
     {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
+      "date": "17.10.2026",
+      "time": "10:00",
+      "startsAt": "2026-10-17T10:00:00+03:00",
+      "homeTeam": "U-17 Tallinna FC Ararat",
+      "awayTeam": "U-17 Rae Spordikool",
+      "opponent": "U-17 Tallinna FC Ararat",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196464"
+    },
+    {
       "teamId": "u13-i",
       "team": "U13 I",
       "status": "upcoming",
@@ -2557,6 +2613,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195222"
     },
     {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
+      "date": "24.10.2026",
+      "time": "10:00",
+      "startsAt": "2026-10-24T10:00:00+03:00",
+      "homeTeam": "U-17 Põhja-Tallinna JK Volta Sinine",
+      "awayTeam": "U-17 Rae Spordikool",
+      "opponent": "U-17 Põhja-Tallinna JK Volta Sinine",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196466"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -2597,6 +2667,20 @@
       "opponent": "Rakvere JK Tarvas (14)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196236"
+    },
+    {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
+      "date": "31.10.2026",
+      "time": "17:30",
+      "startsAt": "2026-10-31T17:30:00+03:00",
+      "homeTeam": "U-17 Rae Spordikool",
+      "awayTeam": "U-17 TJK Legion ja FC Narva Juunior ÜM",
+      "opponent": "U-17 TJK Legion ja FC Narva Juunior ÜM",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196468"
     }
   ],
   "players": [
