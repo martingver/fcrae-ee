@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T06:39:04.841Z",
+  "updatedAt": "2026-09-09T12:35:43.205Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -107,7 +107,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 7,
-      "resultCount": 11,
+      "resultCount": 12,
       "playerCount": 21
     },
     {
@@ -1922,6 +1922,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187818"
     },
     {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "finished",
+      "competition": "U14.III-A",
+      "date": "05.09.2026",
+      "time": "11:00",
+      "startsAt": "2026-09-05T11:00:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Saue JK (13)",
+      "opponent": "Saue JK (13)",
+      "homeAway": "Kodu",
+      "score": "8 - 0",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195189"
+    },
+    {
       "teamId": "rae-ii",
       "team": "Rae II",
       "status": "finished",
@@ -2249,6 +2264,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187842"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "23.09.2026",
+      "time": "17:30",
+      "startsAt": "2026-09-23T17:30:00+03:00",
+      "homeTeam": "JK Tabasalu (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "JK Tabasalu (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196225"
+    },
+    {
       "teamId": "u16",
       "team": "U16",
       "status": "upcoming",
@@ -2457,20 +2486,6 @@
       "opponent": "FC Elva U21",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187855"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.D",
-      "date": "04.10.2026",
-      "time": "17:00",
-      "startsAt": "2026-10-04T17:00:00+03:00",
-      "homeTeam": "JK Tabasalu (14)",
-      "awayTeam": "Rae Spordikool I (14)",
-      "opponent": "JK Tabasalu (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196225"
     },
     {
       "teamId": "u14",
