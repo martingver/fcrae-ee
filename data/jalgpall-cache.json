@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T06:38:40.584Z",
+  "updatedAt": "2026-09-10T12:35:21.233Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -2124,6 +2124,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191526"
     },
     {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "upcoming",
+      "competition": "U15.III",
+      "date": "18.09.2026",
+      "time": "14:00",
+      "startsAt": "2026-09-18T14:00:00+03:00",
+      "homeTeam": "Viljandi JK Tulevik Kollane (12)",
+      "awayTeam": "Rae Spordikool (12)",
+      "opponent": "Viljandi JK Tulevik Kollane (12)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192070"
+    },
+    {
       "teamId": "u14",
       "team": "U14",
       "status": "upcoming",
@@ -2206,20 +2220,6 @@
       "opponent": "Saku Sporting Sinivalge (14)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190601"
-    },
-    {
-      "teamId": "u15",
-      "team": "U15",
-      "status": "upcoming",
-      "competition": "U15.III",
-      "date": "20.09.2026",
-      "time": "14:00",
-      "startsAt": "2026-09-20T14:00:00+03:00",
-      "homeTeam": "Viljandi JK Tulevik Kollane (12)",
-      "awayTeam": "Rae Spordikool (12)",
-      "opponent": "Viljandi JK Tulevik Kollane (12)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192070"
     },
     {
       "teamId": "u17",
