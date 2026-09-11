@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T12:34:58.767Z",
+  "updatedAt": "2026-09-11T18:28:45.476Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -52,7 +52,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 3,
+      "upcomingCount": 2,
       "resultCount": 0,
       "playerCount": 16
     },
@@ -88,7 +88,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 7,
+      "upcomingCount": 6,
       "resultCount": 14,
       "playerCount": 21
     },
@@ -2010,34 +2010,6 @@
       "homeAway": "Kodu",
       "score": "10 - 3",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187829"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.D",
-      "date": "11.09.2026",
-      "time": "16:30",
-      "startsAt": "2026-09-11T16:30:00+03:00",
-      "homeTeam": "Tartu WJK Santos Punane (14)",
-      "awayTeam": "Rae Spordikool I (14)",
-      "opponent": "Tartu WJK Santos Punane (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196214"
-    },
-    {
-      "teamId": "u11",
-      "team": "U11",
-      "status": "upcoming",
-      "competition": "U11.II",
-      "date": "11.09.2026",
-      "time": "18:00",
-      "startsAt": "2026-09-11T18:00:00+03:00",
-      "homeTeam": "Rae Spordikool I (16)",
-      "awayTeam": "Keila JK Valge (16)",
-      "opponent": "Keila JK Valge (16)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191523"
     },
     {
       "teamId": "u14",
