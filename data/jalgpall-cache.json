@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T18:28:45.476Z",
+  "updatedAt": "2026-09-12T00:55:34.021Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -89,7 +89,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 6,
-      "resultCount": 14,
+      "resultCount": 15,
       "playerCount": 21
     },
     {
@@ -2010,6 +2010,21 @@
       "homeAway": "Kodu",
       "score": "10 - 3",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187829"
+    },
+    {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "finished",
+      "competition": "U13.D",
+      "date": "11.09.2026",
+      "time": "16:30",
+      "startsAt": "2026-09-11T16:30:00+03:00",
+      "homeTeam": "Tartu WJK Santos Punane (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "Tartu WJK Santos Punane (14)",
+      "homeAway": "Võõrsil",
+      "score": "0 - 4",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196214"
     },
     {
       "teamId": "u14",
