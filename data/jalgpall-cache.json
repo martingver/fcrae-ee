@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T18:26:43.950Z",
+  "updatedAt": "2026-09-14T01:03:22.194Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -17,7 +17,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 6,
-      "resultCount": 27,
+      "resultCount": 28,
       "playerCount": 16
     },
     {
@@ -2087,6 +2087,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190596"
     },
     {
+      "teamId": "rae-i",
+      "team": "Rae I",
+      "status": "finished",
+      "competition": "II.B.S/E",
+      "date": "13.09.2026",
+      "time": "19:30",
+      "startsAt": "2026-09-13T19:30:00+03:00",
+      "homeTeam": "Tallinna FC Starmedia",
+      "awayTeam": "Rae Spordikool",
+      "opponent": "Tallinna FC Starmedia",
+      "homeAway": "Võõrsil",
+      "score": "2 - 2",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187833"
+    },
+    {
       "teamId": "u11",
       "team": "U11",
       "status": "upcoming",
@@ -2840,8 +2855,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 4,
-      "goals": 4,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/34179/team/6795"
     },
     {
@@ -5462,14 +5477,14 @@
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
-          "matches": 19,
+          "matches": 20,
           "wins": 14,
-          "draws": 3,
+          "draws": 4,
           "losses": 2,
-          "goals": "92:42",
-          "goalsFor": 92,
-          "goalsAgainst": 42,
-          "points": 45,
+          "goals": "94:44",
+          "goalsFor": 94,
+          "goalsAgainst": 44,
+          "points": 46,
           "isRaeTeam": true
         },
         {
@@ -5477,14 +5492,14 @@
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
-          "matches": 19,
+          "matches": 20,
           "wins": 13,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
-          "goals": "71:28",
-          "goalsFor": 71,
-          "goalsAgainst": 28,
-          "points": 42,
+          "goals": "73:30",
+          "goalsFor": 73,
+          "goalsAgainst": 30,
+          "points": 43,
           "isRaeTeam": false
         },
         {
