@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T06:39:56.546Z",
+  "updatedAt": "2026-09-15T12:35:06.537Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -54,7 +54,7 @@
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 2,
       "resultCount": 0,
-      "playerCount": 16
+      "playerCount": 17
     },
     {
       "id": "u13-ii",
@@ -2186,20 +2186,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196218"
     },
     {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "status": "upcoming",
-      "competition": "U13.VII",
-      "date": "20.09.2026",
-      "time": "14:00",
-      "startsAt": "2026-09-20T14:00:00+03:00",
-      "homeTeam": "Rae Spordikool II (14)",
-      "awayTeam": "Saku Sporting Sinivalge (14)",
-      "opponent": "Saku Sporting Sinivalge (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190601"
-    },
-    {
       "teamId": "u17",
       "team": "U17",
       "status": "upcoming",
@@ -2240,6 +2226,20 @@
       "opponent": "Tallinna FC Flora U18",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187842"
+    },
+    {
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "upcoming",
+      "competition": "U13.VII",
+      "date": "22.09.2026",
+      "time": "18:30",
+      "startsAt": "2026-09-22T18:30:00+03:00",
+      "homeTeam": "Rae Spordikool II (14)",
+      "awayTeam": "Saku Sporting Sinivalge (14)",
+      "opponent": "Saku Sporting Sinivalge (14)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190601"
     },
     {
       "teamId": "u13-i",
@@ -3339,6 +3339,20 @@
       "teamId": "u11",
       "team": "U11",
       "position": "PK",
+      "name": "Gerret Butov",
+      "number": "17",
+      "birthDate": "2016",
+      "citizenship": "Eesti",
+      "club": "ETM",
+      "cupGoals": 0,
+      "leagueGoals": 0,
+      "goals": 0,
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/59578/team/6515"
+    },
+    {
+      "teamId": "u11",
+      "team": "U11",
+      "position": "PK",
       "name": "Aleksander Haavik",
       "number": "4",
       "birthDate": "2016",
@@ -3478,9 +3492,9 @@
     {
       "teamId": "u11",
       "team": "U11",
-      "position": "",
+      "position": "K",
       "name": "Tomi Mõtsnik",
-      "number": "",
+      "number": "3",
       "birthDate": "2015",
       "citizenship": "Eesti",
       "club": "ETM",
