@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T06:39:59.016Z",
+  "updatedAt": "2026-09-16T12:35:53.921Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -52,7 +52,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 2,
+      "upcomingCount": 1,
       "resultCount": 0,
       "playerCount": 17
     },
@@ -2100,20 +2100,6 @@
       "homeAway": "Võõrsil",
       "score": "2 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187833"
-    },
-    {
-      "teamId": "u11",
-      "team": "U11",
-      "status": "upcoming",
-      "competition": "U11.II",
-      "date": "16.09.2026",
-      "time": "14:30",
-      "startsAt": "2026-09-16T14:30:00+03:00",
-      "homeTeam": "Tallinna FC Flora Rohelised (16)",
-      "awayTeam": "Rae Spordikool I (16)",
-      "opponent": "Tallinna FC Flora Rohelised (16)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191526"
     },
     {
       "teamId": "u15",
@@ -4349,7 +4335,7 @@
       "position": "PK",
       "name": "Kaspar Vainumäe",
       "number": "12",
-      "birthDate": "",
+      "birthDate": "2013",
       "citizenship": "",
       "club": "ETM",
       "cupGoals": 0,
