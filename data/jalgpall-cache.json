@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T06:38:49.579Z",
+  "updatedAt": "2026-09-18T12:34:13.273Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -124,7 +124,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 4,
+      "upcomingCount": 3,
       "resultCount": 17,
       "playerCount": 24
     },
@@ -2102,20 +2102,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187833"
     },
     {
-      "teamId": "u15",
-      "team": "U15",
-      "status": "upcoming",
-      "competition": "U15.III",
-      "date": "18.09.2026",
-      "time": "14:00",
-      "startsAt": "2026-09-18T14:00:00+03:00",
-      "homeTeam": "Viljandi JK Tulevik Kollane (12)",
-      "awayTeam": "Rae Spordikool (12)",
-      "opponent": "Viljandi JK Tulevik Kollane (12)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192070"
-    },
-    {
       "teamId": "u14",
       "team": "U14",
       "status": "upcoming",
@@ -2142,20 +2128,6 @@
       "opponent": "FC Tallinna Wolves",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188336"
-    },
-    {
-      "teamId": "u14",
-      "team": "U14",
-      "status": "upcoming",
-      "competition": "U14.III-A",
-      "date": "19.09.2026",
-      "time": "11:00",
-      "startsAt": "2026-09-19T11:00:00+03:00",
-      "homeTeam": "Rae Spordikool (13)",
-      "awayTeam": "Viimsi MRJK (13)",
-      "opponent": "Viimsi MRJK (13)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195200"
     },
     {
       "teamId": "u13-i",
@@ -2254,6 +2226,20 @@
       "opponent": "Tallinna FC Flora Valged (11)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189947"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "upcoming",
+      "competition": "U14.III-A",
+      "date": "23.09.2026",
+      "time": "18:30",
+      "startsAt": "2026-09-23T18:30:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Viimsi MRJK (13)",
+      "opponent": "Viimsi MRJK (13)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195200"
     },
     {
       "teamId": "u17",
