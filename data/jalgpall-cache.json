@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T12:31:18.498Z",
+  "updatedAt": "2026-09-19T18:25:50.674Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -88,8 +88,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 6,
-      "resultCount": 15,
+      "upcomingCount": 5,
+      "resultCount": 16,
       "playerCount": 21
     },
     {
@@ -2149,7 +2149,7 @@
     {
       "teamId": "u13-i",
       "team": "U13 I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U13.D",
       "date": "19.09.2026",
       "time": "17:00",
@@ -2158,6 +2158,7 @@
       "awayTeam": "Rae Spordikool I (14)",
       "opponent": "Põhja-Tallinna JK Volta Must (14)",
       "homeAway": "Võõrsil",
+      "score": "0 - 5",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196218"
     },
     {
@@ -5465,14 +5466,14 @@
           "teamId": 4046,
           "teamName": "Paide Linnameeskond III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
-          "matches": 20,
-          "wins": 16,
+          "matches": 21,
+          "wins": 17,
           "draws": 1,
           "losses": 3,
-          "goals": "109:30",
-          "goalsFor": 109,
-          "goalsAgainst": 30,
-          "points": 49,
+          "goals": "123:31",
+          "goalsFor": 123,
+          "goalsAgainst": 31,
+          "points": 52,
           "isRaeTeam": false
         },
         {
@@ -5495,14 +5496,14 @@
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 13,
-          "draws": 4,
+          "draws": 5,
           "losses": 3,
-          "goals": "73:30",
-          "goalsFor": 73,
-          "goalsAgainst": 30,
-          "points": 43,
+          "goals": "75:32",
+          "goalsFor": 75,
+          "goalsAgainst": 32,
+          "points": 44,
           "isRaeTeam": false
         },
         {
@@ -5540,14 +5541,14 @@
           "teamId": 3125,
           "teamName": "Võru FC Helios",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 10,
-          "draws": 3,
+          "draws": 4,
           "losses": 7,
-          "goals": "56:50",
-          "goalsFor": 56,
-          "goalsAgainst": 50,
-          "points": 33,
+          "goals": "58:52",
+          "goalsFor": 58,
+          "goalsAgainst": 52,
+          "points": 34,
           "isRaeTeam": false
         },
         {
@@ -5555,13 +5556,13 @@
           "teamId": 152,
           "teamName": "FC Kose",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/152?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 9,
           "draws": 4,
-          "losses": 7,
-          "goals": "45:48",
-          "goalsFor": 45,
-          "goalsAgainst": 48,
+          "losses": 8,
+          "goals": "46:62",
+          "goalsFor": 46,
+          "goalsAgainst": 62,
           "points": 31,
           "isRaeTeam": false
         },
