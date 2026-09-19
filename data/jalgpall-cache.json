@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T06:35:22.300Z",
+  "updatedAt": "2026-09-19T12:31:18.498Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5522,6 +5522,21 @@
         },
         {
           "position": 5,
+          "teamId": 1863,
+          "teamName": "Jõgeva SK Noorus-96",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
+          "matches": 21,
+          "wins": 11,
+          "draws": 2,
+          "losses": 8,
+          "goals": "50:41",
+          "goalsFor": 50,
+          "goalsAgainst": 41,
+          "points": 35,
+          "isRaeTeam": false
+        },
+        {
+          "position": 6,
           "teamId": 3125,
           "teamName": "Võru FC Helios",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
@@ -5533,21 +5548,6 @@
           "goalsFor": 56,
           "goalsAgainst": 50,
           "points": 33,
-          "isRaeTeam": false
-        },
-        {
-          "position": 6,
-          "teamId": 1863,
-          "teamName": "Jõgeva SK Noorus-96",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 20,
-          "wins": 10,
-          "draws": 2,
-          "losses": 8,
-          "goals": "43:41",
-          "goalsFor": 43,
-          "goalsAgainst": 41,
-          "points": 32,
           "isRaeTeam": false
         },
         {
@@ -5570,13 +5570,13 @@
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 8,
           "draws": 3,
-          "losses": 9,
-          "goals": "30:49",
+          "losses": 10,
+          "goals": "30:56",
           "goalsFor": 30,
-          "goalsAgainst": 49,
+          "goalsAgainst": 56,
           "points": 27,
           "isRaeTeam": false
         },
