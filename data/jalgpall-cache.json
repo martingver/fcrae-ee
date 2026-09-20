@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T12:31:47.760Z",
+  "updatedAt": "2026-09-20T18:26:43.547Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 6,
-      "resultCount": 28,
+      "upcomingCount": 5,
+      "resultCount": 29,
       "playerCount": 16
     },
     {
@@ -52,7 +52,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 1,
+      "upcomingCount": 0,
       "resultCount": 0,
       "playerCount": 17
     },
@@ -161,7 +161,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 5,
-      "resultCount": 13,
+      "resultCount": 14,
       "playerCount": 29
     }
   ],
@@ -2162,23 +2162,24 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196218"
     },
     {
-      "teamId": "u11",
-      "team": "U11",
-      "status": "upcoming",
-      "competition": "U11.II",
+      "teamId": "u17",
+      "team": "U17",
+      "status": "finished",
+      "competition": "U-17.III",
       "date": "20.09.2026",
-      "time": "16:30",
-      "startsAt": "2026-09-20T16:30:00+03:00",
-      "homeTeam": "Rae Spordikool I (16)",
-      "awayTeam": "JK Tallinna Kalev I (16)",
-      "opponent": "JK Tallinna Kalev I (16)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/191528"
+      "time": "14:00",
+      "startsAt": "2026-09-20T14:00:00+03:00",
+      "homeTeam": "U-17 Võru FC Helios",
+      "awayTeam": "U-17 Rae Spordikool",
+      "opponent": "U-17 Võru FC Helios",
+      "homeAway": "Võõrsil",
+      "score": "0 - 5",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196450"
     },
     {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "II.B.S/E",
       "date": "20.09.2026",
       "time": "17:00",
@@ -2187,6 +2188,7 @@
       "awayTeam": "Tallinna FC Flora U18",
       "opponent": "Tallinna FC Flora U18",
       "homeAway": "Kodu",
+      "score": "10 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187842"
     },
     {
@@ -2789,8 +2791,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 1,
-      "leagueGoals": 10,
-      "goals": 11,
+      "leagueGoals": 11,
+      "goals": 12,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/42614/team/6795"
     },
     {
@@ -2873,8 +2875,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 4,
-      "leagueGoals": 16,
-      "goals": 20,
+      "leagueGoals": 20,
+      "goals": 24,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/38392/team/6795"
     },
     {
@@ -2887,8 +2889,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 1,
-      "leagueGoals": 10,
-      "goals": 11,
+      "leagueGoals": 12,
+      "goals": 13,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36477/team/6795"
     },
     {
@@ -5337,8 +5339,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 1,
-      "goals": 1,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49476/team/7012"
     },
     {
@@ -5351,8 +5353,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 2,
-      "goals": 2,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49495/team/7012"
     },
     {
@@ -5393,8 +5395,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 3,
-      "goals": 3,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50298/team/7012"
     },
     {
@@ -5467,18 +5469,33 @@
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
-          "matches": 20,
-          "wins": 14,
+          "matches": 21,
+          "wins": 15,
           "draws": 4,
           "losses": 2,
-          "goals": "94:44",
-          "goalsFor": 94,
+          "goals": "104:44",
+          "goalsFor": 104,
           "goalsAgainst": 44,
-          "points": 46,
+          "points": 49,
           "isRaeTeam": true
         },
         {
           "position": 3,
+          "teamId": 2327,
+          "teamName": "JK Tallinna Kalev III",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
+          "matches": 21,
+          "wins": 13,
+          "draws": 6,
+          "losses": 2,
+          "goals": "88:25",
+          "goalsFor": 88,
+          "goalsAgainst": 25,
+          "points": 45,
+          "isRaeTeam": false
+        },
+        {
+          "position": 4,
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
@@ -5490,21 +5507,6 @@
           "goalsFor": 75,
           "goalsAgainst": 32,
           "points": 44,
-          "isRaeTeam": false
-        },
-        {
-          "position": 4,
-          "teamId": 2327,
-          "teamName": "JK Tallinna Kalev III",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 20,
-          "wins": 12,
-          "draws": 6,
-          "losses": 2,
-          "goals": "81:25",
-          "goalsFor": 81,
-          "goalsAgainst": 25,
-          "points": 42,
           "isRaeTeam": false
         },
         {
@@ -5554,6 +5556,21 @@
         },
         {
           "position": 8,
+          "teamId": 542,
+          "teamName": "FC Elva U21",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
+          "matches": 21,
+          "wins": 9,
+          "draws": 1,
+          "losses": 11,
+          "goals": "46:50",
+          "goalsFor": 46,
+          "goalsAgainst": 50,
+          "points": 28,
+          "isRaeTeam": false
+        },
+        {
+          "position": 9,
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
@@ -5568,33 +5585,18 @@
           "isRaeTeam": false
         },
         {
-          "position": 9,
-          "teamId": 542,
-          "teamName": "FC Elva U21",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
-          "matches": 20,
-          "wins": 8,
-          "draws": 1,
-          "losses": 11,
-          "goals": "43:49",
-          "goalsFor": 43,
-          "goalsAgainst": 49,
-          "points": 25,
-          "isRaeTeam": false
-        },
-        {
           "position": 10,
           "teamId": 188,
           "teamName": "Raasiku FC Joker",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
-          "matches": 20,
-          "wins": 6,
+          "matches": 21,
+          "wins": 7,
           "draws": 3,
           "losses": 11,
-          "goals": "34:62",
-          "goalsFor": 34,
+          "goals": "39:62",
+          "goalsFor": 39,
           "goalsAgainst": 62,
-          "points": 21,
+          "points": 24,
           "isRaeTeam": false
         },
         {
@@ -5602,13 +5604,13 @@
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 6,
           "draws": 1,
-          "losses": 13,
-          "goals": "40:53",
+          "losses": 14,
+          "goals": "40:63",
           "goalsFor": 40,
-          "goalsAgainst": 53,
+          "goalsAgainst": 63,
           "points": 19,
           "isRaeTeam": false
         },
@@ -5617,13 +5619,13 @@
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 4,
           "draws": 2,
-          "losses": 14,
-          "goals": "31:92",
-          "goalsFor": 31,
-          "goalsAgainst": 92,
+          "losses": 15,
+          "goals": "32:95",
+          "goalsFor": 32,
+          "goalsAgainst": 95,
           "points": 14,
           "isRaeTeam": false
         },
@@ -5632,13 +5634,13 @@
           "teamId": 6173,
           "teamName": "Viljandi JK Tulevik U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6173?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 2,
           "draws": 4,
-          "losses": 14,
-          "goals": "29:59",
+          "losses": 15,
+          "goals": "29:64",
           "goalsFor": 29,
-          "goalsAgainst": 59,
+          "goalsAgainst": 64,
           "points": 10,
           "isRaeTeam": false
         },
@@ -5647,13 +5649,13 @@
           "teamId": 4913,
           "teamName": "JK Kuusalu Kalev",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4913?season=2026",
-          "matches": 20,
+          "matches": 21,
           "wins": 2,
           "draws": 2,
-          "losses": 16,
-          "goals": "12:88",
+          "losses": 17,
+          "goals": "12:95",
           "goalsFor": 12,
-          "goalsAgainst": 88,
+          "goalsAgainst": 95,
           "points": 8,
           "isRaeTeam": false
         }
