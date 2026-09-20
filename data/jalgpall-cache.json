@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T06:35:48.361Z",
+  "updatedAt": "2026-09-20T12:31:47.760Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -160,7 +160,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 6,
+      "upcomingCount": 5,
       "resultCount": 13,
       "playerCount": 29
     }
@@ -2160,20 +2160,6 @@
       "homeAway": "Võõrsil",
       "score": "0 - 5",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196218"
-    },
-    {
-      "teamId": "u17",
-      "team": "U17",
-      "status": "upcoming",
-      "competition": "U-17.III",
-      "date": "20.09.2026",
-      "time": "14:00",
-      "startsAt": "2026-09-20T14:00:00+03:00",
-      "homeTeam": "U-17 Võru FC Helios",
-      "awayTeam": "U-17 Rae Spordikool",
-      "opponent": "U-17 Võru FC Helios",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196450"
     },
     {
       "teamId": "u11",
@@ -5113,8 +5099,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 12,
-      "goals": 12,
+      "leagueGoals": 13,
+      "goals": 13,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/7012"
     },
     {
@@ -5253,8 +5239,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 10,
-      "goals": 10,
+      "leagueGoals": 11,
+      "goals": 11,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49068/team/7012"
     },
     {
