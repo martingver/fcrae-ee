@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T06:50:11.642Z",
+  "updatedAt": "2026-09-21T12:34:14.752Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -107,7 +107,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 5,
-      "resultCount": 14,
+      "resultCount": 13,
       "playerCount": 21
     },
     {
@@ -1877,21 +1877,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190587"
     },
     {
-      "teamId": "u14",
-      "team": "U14",
-      "status": "finished",
-      "competition": "U14.III-A",
-      "date": "29.08.2026",
-      "time": "15:00",
-      "startsAt": "2026-08-29T15:00:00+03:00",
-      "homeTeam": "Jalgpallikool Phoenix (13)",
-      "awayTeam": "Rae Spordikool (13)",
-      "opponent": "Jalgpallikool Phoenix (13)",
-      "homeAway": "Võõrsil",
-      "score": "5 - 4",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195183"
-    },
-    {
       "teamId": "u13-i",
       "team": "U13 I",
       "status": "finished",
@@ -2262,6 +2247,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196454"
     },
     {
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "upcoming",
+      "competition": "U13.VII",
+      "date": "26.09.2026",
+      "time": "13:30",
+      "startsAt": "2026-09-26T13:30:00+03:00",
+      "homeTeam": "Rae Spordikool II (14)",
+      "awayTeam": "FC Kose (14)",
+      "opponent": "FC Kose (14)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190603"
+    },
+    {
       "teamId": "rae-ii",
       "team": "Rae II",
       "status": "upcoming",
@@ -2302,20 +2301,6 @@
       "opponent": "Põlva FC Lootos (12)",
       "homeAway": "Võõrsil",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192074"
-    },
-    {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "status": "upcoming",
-      "competition": "U13.VII",
-      "date": "27.09.2026",
-      "time": "15:00",
-      "startsAt": "2026-09-27T15:00:00+03:00",
-      "homeTeam": "Rae Spordikool II (14)",
-      "awayTeam": "FC Kose (14)",
-      "opponent": "FC Kose (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190603"
     },
     {
       "teamId": "rae-i",
