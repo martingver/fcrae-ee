@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T12:35:12.180Z",
+  "updatedAt": "2026-09-22T18:31:04.935Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -70,8 +70,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 5,
-      "resultCount": 13,
+      "upcomingCount": 4,
+      "resultCount": 14,
       "playerCount": 15
     },
     {
@@ -2179,7 +2179,7 @@
     {
       "teamId": "u13-ii",
       "team": "U13 II",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U13.VII",
       "date": "22.09.2026",
       "time": "18:30",
@@ -2188,6 +2188,7 @@
       "awayTeam": "Saku Sporting Sinivalge (14)",
       "opponent": "Saku Sporting Sinivalge (14)",
       "homeAway": "Kodu",
+      "score": "1 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190601"
     },
     {
