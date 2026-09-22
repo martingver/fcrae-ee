@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T06:39:37.735Z",
+  "updatedAt": "2026-09-22T12:35:12.180Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -2583,6 +2583,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195222"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "upcoming",
+      "competition": "U13.D",
+      "date": "20.10.2026",
+      "time": "18:30",
+      "startsAt": "2026-10-20T18:30:00+03:00",
+      "homeTeam": "Rae Spordikool I (14)",
+      "awayTeam": "Rakvere JK Tarvas (14)",
+      "opponent": "Rakvere JK Tarvas (14)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196236"
+    },
+    {
       "teamId": "u17",
       "team": "U17",
       "status": "upcoming",
@@ -2623,20 +2637,6 @@
       "opponent": "JK Tallinna Kalev Kratid (14)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190621"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.D",
-      "date": "25.10.2026",
-      "time": "16:00",
-      "startsAt": "2026-10-25T16:00:00+03:00",
-      "homeTeam": "Rae Spordikool I (14)",
-      "awayTeam": "Rakvere JK Tarvas (14)",
-      "opponent": "Rakvere JK Tarvas (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196236"
     },
     {
       "teamId": "u17",
