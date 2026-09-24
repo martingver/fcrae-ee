@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T18:30:28.124Z",
+  "updatedAt": "2026-09-24T00:57:49.513Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -89,7 +89,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 4,
-      "resultCount": 16,
+      "resultCount": 17,
       "playerCount": 21
     },
     {
@@ -107,7 +107,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 4,
-      "resultCount": 13,
+      "resultCount": 14,
       "playerCount": 21
     },
     {
@@ -2192,6 +2192,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190601"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "finished",
+      "competition": "U13.D",
+      "date": "23.09.2026",
+      "time": "17:30",
+      "startsAt": "2026-09-23T17:30:00+03:00",
+      "homeTeam": "JK Tabasalu (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "JK Tabasalu (14)",
+      "homeAway": "Võõrsil",
+      "score": "6 - 3",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196225"
+    },
+    {
       "teamId": "u16",
       "team": "U16",
       "status": "finished",
@@ -2205,6 +2220,21 @@
       "homeAway": "Kodu",
       "score": "7 - 3",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189947"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "finished",
+      "competition": "U14.III-A",
+      "date": "23.09.2026",
+      "time": "18:30",
+      "startsAt": "2026-09-23T18:30:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Viimsi MRJK (13)",
+      "opponent": "Viimsi MRJK (13)",
+      "homeAway": "Kodu",
+      "score": "5 - 2",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195200"
     },
     {
       "teamId": "u17",
