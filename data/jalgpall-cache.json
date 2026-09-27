@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T18:28:37.019Z",
+  "updatedAt": "2026-09-27T01:07:00.680Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -35,7 +35,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 1,
-      "resultCount": 15,
+      "resultCount": 16,
       "playerCount": 30
     },
     {
@@ -2252,6 +2252,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196454"
     },
     {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "status": "finished",
+      "competition": "III.N/E",
+      "date": "26.09.2026",
+      "time": "19:30",
+      "startsAt": "2026-09-26T19:30:00+03:00",
+      "homeTeam": "Tallinna Mustamäe Jalgpalliklubi",
+      "awayTeam": "Rae Spordikool II",
+      "opponent": "Tallinna Mustamäe Jalgpalliklubi",
+      "homeAway": "Võõrsil",
+      "score": "7 - 4",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188340"
+    },
+    {
       "teamId": "u14",
       "team": "U14",
       "status": "upcoming",
@@ -3075,8 +3090,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 2,
-      "goals": 2,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/17968/team/7118"
     },
     {
@@ -5461,14 +5476,14 @@
           "teamId": 6347,
           "teamName": "Tallinna FC Starmedia",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6347?season=2026",
-          "matches": 21,
-          "wins": 13,
+          "matches": 22,
+          "wins": 14,
           "draws": 5,
           "losses": 3,
-          "goals": "75:32",
-          "goalsFor": 75,
-          "goalsAgainst": 32,
-          "points": 44,
+          "goals": "78:33",
+          "goalsFor": 78,
+          "goalsAgainst": 33,
+          "points": 47,
           "isRaeTeam": false
         },
         {
@@ -5566,13 +5581,13 @@
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 21,
+          "matches": 22,
           "wins": 6,
           "draws": 1,
-          "losses": 14,
-          "goals": "40:63",
-          "goalsFor": 40,
-          "goalsAgainst": 63,
+          "losses": 15,
+          "goals": "41:66",
+          "goalsFor": 41,
+          "goalsAgainst": 66,
           "points": 19,
           "isRaeTeam": false
         },
