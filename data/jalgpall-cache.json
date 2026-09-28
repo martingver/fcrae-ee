@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T06:54:07.743Z",
+  "updatedAt": "2026-09-28T12:41:10.385Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -2383,6 +2383,20 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196458"
     },
     {
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "upcoming",
+      "competition": "U13.VII",
+      "date": "03.10.2026",
+      "time": "16:30",
+      "startsAt": "2026-10-03T16:30:00+03:00",
+      "homeTeam": "Ida-Virumaa JK Noova (14)",
+      "awayTeam": "Rae Spordikool II (14)",
+      "opponent": "Ida-Virumaa JK Noova (14)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190608"
+    },
+    {
       "teamId": "u16",
       "team": "U16",
       "status": "upcoming",
@@ -2409,20 +2423,6 @@
       "opponent": "Pärnu JK Poseidon (12)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192076"
-    },
-    {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "status": "upcoming",
-      "competition": "U13.VII",
-      "date": "04.10.2026",
-      "time": "14:30",
-      "startsAt": "2026-10-04T14:30:00+03:00",
-      "homeTeam": "Ida-Virumaa JK Noova (14)",
-      "awayTeam": "Rae Spordikool II (14)",
-      "opponent": "Ida-Virumaa JK Noova (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190608"
     },
     {
       "teamId": "u14",
