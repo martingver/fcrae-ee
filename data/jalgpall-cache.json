@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T06:42:31.196Z",
+  "updatedAt": "2026-09-29T12:39:41.350Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -160,7 +160,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 4,
+      "upcomingCount": 3,
       "resultCount": 15,
       "playerCount": 29
     }
@@ -2535,20 +2535,6 @@
       "opponent": "FC Kose",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187859"
-    },
-    {
-      "teamId": "u17",
-      "team": "U17",
-      "status": "upcoming",
-      "competition": "U-17.III",
-      "date": "17.10.2026",
-      "time": "10:00",
-      "startsAt": "2026-10-17T10:00:00+03:00",
-      "homeTeam": "U-17 Tallinna FC Ararat",
-      "awayTeam": "U-17 Rae Spordikool",
-      "opponent": "U-17 Tallinna FC Ararat",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196464"
     },
     {
       "teamId": "u13-i",
