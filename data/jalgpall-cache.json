@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T18:31:25.990Z",
+  "updatedAt": "2026-10-01T01:12:49.505Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -35,7 +35,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 0,
-      "resultCount": 16,
+      "resultCount": 17,
       "playerCount": 30
     },
     {
@@ -2355,6 +2355,21 @@
       "homeAway": "Kodu",
       "score": "6 - 2",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189939"
+    },
+    {
+      "teamId": "rae-ii",
+      "team": "Rae II",
+      "status": "finished",
+      "competition": "III.N/E",
+      "date": "30.09.2026",
+      "time": "19:30",
+      "startsAt": "2026-09-30T19:30:00+03:00",
+      "homeTeam": "Rae Spordikool II",
+      "awayTeam": "FC Eston Villa ja Põhja-Tallinna JK Volta ÜM",
+      "opponent": "FC Eston Villa ja Põhja-Tallinna JK Volta ÜM",
+      "homeAway": "Kodu",
+      "score": "3 - 8",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188345"
     },
     {
       "teamId": "u17",
