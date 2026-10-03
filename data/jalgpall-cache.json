@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T13:57:20.824Z",
+  "updatedAt": "2026-10-03T18:58:33.771Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -71,7 +71,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 2,
-      "resultCount": 15,
+      "resultCount": 16,
       "playerCount": 15
     },
     {
@@ -2370,6 +2370,21 @@
       "homeAway": "Kodu",
       "score": "3 - 8",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188345"
+    },
+    {
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "finished",
+      "competition": "U13.VII",
+      "date": "03.10.2026",
+      "time": "16:30",
+      "startsAt": "2026-10-03T16:30:00+03:00",
+      "homeTeam": "Ida-Virumaa JK Noova (14)",
+      "awayTeam": "Rae Spordikool II (14)",
+      "opponent": "Ida-Virumaa JK Noova (14)",
+      "homeAway": "Võõrsil",
+      "score": "3 - 3",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190608"
     },
     {
       "teamId": "u16",
@@ -5530,13 +5545,13 @@
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
-          "matches": 22,
+          "matches": 23,
           "wins": 8,
           "draws": 3,
-          "losses": 11,
-          "goals": "30:65",
+          "losses": 12,
+          "goals": "30:67",
           "goalsFor": 30,
-          "goalsAgainst": 65,
+          "goalsAgainst": 67,
           "points": 27,
           "isRaeTeam": false
         },
@@ -5575,14 +5590,14 @@
           "teamId": 55,
           "teamName": "Põlva FC Lootos",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/55?season=2026",
-          "matches": 22,
-          "wins": 4,
+          "matches": 23,
+          "wins": 5,
           "draws": 2,
           "losses": 16,
-          "goals": "33:106",
-          "goalsFor": 33,
+          "goals": "35:106",
+          "goalsFor": 35,
           "goalsAgainst": 106,
-          "points": 14,
+          "points": 17,
           "isRaeTeam": false
         },
         {
