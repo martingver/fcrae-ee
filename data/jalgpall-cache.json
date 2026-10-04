@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T01:32:14.651Z",
+  "updatedAt": "2026-10-04T08:19:56.416Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -124,7 +124,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 2,
+      "upcomingCount": 1,
       "resultCount": 19,
       "playerCount": 24
     },
@@ -142,7 +142,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 2,
+      "upcomingCount": 1,
       "resultCount": 18,
       "playerCount": 25
     },
@@ -2385,34 +2385,6 @@
       "homeAway": "Võõrsil",
       "score": "3 - 3",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190608"
-    },
-    {
-      "teamId": "u16",
-      "team": "U16",
-      "status": "upcoming",
-      "competition": "U16.III",
-      "date": "04.10.2026",
-      "time": "10:00",
-      "startsAt": "2026-10-04T10:00:00+03:00",
-      "homeTeam": "Raplamaa JK (11)",
-      "awayTeam": "Rae Spordikool (11)",
-      "opponent": "Raplamaa JK (11)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189952"
-    },
-    {
-      "teamId": "u15",
-      "team": "U15",
-      "status": "upcoming",
-      "competition": "U15.III",
-      "date": "04.10.2026",
-      "time": "11:00",
-      "startsAt": "2026-10-04T11:00:00+03:00",
-      "homeTeam": "Rae Spordikool (12)",
-      "awayTeam": "Pärnu JK Poseidon (12)",
-      "opponent": "Pärnu JK Poseidon (12)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192076"
     },
     {
       "teamId": "u14",
