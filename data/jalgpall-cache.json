@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T08:19:56.416Z",
+  "updatedAt": "2026-10-04T14:10:31.317Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,7 +16,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 4,
+      "upcomingCount": 3,
       "resultCount": 30,
       "playerCount": 16
     },
@@ -106,8 +106,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 3,
-      "resultCount": 15,
+      "upcomingCount": 2,
+      "resultCount": 16,
       "playerCount": 21
     },
     {
@@ -125,7 +125,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 1,
-      "resultCount": 19,
+      "resultCount": 20,
       "playerCount": 24
     },
     {
@@ -2387,9 +2387,24 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190608"
     },
     {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "finished",
+      "competition": "U15.III",
+      "date": "04.10.2026",
+      "time": "11:00",
+      "startsAt": "2026-10-04T11:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "Pärnu JK Poseidon (12)",
+      "opponent": "Pärnu JK Poseidon (12)",
+      "homeAway": "Kodu",
+      "score": "1 - 3",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/192076"
+    },
+    {
       "teamId": "u14",
       "team": "U14",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U14.III-A",
       "date": "04.10.2026",
       "time": "15:00",
@@ -2398,21 +2413,8 @@
       "awayTeam": "Tartu JK Tammeka Valge (13)",
       "opponent": "Tartu JK Tammeka Valge (13)",
       "homeAway": "Kodu",
+      "score": "6 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195211"
-    },
-    {
-      "teamId": "rae-i",
-      "team": "Rae I",
-      "status": "upcoming",
-      "competition": "II.B.S/E",
-      "date": "04.10.2026",
-      "time": "17:00",
-      "startsAt": "2026-10-04T17:00:00+03:00",
-      "homeTeam": "Rae Spordikool",
-      "awayTeam": "FC Elva U21",
-      "opponent": "FC Elva U21",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187855"
     },
     {
       "teamId": "u14",
@@ -4008,8 +4010,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 18,
-      "goals": 18,
+      "leagueGoals": 21,
+      "goals": 21,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/58482/team/5884"
     },
     {
@@ -4036,8 +4038,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 6,
-      "goals": 6,
+      "leagueGoals": 8,
+      "goals": 8,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/61008/team/5884"
     },
     {
@@ -4204,8 +4206,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 5,
-      "goals": 5,
+      "leagueGoals": 6,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54826/team/5884"
     },
     {
@@ -4456,8 +4458,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 9,
-      "goals": 9,
+      "leagueGoals": 10,
+      "goals": 10,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54943/team/5883"
     },
     {
@@ -5427,13 +5429,13 @@
           "teamId": 2327,
           "teamName": "JK Tallinna Kalev III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 22,
+          "matches": 23,
           "wins": 14,
           "draws": 6,
-          "losses": 2,
-          "goals": "93:26",
-          "goalsFor": 93,
-          "goalsAgainst": 26,
+          "losses": 3,
+          "goals": "94:28",
+          "goalsFor": 94,
+          "goalsAgainst": 28,
           "points": 48,
           "isRaeTeam": false
         },
@@ -5457,14 +5459,14 @@
           "teamId": 1863,
           "teamName": "Jõgeva SK Noorus-96",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 22,
-          "wins": 12,
+          "matches": 23,
+          "wins": 13,
           "draws": 2,
           "losses": 8,
-          "goals": "53:42",
-          "goalsFor": 53,
-          "goalsAgainst": 42,
-          "points": 38,
+          "goals": "55:43",
+          "goalsFor": 55,
+          "goalsAgainst": 43,
+          "points": 41,
           "isRaeTeam": false
         },
         {
