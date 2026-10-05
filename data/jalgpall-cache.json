@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T12:40:39.839Z",
+  "updatedAt": "2026-10-05T18:33:59.976Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -161,7 +161,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 2,
-      "resultCount": 15,
+      "resultCount": 16,
       "playerCount": 29
     }
   ],
@@ -2370,6 +2370,21 @@
       "homeAway": "Kodu",
       "score": "3 - 8",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/188345"
+    },
+    {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "finished",
+      "competition": "U-17.III",
+      "date": "03.10.2026",
+      "time": "14:30",
+      "startsAt": "2026-10-03T14:30:00+03:00",
+      "homeTeam": "U-17 Rae Spordikool",
+      "awayTeam": "U-17 Jõhvi FC Phoenix",
+      "opponent": "U-17 Jõhvi FC Phoenix",
+      "homeAway": "Kodu",
+      "score": "4 - 3",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196458"
     },
     {
       "teamId": "u13-ii",
