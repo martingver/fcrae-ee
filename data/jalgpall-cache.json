@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T06:43:44.033Z",
+  "updatedAt": "2026-10-09T12:37:14.968Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -143,7 +143,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 1,
-      "resultCount": 18,
+      "resultCount": 19,
       "playerCount": 25
     },
     {
@@ -2400,6 +2400,21 @@
       "homeAway": "Võõrsil",
       "score": "3 - 3",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190608"
+    },
+    {
+      "teamId": "u16",
+      "team": "U16",
+      "status": "finished",
+      "competition": "U16.III",
+      "date": "04.10.2026",
+      "time": "10:00",
+      "startsAt": "2026-10-04T10:00:00+03:00",
+      "homeTeam": "Raplamaa JK (11)",
+      "awayTeam": "Rae Spordikool (11)",
+      "opponent": "Raplamaa JK (11)",
+      "homeAway": "Võõrsil",
+      "score": "4 - 3",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189952"
     },
     {
       "teamId": "u15",
@@ -4964,8 +4979,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 8,
-      "goals": 8,
+      "leagueGoals": 10,
+      "goals": 10,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49476/team/6511"
     },
     {
