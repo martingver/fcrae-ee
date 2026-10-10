@@ -7,19 +7,8 @@ X-WR-CALNAME:FC Rae U13 II
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/u13-ii.ics
 BEGIN:VEVENT
-UID:190612@fcrae.ee
-DTSTAMP:20261010T123501Z
-DTSTART:20261010T143000Z
-DTEND:20261010T163000Z
-SUMMARY:Rae Spordikool II (14) - Tallinna FC Flora Rohelised (14)
-DESCRIPTION:U13 II · U13.VII\nKodumäng\nEJL: https://jalgpall.ee/voistlu
- sed/match_info/190612
-LOCATION:Roheluse tee 4\, Järveküla\, Rae vald
-URL:https://jalgpall.ee/voistlused/match_info/190612
-END:VEVENT
-BEGIN:VEVENT
 UID:190621@fcrae.ee
-DTSTAMP:20261010T123501Z
+DTSTAMP:20261010T183027Z
 DTSTART:20261025T110000Z
 DTEND:20261025T130000Z
 SUMMARY:Rae Spordikool II (14) - JK Tallinna Kalev Kratid (14)

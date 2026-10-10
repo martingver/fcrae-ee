@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T12:35:01.052Z",
+  "updatedAt": "2026-10-10T18:30:27.893Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -70,7 +70,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 2,
+      "upcomingCount": 1,
       "resultCount": 16,
       "playerCount": 15
     },
@@ -142,8 +142,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 1,
-      "resultCount": 19,
+      "upcomingCount": 0,
+      "resultCount": 20,
       "playerCount": 25
     },
     {
@@ -2479,7 +2479,7 @@
     {
       "teamId": "u16",
       "team": "U16",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U16.III",
       "date": "10.10.2026",
       "time": "16:00",
@@ -2488,21 +2488,8 @@
       "awayTeam": "FC Tallinn II (11)",
       "opponent": "FC Tallinn II (11)",
       "homeAway": "Kodu",
+      "score": "14 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189958"
-    },
-    {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "status": "upcoming",
-      "competition": "U13.VII",
-      "date": "10.10.2026",
-      "time": "17:30",
-      "startsAt": "2026-10-10T17:30:00+03:00",
-      "homeTeam": "Rae Spordikool II (14)",
-      "awayTeam": "Tallinna FC Flora Rohelised (14)",
-      "opponent": "Tallinna FC Flora Rohelised (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190612"
     },
     {
       "teamId": "u13-i",
@@ -4686,8 +4673,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 2,
-      "goals": 2,
+      "leagueGoals": 4,
+      "goals": 4,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49213/team/6511"
     },
     {
@@ -4714,8 +4701,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 7,
-      "goals": 7,
+      "leagueGoals": 13,
+      "goals": 13,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/6511"
     },
     {
@@ -4812,8 +4799,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50292/team/6511"
     },
     {
@@ -4938,8 +4925,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 5,
-      "goals": 5,
+      "leagueGoals": 7,
+      "goals": 7,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/45763/team/6511"
     },
     {
@@ -4952,8 +4939,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 1,
-      "goals": 1,
+      "leagueGoals": 2,
+      "goals": 2,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49095/team/6511"
     },
     {
@@ -4980,8 +4967,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 10,
-      "goals": 10,
+      "leagueGoals": 12,
+      "goals": 12,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49476/team/6511"
     },
     {
@@ -5505,14 +5492,14 @@
           "teamId": 1863,
           "teamName": "Jõgeva SK Noorus-96",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
-          "matches": 23,
+          "matches": 24,
           "wins": 13,
-          "draws": 2,
+          "draws": 3,
           "losses": 8,
           "goals": "55:43",
           "goalsFor": 55,
           "goalsAgainst": 43,
-          "points": 41,
+          "points": 42,
           "isRaeTeam": false
         },
         {
@@ -5520,14 +5507,14 @@
           "teamId": 3125,
           "teamName": "Võru FC Helios",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/3125?season=2026",
-          "matches": 23,
+          "matches": 24,
           "wins": 11,
-          "draws": 3,
+          "draws": 4,
           "losses": 9,
           "goals": "61:60",
           "goalsFor": 61,
           "goalsAgainst": 60,
-          "points": 36,
+          "points": 37,
           "isRaeTeam": false
         },
         {
