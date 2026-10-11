@@ -6,15 +6,4 @@ METHOD:PUBLISH
 X-WR-CALNAME:FC Rae U15
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/u15.ics
-BEGIN:VEVENT
-UID:192081@fcrae.ee
-DTSTAMP:20261011T123639Z
-DTSTART:20261011T130000Z
-DTEND:20261011T150000Z
-SUMMARY:Paide LM (12) - Rae Spordikool (12)
-DESCRIPTION:U15 · U15.III\nVõõrsilmäng\nEJL: https://jalgpall.ee/voist
- lused/match_info/192081
-LOCATION:Võõrsilmäng
-URL:https://jalgpall.ee/voistlused/match_info/192081
-END:VEVENT
 END:VCALENDAR
