@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T18:30:27.893Z",
+  "updatedAt": "2026-10-11T01:10:06.092Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -71,7 +71,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 1,
-      "resultCount": 16,
+      "resultCount": 17,
       "playerCount": 15
     },
     {
@@ -2490,6 +2490,21 @@
       "homeAway": "Kodu",
       "score": "14 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/189958"
+    },
+    {
+      "teamId": "u13-ii",
+      "team": "U13 II",
+      "status": "finished",
+      "competition": "U13.VII",
+      "date": "10.10.2026",
+      "time": "17:30",
+      "startsAt": "2026-10-10T17:30:00+03:00",
+      "homeTeam": "Rae Spordikool II (14)",
+      "awayTeam": "Tallinna FC Flora Rohelised (14)",
+      "opponent": "Tallinna FC Flora Rohelised (14)",
+      "homeAway": "Kodu",
+      "score": "2 - 2",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190612"
     },
     {
       "teamId": "u13-i",
