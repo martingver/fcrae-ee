@@ -18,4 +18,4 @@ rsync -azR -e "ssh -i $deploy_key" \
   "$deploy_target:/opt/fcrae-forms/"
 
 ssh -i "$deploy_key" "$deploy_target" \
-  'systemctl restart fcrae-forms && systemctl is-active --quiet fcrae-forms && curl --retry 5 --retry-delay 1 --retry-connrefused -fsS http://127.0.0.1:4174/health'
+  'sudo -n /usr/bin/systemctl restart fcrae-forms && systemctl is-active --quiet fcrae-forms && curl --retry 5 --retry-delay 1 --retry-connrefused -fsS http://127.0.0.1:4174/health'

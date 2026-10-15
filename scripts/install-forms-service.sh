@@ -120,4 +120,10 @@ systemctl daemon-reload
 systemctl enable --now fcrae-forms.service
 systemctl restart fcrae-forms.service
 systemctl reload nginx
+if id deploy >/dev/null 2>&1; then
+  chown -R deploy:deploy /opt/fcrae-forms
+  printf '%s\n' 'deploy ALL=(root) NOPASSWD: /usr/bin/systemctl restart fcrae-forms' > /etc/sudoers.d/fcrae-forms-deploy
+  chmod 0440 /etc/sudoers.d/fcrae-forms-deploy
+  /usr/sbin/visudo -cf /etc/sudoers.d/fcrae-forms-deploy
+fi
 echo 'FC Rae form service installed. Google Workspace must allow 89.167.60.39 in its SMTP relay.'
