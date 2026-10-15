@@ -21,8 +21,65 @@ Repo sisaldab GitHub Actions töövoogu `.github/workflows/update-jalgpall-data.
 
 ## Vormid
 
-Kontaktivorm, fänniklubi huvi ja toetajapaketi modal proovivad saata päringu serveripoolsesse endpointi `/api/forms/contact`. Endpoint peab valideerima väljad, kontrollima honeypot'i, täitmise aega, linkide arvu ja IP-põhist rate limitit ning saatma kirja aadressile `info@fcrae.ee`.
+Kontaktivorm, fänniklubi huvi, ettevõtte koostöösoov ja toetajapaketi huvivorm kasutavad sama `/api/forms/contact` endpointi. Selle omanik on `api/forms/contact.mjs`; kliendipoolne saatmine ja modaalide fookus on failis `app.js`. Endpoint valideerib väljad, nõusoleku, honeypot'i, täitmise aja, linkide arvu ja IP-põhise päringupiirangu. See salvestab taotluse privaatsesse SQLite registrisse ja saadab klubile teate ning kliendile kinnituse. Paketi tingimustest säilib päringu tegemise aegne koopia. Sama tunnusega korduv saatmine ei loo uut taotlust.
 
-Praegune avalik hosting on staatiline ja ei käivita PHP-d. Kui serveripoolne saatmine ebaõnnestub või endpoint puudub, kuvab frontend kasutajale `mailto:` fallback-lingi. Kohalik `npm run serve` tagastab sellele endpointile teadlikult 503 JSON-vastuse, et fallbacki oleks lihtne testida.
+Avalikud lehed on staatilised; `/api/forms/contact` ja vana `/api/forms/contact.php` suunatakse eraldi Node vormiteenusesse. Teenus on serveris paigaldatud (vt allpool). Staatiliste failide kopeerimine üksi vormiteenust ei uuenda. `npm run serve` teenindab kohapeal nii veebilehte kui endpointi. Ilma meiliedastuse seadistuseta tagastab endpoint 503 ning veeb pakub täidetud andmetega `mailto:` varulinki. Vormi õnnestumist ei imiteerita. Meiliprogrammis tuleb kiri kasutajal endal ära saata.
+
+### Toetajalehe sisu ja eelvaade
+
+`data/supporters.json` on paketi hinna, hüvede, versiooni, PDF-i, fännipoe, makseandmete ja dokumendilinkide ühine seadistus. Pärast muutmist käivita `npm run build:supporters`; see uuendab nii `/toetajad/` kui ka vana `/toetajad.html` koopiat. Seejärel taaskäivita Node teenus, et kirjad ja serveri kontroll kasutaksid sama versiooni. Paketi hinna või tingimuste muutmisel muuda ka `version` väärtust; vana lehega saabunud huvisaatmine palub kasutajal lehte värskendada.
+
+Praegune etapp on **huvi registreerimine**, mitte tellimine ega arve taotlus. Maksmist, komplekti tarneaega ega suuruseid ei lubata. Paketi aktiveerimine ja nimede avaldamine selle vormi kaudu ei toimu. 12-kuulise toetajaperioodi ja makse kinnitamise töövoog ning arve taotlemine kuuluvad järgmisse etappi, kui klubi on tingimused kinnitanud.
+
+Kinnitatud pangainfo lisamiseks täida `bank` kujul `{ "recipient": "kinnitatud saaja", "iban": "kinnitatud Eesti IBAN", "reference": "Rae SK toetus" }`. Tühi väärtus jätab makseandmete asemel nähtavale kontakti. Pangainfo olemasolul saab valida 10 / 25 / 50 € või muu summa ning kopeerida ülekande väljad. Leht ei kinnita laekumist. Enne avaldamist kontrolli saaja ja IBAN klubiga üle.
+
+Avalikud juhatuse, põhikirja ja aruande lingid lisa `documents` loendisse kujul `{ "title": "Põhikiri", "url": "/assets/kinnitatud-fail.pdf" }` alles pärast päris failide ja avaldamisõiguse saamist. Tühje linke ei kuvata. Olemasolevad sponsorid ja nende järjestus on säilitatud lehe HTML-is.
+
+### Vormiteenuse seadistamine serveris
+
+Server vajab Node.js 22.13+ (kohalik arendus kasutab 24) ja seadistatud `sendmail`-ühilduvat meiliteenust (näiteks olemasolev Postfix või msmtp). Uusi npm sõltuvusi ei ole. Keskkonnamuutujate näidis on `.env.example`; päris seadistus peab asuma väljaspool avalikku veebijuurt.
+
+- `SENDMAIL_PATH`: seadistatud meiliprogrammi absoluutne tee. Programm saab kirja standard-sisendist argumentidega `-t -i`.
+- `MAIL_FROM`: klubi kinnitatud saatja. Serveri meiliteenuse autentimine ja domeeni kirjeseadistus peavad olema korras.
+- `FORMS_DATABASE`: privaatse SQLite registri absoluutne tee, näiteks `/var/lib/fcrae/requests.sqlite`. Teenuse kasutajal peab olema sinna kirjutusõigus. Endpoint keeldub registri loomisest avaliku veebikausta sisse.
+- `HOST=127.0.0.1`, `PORT=4173`; `TRUST_LOCAL_PROXY=1` ainult localhosti pöördproksi taga, mis kirjutab `X-Real-IP` päise ise üle.
+
+Nginxi olemasolevasse serveriplokki lisa vajadusel:
+
+```nginx
+location = /api/forms/contact {
+    proxy_pass http://127.0.0.1:4173;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+}
+```
+
+Käivita teenus selle keskkonnaga `node --env-file=/kaitstud/asukoht/fcrae.env scripts/static-server.mjs` ning halda olemasoleva teenusehalduriga. Üks protsess on piisav; praegune päringupiirang ja samaaegsete saatmiste lukk on protsessipõhised. Registri hooldus toimub volitatud haldajal serveris, mitte avaliku veebi kaudu. Hoia varukoopia koos SQLite WAL-failidega või kasuta SQLite backup-käsku. Ära lisa registrit Git-i ega `/var/www/html/` alla.
+
+Enne avalikku aktiveerimist testi klubi loal päris kirja saabumist klubi ja taotleja postkasti. Automaatkontroll `npm test` kasutab ainult kohalikku testtransporti ning ei saada päris kirju. See katab valideerimise, korduva ja samaaegse saatmise, meilivea järel korduskatse, paketi koopia ning privaatsete failide kaitse. Kohalik brauserikontroll ei tõenda päris serveri meiliedastust.
+
+Mõõtmine: CTA-d ja õnnestunud saatmised väljastavad DOM-i `supporter-event` sündmuse, mille `detail.event` sisaldab ainult sündmuse nime. Analüütikateenust pole lisatud; nimesid, e-posti ega sõnumit sündmustesse ei panda. UTM-andmeid praegu ei salvestata ning huvi ei arvestata tuluna.
+
+### Üleandmine ja avaldamise eeldused
+
+Veel vajab klubi kinnitust: makse saaja ja IBAN, hinnakäsitlus ja arveldamise kord, komplekti mudel/suurused/tarneaeg, paketi tingimused, toetajasuhete vastutaja ning avalikud dokumendifailid. Fännipoe juures ei avaldata kontrollimata hindu, tootefotosid ega laoseisu. QR-kood ja PDF on kaasas, kuid trükitud QR tuleb enne trükki kahe päris telefoniga kontrollida.
+
+Muudatused on piiratud toetajalehe, selle materjalide ja jagatud vormitöötlusega. Toetajaleht ja vormiteenus avaldatakse koos `scripts/deploy-site.sh` kaudu. Tagasivõtmiseks taasta selle töö Git-muudatused; privaatne taotluste register säilita eraldi. Jalgpall.ee andmete laadimine ja teised lehesisud kasutavad senist lahendust.
+
+### Serveri seis 15.10.2026
+
+`fcraeweb` serverisse on paigaldatud Ubuntu enda Node 22.22.1 ning msmtp. `fcrae-forms.service` töötab kasutajana `fcrae-forms` ja kuulab ainult `127.0.0.1:4174`. Kood asub `/opt/fcrae-forms`, privaatne register `/var/lib/fcrae/requests.sqlite`, teenuse keskkond `/etc/fcrae/forms.env` ning relee seaded `/etc/msmtprc`. Sätted on seadistatud Google Workspace’i releele `smtp-relay.gmail.com:587`, kohustusliku TLS-i ja IPv4 lähteaadressiga `89.167.60.39`. SMTP autentimist ei kasutata: Google Admin peab lubama selle IP. Seadistamise ajal keeldus relee nii serveri IPv4 kui IPv6 saatmiskatsest veaga 550 5.7.0; päris kirja sisu ei saadetud. Serveripoolne TLS-i ja seadistuse kontroll läbis. Pärast IP-aadressi lubamist 15.10.2026 aktsepteeris Google serveri IPv4 ühendusel nii `MAIL FROM: info@fcrae.ee` kui `RCPT TO: info@fcrae.ee` (mõlemad SMTP 250). Teenuse tervisekontroll läbis. Ühenduse kontroll lõpetati enne kirja sisu saatmist. Järgnenud kasutaja vormiproovi kohta näitas privaatne register üht edukat klubile saadetud kirja ja üht kinnituskirja; postkasti saabumist see eraldi ei kinnita. Kohalik eelvaateserver ei kasuta automaatselt tootmise meiliedastust.
+
+Teenuse käivitaja on `scripts/forms-server.mjs`; see kasutab sama valideerimise ja salvestamise omanikku `api/forms/contact.mjs`. Avalikud vanad vormid, mis ei saada päringu tunnust, saavad serveris sisu järgi püsiva tunnuse, et nende korduskatse uut registrikirjet ei looks. `npm test` kontrollib ka seda ühilduvust.
+
+Paigaldust kirjeldab `scripts/install-forms-service.sh`. See eeldab eelnevalt paigaldatud Node/msmtp pakette ning kolme koodifaili kopeerimist vastavatesse `/opt/fcrae-forms` alamkaustadesse. Nginxi algse seadistuse varukoopia asub `/var/backups/fcrae/nginx-default-20261015T133705Z`. Teenuse seis: `systemctl status fcrae-forms`; privaatne tervisekontroll: `curl http://127.0.0.1:4174/health`.
+
+Vormikoodi või paketi seadistuse muutmisel kopeeri `api/forms/contact.mjs`, `scripts/forms-server.mjs` ja `data/supporters.json` vastavatesse `/opt/fcrae-forms` kaustadesse ning käivita `systemctl restart fcrae-forms`. GitHubi avaldamisvood teevad seda nüüd automaatselt ühise `scripts/deploy-site.sh` abil. See saadab avalikud failid veebijuure alla, vormikoodi eraldi `/opt/fcrae-forms` kausta ning taaskäivitab ainult vormiteenuse. Ka ajastatud jalgpall.ee uuendus kasutab sama avaldamist; kaks voogu ei avalda korraga. Privaatne register ja serveri relee seadistus jäävad puutumata.
+
+Peatamiseks: `systemctl disable --now fcrae-forms`; nginxist eemalda ainult märgistusega „FC Rae form service” plokk, kontrolli `nginx -t` ja laadi nginx uuesti. Registrit ära kustuta. Muud serveri teenused ja Google Workspace’i seaded pole muudetud.
+
+Toetajalehe põhitegevus on kohtumise ja suurema ettevõtte koostöö algatamine. 300 € pakett jääb teiseseks CTA-ks ning ettevõtte koostööplokk paikneb sellest eespool.
 
 Fännikaup viitab seniks 4Teamsi Rae Spordikooli varustuse lehele: https://4teams.ee/klubi-varustus/rae-spordikool/.
+
+Avaldamise eelne veebifailide varukoopia: `/var/backups/fcrae/site-before-supporters-20261015T135742Z.tar.gz`. Toetajate plokk asub enne ettevõtte koostöövõimalusi; kõik senised nimed, lingid ja peasponsori staatus on säilitatud. Külastajale rämpspostikaitse tehnilist teadet ei kuvata; kaitse ise jääb vormitöötluses aktiivseks.

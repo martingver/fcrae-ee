@@ -1055,7 +1055,6 @@ input {
 
 .join-form label:nth-child(3),
 .join-form .check-field,
-.join-form .spam-note,
 .join-form .form-status,
 .join-form button {
   grid-column: 1 / -1;
@@ -2411,12 +2410,6 @@ body[data-team-page="u13-i"] .team-subhero {
   margin-top: 20px;
 }
 
-.spam-note {
-  margin: 0;
-  color: #68717c;
-  font-size: 0.85rem;
-  font-weight: 800;
-}
 
 .form-status {
   margin: 14px 0 0;

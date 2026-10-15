@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "update:data": "node scripts/update-jalgpall-data.mjs",
-    "serve": "node scripts/static-server.mjs"
+    "build:supporters": "node scripts/build-supporters.mjs",
+    "serve": "node scripts/static-server.mjs",
+    "test": "node --test scripts/contact.test.mjs"
   }
 }

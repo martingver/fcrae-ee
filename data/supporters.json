@@ -1,0 +1,18 @@
+{
+  "version": "2026-10-15-interest-1",
+  "price": 300,
+  "periodMonths": 12,
+  "mode": "interest",
+  "contactEmail": "info@fcrae.ee",
+  "legalName": "FC Rae SK MTÜ",
+  "benefits": [
+    "Üks Rae SK fännisärk ja üks sall.",
+    "Digitaalse Rae SK toetajamärgise kasutusõigus 12 kuuks.",
+    "Soovi korral nimi või ettevõtte nimi toetajate lehel.",
+    "Kaks korda aastas ülevaade klubi arengust ja toetuse kasutamisest."
+  ],
+  "pdfUrl": "/assets/rae-sk-toetaja-ulevaade.pdf",
+  "shopUrl": "https://4teams.ee/klubi-varustus/rae-spordikool/",
+  "bank": null,
+  "documents": []
+}

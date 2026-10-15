@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: fcrae-production
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,6 +16,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Build and verify supporter page and forms
+        run: npm run build:supporters && npm test
 
       - name: Install rsync
         run: sudo apt-get update && sudo apt-get install -y rsync
@@ -24,9 +36,7 @@ jobs:
           ssh-keyscan -H "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
 
       - name: Deploy to server
-        run: |
-          rsync -az --delete \
-            --exclude ".git" \
-            --exclude ".github" \
-            -e "ssh -i ~/.ssh/deploy_key" \
-            ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/var/www/html/
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        run: bash scripts/deploy-site.sh

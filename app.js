@@ -234,34 +234,42 @@ const setupMobileMenu = () => {
 };
 
 const setupSponsorModal = () => {
-  const modal = document.querySelector("[data-sponsor-modal]");
-  if (!modal) return;
-
-  const openButtons = document.querySelectorAll("[data-open-sponsor-modal]");
-  const closeButtons = modal.querySelectorAll("[data-close-sponsor-modal]");
-  const firstInput = modal.querySelector("input, select, textarea, button");
-  const params = new URLSearchParams(window.location.search);
-
-  const open = () => {
-    modal.hidden = false;
-    document.body.classList.add("modal-open");
-    setTimeout(() => firstInput?.focus(), 0);
-  };
-
-  const close = () => {
-    modal.hidden = true;
-    document.body.classList.remove("modal-open");
-  };
-
-  openButtons.forEach((button) => button.addEventListener("click", open));
-  if (params.get("modal") === "toetaja") open();
-  closeButtons.forEach((button) => button.addEventListener("click", close));
-  modal.addEventListener("click", (event) => {
-    if (event.target === modal) close();
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !modal.hidden) close();
-  });
+  for (const kind of ["sponsor", "supporter"]) {
+    const modal = document.querySelector(`[data-${kind}-modal]`);
+    if (!modal) continue;
+    let opener;
+    const dialog = modal.querySelector('[role="dialog"]');
+    const focusable = () => [...modal.querySelectorAll('button, input, select, textarea, a[href], [tabindex="0"]')]
+      .filter((node) => !node.disabled && node.getClientRects().length);
+    const close = () => {
+      modal.hidden = true;
+      document.body.classList.remove("modal-open");
+      for (const node of document.querySelectorAll("body > header, body > main, body > footer")) node.inert = false;
+      opener?.focus();
+    };
+    const open = (event) => {
+      opener = event?.currentTarget ?? document.activeElement;
+      modal.hidden = false;
+      document.body.classList.add("modal-open");
+      for (const node of document.querySelectorAll("body > header, body > main, body > footer")) node.inert = true;
+      (modal.querySelector('input:not([type="hidden"]):not([hidden]), select') ?? dialog).focus();
+    };
+    document.querySelectorAll(`[data-open-${kind}-modal]`).forEach((button) => button.addEventListener("click", open));
+    modal.querySelectorAll(`[data-close-${kind}-modal]`).forEach((button) => button.addEventListener("click", close));
+    modal.addEventListener("click", (event) => { if (event.target === modal) close(); });
+    document.addEventListener("keydown", (event) => {
+      if (modal.hidden) return;
+      if (event.key === "Escape") close();
+      if (event.key === "Tab") {
+        const nodes = focusable();
+        const first = nodes[0];
+        const last = nodes.at(-1);
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+      }
+    });
+    if (kind === "sponsor" && new URLSearchParams(window.location.search).get("modal") === "toetaja") open();
+  }
 };
 
 const setupMailForms = () => {
@@ -291,6 +299,8 @@ const setupMailForms = () => {
       input.value = renderedAt;
     });
 
+    let requestId = crypto.randomUUID();
+    let lastPayload = "";
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const status = form.querySelector(".form-status");
@@ -318,7 +328,7 @@ const setupMailForms = () => {
       };
 
       if (String(data.get("website") || "").trim()) {
-        setStatus("Aitäh! Sinu päring on vastu võetud.", "success");
+        setStatus("Vormi saatmine ei õnnestunud. Palun kirjuta info@fcrae.ee.");
         return;
       }
 
@@ -341,16 +351,33 @@ const setupMailForms = () => {
       const type = form.dataset.mailForm;
       const payload = Object.fromEntries(data.entries());
       payload.type = type;
+      const payloadKey = JSON.stringify(payload);
+      if (lastPayload && payloadKey !== lastPayload) requestId = crypto.randomUUID();
+      lastPayload = payloadKey;
+      payload.requestId = requestId;
 
-      const subject = type === "sponsor"
-        ? `FC Rae toetajapaketi päring: ${data.get("company")}`
+      const subject = type === "supporter"
+        ? "Rae SK toetajapaketi huvi"
+        : type === "sponsor"
+        ? `Rae SK koostöösoov: ${data.get("company")}`
         : `FC Rae kontaktivorm: ${data.get("topic")}`;
-      const bodyLines = type === "sponsor"
+      const bodyLines = type === "supporter"
+        ? [
+            "Rae SK toetajapaketi huvi (ei ole tellimus ega arve taotlus)",
+            `Toetaja: ${data.get("customerType") === "company" ? "Ettevõte" : "Eraisik"}`,
+            `Ettevõte: ${data.get("company") || "-"}`,
+            `Kontaktisik: ${data.get("contact")}`,
+            `E-post: ${data.get("email")}`,
+            `Paketi versioon: ${data.get("packageVersion")}`,
+            `Kommentaar: ${message || "-"}`
+          ]
+        : type === "sponsor"
         ? [
             `Ettevõte: ${data.get("company")}`,
             `Kontaktisik: ${data.get("contact")}`,
             `E-post: ${data.get("email")}`,
             `Telefon: ${data.get("phone") || "-"}`,
+            `Huvi: ${data.get("interest") || "-"}`,
             "",
             `Sõnum:`,
             message || "-",
@@ -383,21 +410,37 @@ const setupMailForms = () => {
       })
         .then(async (response) => {
           const result = await response.json().catch(() => ({}));
-          if (!response.ok || !result.ok) throw new Error(result.error || "send_failed");
+          if (!response.ok || !result.ok) {
+            const error = new Error(result.message || "Saatmine ei õnnestunud. Proovi uuesti või kirjuta meile.");
+            error.status = response.status;
+            error.field = result.field;
+            throw error;
+          }
 
           setStatus(
-            type === "sponsor"
-              ? "Aitäh! Võtame sinuga peagi ühendust ja saadame toetajainfo."
-              : "Aitäh! Sinu sõnum on saadetud. Vastame esimesel võimalusel.",
+            `${type === "supporter"
+              ? "Aitäh! Saime sinu toetamissoovi kätte. Võtame ühendust ja täpsustame paketi tingimused. See ei ole makse kinnitus."
+              : type === "sponsor"
+                ? "Aitäh! Sinu koostöösoov jõudis Rae SK-ni. Võtame ühendust."
+                : "Aitäh! Sinu sõnum on saadetud. Vastame esimesel võimalusel."}${result.requestId ? ` Päringu tunnus: ${result.requestId}.` : ""}${result.confirmationSent === false ? " Kinnituskirja saatmine ei õnnestunud, kuid klubi sai sinu päringu kätte." : ""}`,
             "success"
           );
+          document.dispatchEvent(new CustomEvent("supporter-event", { detail: { event: type === "supporter" ? "package_interest_success" : type === "sponsor" ? "cooperation_success" : "contact_success" } }));
           form.reset();
+          requestId = crypto.randomUUID();
+          lastPayload = "";
           form.querySelectorAll("[data-rendered-at]").forEach((input) => {
             input.value = String(Date.now());
           });
         })
-        .catch(() => {
-          setFallbackStatus("Serveripoolne saatmine ebaõnnestus.", mailtoUrl);
+        .catch((error) => {
+          if (error.status >= 400 && error.status < 500) {
+            setStatus(error.message);
+            const field = error.field && form.elements.namedItem(error.field);
+            field?.focus?.();
+          } else {
+            setFallbackStatus("Vormi saatmine ei õnnestunud. Sinu andmed on alles; proovi uuesti või saada soov e-postiga.", mailtoUrl);
+          }
         })
         .finally(() => {
           if (submitButton) submitButton.disabled = false;
