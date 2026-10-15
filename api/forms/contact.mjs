@@ -89,13 +89,13 @@ export function createContactHandler({ config, root, databasePath = process.env.
     const label = payload.type === "supporter" ? "Toetajapaketi huvi" : payload.type === "sponsor" ? "Koostöösoov" : "Kontaktipäring";
     const packageText = payload.package ? `\nPakett: ${payload.package.price} € aastas. Huvi registreerimine; ei ole tellimus ega makse kinnitus.\nVersioon: ${payload.package.version}\n${payload.package.benefits.join("\n")}\n` : "";
     if (!record.club_sent) {
-      await sendMail({ to: config.contactEmail, replyTo: payload.email, subject: `Rae SK: ${label}`, text: `Päringu tunnus: ${payload.requestId}\nLiik: ${label}\nNimi: ${payload.contact || payload.name}\nEttevõte: ${payload.company || "-"}\nE-post: ${payload.email}\nTelefon: ${payload.phone || "-"}\nHuvi / teema: ${payload.interest || payload.topic || "-"}\n${packageText}\nSõnum:\n${payload.message || "-"}\n\nÜhenduse võtmise nõusolek: jah.\nNime avaldamiseks nõusolekut ei ole küsitud ega antud.` });
+      await sendMail({ to: config.contactEmail, replyTo: payload.email, subject: `Rae SK: ${label}`, text: `Liik: ${label}\nNimi: ${payload.contact || payload.name}\nEttevõte: ${payload.company || "-"}\nE-post: ${payload.email}\nTelefon: ${payload.phone || "-"}\nHuvi / teema: ${payload.interest || payload.topic || "-"}\n${packageText}\nSõnum:\n${payload.message || "-"}\n\nÜhenduse võtmise nõusolek: jah.\nNime avaldamiseks nõusolekut ei ole küsitud ega antud.` });
       db.prepare("UPDATE requests SET club_sent = 1 WHERE id = ?").run(payload.requestId);
     }
     let confirmationSent = Boolean(record.confirmation_sent);
     if (!confirmationSent) {
       try {
-        await sendMail({ to: payload.email, replyTo: config.contactEmail, subject: "Rae SK: päringu kinnitus", text: `Aitäh! Sinu ${label.toLowerCase()} jõudis Rae SK-ni. Võtame ühendust.\n\nPäringu tunnus: ${payload.requestId}\n${packageText}\nSee kiri ei kinnita makset ega aktiveeri toetajapaketti. Sinu nime ei avaldata selle päringu põhjal.\n\n${config.legalName}\n${config.contactEmail}` });
+        await sendMail({ to: payload.email, replyTo: config.contactEmail, subject: "Rae SK: päringu kinnitus", text: `Aitäh! Sinu ${label.toLowerCase()} jõudis Rae SK-ni. Võtame ühendust.\n\n${packageText}\nSee kiri ei kinnita makset ega aktiveeri toetajapaketti. Sinu nime ei avaldata selle päringu põhjal.\n\n${config.legalName}\n${config.contactEmail}` });
         db.prepare("UPDATE requests SET confirmation_sent = 1 WHERE id = ?").run(payload.requestId);
         confirmationSent = true;
       } catch { /* The club has the request; a retry with the same ID can resend the confirmation. */ }

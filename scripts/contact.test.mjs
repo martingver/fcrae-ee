@@ -66,6 +66,10 @@ test("real HTTP: one record and one pair of emails for concurrent duplicate subm
     assert.equal(mails.length, 6);
     const oldContact = form({ type: "contact", name: "Test Nimi", topic: "Treening" });
     assert.equal((await post(oldContact)).status, 200);
+    for (const mail of mails) {
+      assert.doesNotMatch(mail.text, /Päringu tunnus:/);
+      assert.doesNotMatch(mail.text, /[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}/i);
+    }
     for (const path of ["/api/forms/contact.mjs", "/.git/config", "/.env", "/scripts/contact.test.mjs", "/unknown"]) assert.equal((await fetch(base + path)).status, 404);
     for (const path of ["/", "/kontakt/", "/toetajad/", "/toetajad.html"]) assert.equal((await fetch(base + path)).status, 200);
     const pdf = await fetch(base + "/assets/rae-sk-toetaja-ulevaade.pdf");
@@ -74,6 +78,7 @@ test("real HTTP: one record and one pair of emails for concurrent duplicate subm
     const db = new DatabaseSync(dbPath);
     const rows = db.prepare("SELECT * FROM requests").all();
     assert.equal(rows.length, 4);
+    assert.equal(rows[0].id, data.requestId);
     assert.ok(rows.every((row) => row.status === "new"));
     assert.equal(JSON.parse(rows[0].payload).package.version, config.version);
     db.close();
