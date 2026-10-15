@@ -39,13 +39,14 @@ if (config.bank?.recipient && /^EE\d{18}$/.test(config.bank.iban.replace(/\s/g, 
     if (!form.reportValidity()) return;
     const amount = form.elements.amount.value === "other" ? Number(custom.value) : Number(form.elements.amount.value);
     if (!Number.isFinite(amount) || amount <= 0) return;
-    const values = { recipient: config.bank.recipient, iban: config.bank.iban, amount: `${amount.toFixed(2)} €`, reference: config.bank.reference || "Rae SK toetus" };
+    const values = { recipient: config.bank.recipient, iban: config.bank.iban, amount: new Intl.NumberFormat("et-EE", { style: "currency", currency: "EUR" }).format(amount), reference: config.bank.reference || "Rae SK toetus" };
     donation.querySelectorAll("[data-bank-value]").forEach((node) => { node.textContent = values[node.dataset.bankValue]; });
     donation.querySelector("[data-bank-details]").hidden = false;
     document.dispatchEvent(new CustomEvent("supporter-event", { detail: { event: "payment_details_open" } }));
   });
   donation.querySelectorAll("[data-copy]").forEach((button) => button.addEventListener("click", async () => {
-    const value = donation.querySelector(`[data-bank-value="${button.dataset.copy}"]`).textContent;
+    const text = donation.querySelector(`[data-bank-value="${button.dataset.copy}"]`).textContent;
+    const value = button.dataset.copy === "amount" ? text.replace(/\s*€$/, "") : text;
     const status = donation.querySelector("[data-copy-status]");
     try { await navigator.clipboard.writeText(value); status.textContent = "Kopeeritud."; }
     catch { status.textContent = "Kopeerimine ei õnnestunud. Vali tekst ja kopeeri see käsitsi."; }

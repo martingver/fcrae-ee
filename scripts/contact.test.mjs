@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm, mkdir, copyFile, writeFile } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { randomUUID } from "node:crypto";
@@ -101,4 +102,31 @@ test("unconfigured mail service never reports success", async () => {
     assert.equal(response.status, 503);
     assert.equal((await response.json()).ok, false);
   } finally { server.closeAllConnections(); await new Promise((resolve) => server.close(resolve)); handler.close(); }
+});
+
+test("content build publishes complete evidence, escapes text and rejects invalid bank details", async () => {
+  const dir = await mkdtemp(join(tmpdir(), "rae-content-test-"));
+  try {
+    for (const name of ["scripts", "data", "toetajad", "assets"]) await mkdir(join(dir, name));
+    for (const name of ["scripts/build-supporters.mjs", "toetajad/index.html", "assets/u11-medalid.jpg"]) await copyFile(new URL(`../${name}`, import.meta.url), join(dir, name));
+    const fixture = { ...config, updates: [{ activity: "Test <tegevus>", photo: "/assets/u11-medalid.jpg", photoAlt: "Testfoto", result: "Kontrollitud & kinnitatud tulemus" }] };
+    const build = () => execFileSync(process.execPath, ["scripts/build-supporters.mjs"], { cwd: dir, stdio: "pipe" });
+    const save = () => writeFile(join(dir, "data/supporters.json"), JSON.stringify(fixture));
+    await save(); build();
+    const page = await readFile(join(dir, "toetajad/index.html"), "utf8");
+    assert.match(page, /Test &lt;tegevus>/);
+    assert.match(page, /Kontrollitud &amp; kinnitatud tulemus/);
+    assert.equal(page, await readFile(join(dir, "toetajad.html"), "utf8"));
+    const base = new URL(page.match(/<base href="([^"]+)"/)[1], "https://fcrae.ee/toetajad/");
+    const anchors = [...page.matchAll(/href="([^"]*#[^"]*)"/g)].map((match) => match[1]).filter((href) => href.startsWith("#") || href.startsWith("/toetajad/#"));
+    for (const href of anchors) {
+      const target = new URL(href, base);
+      assert.equal(target.pathname, "/toetajad/");
+      assert.ok(page.includes(`id="${target.hash.slice(1)}"`));
+    }
+    fixture.bank = { ...config.bank, iban: "EE007700771012793401" };
+    await save(); assert.throws(build);
+    fixture.bank = config.bank; fixture.updates[0].result = "";
+    await save(); assert.throws(build);
+  } finally { await rm(dir, { recursive: true, force: true }); }
 });

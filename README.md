@@ -62,7 +62,7 @@ Mõõtmine: CTA-d ja õnnestunud saatmised väljastavad DOM-i `supporter-event` 
 
 ### Üleandmine ja avaldamise eeldused
 
-Veel vajab klubi kinnitust: makse saaja ja IBAN, hinnakäsitlus ja arveldamise kord, komplekti mudel/suurused/tarneaeg, paketi tingimused, toetajasuhete vastutaja ning avalikud dokumendifailid. Fännipoe juures ei avaldata kontrollimata hindu, tootefotosid ega laoseisu. QR-kood ja PDF on kaasas, kuid trükitud QR tuleb enne trükki kahe päris telefoniga kontrollida.
+Väiksema toetuse saaja ja IBAN on klubi antud konto põhjal sisestatud ning kontrollsumma läbis. Veel vajab klubi kinnitust: hinnakäsitlus ja arveldamise kord, komplekti mudel/suurused/tarneaeg, paketi tingimused, toetajasuhete vastutaja ning avalikud dokumendifailid. Fännipoe juures ei avaldata kontrollimata hindu, tootefotosid ega laoseisu. QR-kood ja PDF on kaasas, kuid trükitud QR tuleb enne trükki kahe päris telefoniga kontrollida.
 
 Muudatused on piiratud toetajalehe, selle materjalide ja jagatud vormitöötlusega. Toetajaleht ja vormiteenus avaldatakse koos `scripts/deploy-site.sh` kaudu. Tagasivõtmiseks taasta selle töö Git-muudatused; privaatne taotluste register säilita eraldi. Jalgpall.ee andmete laadimine ja teised lehesisud kasutavad senist lahendust.
 
@@ -83,3 +83,11 @@ Toetajalehe põhitegevus on kohtumise ja suurema ettevõtte koostöö algatamine
 Fännikaup viitab seniks 4Teamsi Rae Spordikooli varustuse lehele: https://4teams.ee/klubi-varustus/rae-spordikool/.
 
 Avaldamise eelne veebifailide varukoopia: `/var/backups/fcrae/site-before-supporters-20261015T135742Z.tar.gz`. Toetajate plokk asub enne ettevõtte koostöövõimalusi; kõik senised nimed, lingid ja peasponsori staatus on säilitatud. Külastajale rämpspostikaitse tehnilist teadet ei kuvata; kaitse ise jääb vormitöötluses aktiivseks.
+
+### Toetaja väärtus ja tõendid
+
+Toetaja väärtust kirjeldav plokk paikneb mõju ja olemasolevate toetajate vahel ning kasutab olemasolevat klubifotot `assets/u11-medalid.jpg`. Koostöövormi ja paketi juurde viivad tegevused kasutavad seniseid käitumise omanikke. Toetajamärgise eelvaade jääb paketi juurde; vorminähtavus, eraldi sotsiaalmeediakajastused ning korraldatud ühistegevused on eraldi sponsorkoostöö.
+
+`data/supporters.json` välja `updates` saab lisada klubi kinnitatud ülevaateid kujul `{ "activity": "Tegevuse nimi", "photo": "/assets/klubi-kinnitatud-foto.jpg", "photoAlt": "Foto sisuline kirjeldus", "result": "Tegevuse tegelik tulemus ja kontrollitud näitajad" }`. Need on sisestusväljade kirjeldused, mitte avaldatavad näidisfaktid. Kasuta ainult päris tegevusi, avaldamiseks lubatud fotosid ja kontrollitud tulemusi. Käivita `npm run build:supporters`; ülevaated ilmuvad läbipaistvuse plokki. Tühi loend ei lisa avalikku tühja sektsiooni. Puuduv tegevus, tulemus või kohalik foto peatab ehituse.
+
+Pangaandmed on väiksema toetuse jaoks; nende sisestamine ei kinnita 300 € paketi tarne- ega arveldustingimusi. Paketi vorm jääb huvi registreerimiseks. Arve taotlemine, särgisuuruse või komplektist loobumise valik aktiveeritakse alles klubi kinnitatud tingimuste järel. Selle muudatusega tuleb üheskoos üle kontrollida veeb, PDF ning kliendi kinnituskiri, et hind, hüved, kestus ja makse kinnitamise tähendus oleksid samad.

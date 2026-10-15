@@ -13,6 +13,11 @@
   ],
   "pdfUrl": "/assets/rae-sk-toetaja-ulevaade.pdf",
   "shopUrl": "https://4teams.ee/klubi-varustus/rae-spordikool/",
-  "bank": null,
-  "documents": []
+  "bank": {
+    "recipient": "FC Rae SK MTÜ",
+    "iban": "EE867700771012793401",
+    "reference": "Rae SK toetus"
+  },
+  "documents": [],
+  "updates": []
 }
