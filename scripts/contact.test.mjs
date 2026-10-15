@@ -68,7 +68,9 @@ test("real HTTP: one record and one pair of emails for concurrent duplicate subm
     assert.equal((await post(oldContact)).status, 200);
     for (const path of ["/api/forms/contact.mjs", "/.git/config", "/.env", "/scripts/contact.test.mjs", "/unknown"]) assert.equal((await fetch(base + path)).status, 404);
     for (const path of ["/", "/kontakt/", "/toetajad/", "/toetajad.html"]) assert.equal((await fetch(base + path)).status, 200);
-    assert.match((await fetch(base + "/assets/rae-sk-toetaja-ulevaade.pdf")).headers.get("content-type"), /application\/pdf/);
+    const pdf = await fetch(base + "/assets/rae-sk-toetaja-ulevaade.pdf");
+    assert.match(pdf.headers.get("content-type"), /application\/pdf/);
+    await pdf.arrayBuffer();
     const db = new DatabaseSync(dbPath);
     const rows = db.prepare("SELECT * FROM requests").all();
     assert.equal(rows.length, 4);
@@ -78,6 +80,7 @@ test("real HTTP: one record and one pair of emails for concurrent duplicate subm
     assert.equal((await post(form())).status, 200);
     assert.equal((await post(form())).status, 429);
   } finally {
+    server.closeAllConnections();
     await new Promise((resolve) => server.close(resolve));
     handler.close();
     await rm(dir, { recursive: true, force: true });
@@ -92,5 +95,5 @@ test("unconfigured mail service never reports success", async () => {
     const response = await fetch(`http://127.0.0.1:${server.address().port}/api/forms/contact`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form()) });
     assert.equal(response.status, 503);
     assert.equal((await response.json()).ok, false);
-  } finally { await new Promise((resolve) => server.close(resolve)); handler.close(); }
+  } finally { server.closeAllConnections(); await new Promise((resolve) => server.close(resolve)); handler.close(); }
 });
