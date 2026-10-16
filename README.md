@@ -88,6 +88,8 @@ Avaldamise eelne veebifailide varukoopia: `/var/backups/fcrae/site-before-suppor
 
 ### Toetaja väärtus ja tõendid
 
+Jalgpalliga toetajamärgise heaks kiidetud veebipilt on `assets/rae-sk-toetaja-jalgpall.png` (läbipaistev PNG, 2172 × 724). Sama nimega `.svg` sisaldab eraldi vektorkihte ning muudetavaid tekste (Arial Black ja Arial); `-kontuurid.svg` säilitab tähekujud vektorkontuuridena ja ei vaja fonte. SVG-des on tekstuuri asemel puhtad värvid: roheline `#142D20`, kollane `#FDD23C`, hele `#FCF9F0`. Mõlemad on päris vektorid, mitte SVG-sse peidetud PNG-d.
+
 Toetaja väärtust kirjeldav plokk paikneb mõju ja olemasolevate toetajate vahel ning kasutab olemasolevat klubifotot `assets/u11-medalid.jpg`. Koostöövorm ja toetaja soovivorm kasutavad seniseid käitumise omanikke. Toetajamärgise eelvaade asub ettevõtte koostöö juures; vorminähtavus, eraldi sotsiaalmeediakajastused ning korraldatud ühistegevused on eraldi sponsorkoostöö.
 
 `data/supporters.json` välja `updates` saab lisada klubi kinnitatud ülevaateid kujul `{ "activity": "Tegevuse nimi", "photo": "/assets/klubi-kinnitatud-foto.jpg", "photoAlt": "Foto sisuline kirjeldus", "result": "Tegevuse tegelik tulemus ja kontrollitud näitajad" }`. Need on sisestusväljade kirjeldused, mitte avaldatavad näidisfaktid. Kasuta ainult päris tegevusi, avaldamiseks lubatud fotosid ja kontrollitud tulemusi. Käivita `npm run build:supporters`; ülevaated ilmuvad läbipaistvuse plokki. Tühi loend ei lisa avalikku tühja sektsiooni. Puuduv tegevus, tulemus või kohalik foto peatab ehituse.
