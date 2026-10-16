@@ -27,11 +27,13 @@ Avalikud lehed on staatilised; `/api/forms/contact` ja vana `/api/forms/contact.
 
 ### Toetajalehe sisu ja eelvaade
 
-`data/supporters.json` on paketi hinna, hüvede, versiooni, PDF-i, fännipoe, makseandmete ja dokumendilinkide ühine seadistus. Pärast muutmist käivita `npm run build:supporters`; see uuendab nii `/toetajad/` kui ka vana `/toetajad.html` koopiat. Seejärel taaskäivita Node teenus, et kirjad ja serveri kontroll kasutaksid sama versiooni. Paketi hinna või tingimuste muutmisel muuda ka `version` väärtust; vana lehega saabunud huvisaatmine palub kasutajal lehte värskendada.
+`data/supporters.json` on toetuse tänu alampiiri, versiooni, PDF-i, fännipoe, makseandmete ja dokumendilinkide ühine seadistus. `npm run build:supporters` uuendab nii `/toetajad/` kui ka vana `/toetajad.html` koopiat. Vormiteenus kasutab sama konfiguratsiooni; tingimuste muutmisel uuenda `version` väärtust ja taaskäivita teenus. Vana lehega saabunud soov palub kasutajal lehte värskendada.
 
-Praegune etapp on **huvi registreerimine**, mitte tellimine ega arve taotlus. Maksmist, komplekti tarneaega ega suuruseid ei lubata. Paketi aktiveerimine ja nimede avaldamine selle vormi kaudu ei toimu. 12-kuulise toetajaperioodi ja makse kinnitamise töövoog ning arve taotlemine kuuluvad järgmisse etappi, kui klubi on tingimused kinnitanud.
+Toetamine on vabalt valitud summaga pangaülekanne, mitte aastapakett. Vähemalt 150 € toetuse puhul saab soovi korral ühe fännisärgi ja salli ning eraldi nõusolekul tänuavalduse veebilehel. Vorm kogub ülekande summa, komplekti soovi või loobumise, võimaliku särgisuuruse ja avaldatava nime eraldi nõusolekuga. Üleandmine lepitakse eraldi kokku. Vorm ei kinnita laekumist ega avalda nimesid automaatselt; klubi kontrollib laekumist enne üleandmist või nime avaldamist. 300 € aastapakett on eemaldatud.
 
-Kinnitatud pangainfo lisamiseks täida `bank` kujul `{ "recipient": "kinnitatud saaja", "iban": "kinnitatud Eesti IBAN", "reference": "Rae SK toetus" }`. Tühi väärtus jätab makseandmete asemel nähtavale kontakti. Pangainfo olemasolul saab valida 10 / 25 / 50 € või muu summa ning kopeerida ülekande väljad. Leht ei kinnita laekumist. Enne avaldamist kontrolli saaja ja IBAN klubiga üle.
+Kinnitatud pangainfo asub `bank` väljas. Toetaja saab valida 10 / 25 / 50 / 150 € või muu summa ja kopeerida ülekande väljad. Märgis, ettevõtte kajastused, ühistegevused ja vorminähtavus kuuluvad eraldi sponsorkoostöösse; fikseeritud hinnakirja ei ole. Liikmelisus on eraldi.
+
+PDF kasutab sama alampiiri ja ettevõtte hüvede teksti: `scripts/build-supporter-overview.py` loeb seadistust ja lehe HTML-i. Taastootmiseks kasuta ReportLabiga Pythonit (Windowsis Arial fondid). PDF salvestub `assets/rae-sk-toetaja-ulevaade.pdf`; kontrolli pärast muutmist visuaalselt. Avaldamisel kasutatakse kontrollitud ja Git-is hoitavat PDF-i.
 
 Avalikud juhatuse, põhikirja ja aruande lingid lisa `documents` loendisse kujul `{ "title": "Põhikiri", "url": "/assets/kinnitatud-fail.pdf" }` alles pärast päris failide ja avaldamisõiguse saamist. Tühje linke ei kuvata. Olemasolevad sponsorid ja nende järjestus on säilitatud lehe HTML-is.
 
@@ -56,13 +58,13 @@ location = /api/forms/contact {
 
 Käivita teenus selle keskkonnaga `node --env-file=/kaitstud/asukoht/fcrae.env scripts/static-server.mjs` ning halda olemasoleva teenusehalduriga. Üks protsess on piisav; praegune päringupiirang ja samaaegsete saatmiste lukk on protsessipõhised. Registri hooldus toimub volitatud haldajal serveris, mitte avaliku veebi kaudu. Hoia varukoopia koos SQLite WAL-failidega või kasuta SQLite backup-käsku. Ära lisa registrit Git-i ega `/var/www/html/` alla.
 
-Enne avalikku aktiveerimist testi klubi loal päris kirja saabumist klubi ja taotleja postkasti. Automaatkontroll `npm test` kasutab ainult kohalikku testtransporti ning ei saada päris kirju. See katab valideerimise, korduva ja samaaegse saatmise, meilivea järel korduskatse, paketi koopia ning privaatsete failide kaitse. Kohalik brauserikontroll ei tõenda päris serveri meiliedastust.
+Enne avalikku aktiveerimist testi klubi loal päris kirja saabumist klubi ja taotleja postkasti. Automaatkontroll `npm test` kasutab ainult kohalikku testtransporti ning ei saada päris kirju. See katab valideerimise, korduva ja samaaegse saatmise, meilivea järel korduskatse, toetuse soovi ja nõusolekute koopia ning privaatsete failide kaitse. Kohalik brauserikontroll ei tõenda päris serveri meiliedastust.
 
 Mõõtmine: CTA-d ja õnnestunud saatmised väljastavad DOM-i `supporter-event` sündmuse, mille `detail.event` sisaldab ainult sündmuse nime. Analüütikateenust pole lisatud; nimesid, e-posti ega sõnumit sündmustesse ei panda. UTM-andmeid praegu ei salvestata ning huvi ei arvestata tuluna.
 
 ### Üleandmine ja avaldamise eeldused
 
-Väiksema toetuse saaja ja IBAN on klubi antud konto põhjal sisestatud ning kontrollsumma läbis. Veel vajab klubi kinnitust: hinnakäsitlus ja arveldamise kord, komplekti mudel/suurused/tarneaeg, paketi tingimused, toetajasuhete vastutaja ning avalikud dokumendifailid. Fännipoe juures ei avaldata kontrollimata hindu, tootefotosid ega laoseisu. QR-kood ja PDF on kaasas, kuid trükitud QR tuleb enne trükki kahe päris telefoniga kontrollida.
+Väiksema toetuse saaja ja IBAN on klubi antud konto põhjal sisestatud ning kontrollsumma läbis. Komplekti mudel, suurus ja üleandmine täpsustatakse toetajaga eraldi. Avalikud dokumendifailid vajavad veel klubi kinnitust. Fännipoe juures ei avaldata kontrollimata hindu, tootefotosid ega laoseisu. QR-kood ja PDF on kaasas, kuid trükitud QR tuleb enne trükki kahe päris telefoniga kontrollida.
 
 Muudatused on piiratud toetajalehe, selle materjalide ja jagatud vormitöötlusega. Toetajaleht ja vormiteenus avaldatakse koos `scripts/deploy-site.sh` kaudu. Tagasivõtmiseks taasta selle töö Git-muudatused; privaatne taotluste register säilita eraldi. Jalgpall.ee andmete laadimine ja teised lehesisud kasutavad senist lahendust.
 
@@ -74,11 +76,11 @@ Teenuse käivitaja on `scripts/forms-server.mjs`; see kasutab sama valideerimise
 
 Paigaldust kirjeldab `scripts/install-forms-service.sh`. See eeldab eelnevalt paigaldatud Node/msmtp pakette ning kolme koodifaili kopeerimist vastavatesse `/opt/fcrae-forms` alamkaustadesse. Nginxi algse seadistuse varukoopia asub `/var/backups/fcrae/nginx-default-20261015T133705Z`. Teenuse seis: `systemctl status fcrae-forms`; privaatne tervisekontroll: `curl http://127.0.0.1:4174/health`.
 
-Vormikoodi või paketi seadistuse muutmisel kopeeri `api/forms/contact.mjs`, `scripts/forms-server.mjs` ja `data/supporters.json` vastavatesse `/opt/fcrae-forms` kaustadesse ning käivita `systemctl restart fcrae-forms`. GitHubi avaldamisvood teevad seda nüüd automaatselt ühise `scripts/deploy-site.sh` abil. See saadab avalikud failid veebijuure alla, vormikoodi eraldi `/opt/fcrae-forms` kausta ning taaskäivitab ainult vormiteenuse. Ka ajastatud jalgpall.ee uuendus kasutab sama avaldamist; kaks voogu ei avalda korraga. Privaatne register ja serveri relee seadistus jäävad puutumata.
+Vormikoodi või toetamise seadistuse muutmisel kopeeri `api/forms/contact.mjs`, `scripts/forms-server.mjs` ja `data/supporters.json` vastavatesse `/opt/fcrae-forms` kaustadesse ning käivita `systemctl restart fcrae-forms`. GitHubi avaldamisvood teevad seda nüüd automaatselt ühise `scripts/deploy-site.sh` abil. See saadab avalikud failid veebijuure alla, vormikoodi eraldi `/opt/fcrae-forms` kausta ning taaskäivitab ainult vormiteenuse. Ka ajastatud jalgpall.ee uuendus kasutab sama avaldamist; kaks voogu ei avalda korraga. Privaatne register ja serveri relee seadistus jäävad puutumata.
 
 Peatamiseks: `systemctl disable --now fcrae-forms`; nginxist eemalda ainult märgistusega „FC Rae form service” plokk, kontrolli `nginx -t` ja laadi nginx uuesti. Registrit ära kustuta. Muud serveri teenused ja Google Workspace’i seaded pole muudetud.
 
-Toetajalehe põhitegevus on kohtumise ja suurema ettevõtte koostöö algatamine. 300 € pakett jääb teiseseks CTA-ks ning ettevõtte koostööplokk paikneb sellest eespool.
+Toetajaleht pakub kahte teed: toeta sobiva summaga või tule ettevõttega partneriks. Ettevõtte hüved on koondatud ühte ossa; fännikomplekti tänu on väiksema toetuse juures tagasihoidlikult esitatud.
 
 Fännikaup viitab seniks 4Teamsi Rae Spordikooli varustuse lehele: https://4teams.ee/klubi-varustus/rae-spordikool/.
 
@@ -86,8 +88,8 @@ Avaldamise eelne veebifailide varukoopia: `/var/backups/fcrae/site-before-suppor
 
 ### Toetaja väärtus ja tõendid
 
-Toetaja väärtust kirjeldav plokk paikneb mõju ja olemasolevate toetajate vahel ning kasutab olemasolevat klubifotot `assets/u11-medalid.jpg`. Koostöövormi ja paketi juurde viivad tegevused kasutavad seniseid käitumise omanikke. Toetajamärgise eelvaade jääb paketi juurde; vorminähtavus, eraldi sotsiaalmeediakajastused ning korraldatud ühistegevused on eraldi sponsorkoostöö.
+Toetaja väärtust kirjeldav plokk paikneb mõju ja olemasolevate toetajate vahel ning kasutab olemasolevat klubifotot `assets/u11-medalid.jpg`. Koostöövorm ja toetaja soovivorm kasutavad seniseid käitumise omanikke. Toetajamärgise eelvaade asub ettevõtte koostöö juures; vorminähtavus, eraldi sotsiaalmeediakajastused ning korraldatud ühistegevused on eraldi sponsorkoostöö.
 
 `data/supporters.json` välja `updates` saab lisada klubi kinnitatud ülevaateid kujul `{ "activity": "Tegevuse nimi", "photo": "/assets/klubi-kinnitatud-foto.jpg", "photoAlt": "Foto sisuline kirjeldus", "result": "Tegevuse tegelik tulemus ja kontrollitud näitajad" }`. Need on sisestusväljade kirjeldused, mitte avaldatavad näidisfaktid. Kasuta ainult päris tegevusi, avaldamiseks lubatud fotosid ja kontrollitud tulemusi. Käivita `npm run build:supporters`; ülevaated ilmuvad läbipaistvuse plokki. Tühi loend ei lisa avalikku tühja sektsiooni. Puuduv tegevus, tulemus või kohalik foto peatab ehituse.
 
-Pangaandmed on väiksema toetuse jaoks; nende sisestamine ei kinnita 300 € paketi tarne- ega arveldustingimusi. Paketi vorm jääb huvi registreerimiseks. Arve taotlemine, särgisuuruse või komplektist loobumise valik aktiveeritakse alles klubi kinnitatud tingimuste järel. Selle muudatusega tuleb üheskoos üle kontrollida veeb, PDF ning kliendi kinnituskiri, et hind, hüved, kestus ja makse kinnitamise tähendus oleksid samad.
+Pangaandmed on vabalt valitud toetuse jaoks. Vormi saatmine ja makse laekumine on eraldi; klubi ei tohi soovi automaatselt laekumiseks lugeda. 15.10.2026 kontrollisime mõlema vormi päris kirjade saabumist nii saatja kui klubi postkasti. Uue tänuavalduse vormi regressioonid kontrollivad alampiiri, komplektist loobumist, eraldi avaldamisluba, stale-versiooni ning klubile ja toetajale saadetava info kooskõla kohaliku testtranspordiga.

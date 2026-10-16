@@ -50,21 +50,8 @@
 .support-update { padding: 24px 0; border-top: 1px solid #51555c; }
 .support-update img { width: 100%; height: auto; margin: 16px 0; }
 .support-update p { margin: 12px 0 0; }
-.support-package { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(36px, 6vw, 88px); background: #f0eee6; }
-.support-package-offer > p { max-width: 60ch; }
-.support-price { margin: 14px 0 24px; font-variant-numeric: tabular-nums; }
-.support-price > span:first-child { font-family: "Anton", sans-serif; font-size: clamp(3.5rem, 6vw, 5rem); line-height: 1; }
-.support-price > span:last-child { font-size: 1rem; margin-left: 8px; }
-.support-benefits { margin: 24px 0 30px; padding-left: 22px; }
-.support-benefits li { padding: 8px 0 8px 4px; line-height: 1.55; }
-.support-benefits li::marker { color: #78600d; }
-.support-interest-note { font-size: .88rem; font-weight: 700; }
 .support-small { font-size: .83rem; color: #51555c; }
 .support-small a { text-decoration: underline; }
-.support-badge { align-self: center; }
-.support-badge-preview { display: grid; place-items: center; min-height: 210px; padding: 36px; background: var(--white); margin-bottom: 28px; }
-.support-badge-preview img { width: 100%; height: auto; }
-.support-badge > p { max-width: 46ch; }
 .support-business { background: var(--white); }
 .support-intro { max-width: 85ch; margin: 0 0 32px; }
 .support-opportunities { margin: 0 0 32px; }
@@ -108,7 +95,7 @@
 .support-bank-details dl > div { padding: 14px 0; border-top: 1px solid #c5c9ce; }
 .support-bank-details dt { font-size: .82rem; color: #51555c; }
 .support-bank-details dd { margin: 6px 0; font-weight: 800; overflow-wrap: anywhere; }
-.support-bank-details button { min-height: 44px; background: none; border: 0; padding: 0; font: inherit; text-decoration: underline; cursor: pointer; }
+.support-bank-details button:not(.button) { min-height: 44px; background: none; border: 0; padding: 0; font: inherit; text-decoration: underline; cursor: pointer; }
 .support-invitation { display: flex; justify-content: space-between; align-items: center; gap: 48px; color: var(--white); background: var(--coal); }
 .support-invitation h2 { max-width: 22ch; }
 .support-invitation p { max-width: 68ch; }
@@ -130,7 +117,6 @@
   .support-section { padding-top: 56px; padding-bottom: 56px; scroll-margin-top: 24px; }
   .support-hero { padding-top: 48px; }
   .support-hero h1 { max-width: 24ch; }
-  .support-package { grid-template-columns: 1.1fr .9fr; gap: 32px; }
   .support-impact-list { gap: 24px; }
   .support-section-heading, .support-transparency, .support-faq, .support-donation { gap: 32px; }
   .support-invitation { flex-direction: column; align-items: start; gap: 24px; }
@@ -147,11 +133,9 @@
   .support-hero-links a { display: inline-flex; align-items: center; min-height: 44px; }
   .support-hero-photo img { height: auto; min-height: 185px; object-fit: cover; }
   .support-hero-photo figcaption { font-size: .75rem; }
-  .support-section-heading, .support-impact-list, .support-vision, .support-package, .support-transparency, .support-faq, .support-donation { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .support-section-heading, .support-impact-list, .support-vision, .support-transparency, .support-faq, .support-donation { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .support-section-heading { margin-bottom: 28px; }
   .support-vision { margin-top: 32px; gap: 4px; }
-  .support-badge { margin-top: 8px; }
-  .support-badge-preview { min-height: 150px; padding: 28px 20px; }
   .support-opportunities > div { grid-template-columns: minmax(0, 1fr); gap: 8px; }
   .support-current .sponsor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .support-current .sponsor-main img { width: 75%; }
@@ -163,4 +147,14 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .supporters-page *, html:has(.supporters-page) { scroll-behavior: auto; transition: none; }
+}
+.support-partner-footer { display: grid; grid-template-columns: 1.5fr 1fr; align-items: center; gap: 48px; }
+.support-partner-badge { margin: 0; padding: 24px; background: #f0eee6; }
+.support-partner-badge img { width: 100%; height: auto; }
+.support-partner-badge figcaption { margin-top: 16px; font-size: .83rem; line-height: 1.6; color: #51555c; }
+.support-donation-thanks { padding-top: 20px; border-top: 1px solid #c5c9ce; }
+.support-thank-you-action { padding-top: 20px; border-top: 1px solid #c5c9ce; }
+.support-thank-you-action .button { width: auto; }
+@media (max-width: 720px) {
+  .support-partner-footer { grid-template-columns: minmax(0, 1fr); gap: 28px; }
 }

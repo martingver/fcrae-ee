@@ -357,18 +357,22 @@ const setupMailForms = () => {
       payload.requestId = requestId;
 
       const subject = type === "supporter"
-        ? "Rae SK toetajapaketi huvi"
+        ? "Rae SK fännikomplekti / tänuavalduse soov"
         : type === "sponsor"
         ? `Rae SK koostöösoov: ${data.get("company")}`
         : `FC Rae kontaktivorm: ${data.get("topic")}`;
       const bodyLines = type === "supporter"
         ? [
-            "Rae SK toetajapaketi huvi (ei ole tellimus ega arve taotlus)",
+            "Rae SK fännikomplekti / tänuavalduse soov (ei kinnita makse laekumist)",
             `Toetaja: ${data.get("customerType") === "company" ? "Ettevõte" : "Eraisik"}`,
             `Ettevõte: ${data.get("company") || "-"}`,
             `Kontaktisik: ${data.get("contact")}`,
             `E-post: ${data.get("email")}`,
-            `Paketi versioon: ${data.get("packageVersion")}`,
+            `Märgitud ülekande summa: ${data.get("donationAmount")} €`,
+            `Fännikomplekt: ${data.get("fanKit") === "request" ? "soovin särki ja salli" : "loobun"}`,
+            `Särgisuuruse soov: ${data.get("shirtSize") || "täpsustame eraldi"}`,
+            `Nime avaldamise nõusolek: ${data.get("publishConsent") ? `jah; avaldatav nimi: ${data.get("publicName")}` : "ei"}`,
+            "Nime võib avaldada ainult eraldi nõusolekul ja pärast laekumise kontrollimist.",
             `Kommentaar: ${message || "-"}`
           ]
         : type === "sponsor"
@@ -419,13 +423,13 @@ const setupMailForms = () => {
 
           setStatus(
             `${type === "supporter"
-              ? "Aitäh! Saime sinu toetamissoovi kätte. Võtame ühendust ja täpsustame paketi tingimused. See ei ole makse kinnitus."
+              ? "Aitäh! Saime sinu soovi kätte. Klubi kontrollib laekumist ja võtab ühendust. See ei ole makse kinnitus."
               : type === "sponsor"
                 ? "Aitäh! Sinu koostöösoov jõudis Rae SK-ni. Võtame ühendust."
                 : "Aitäh! Sinu sõnum on saadetud. Vastame esimesel võimalusel."}${result.requestId ? ` Päringu tunnus: ${result.requestId}.` : ""}${result.confirmationSent === false ? " Kinnituskirja saatmine ei õnnestunud, kuid klubi sai sinu päringu kätte." : ""}`,
             "success"
           );
-          document.dispatchEvent(new CustomEvent("supporter-event", { detail: { event: type === "supporter" ? "package_interest_success" : type === "sponsor" ? "cooperation_success" : "contact_success" } }));
+          document.dispatchEvent(new CustomEvent("supporter-event", { detail: { event: type === "supporter" ? "supporter_wish_success" : type === "sponsor" ? "cooperation_success" : "contact_success" } }));
           form.reset();
           requestId = crypto.randomUUID();
           lastPayload = "";

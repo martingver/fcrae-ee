@@ -10,17 +10,21 @@ import { createContactHandler, validateForm } from "../api/forms/contact.mjs";
 import { createSiteServer } from "./static-server.mjs";
 
 const config = JSON.parse(await readFile(new URL("../data/supporters.json", import.meta.url), "utf8"));
-const form = (override = {}) => ({ type: "supporter", requestId: randomUUID(), renderedAt: Date.now() - 5000, contact: "Test Toetaja", email: "test@example.invalid", customerType: "person", packageVersion: config.version, consent: "on", ...override });
+const form = (override = {}) => ({ type: "supporter", requestId: randomUUID(), renderedAt: Date.now() - 5000, contact: "Test Toetaja", email: "test@example.invalid", customerType: "person", supportVersion: config.version, donationAmount: "150", fanKit: "request", consent: "on", ...override });
 
-test("trust boundary: required fields, consent, stale package, spam and company", () => {
-  for (const override of [{ email: "bad" }, { email: "localalias,user@host.invalid" }, { email: "test@host.invalid\r\nBcc: other@host.invalid" }, { consent: "" }, { contact: " " }, { renderedAt: Date.now() }, { packageVersion: "old" }, { customerType: "company", company: "" }, { website: "bot" }, { type: "invoice" }, { message: "https://a https://b https://c" }]) {
+test("trust boundary: required fields, separate publication consent, donation threshold and stale terms", () => {
+  for (const override of [{ email: "bad" }, { email: "localalias,user@host.invalid" }, { email: "test@host.invalid\r\nBcc: other@host.invalid" }, { consent: "" }, { contact: " " }, { renderedAt: Date.now() }, { supportVersion: "old" }, { customerType: "company", company: "" }, { website: "bot" }, { type: "invoice" }, { message: "https://a https://b https://c" }, { donationAmount: "149.99" }, { donationAmount: "Infinity" }, { donationAmount: "150.001" }, { donationAmount: 150 }, { fanKit: "bad" }, { publishConsent: "yes" }, { publishConsent: "on", publicName: " " }]) {
     assert.throws(() => validateForm(form(override), config));
   }
   const data = validateForm(form(), config);
-  assert.equal(data.package.price, config.price);
-  assert.equal(data.package.mode, "interest");
+  assert.equal(data.donationAmount, config.thankYouMinimum);
+  assert.equal(data.publishConsent, false);
   assert.equal(data.consent, true);
-  assert.deepEqual(data.package.benefits, config.benefits);
+  assert.equal(validateForm(form({publicName: "Must not publish"}), config).publicName, "");
+  assert.equal(validateForm(form({publishConsent: "on", publicName: "Avalik nimi"}), config).publicName, "Avalik nimi");
+  assert.equal(validateForm(form({fanKit: "decline", shirtSize: "M"}), config).shirtSize, "");
+  assert.equal(validateForm(form({donationAmount: "200"}), config).donationAmount, 200);
+  assert.throws(() => validateForm(form({ supportVersion: undefined, packageVersion: "2026-10-15-interest-1" }), config));
   const legacy = form({ type: "contact", name: "Vana vorm" });
   delete legacy.requestId;
   assert.equal(validateForm(legacy, config).requestId, validateForm({ ...legacy }, config).requestId);
@@ -47,18 +51,26 @@ test("real HTTP: one record and one pair of emails for concurrent duplicate subm
     assert.deepEqual(results.map((r) => r.status), [200, 200]);
     for (const response of results) assert.equal((await response.json()).requestId, data.requestId);
     assert.equal(mails.length, 2);
-    assert.match(mails[1].text, new RegExp(`${config.price} € aastas`));
-    assert.match(mails[1].text, /ei ole tellimus/);
+    assert.match(mails[1].text, new RegExp(`Vähemalt ${config.thankYouMinimum} €`));
+    assert.match(mails[1].text, /Fännikomplekt: soovin särki ja salli/);
+    assert.match(mails[1].text, /Nime avaldamise nõusolekut ei ole antud/);
+    assert.match(mails[1].text, /ei kinnita makse laekumist/);
+    assert.doesNotMatch(mails[1].text, /300 €|aastas|toetajapaket/);
     assert.equal((await post(data)).status, 200);
     assert.equal(mails.length, 2);
     assert.equal((await post({ ...data, message: "changed" })).status, 409);
     assert.equal((await post(form({ email: "invalid" }))).status, 400);
     failDelivery = true;
-    const retryData = form({ customerType: "company", company: "Test OÜ" });
+    const retryData = form({ customerType: "company", company: "Test OÜ", fanKit: "decline", publishConsent: "on", publicName: "Avalik Test OÜ" });
     assert.equal((await post(retryData)).status, 503);
     failDelivery = false;
     assert.equal((await post(retryData)).status, 200);
     assert.equal(mails.length, 4);
+    for (const mail of mails.slice(2)) {
+      assert.match(mail.text, /Fännikomplekt: loobun/);
+      assert.match(mail.text, /Nime avaldamise nõusolek: jah; avaldatav nimi: Avalik Test OÜ/);
+      assert.match(mail.text, /pärast laekumise kontrollimist/);
+    }
     failConfirmation = true;
     const confirmationData = form({ type: "sponsor", company: "Test OÜ", interest: "Kohtumine" });
     assert.equal((await (await post(confirmationData)).json()).confirmationSent, false);
@@ -81,7 +93,8 @@ test("real HTTP: one record and one pair of emails for concurrent duplicate subm
     assert.equal(rows.length, 4);
     assert.equal(rows[0].id, data.requestId);
     assert.ok(rows.every((row) => row.status === "new"));
-    assert.equal(JSON.parse(rows[0].payload).package.version, config.version);
+    assert.equal(JSON.parse(rows[0].payload).supportVersion, config.version);
+    assert.equal(JSON.parse(rows[0].payload).publishConsent, false);
     db.close();
     assert.equal((await post(form())).status, 200);
     assert.equal((await post(form())).status, 429);

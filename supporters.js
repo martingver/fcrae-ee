@@ -1,11 +1,11 @@
 const config = JSON.parse(document.querySelector("#supporter-config").textContent);
 
-// Price and benefits are also rendered into HTML by npm run build:supporters.
+// The thank-you threshold is also rendered into HTML by npm run build:supporters.
 document.querySelectorAll("[data-supporter-pdf]").forEach((link) => { link.href = config.pdfUrl; });
 document.querySelectorAll("[data-supporter-shop]").forEach((link) => { link.href = config.shopUrl; });
 
 const packageForm = document.querySelector('[data-mail-form="supporter"]');
-packageForm.querySelector('[name="packageVersion"]').value = config.version;
+packageForm.querySelector('[name="supportVersion"]').value = config.version;
 const companyGroup = packageForm.querySelector("[data-company-fields]");
 const companyInput = companyGroup.querySelector("input");
 const syncCompany = () => {
@@ -17,6 +17,19 @@ const syncCompany = () => {
 packageForm.elements.customerType.addEventListener("change", syncCompany);
 packageForm.addEventListener("reset", () => requestAnimationFrame(syncCompany));
 syncCompany();
+
+const syncWishes = () => {
+  const fanKit = packageForm.elements.fanKit.value === "request";
+  packageForm.querySelector("[data-shirt-size]").hidden = !fanKit;
+  packageForm.elements.shirtSize.disabled = !fanKit;
+  const publish = packageForm.elements.publishConsent.checked;
+  packageForm.querySelector("[data-public-name]").hidden = !publish;
+  packageForm.elements.publicName.disabled = !publish;
+  packageForm.elements.publicName.required = publish;
+};
+packageForm.addEventListener("change", syncWishes);
+packageForm.addEventListener("reset", () => requestAnimationFrame(syncWishes));
+syncWishes();
 
 const donation = document.querySelector("[data-donation]");
 if (config.bank?.recipient && /^EE\d{18}$/.test(config.bank.iban.replace(/\s/g, ""))) {
@@ -42,6 +55,8 @@ if (config.bank?.recipient && /^EE\d{18}$/.test(config.bank.iban.replace(/\s/g, 
     const values = { recipient: config.bank.recipient, iban: config.bank.iban, amount: new Intl.NumberFormat("et-EE", { style: "currency", currency: "EUR" }).format(amount), reference: config.bank.reference || "Rae SK toetus" };
     donation.querySelectorAll("[data-bank-value]").forEach((node) => { node.textContent = values[node.dataset.bankValue]; });
     donation.querySelector("[data-bank-details]").hidden = false;
+    donation.querySelector("[data-thank-you-action]").hidden = amount < config.thankYouMinimum;
+    packageForm.elements.donationAmount.value = String(amount);
     document.dispatchEvent(new CustomEvent("supporter-event", { detail: { event: "payment_details_open" } }));
   });
   donation.querySelectorAll("[data-copy]").forEach((button) => button.addEventListener("click", async () => {
