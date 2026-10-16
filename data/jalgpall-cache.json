@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T06:38:51.316Z",
+  "updatedAt": "2026-10-16T12:35:54.865Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -124,7 +124,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 0,
+      "upcomingCount": 3,
       "resultCount": 21,
       "playerCount": 24
     },
@@ -2612,6 +2612,20 @@
       "team": "U17",
       "status": "upcoming",
       "competition": "U-17.III",
+      "date": "21.10.2026",
+      "time": "18:00",
+      "startsAt": "2026-10-21T18:00:00+03:00",
+      "homeTeam": "U-17 Rae Spordikool",
+      "awayTeam": "U-17 TJK Legion ja FC Narva Juunior ÜM",
+      "opponent": "U-17 TJK Legion ja FC Narva Juunior ÜM",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196468"
+    },
+    {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
       "date": "24.10.2026",
       "time": "10:00",
       "startsAt": "2026-10-24T10:00:00+03:00",
@@ -2650,18 +2664,46 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190621"
     },
     {
-      "teamId": "u17",
-      "team": "U17",
+      "teamId": "u15",
+      "team": "U15",
       "status": "upcoming",
-      "competition": "U-17.III",
-      "date": "31.10.2026",
-      "time": "17:30",
-      "startsAt": "2026-10-31T17:30:00+03:00",
-      "homeTeam": "U-17 Rae Spordikool",
-      "awayTeam": "U-17 TJK Legion ja FC Narva Juunior ÜM",
-      "opponent": "U-17 TJK Legion ja FC Narva Juunior ÜM",
+      "competition": "U15.III",
+      "date": "26.10.2026",
+      "time": "15:00",
+      "startsAt": "2026-10-26T15:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "Viljandi JK Tulevik Kollane (12)",
+      "opponent": "Viljandi JK Tulevik Kollane (12)",
       "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196468"
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197235"
+    },
+    {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "upcoming",
+      "competition": "U15.III",
+      "date": "29.10.2026",
+      "time": "13:00",
+      "startsAt": "2026-10-29T13:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "JK Vasalemma (12)",
+      "opponent": "JK Vasalemma (12)",
+      "homeAway": "Kodu",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197237"
+    },
+    {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "upcoming",
+      "competition": "U15.III",
+      "date": "08.11.2026",
+      "time": "14:00",
+      "startsAt": "2026-11-08T14:00:00+03:00",
+      "homeTeam": "Pärnu JK Poseidon (12)",
+      "awayTeam": "Rae Spordikool (12)",
+      "opponent": "Pärnu JK Poseidon (12)",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197239"
     }
   ],
   "players": [
