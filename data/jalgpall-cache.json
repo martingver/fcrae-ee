@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T12:35:54.865Z",
+  "updatedAt": "2026-10-16T18:29:05.937Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -5612,13 +5612,13 @@
           "teamId": 542,
           "teamName": "FC Elva U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
-          "matches": 24,
+          "matches": 25,
           "wins": 9,
           "draws": 1,
-          "losses": 14,
-          "goals": "49:58",
-          "goalsFor": 49,
-          "goalsAgainst": 58,
+          "losses": 15,
+          "goals": "50:60",
+          "goalsFor": 50,
+          "goalsAgainst": 60,
           "points": 28,
           "isRaeTeam": false
         },
@@ -5642,14 +5642,14 @@
           "teamId": 5920,
           "teamName": "Tallinna FC Flora U18",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/5920?season=2026",
-          "matches": 24,
-          "wins": 7,
+          "matches": 25,
+          "wins": 8,
           "draws": 1,
           "losses": 16,
-          "goals": "48:71",
-          "goalsFor": 48,
-          "goalsAgainst": 71,
-          "points": 22,
+          "goals": "50:72",
+          "goalsFor": 50,
+          "goalsAgainst": 72,
+          "points": 25,
           "isRaeTeam": false
         },
         {
