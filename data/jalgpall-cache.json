@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T06:34:53.310Z",
+  "updatedAt": "2026-10-17T12:30:30.051Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -88,7 +88,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 2,
+      "upcomingCount": 1,
       "resultCount": 19,
       "playerCount": 21
     },
@@ -2550,20 +2550,6 @@
       "homeAway": "Kodu",
       "score": "3 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187859"
-    },
-    {
-      "teamId": "u13-i",
-      "team": "U13 I",
-      "status": "upcoming",
-      "competition": "U13.D",
-      "date": "17.10.2026",
-      "time": "12:00",
-      "startsAt": "2026-10-17T12:00:00+03:00",
-      "homeTeam": "Tallinna JK Augur (14)",
-      "awayTeam": "Rae Spordikool I (14)",
-      "opponent": "Tallinna JK Augur (14)",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196232"
     },
     {
       "teamId": "rae-i",
