@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T12:31:31.244Z",
+  "updatedAt": "2026-10-18T18:26:42.352Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 2,
-      "resultCount": 32,
+      "upcomingCount": 1,
+      "resultCount": 33,
       "playerCount": 16
     },
     {
@@ -106,7 +106,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 1,
+      "upcomingCount": 0,
       "resultCount": 17,
       "playerCount": 21
     },
@@ -2554,7 +2554,7 @@
     {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "II.B.S/E",
       "date": "18.10.2026",
       "time": "17:00",
@@ -2563,21 +2563,8 @@
       "awayTeam": "Ida-Viru JK Noova",
       "opponent": "Ida-Viru JK Noova",
       "homeAway": "Kodu",
+      "score": "11 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187868"
-    },
-    {
-      "teamId": "u14",
-      "team": "U14",
-      "status": "upcoming",
-      "competition": "U14.III-A",
-      "date": "18.10.2026",
-      "time": "17:30",
-      "startsAt": "2026-10-18T17:30:00+03:00",
-      "homeTeam": "Rae Spordikool (13)",
-      "awayTeam": "Nõmme Kalju FC I (13)",
-      "opponent": "Nõmme Kalju FC I (13)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195222"
     },
     {
       "teamId": "u13-i",
@@ -2899,8 +2886,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 4,
-      "leagueGoals": 24,
-      "goals": 28,
+      "leagueGoals": 25,
+      "goals": 29,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/38392/team/6795"
     },
     {
@@ -2913,8 +2900,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 1,
-      "leagueGoals": 14,
-      "goals": 15,
+      "leagueGoals": 15,
+      "goals": 16,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36477/team/6795"
     },
     {
@@ -4089,8 +4076,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 23,
-      "goals": 23,
+      "leagueGoals": 26,
+      "goals": 26,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/58482/team/5884"
     },
     {
@@ -4173,8 +4160,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 11,
-      "goals": 11,
+      "leagueGoals": 13,
+      "goals": 13,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/62613/team/5884"
     },
     {
@@ -4201,8 +4188,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 13,
-      "goals": 13,
+      "leagueGoals": 15,
+      "goals": 15,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54441/team/5884"
     },
     {
@@ -4355,8 +4342,8 @@
       "citizenship": "",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 0,
-      "goals": 0,
+      "leagueGoals": 1,
+      "goals": 1,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/54366/team/5884"
     },
     {
@@ -5493,14 +5480,14 @@
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
-          "matches": 24,
-          "wins": 18,
+          "matches": 25,
+          "wins": 19,
           "draws": 4,
           "losses": 2,
-          "goals": "117:45",
-          "goalsFor": 117,
+          "goals": "128:45",
+          "goalsFor": 128,
           "goalsAgainst": 45,
-          "points": 58,
+          "points": 61,
           "isRaeTeam": true
         },
         {
@@ -5583,13 +5570,13 @@
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
-          "matches": 24,
+          "matches": 25,
           "wins": 9,
           "draws": 3,
-          "losses": 12,
-          "goals": "34:69",
+          "losses": 13,
+          "goals": "34:80",
           "goalsFor": 34,
-          "goalsAgainst": 69,
+          "goalsAgainst": 80,
           "points": 30,
           "isRaeTeam": false
         },
