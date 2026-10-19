@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T18:26:42.352Z",
+  "updatedAt": "2026-10-19T00:59:56.929Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -107,7 +107,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 0,
-      "resultCount": 17,
+      "resultCount": 18,
       "playerCount": 21
     },
     {
@@ -2565,6 +2565,21 @@
       "homeAway": "Kodu",
       "score": "11 - 0",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187868"
+    },
+    {
+      "teamId": "u14",
+      "team": "U14",
+      "status": "finished",
+      "competition": "U14.III-A",
+      "date": "18.10.2026",
+      "time": "17:30",
+      "startsAt": "2026-10-18T17:30:00+03:00",
+      "homeTeam": "Rae Spordikool (13)",
+      "awayTeam": "Nõmme Kalju FC I (13)",
+      "opponent": "Nõmme Kalju FC I (13)",
+      "homeAway": "Kodu",
+      "score": "8 - 1",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195222"
     },
     {
       "teamId": "u13-i",
@@ -5567,6 +5582,21 @@
         },
         {
           "position": 8,
+          "teamId": 188,
+          "teamName": "Raasiku FC Joker",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
+          "matches": 25,
+          "wins": 9,
+          "draws": 4,
+          "losses": 12,
+          "goals": "53:72",
+          "goalsFor": 53,
+          "goalsAgainst": 72,
+          "points": 31,
+          "isRaeTeam": false
+        },
+        {
+          "position": 9,
           "teamId": 6554,
           "teamName": "Ida-Viru JK Noova",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6554?season=2026",
@@ -5581,7 +5611,7 @@
           "isRaeTeam": false
         },
         {
-          "position": 9,
+          "position": 10,
           "teamId": 542,
           "teamName": "FC Elva U21",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/542?season=2026",
@@ -5592,21 +5622,6 @@
           "goals": "50:60",
           "goalsFor": 50,
           "goalsAgainst": 60,
-          "points": 28,
-          "isRaeTeam": false
-        },
-        {
-          "position": 10,
-          "teamId": 188,
-          "teamName": "Raasiku FC Joker",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
-          "matches": 24,
-          "wins": 8,
-          "draws": 4,
-          "losses": 12,
-          "goals": "46:70",
-          "goalsFor": 46,
-          "goalsAgainst": 70,
           "points": 28,
           "isRaeTeam": false
         },
@@ -5660,13 +5675,13 @@
           "teamId": 4913,
           "teamName": "JK Kuusalu Kalev",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/4913?season=2026",
-          "matches": 24,
+          "matches": 25,
           "wins": 2,
           "draws": 2,
-          "losses": 20,
-          "goals": "17:113",
-          "goalsFor": 17,
-          "goalsAgainst": 113,
+          "losses": 21,
+          "goals": "19:120",
+          "goalsFor": 19,
+          "goalsAgainst": 120,
           "points": 8,
           "isRaeTeam": false
         }
