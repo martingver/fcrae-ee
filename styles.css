@@ -6,8 +6,8 @@
   --line: #dfe3e8;
   --paper: #f6f5f1;
   --white: #ffffff;
-  --gold: #f2c230;
-  --gold-dark: #c7950a;
+  --gold: #fdee08;
+  --gold-dark: #756600;
   --blue: #2767c7;
   --radius: 8px;
 }
@@ -66,7 +66,10 @@ img {
 
 .brand img {
   width: 84px;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.18));
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: none;
 }
 
 .main-nav {
@@ -196,11 +199,11 @@ button.button {
 .button-primary {
   background: var(--gold);
   color: #111;
-  box-shadow: 0 16px 34px rgba(242, 194, 48, 0.18);
+  box-shadow: 0 16px 34px rgba(253, 238, 8, 0.18);
 }
 
 .button-primary:hover {
-  background: #ffd84d;
+  background: #fff45a;
 }
 
 .button-dark {
@@ -456,7 +459,7 @@ input {
   font-weight: 900;
   cursor: pointer;
   list-style: none;
-  box-shadow: 0 16px 34px rgba(242, 194, 48, 0.16);
+  box-shadow: 0 16px 34px rgba(253, 238, 8, 0.16);
 }
 
 .calendar-menu summary::-webkit-details-marker {
@@ -613,7 +616,7 @@ input {
 }
 
 .fixture-row.is-home {
-  background: linear-gradient(90deg, rgba(242, 194, 48, 0.08), transparent 42%);
+  background: linear-gradient(90deg, rgba(253, 238, 8, 0.08), transparent 42%);
 }
 
 .fixture-row.is-away {
@@ -654,7 +657,7 @@ input {
 }
 
 .is-home .place-badge {
-  background: rgba(242, 194, 48, 0.24);
+  background: rgba(253, 238, 8, 0.24);
 }
 
 .vision {
@@ -1010,7 +1013,7 @@ input {
   padding: 18px;
   border-radius: var(--radius);
   background:
-    linear-gradient(145deg, rgba(242, 194, 48, 0.08), rgba(21, 24, 29, 0.98)),
+    linear-gradient(145deg, rgba(253, 238, 8, 0.08), rgba(21, 24, 29, 0.98)),
     linear-gradient(145deg, #24272d, #15181d);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.22s ease, border-color 0.22s ease;
@@ -1018,7 +1021,7 @@ input {
 
 .shop-items a:hover {
   transform: translateY(-3px);
-  border-color: rgba(242, 194, 48, 0.55);
+  border-color: rgba(253, 238, 8, 0.55);
 }
 
 .shop-items img {
@@ -1101,6 +1104,9 @@ button:disabled {
 .footer-logos img:last-child {
   width: 90px;
 }
+
+.footer-school { display: flex; align-items: center; gap: 12px; max-width: 32ch; }
+.footer-school img { width: 36px; height: 36px; flex: 0 0 36px; object-fit: contain; }
 
 .site-footer p {
   color: rgba(255, 255, 255, 0.62);
@@ -1570,7 +1576,7 @@ body[data-team-page="u13-i"] .team-subhero {
 
 .team-list-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(242, 194, 48, 0.75);
+  border-color: rgba(253, 238, 8, 0.75);
   box-shadow: 0 18px 45px rgba(22, 24, 28, 0.12);
 }
 
@@ -1768,7 +1774,7 @@ body[data-team-page="u13-i"] .team-subhero {
 .team-match-row:hover,
 .team-result-row:hover {
   transform: translateY(-2px);
-  border-color: rgba(242, 194, 48, 0.7);
+  border-color: rgba(253, 238, 8, 0.7);
   box-shadow: 0 14px 32px rgba(9, 10, 12, 0.08);
 }
 
@@ -1919,7 +1925,7 @@ body[data-team-page="u13-i"] .team-subhero {
 }
 
 .league-table tr.is-rae {
-  background: rgba(242, 194, 48, 0.16);
+  background: rgba(253, 238, 8, 0.16);
 }
 
 .league-table tr.is-rae td:first-child,
@@ -1953,7 +1959,7 @@ body[data-team-page="u13-i"] .team-subhero {
 
 .video-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(242, 194, 48, 0.75);
+  border-color: rgba(253, 238, 8, 0.75);
   box-shadow: 0 18px 45px rgba(9, 10, 12, 0.12);
 }
 
@@ -1962,7 +1968,7 @@ body[data-team-page="u13-i"] .team-subhero {
   position: relative;
   aspect-ratio: 16 / 9;
   background:
-    radial-gradient(circle at 18% 12%, rgba(242, 194, 48, 0.22), transparent 34%),
+    radial-gradient(circle at 18% 12%, rgba(253, 238, 8, 0.22), transparent 34%),
     linear-gradient(145deg, #171a1f, #0d0f12);
 }
 
@@ -2008,7 +2014,7 @@ body[data-team-page="u13-i"] .team-subhero {
   margin: 0;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 16px 42px rgba(242, 194, 48, 0.26);
+  box-shadow: 0 16px 42px rgba(253, 238, 8, 0.26);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2091,7 +2097,7 @@ body[data-team-page="u13-i"] .team-subhero {
   padding: clamp(24px, 4vw, 38px);
   border-radius: 12px;
   background:
-    radial-gradient(circle at 0% 50%, rgba(242, 194, 48, 0.16), transparent 32%),
+    radial-gradient(circle at 0% 50%, rgba(253, 238, 8, 0.16), transparent 32%),
     linear-gradient(145deg, #171a1f, #0d0f12);
   color: var(--white);
 }
@@ -2443,7 +2449,7 @@ body[data-team-page="u13-i"] .team-subhero {
   padding: 28px;
   border-radius: 12px;
   background:
-    radial-gradient(circle at 20% 0%, rgba(242, 194, 48, 0.2), transparent 42%),
+    radial-gradient(circle at 20% 0%, rgba(253, 238, 8, 0.2), transparent 42%),
     linear-gradient(145deg, #171a1f, #0d0f12);
   color: var(--white);
 }

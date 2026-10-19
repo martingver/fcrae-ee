@@ -23,6 +23,9 @@
 .news-sharing .button-outline-dark { border: 1px solid var(--ink); background: transparent; color: var(--ink); }
 .news-page :focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
 .news-page ::selection { background: var(--gold); color: var(--black); }
+@media (max-width: 848px) {
+  .news-support { margin-inline: -24px; padding-inline: 24px; }
+}
 @media (max-width: 720px) {
   .news-heading { padding-top: 28px; }
   .news-byline { margin-top: 26px; }

@@ -12,7 +12,6 @@
 .supporters-page .button-primary { box-shadow: none; }
 .support-hero .button-ghost { background: transparent; color: var(--white); border-color: #777b82; }
 .support-hero .button-ghost:hover { background: #25282e; }
-.supporters-page .brand img { width: 72px; filter: none; }
 .supporters-page .button-dark { background: var(--ink); color: var(--white); border: 1px solid var(--ink); }
 .supporters-page .button-dark:hover { background: var(--black); }
 .supporters-page .inline-cta, .support-current .sponsor-main span { color: #755700; }
