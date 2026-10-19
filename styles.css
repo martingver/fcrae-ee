@@ -1440,6 +1440,29 @@ button:disabled {
     url("assets/u15-saal.jpg") center / cover;
 }
 
+body[data-team-page="rae-i"] .team-subhero {
+  min-height: 0;
+  padding-top: 64px;
+  padding-bottom: 84px;
+  row-gap: 32px;
+  background: var(--coal);
+}
+
+.team-lead-photo {
+  grid-column: 1 / -1;
+  margin: 0;
+  aspect-ratio: 2.7;
+  overflow: hidden;
+}
+
+.team-lead-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  filter: brightness(1.04) contrast(1.03) saturate(0.98);
+}
+
 .secondary-team {
   background:
     linear-gradient(90deg, rgba(9, 10, 12, 0.96), rgba(9, 10, 12, 0.58)),
