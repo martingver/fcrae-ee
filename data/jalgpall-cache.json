@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T06:50:41.842Z",
+  "updatedAt": "2026-10-19T12:37:55.555Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -89,7 +89,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 1,
-      "resultCount": 19,
+      "resultCount": 20,
       "playerCount": 21
     },
     {
@@ -2552,6 +2552,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187859"
     },
     {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "finished",
+      "competition": "U13.D",
+      "date": "17.10.2026",
+      "time": "12:00",
+      "startsAt": "2026-10-17T12:00:00+03:00",
+      "homeTeam": "Tallinna JK Augur (14)",
+      "awayTeam": "Rae Spordikool I (14)",
+      "opponent": "Tallinna JK Augur (14)",
+      "homeAway": "Võõrsil",
+      "score": "1 - 2",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196232"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "finished",
@@ -2615,8 +2630,8 @@
       "status": "upcoming",
       "competition": "U-17.III",
       "date": "24.10.2026",
-      "time": "10:00",
-      "startsAt": "2026-10-24T10:00:00+03:00",
+      "time": "11:30",
+      "startsAt": "2026-10-24T11:30:00+03:00",
       "homeTeam": "U-17 Põhja-Tallinna JK Volta Sinine",
       "awayTeam": "U-17 Rae Spordikool",
       "opponent": "U-17 Põhja-Tallinna JK Volta Sinine",
