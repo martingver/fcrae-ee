@@ -65,9 +65,9 @@ img {
 }
 
 .brand img {
-  width: 84px;
+  width: 154px;
   height: auto;
-  aspect-ratio: 1;
+  aspect-ratio: 11 / 3;
   object-fit: contain;
   filter: none;
 }
@@ -1104,15 +1104,13 @@ button:disabled {
   gap: 14px;
 }
 
-.footer-logos img {
-  width: 78px;
+.footer-logos img,
+.footer-logos img:last-child {
+  width: 154px;
   height: auto;
   object-fit: contain;
 }
 
-.footer-logos img:last-child {
-  width: 90px;
-}
 
 .footer-school { display: flex; align-items: center; gap: 12px; max-width: 32ch; }
 .footer-school img { width: 36px; height: 36px; flex: 0 0 36px; object-fit: contain; }
@@ -2653,7 +2651,7 @@ body[data-team-page="u13-i"] .team-subhero {
   color: var(--white);
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
   .site-header {
     grid-template-columns: auto 1fr;
   }
@@ -2673,7 +2671,9 @@ body[data-team-page="u13-i"] .team-subhero {
   .mobile-menu:not([hidden]) {
     display: grid;
   }
+}
 
+@media (max-width: 1040px) {
   .match-board,
   .fixtures-heading,
   .fixture-controls,
@@ -2767,7 +2767,7 @@ body[data-team-page="u13-i"] .team-subhero {
   }
 
   .brand img {
-    width: 96px;
+    width: 154px;
   }
 
   .header-actions,
