@@ -9,6 +9,8 @@
 .news-body { max-width: 780px; padding: 0 24px; margin: auto; font-size: 18px; line-height: 1.8; }
 .news-body h2 { font-size: clamp(27px, 3.4vw, 38px); line-height: 1.25; margin: 48px 0 16px; text-wrap: balance; }
 .news-body p { margin: 0 0 24px; }
+.news-prizes { margin: 0 0 24px; padding-left: 24px; }
+.news-prizes li { margin: 8px 0; }
 .news-body a:not(.button) { color: #795800; text-decoration: underline; text-underline-offset: 4px; }
 .news-body .news-fixture { border-block: 1px solid #c7c8c7; padding: 24px 0; margin-bottom: 32px; }
 .news-fixture h2 { margin: 0 0 12px; }
