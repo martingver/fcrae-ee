@@ -1097,16 +1097,21 @@ button:disabled {
 
 .site-footer {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-columns: 154px minmax(0, 1.25fr) minmax(0, 1fr) minmax(0, .8fr);
+  align-items: start;
   gap: clamp(22px, 4vw, 64px);
   padding: 42px clamp(22px, 7vw, 110px);
   background: #0a0b0e;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.site-footer > div {
+  min-width: 0;
+}
+
 .footer-logos {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 14px;
 }
 
@@ -1118,7 +1123,7 @@ button:disabled {
 }
 
 
-.footer-school { display: flex; align-items: center; gap: 12px; max-width: 32ch; }
+.footer-school { display: flex; align-items: flex-start; gap: 12px; max-width: 32ch; margin: 0; }
 .footer-school img { width: 36px; height: 36px; flex: 0 0 36px; object-fit: contain; }
 
 .site-footer p {

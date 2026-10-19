@@ -11,5 +11,9 @@ test('public copy uses Rae SK and keeps implementation details out of visitor te
   // The registered legal name remains correct in consent and payment details.
   assert.doesNotMatch(text.replaceAll('FC Rae SK MTÜ',''),/FC Rae|FC RAE|Rae Sk/,file);
   assert.doesNotMatch(text,/jalgpall\.ee cache|käivita cache|fallback andmetest|cache'is piisavalt/,file);
+  if(file.endsWith('.html')) {
+   const footer=text.match(/<footer\b[\s\S]*?<\/footer>/)?.[0]??'';
+   assert.doesNotMatch(footer,/<strong>Rae SK<\/strong>/,`${file}: the footer logo already carries the brand name`);
+  }
  }
 });
