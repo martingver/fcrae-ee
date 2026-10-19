@@ -123,8 +123,8 @@ const shirtNumber = (player) => {
   return Number.isFinite(number) ? number : 9999;
 };
 
-const playerGoals = (player) => {
-  const value = player?.goals ?? player?.goalsScored ?? player?.goalCount;
+const playerLeagueGoals = (player) => {
+  const value = player?.leagueGoals;
   const number = Number.parseInt(value, 10);
   return Number.isFinite(number) ? number : 0;
 };
@@ -670,21 +670,22 @@ const renderTeamFacts = (team, matches, players) => {
 
   const now = new Date();
   const topScorers = [...players]
-    .map((player) => ({ player, goals: playerGoals(player) }))
+    .map((player) => ({ player, goals: playerLeagueGoals(player) }))
     .filter((item) => item.goals > 0)
     .sort((a, b) => b.goals - a.goals || shirtNumber(a.player) - shirtNumber(b.player));
 
   const nextMatch = matches
     .filter((match) => match.status === "upcoming" && new Date(match.startsAt) >= now)
     .sort(byDateAsc)[0];
-  const topScorerText = topScorers.length
-    ? `${topScorers.slice(0, 2).map((item) => item.player.name).join(" + ")} — ${topScorers[0].goals}`
+  const leaders = topScorers.filter((item) => item.goals === topScorers[0]?.goals);
+  const topScorerText = leaders.length
+    ? `${new Intl.ListFormat("et", { type: "conjunction" }).format(leaders.map((item) => item.player.name))} — ${leaders[0].goals}`
     : "Avaldamisel";
 
   const facts = [
     factTemplate("Koosseis", `${players.length || team?.playerCount || 0} mängijat`, team?.level || ""),
     nextMatch ? factTemplate("Järgmine mäng", nextMatch.date, `vs ${nextMatch.opponent}`) : factTemplate("Järgmine mäng", "Avaldamisel"),
-    ...(showsTopScorer(team) && topScorers.length ? [factTemplate("Enim väravaid", topScorerText)] : []),
+    ...(showsTopScorer(team) && topScorers.length ? [factTemplate("Enim liigaväravaid", topScorerText)] : []),
     factTemplate("Koduväljak", team?.venue || "Jüri staadion")
   ];
 
