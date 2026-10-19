@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+
+test('public copy uses Rae SK and keeps implementation details out of visitor text', async()=>{
+ const files=execFileSync('git',['ls-files','*.html','kalendrid/*.ics'],{encoding:'utf8'}).trim().split(/\r?\n/);
+ files.push('app.js','api/forms/contact.mjs','scripts/update-jalgpall-data.mjs','llms.txt');
+ for(const file of files){
+  const text=await readFile(new URL('../'+file,import.meta.url),'utf8');
+  // The registered legal name remains correct in consent and payment details.
+  assert.doesNotMatch(text.replaceAll('FC Rae SK MTÜ',''),/FC Rae|FC RAE|Rae Sk/,file);
+  assert.doesNotMatch(text,/jalgpall\.ee cache|käivita cache|fallback andmetest|cache'is piisavalt/,file);
+ }
+});

@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//FC Rae//Mängude kalender//ET
+PRODID:-//Rae SK//Mängude kalender//ET
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:FC Rae U15
+X-WR-CALNAME:Rae SK U15
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/u15.ics
 BEGIN:VEVENT

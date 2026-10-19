@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//FC Rae//Mängude kalender//ET
+PRODID:-//Rae SK//Mängude kalender//ET
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:FC Rae kõik võistkonnad
+X-WR-CALNAME:Rae SK kõik võistkonnad
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/koik-voistkonnad.ics
 BEGIN:VEVENT

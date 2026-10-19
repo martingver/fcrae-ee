@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//FC Rae//Mängude kalender//ET
+PRODID:-//Rae SK//Mängude kalender//ET
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:FC Rae Rae I
+X-WR-CALNAME:Rae SK Rae I
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/rae-i.ics
 BEGIN:VEVENT

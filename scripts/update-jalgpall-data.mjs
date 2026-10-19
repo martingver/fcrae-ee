@@ -97,7 +97,7 @@ const calendarPayload = (name, matches, team, updatedAt) => {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//FC Rae//Mängude kalender//ET",
+    "PRODID:-//Rae SK//Mängude kalender//ET",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     `X-WR-CALNAME:${escapeIcsText(name)}`,
@@ -122,7 +122,7 @@ const writeCalendars = async (payload) => {
 
   await writeFile(
     `kalendrid/${calendarFileName("koik-voistkonnad")}`,
-    calendarPayload("FC Rae kõik võistkonnad", upcomingMatches, null, payloadUpdatedAt),
+    calendarPayload("Rae SK kõik võistkonnad", upcomingMatches, null, payloadUpdatedAt),
     "utf8"
   );
 
@@ -130,7 +130,7 @@ const writeCalendars = async (payload) => {
     const teamMatches = upcomingMatches.filter((match) => match.teamId === team.id);
     return writeFile(
       `kalendrid/${calendarFileName(team.id)}`,
-      calendarPayload(`FC Rae ${team.shortName}`, teamMatches, team, payloadUpdatedAt),
+      calendarPayload(`Rae SK ${team.shortName}`, teamMatches, team, payloadUpdatedAt),
       "utf8"
     );
   }));

@@ -76,9 +76,9 @@ const teamPageUrl = (teamId) => ({
 const calendarSlug = (teamId = "all") => teamId === "all" ? "koik-voistkonnad" : teamId;
 
 const calendarTeamLabel = (data, teamId = "all") => {
-  if (teamId === "all") return "Kõik FC Rae mängud";
+  if (teamId === "all") return "Kõik Rae SK mängud";
   const team = data.teams.find((item) => item.id === teamId);
-  return team ? `FC Rae ${team.shortName}` : "FC Rae kalender";
+  return team ? `Rae SK ${team.shortName}` : "Rae SK kalender";
 };
 
 const calendarFeedUrl = (teamId = "all") => `${calendarBaseUrl}/${calendarSlug(teamId)}.ics`;
@@ -137,7 +137,7 @@ const contactName = (team) => {
     .split(/[._-]+/)
     .filter(Boolean)
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(" ") || "FC Rae";
+    .join(" ") || "Rae SK";
 };
 
 const teamKind = (team) => {
@@ -284,7 +284,7 @@ const setupMailForms = () => {
       const topicSelect = form.querySelector('select[name="topic"]');
       const message = form.querySelector('textarea[name="message"]');
       if (topicSelect) topicSelect.value = "Fänniklubi";
-      if (message && !message.value) message.value = "Soovin liituda FC Rae fänniklubiga.";
+      if (message && !message.value) message.value = "Soovin liituda Rae SK fänniklubiga.";
     }
 
     if (form.dataset.mailForm === "contact" && topic === "treening") {
@@ -360,7 +360,7 @@ const setupMailForms = () => {
         ? "Rae SK fännikomplekti / tänuavalduse soov"
         : type === "sponsor"
         ? `Rae SK koostöösoov: ${data.get("company")}`
-        : `FC Rae kontaktivorm: ${data.get("topic")}`;
+        : `Rae SK kontaktivorm: ${data.get("topic")}`;
       const bodyLines = type === "supporter"
         ? [
             "Rae SK fännikomplekti / tänuavalduse soov (ei kinnita makse laekumist)",
@@ -599,7 +599,7 @@ const renderMeta = (data) => {
   if (!note) return;
   note.textContent = data.updatedAt
     ? `Andmed uuendatud ${new Date(data.updatedAt).toLocaleString("et-EE")}`
-    : "Andmed: fallback, käivita cache'i uuendus";
+    : "Andmete uuendamise aeg pole praegu saadaval.";
 };
 
 const renderMatchesPage = (data) => {
@@ -639,7 +639,7 @@ const renderMatchesPage = (data) => {
       : `<p class="empty-state">Selle filtriga mänge ei leitud.</p>`;
 
     if (summary) {
-      summary.textContent = `${matches.length} mängu · andmed uuendatud ${data.updatedAt ? new Date(data.updatedAt).toLocaleString("et-EE") : "fallback andmetest"}`;
+      summary.textContent = `${matches.length} mängu${data.updatedAt ? ` · andmed uuendatud ${new Date(data.updatedAt).toLocaleString("et-EE")}` : ""}`;
     }
 
     calendarActions.innerHTML = calendarMenuTemplate(data, teamId);
@@ -689,7 +689,7 @@ const renderTeamFacts = (team, matches, players) => {
     factTemplate("Koduväljak", team?.venue || "Jüri staadion")
   ];
 
-  list.innerHTML = facts.length ? facts.join("") : `<p class="empty-state">Hooaja kiirvaade tekib siis, kui võistkonnal on cache'is piisavalt mänge ja mängijaid.</p>`;
+  list.innerHTML = facts.length ? facts.join("") : `<p class="empty-state">Hooaja ülevaade ei ole veel saadaval.</p>`;
 };
 
 const outcome = (match) => {
@@ -860,9 +860,9 @@ const setupTeamChrome = (team) => {
     cta.className = "team-join-cta";
     cta.innerHTML = `
       <div>
-        <span>FC Rae</span>
+        <span>Rae SK</span>
         <h2>Tahad liituda?</h2>
-        <p>FC Rae ootab uusi jalgpallihuvilisi. Lisa laps trenni ja saa osa meie kogukonnast.</p>
+        <p>Rae SK ootab uusi jalgpallihuvilisi. Lisa laps trenni ja saa osa meie kogukonnast.</p>
       </div>
       <a class="button button-primary" href="${routes.register}" target="_blank" rel="noreferrer">Lisa laps trenni</a>
     `;
