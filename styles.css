@@ -2699,6 +2699,19 @@ body[data-team-page="u13-i"] .team-subhero {
 
   .mobile-menu:not([hidden]) {
     display: grid;
+    justify-self: stretch;
+    max-height: calc(100dvh - 112px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .mobile-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mobile-actions .button-primary {
+    background: var(--gold);
+    color: var(--black);
   }
 }
 
@@ -2735,7 +2748,7 @@ body[data-team-page="u13-i"] .team-subhero {
   .shop-strip,
   .join,
   .site-footer {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .community-grid,
@@ -2809,7 +2822,7 @@ body[data-team-page="u13-i"] .team-subhero {
   }
 
   .hero {
-    min-height: 760px;
+    min-height: 0;
   }
 
   .hero-overlay {
@@ -2818,11 +2831,12 @@ body[data-team-page="u13-i"] .team-subhero {
 
   .hero-content {
     width: 100%;
-    padding: 310px 18px 150px;
+    padding: clamp(150px, 42vw, 220px) 20px 132px;
   }
 
   .hero h1 {
-    font-size: clamp(2.65rem, 13vw, 4.2rem);
+    font-size: clamp(2.5rem, 11.5vw, 4.2rem);
+    overflow-wrap: anywhere;
   }
 
   .subhero {
@@ -2843,7 +2857,6 @@ body[data-team-page="u13-i"] .team-subhero {
     margin-top: -96px;
   }
 
-  .versus,
   .stat-strip,
   .youth-grid,
   .community-grid,
@@ -2858,7 +2871,66 @@ body[data-team-page="u13-i"] .team-subhero {
   .form-grid,
   .benefit-list,
   .join-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dark-panel,
+  .youth-panel {
+    min-width: 0;
+    padding: 40px 22px;
+  }
+
+  .dark-panel h2,
+  .youth-panel h2 {
+    font-size: clamp(1.8rem, 7.5vw, 2.2rem);
+    overflow-wrap: anywhere;
+  }
+
+  .match-card {
+    min-height: 0;
+    padding: 22px 20px;
+  }
+
+  .versus {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    font-size: .9rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .versus > span {
+    width: 34px;
+    height: 34px;
+  }
+
+  .source-row {
+    grid-template-columns: 60px minmax(0, 1fr) auto;
+    gap: 10px;
+  }
+
+  .result-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 12px;
+    line-height: 1.5;
+  }
+
+  .result-row > span:not(.score) {
+    grid-column: 1;
+  }
+
+  .result-row .score {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    white-space: nowrap;
+  }
+
+  input,
+  select,
+  textarea {
+    min-width: 0;
+    font-size: 1rem;
   }
 
   .contact-directory,
@@ -2918,16 +2990,45 @@ body[data-team-page="u13-i"] .team-subhero {
     min-height: 50px;
   }
 
-  .team-match-row,
-  .team-result-row {
-    grid-template-columns: 1fr;
+  .team-match-row {
+    grid-template-columns: minmax(0, 1fr);
     gap: 8px;
   }
 
+  .team-result-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px 12px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  .team-result-row > span {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .team-result-row > strong:first-of-type {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .team-result-row > strong:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .team-result-row b {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    white-space: nowrap;
+  }
+
   .team-result-row em {
+    grid-column: 2;
+    grid-row: 1;
     width: auto;
     height: auto;
-    justify-self: start;
+    justify-self: end;
     padding: 5px 10px;
     border-radius: 999px;
   }
@@ -2937,14 +3038,25 @@ body[data-team-page="u13-i"] .team-subhero {
     flex-direction: column;
   }
 
-  .result-row,
-  .source-row,
-  .fixture-row {
-    grid-template-columns: 1fr;
+  .fixture-row,
+  .big-list .fixture-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    line-height: 1.5;
   }
 
-  .big-list .fixture-row {
-    grid-template-columns: 1fr;
+  .fixture-row > div {
+    grid-column: 1 / -1;
+  }
+
+  .fixture-row .place-badge {
+    justify-self: start;
+    grid-column: 1;
+  }
+
+  .fixture-row .fixture-pill {
+    grid-column: 2;
+    justify-self: end;
   }
 
   .matches-calendar-actions {
