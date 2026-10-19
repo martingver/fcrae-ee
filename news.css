@@ -1,0 +1,32 @@
+.news-page { background: var(--paper); color: var(--ink); padding-bottom: 80px; }
+.news-heading { max-width: 1000px; margin: auto; padding: 48px 24px 36px; }
+.news-back { color: var(--ink); text-underline-offset: 4px; font-size: 14px; }
+.news-byline { color: #505762; margin: 36px 0 16px; font-size: 14px; }
+.news-heading h1 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: clamp(38px, 5.5vw, 76px); line-height: 1.12; letter-spacing: -.02em; margin: 0 0 24px; text-wrap: balance; }
+.news-lead { max-width: 740px; font-size: clamp(18px, 2vw, 23px); line-height: 1.65; margin: 0; }
+.news-cover { max-width: 1100px; margin: 0 auto 40px; }
+.news-cover img { display: block; width: 100%; height: auto; }
+.news-body { max-width: 780px; padding: 0 24px; margin: auto; font-size: 18px; line-height: 1.8; }
+.news-body h2 { font-size: clamp(27px, 3.4vw, 38px); line-height: 1.25; margin: 48px 0 16px; text-wrap: balance; }
+.news-body p { margin: 0 0 24px; }
+.news-body a:not(.button) { color: #795800; text-decoration: underline; text-underline-offset: 4px; }
+.news-body .news-fixture { border-block: 1px solid #c7c8c7; padding: 24px 0; margin-bottom: 32px; }
+.news-fixture h2 { margin: 0 0 12px; }
+.news-fixture p { margin-bottom: 10px; }
+.news-support { background: var(--coal); color: var(--white); padding: 32px; margin: 48px -32px; }
+.news-support h2 { margin-top: 0; }
+.news-support .button { white-space: normal; line-height: 1.5; }
+.news-body .news-source { font-size: 13px; color: #505762; line-height: 1.7; }
+.news-sharing { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.news-sharing [role="status"] { flex-basis: 100%; font-size: 14px; }
+.news-sharing [hidden] { display: none; }
+.news-sharing .button-outline-dark { border: 1px solid var(--ink); background: transparent; color: var(--ink); }
+.news-page :focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+.news-page ::selection { background: var(--gold); color: var(--black); }
+@media (max-width: 720px) {
+  .news-heading { padding-top: 28px; }
+  .news-byline { margin-top: 26px; }
+  .news-body { font-size: 17px; }
+  .news-support { margin-inline: -24px; padding: 28px 24px; }
+  .news-sharing .button { width: 100%; }
+}

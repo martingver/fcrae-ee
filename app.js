@@ -843,6 +843,7 @@ const setupTeamChrome = (team) => {
     : "";
   tabs.innerHTML = `
     <a href="${pagePath}#ulevaade">Ülevaade</a>
+    ${document.querySelector(".team-news") ? `<a href="${pagePath}#uudised">Uudised</a>` : ""}
     ${standingsTab}
     <a href="${pagePath}#mangud">Mängud</a>
     <a href="${pagePath}#tulemused">Tulemused</a>
