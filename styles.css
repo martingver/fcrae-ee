@@ -810,6 +810,12 @@ input {
   opacity: 0.8;
 }
 
+.image-card--reserve > img {
+  position: absolute;
+  inset: 0;
+  object-position: center;
+}
+
 .image-card div,
 .community-grid article h3,
 .community-grid article p {
@@ -1466,7 +1472,7 @@ body[data-team-page="rae-i"] .team-subhero {
 .secondary-team {
   background:
     linear-gradient(90deg, rgba(9, 10, 12, 0.96), rgba(9, 10, 12, 0.58)),
-    url("assets/algajad-hall.jpg") center / cover;
+    url("assets/rae-ii-meeskond-2026.webp") center 20% / cover;
 }
 
 body[data-team-page="u13-i"] .team-subhero {
