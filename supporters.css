@@ -151,9 +151,49 @@
 .support-partner-badge { margin: 0; padding: 24px; background: #f0eee6; }
 .support-partner-badge img { width: 100%; height: auto; }
 .support-partner-badge figcaption { margin-top: 16px; font-size: .83rem; line-height: 1.6; color: #51555c; }
+.support-partner-badge figcaption a { text-decoration: underline; text-underline-offset: 4px; }
 .support-donation-thanks { padding-top: 20px; border-top: 1px solid #c5c9ce; }
 .support-thank-you-action { padding-top: 20px; border-top: 1px solid #c5c9ce; }
 .support-thank-you-action .button { width: auto; }
 @media (max-width: 720px) {
   .support-partner-footer { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+}
+
+.badge-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 48px; padding-bottom: 64px; }
+.badge-back { display: inline-flex; align-items: center; min-height: 44px; margin-bottom: 24px; color: #e0e2e5; font-size: .9rem; }
+.badge-hero h1 { max-width: 13ch; font-size: clamp(2.7rem, 5vw, 4.7rem); overflow-wrap: anywhere; }
+.badge-hero-copy > p { max-width: 56ch; margin: 24px 0; color: #e0e2e5; font-size: 1.05rem; }
+.badge-hero .hero-actions { margin-bottom: 0; }
+.badge-hero-preview { display: grid; gap: 28px; align-content: center; margin: 0; padding: clamp(24px, 3vw, 48px); min-height: 300px; background: var(--gold); color: var(--ink); }
+.badge-hero-preview img { width: 100%; height: auto; }
+.badge-hero-preview figcaption { text-align: center; font-weight: 800; line-height: 1.5; }
+.badge-page .support-opportunities a { text-decoration: underline; text-underline-offset: 4px; }
+.badge-downloads { background: #f0eee6; }
+.badge-variants { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
+.badge-preview { display: grid; align-items: center; min-height: 230px; padding: 32px; }
+.badge-preview img { width: 100%; height: auto; }
+.badge-preview-light { background: var(--white); }
+.badge-preview-dark { background: var(--coal); }
+.badge-variants h3 { margin: 24px 0 12px; }
+.badge-variants p { margin: 0 0 24px; color: #51555c; }
+.badge-download-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.badge-file-note { margin: 32px 0 0; max-width: 85ch; }
+.badge-usage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 64px; background: var(--white); }
+.badge-usage p:first-child { margin-top: 0; }
+.badge-usage ul { padding-left: 24px; line-height: 1.75; }
+.badge-usage li { margin-bottom: 12px; }
+.badge-page-link { display: inline-block; max-width: 100%; padding-block: 10px; color: var(--gold-dark); font-weight: 800; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+@media (max-width: 1040px) {
+  .badge-hero { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-bottom: 48px; }
+  .badge-hero-preview { max-width: 700px; min-height: 240px; }
+  .badge-usage { gap: 32px; }
+}
+@media (max-width: 720px) {
+  .badge-hero { padding-bottom: 32px; }
+  .badge-back { margin-bottom: 16px; }
+  .badge-hero h1 { font-size: clamp(2.3rem, 10vw, 4rem); }
+  .badge-hero-preview { min-height: 190px; padding: 24px; gap: 20px; }
+  .badge-variants, .badge-usage { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .badge-preview { min-height: 160px; padding: 24px; }
+  .badge-download-links { flex-direction: column; }
 }

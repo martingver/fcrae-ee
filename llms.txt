@@ -12,6 +12,7 @@ Leht koondab klubi visiooni, noortetöö, võistkonnad, mängud, toetajad, fänn
 - Võistkonnad: https://fcrae.ee/voistkonnad/
 - Kogukond: https://fcrae.ee/kogukond/
 - Toetajad ja partnerlus: https://fcrae.ee/toetajad/
+- Toetajamärgis ja failid: https://fcrae.ee/toetajad/toetajamargis/
 - Kontakt: https://fcrae.ee/kontakt/
 
 ## Võistkonnad
