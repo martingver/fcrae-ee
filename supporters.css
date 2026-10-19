@@ -14,7 +14,7 @@
 .support-hero .button-ghost:hover { background: #25282e; }
 .supporters-page .button-dark { background: var(--ink); color: var(--white); border: 1px solid var(--ink); }
 .supporters-page .button-dark:hover { background: var(--black); }
-.supporters-page .inline-cta, .support-current .sponsor-main span { color: #755700; }
+.supporters-page .inline-cta { color: #755700; }
 .support-section { padding: 80px max(24px, calc((100vw - 1240px) / 2)); scroll-margin-top: 112px; }
 .support-section-heading { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 48px; margin-bottom: 42px; }
 .support-section-heading p { max-width: 45ch; margin: 0; color: #51555c; }
@@ -65,9 +65,6 @@
 .support-document-links a { color: var(--gold); text-decoration: underline; }
 .support-current { background: var(--white); }
 .support-current .supporter-wall { width: 100%; }
-.support-current .sponsor-main { min-height: 180px; }
-.support-current .sponsor-main img { max-width: 380px; width: 70%; }
-.support-current .sponsor-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .support-current-invitation { display: flex; justify-content: flex-end; margin-top: 28px; }
 .support-shop { display: flex; align-items: center; justify-content: space-between; gap: 48px; background: var(--gold); }
 .support-shop h2 { max-width: 21ch; }
@@ -136,8 +133,6 @@
   .support-section-heading { margin-bottom: 28px; }
   .support-vision { margin-top: 32px; gap: 4px; }
   .support-opportunities > div { grid-template-columns: minmax(0, 1fr); gap: 8px; }
-  .support-current .sponsor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .support-current .sponsor-main img { width: 75%; }
   .support-shop { flex-direction: column; align-items: start; gap: 24px; }
   .supporters-page .sponsor-modal { padding: 28px 20px; }
   .supporters-page .sponsor-modal h2 { font-size: 1.8rem; }
