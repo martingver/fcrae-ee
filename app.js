@@ -52,7 +52,7 @@ const routes = {
   contact: "/kontakt/",
   shop: "https://4teams.ee/klubi-varustus/rae-spordikool/",
   register: "https://piksel.ee/arno/rae/ee/huvikoolid/vaata/239",
-  fanclub: "/kontakt/?teema=fanniklubi#kontaktivorm"
+  // fanclub: "/kontakt/?teema=fanniklubi#kontaktivorm"
 };
 
 const calendarBaseUrl = "https://fcrae.ee/kalendrid";
@@ -280,12 +280,14 @@ const setupMailForms = () => {
   const topic = params.get("teema");
 
   forms.forEach((form) => {
+    /* Fänniklubi liitumine on ajutiselt välja lülitatud.
     if (form.dataset.mailForm === "contact" && topic === "fanniklubi") {
       const topicSelect = form.querySelector('select[name="topic"]');
       const message = form.querySelector('textarea[name="message"]');
       if (topicSelect) topicSelect.value = "Fänniklubi";
       if (message && !message.value) message.value = "Soovin liituda Rae SK fänniklubiga.";
     }
+    */
 
     if (form.dataset.mailForm === "contact" && topic === "treening") {
       const topicSelect = form.querySelector('select[name="topic"]');

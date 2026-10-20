@@ -913,7 +913,7 @@ input {
 }
 
 .community-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .community-grid article {
@@ -2200,7 +2200,8 @@ body[data-team-page="u13-i"] .team-subhero {
 
 .community-feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-self: start;
   gap: 12px;
 }
 
@@ -2490,7 +2491,7 @@ body[data-team-page="u13-i"] .team-subhero {
 
 .contact-cta-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   padding: 0 clamp(22px, 7vw, 110px) 78px;
 }

@@ -21,7 +21,7 @@ Repo sisaldab GitHub Actions töövoogu `.github/workflows/update-jalgpall-data.
 
 ## Vormid
 
-Kontaktivorm, fänniklubi huvi, ettevõtte koostöösoov ja toetajapaketi huvivorm kasutavad sama `/api/forms/contact` endpointi. Selle omanik on `api/forms/contact.mjs`; kliendipoolne saatmine ja modaalide fookus on failis `app.js`. Endpoint valideerib väljad, nõusoleku, honeypot'i, täitmise aja, linkide arvu ja IP-põhise päringupiirangu. See salvestab taotluse privaatsesse SQLite registrisse ja saadab klubile teate ning kliendile kinnituse. Paketi tingimustest säilib päringu tegemise aegne koopia. Sama tunnusega korduv saatmine ei loo uut taotlust.
+Kontaktivorm, ettevõtte koostöösoov ja toetajapaketi huvivorm kasutavad sama `/api/forms/contact` endpointi. Selle omanik on `api/forms/contact.mjs`; kliendipoolne saatmine ja modaalide fookus on failis `app.js`. Endpoint valideerib väljad, nõusoleku, honeypot'i, täitmise aja, linkide arvu ja IP-põhise päringupiirangu. See salvestab taotluse privaatsesse SQLite registrisse ja saadab klubile teate ning kliendile kinnituse. Paketi tingimustest säilib päringu tegemise aegne koopia. Sama tunnusega korduv saatmine ei loo uut taotlust.
 
 Avalikud lehed on staatilised; `/api/forms/contact` ja vana `/api/forms/contact.php` suunatakse eraldi Node vormiteenusesse. Teenus on serveris paigaldatud (vt allpool). Staatiliste failide kopeerimine üksi vormiteenust ei uuenda. `npm run serve` teenindab kohapeal nii veebilehte kui endpointi. Ilma meiliedastuse seadistuseta tagastab endpoint 503 ning veeb pakub täidetud andmetega `mailto:` varulinki. Vormi õnnestumist ei imiteerita. Meiliprogrammis tuleb kiri kasutajal endal ära saata.
 

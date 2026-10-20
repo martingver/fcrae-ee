@@ -12,6 +12,9 @@ test('public copy uses Rae SK and keeps implementation details out of visitor te
   assert.doesNotMatch(text.replaceAll('FC Rae SK MTÜ',''),/FC Rae|FC RAE|Rae Sk/,file);
   assert.doesNotMatch(text,/jalgpall\.ee cache|käivita cache|fallback andmetest|cache'is piisavalt/,file);
   if(file.endsWith('.html')) {
+   assert.doesNotMatch(text,/<!--(?:(?!-->)[\s\S])*?<!--/,`${file}: nested comments can expose disabled signup fields`);
+   const activeMarkup=text.replace(/<!--[\s\S]*?-->/g,'');
+   assert.doesNotMatch(activeMarkup,/fänn(?:i)?klub|fann(?:i)?klub/i,`${file}: fan club is not currently offered`);
    assert.doesNotMatch(text,/peasponsor/i,`${file}: supporters are presented equally`);
    const footer=text.match(/<footer\b[\s\S]*?<\/footer>/)?.[0]??'';
    assert.doesNotMatch(footer,/<strong>Rae SK<\/strong>/,`${file}: the footer logo already carries the brand name`);
