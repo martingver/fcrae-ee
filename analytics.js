@@ -91,22 +91,22 @@
 
   const panel = document.createElement('section');
   panel.className = 'analytics-consent';
-  panel.setAttribute('aria-label', 'Analüütika valikud');
+  panel.setAttribute('aria-label', 'Küpsiste valikud');
   panel.innerHTML = `
     <div class="analytics-consent-copy">
-      <h2 tabindex="-1">Kas lubad külastusstatistikat?</h2>
-      <p>Sinu loal kasutame Google Analyticsit, et näha, millised lehed huvi pakuvad ja kuidas jõutakse toetamiseni. Keeldumisel töötab veeb samamoodi.</p>
-      <details><summary>Mida mõõdame?</summary>
+      <h2 tabindex="-1">Küpsised Rae SK veebis</h2>
+      <p>Kasutame sinu loal Google Analyticsi küpsiseid, et mõista, kuidas meie veebi kasutatakse, ja seda paremaks teha.</p>
+      <details><summary>Vaata lähemalt</summary>
         <p>Mõõdame lehekülastusi, toetamise linkide kasutamist ja päringu õnnestunud saatmist. Vormidesse kirjutatud nimesid, e-posti aadresse ega sõnumeid Analyticsisse ei saadeta. Pangaandmete avamine ei tähenda makse laekumist.</p>
         <p>Nõusolekul edastatakse Google'ile külastus- ja seadmeandmed, sh IP-aadress, mille abil tuletatakse ligikaudne asukoht. Google Analytics kasutab külastuste seostamiseks küpsiseid <code>_ga</code> ja <code>_ga_…</code> kuni 180 päeva. Kasutaja- ja sündmuseandmete säilitusaeg Analyticsis on kaks kuud; koondaruanded võivad säilida kauem. Reklaamifunktsioone me ei kasuta.</p>
         <p>Veebilehe haldaja on FC Rae SK MTÜ. Küsimused: <a href="mailto:info@fcrae.ee">info@fcrae.ee</a>. <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noreferrer">Kuidas Google andmeid kasutab</a>.</p>
-        <p>Sinu valik säilib selles brauseris 180 päeva. Seda saad igal ajal jaluse lingist „Analüütika valikud” muuta.</p>
+        <p>Ilma statistikata töötab veeb samamoodi. Sinu valik säilib selles brauseris 180 päeva. Seda saad igal ajal jaluse lingist „Küpsiste valikud” muuta.</p>
       </details>
       <p class="analytics-consent-status" role="status"></p>
     </div>
     <div class="analytics-consent-actions">
-      <button type="button" class="button button-outline" data-analytics-deny>Ei luba</button>
-      <button type="button" class="button button-dark" data-analytics-allow>Luban statistikat</button>
+      <button type="button" class="button" data-analytics-deny>Ilma statistikata</button>
+      <button type="button" class="button" data-analytics-allow>Luban statistikat</button>
     </div>`;
   panel.hidden = consent !== null;
   document.body.append(panel);
@@ -136,7 +136,7 @@
   const preferences = document.createElement('button');
   preferences.type = 'button';
   preferences.className = 'analytics-preferences';
-  preferences.textContent = 'Analüütika valikud';
+  preferences.textContent = 'Küpsiste valikud';
   preferences.addEventListener('click', () => {
     returnFocus = preferences;
     choiceText();

@@ -112,8 +112,8 @@ test('every public page loads one shared consent implementation with current sty
   const files = execFileSync('git',['ls-files','*.html'],{encoding:'utf8'}).trim().split(/\r?\n/);
   for (const file of files) {
     const html = await readFile(new URL('../'+file,import.meta.url),'utf8');
-    assert.equal((html.match(/src="\/analytics\.js\?v=20261021"/g)||[]).length,1,file);
-    assert.match(html,/styles\.css\?v=20261021-analytics/,file);
+    assert.equal((html.match(/src="\/analytics\.js\?v=20261021-consent"/g)||[]).length,1,file);
+    assert.match(html,/styles\.css\?v=20261021-consent/,file);
     assert.doesNotMatch(html,/src="https:\/\/(www\.)?(googletagmanager|google-analytics)\.com/,file);
   }
 });
