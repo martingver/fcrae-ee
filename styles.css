@@ -1150,6 +1150,7 @@ button:disabled {
 }
 
 .analytics-consent[hidden] { display: none; }
+body.modal-open .analytics-consent { display: none; }
 .analytics-consent-copy { flex: 1; min-width: 0; }
 body .analytics-consent h2 { margin: 0 0 6px; font: 800 20px/1.3 "Manrope", system-ui, sans-serif; text-wrap: wrap; }
 .analytics-consent p { margin: 0 0 10px; }
