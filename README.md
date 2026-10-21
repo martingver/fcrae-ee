@@ -2,6 +2,18 @@
 
 FC Rae avalik koduleht koos kohalike assetide, serveripoolsete vormide ja jalgpall.ee cache'i uuendusskriptiga.
 
+## Google Analytics (21.10.2026)
+
+Google'i konto `info@fcrae.ee` all on Analyticsi konto **Rae SK** (412738962), vara **fcrae.ee** (559873445) ja veebivoog **Rae SK veeb** (16172003033), mõõtmis-ID `G-WBRDS9YMX5`. Aruannete ajavöönd on Eesti/Tallinn, valuuta EUR. Kasutus- ja andmetöötlustingimused kinnitati kasutaja eraldi loal. Google Signals, kasutajaandmete lisakogumine, detailne asukoha/seadmeinfo ja reklaamide isikupärastamine on välja lülitatud; sündmus- ja kasutajaandmete säilitamine on 2 kuud, uue tegevuse korral tähtaega ei pikendata. Koondaruannetele see säilitusaeg ei rakendu.
+
+Kõik avalikud HTML-id laadivad ühe `analytics.js` faili. See laadib Google'i tagi ainult `fcrae.ee` ja `www.fcrae.ee` lehel pärast selgesõnalist nõusolekut. Keeldumisel Google'i päringuid ei tehta. Jaluse „Analüütika valikud” avab valiku uuesti; tagasivõtmine eemaldab GA küpsised ja laadib lehe uuesti, et peatada ka töötav tag. Valik ja GA küpsised säilivad kuni 180 päeva. Kohalik eelvaade Google'ile andmeid ei saada.
+
+Mõõdetakse lehevaatamisi, toetajalehele suunavaid linke ja olemasolevaid `supporter-event` sündmusi. Vormisündmus tekib alles serveri eduka vastuse järel. Edastatakse ainult lubatud sündmuse nimi, mitte vormiväljad. `payment_details_open` tähendab ülekandejuhiste avamist, mitte makset. Automaatsed enhanced measurement sündmused on andmevoos välja lülitatud.
+
+Lehe URL-ist eemaldatakse päringuparameetrid ja fragment; erand on koodis lubatud kampaaniasiltide loend (sh uudise `hooaja-lopumang-2026`). Uut kampaaniat lisades täienda seda loendit avalike mitteisikustatud väärtustega. Väline viitaja lühendatakse domeeniks. Nõusolekupaneeli „Mida mõõdame?” selgitab tegelikku kogumist, säilitamist ja Google'i kasutustingimusi. Muud Analyticsi lisad tuleb kooskõlastada selle teabega.
+
+Regressioonid: `scripts/analytics.test.mjs` kontrollib nõusoleku piiri, tagasivõtmist, lubatud sündmusi, URL-ide puhastamist ja kõigi HTML-ide ühist integratsiooni. Brauseris kontrolliti 320/390/768/1440 px vaateid ning koostöövormi eduka testvastuse sündmust; selleks päriskirju ei saadetud.
+
 ## Käivitus
 
 ```bash
