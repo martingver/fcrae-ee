@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T18:30:13.876Z",
+  "updatedAt": "2026-10-21T00:55:09.013Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -89,7 +89,7 @@
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
       "upcomingCount": 0,
-      "resultCount": 20,
+      "resultCount": 21,
       "playerCount": 21
     },
     {
@@ -2595,6 +2595,21 @@
       "homeAway": "Kodu",
       "score": "8 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/195222"
+    },
+    {
+      "teamId": "u13-i",
+      "team": "U13 I",
+      "status": "finished",
+      "competition": "U13.D",
+      "date": "20.10.2026",
+      "time": "18:30",
+      "startsAt": "2026-10-20T18:30:00+03:00",
+      "homeTeam": "Rae Spordikool I (14)",
+      "awayTeam": "Rakvere JK Tarvas (14)",
+      "opponent": "Rakvere JK Tarvas (14)",
+      "homeAway": "Kodu",
+      "score": "5 - 0",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196236"
     },
     {
       "teamId": "u17",
