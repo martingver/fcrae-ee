@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T12:36:06.581Z",
+  "updatedAt": "2026-10-21T18:30:18.996Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -160,8 +160,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 2,
-      "resultCount": 16,
+      "upcomingCount": 1,
+      "resultCount": 17,
       "playerCount": 29
     }
   ],
@@ -2614,7 +2614,7 @@
     {
       "teamId": "u17",
       "team": "U17",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U-17.III",
       "date": "21.10.2026",
       "time": "18:00",
@@ -2623,6 +2623,7 @@
       "awayTeam": "U-17 TJK Legion ja FC Narva Juunior ÜM",
       "opponent": "U-17 TJK Legion ja FC Narva Juunior ÜM",
       "homeAway": "Kodu",
+      "score": "3 - 4",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196468"
     },
     {
@@ -5143,8 +5144,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 13,
-      "goals": 13,
+      "leagueGoals": 14,
+      "goals": 14,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/7012"
     },
     {
@@ -5297,8 +5298,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 8,
-      "goals": 8,
+      "leagueGoals": 9,
+      "goals": 9,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49064/team/7012"
     },
     {
@@ -5437,8 +5438,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 4,
-      "goals": 4,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/50298/team/7012"
     },
     {
@@ -5493,21 +5494,6 @@
       "rows": [
         {
           "position": 1,
-          "teamId": 4046,
-          "teamName": "Paide Linnameeskond III",
-          "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
-          "matches": 25,
-          "wins": 21,
-          "draws": 1,
-          "losses": 3,
-          "goals": "159:35",
-          "goalsFor": 159,
-          "goalsAgainst": 35,
-          "points": 64,
-          "isRaeTeam": false
-        },
-        {
-          "position": 2,
           "teamId": 6795,
           "teamName": "Rae Spordikool",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/6795?season=2026",
@@ -5520,6 +5506,21 @@
           "goalsAgainst": 45,
           "points": 61,
           "isRaeTeam": true
+        },
+        {
+          "position": 2,
+          "teamId": 4046,
+          "teamName": "Paide Linnameeskond III",
+          "teamUrl": "https://jalgpall.ee/voistlused/538/team/4046?season=2026",
+          "matches": 25,
+          "wins": 20,
+          "draws": 1,
+          "losses": 4,
+          "goals": "146:35",
+          "goalsFor": 146,
+          "goalsAgainst": 35,
+          "points": 61,
+          "isRaeTeam": false
         },
         {
           "position": 3,
@@ -5557,13 +5558,13 @@
           "teamName": "Jõgeva SK Noorus-96",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/1863?season=2026",
           "matches": 25,
-          "wins": 13,
+          "wins": 14,
           "draws": 3,
-          "losses": 9,
-          "goals": "57:56",
+          "losses": 8,
+          "goals": "57:43",
           "goalsFor": 57,
-          "goalsAgainst": 56,
-          "points": 42,
+          "goalsAgainst": 43,
+          "points": 45,
           "isRaeTeam": false
         },
         {
