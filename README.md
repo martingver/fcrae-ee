@@ -12,7 +12,7 @@ Mõõdetakse lehevaatamisi, toetajalehele suunavaid linke ja olemasolevaid `supp
 
 Lehe URL-ist eemaldatakse päringuparameetrid ja fragment; erand on koodis lubatud kampaaniasiltide loend (sh uudise `hooaja-lopumang-2026`). Uut kampaaniat lisades täienda seda loendit avalike mitteisikustatud väärtustega. Väline viitaja lühendatakse domeeniks. Nõusolekupaneeli „Vaata lähemalt” selgitab tegelikku kogumist, säilitamist ja Google'i kasutustingimusi. Muud Analyticsi lisad tuleb kooskõlastada selle teabega.
 
-Regressioonid: `scripts/analytics.test.mjs` kontrollib nõusoleku piiri, tagasivõtmist, lubatud sündmusi, URL-ide puhastamist ja kõigi HTML-ide ühist integratsiooni. Brauseris kontrolliti 320/390/768/1440 px vaateid ning koostöövormi eduka testvastuse sündmust; selleks päriskirju ei saadetud.
+Regressioonid: `scripts/analytics.test.mjs` kontrollib nõusoleku piiri, tagasivõtmist, lubatud sündmusi, URL-ide puhastamist ja kõigi HTML-ide ühist integratsiooni. `scripts/analytics-ui-check.mjs` kasutab Playwrighti ning kontrollib ava-, toetaja- ja uudiselehel kompaktset paigutust, valikute võrdset geomeetriat ja stiili, keritavat lisainfot ning lõikumata klaviatuurifookust (sh rõhtvaade 844 × 390). Käivita `node scripts/analytics-ui-check.mjs`, kui Playwright on Node’i moodulite otsinguteel. Brauseris kontrolliti 320/390/768/1440 px vaateid ning koostöövormi eduka testvastuse sündmust; selleks päriskirju ei saadetud.
 
 ## Käivitus
 

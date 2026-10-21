@@ -1166,7 +1166,7 @@ body .analytics-consent h2 { margin: 0 0 8px; font: 800 18px/1.35 "Manrope", sys
 .analytics-consent-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; flex-shrink: 0; }
 .analytics-consent-actions .button { min-height: 44px; padding: 10px 8px; border: 1px solid #686d75; background: #25282d; color: var(--white); font-size: 13px; font-weight: 700; line-height: 1.4; }
 .analytics-consent-actions .button:hover { border-color: var(--gold); background: #34383e; }
-.analytics-consent :focus-visible, .analytics-preferences:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+body .analytics-consent :focus-visible, body .analytics-preferences:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 @media (max-width: 480px) {
   .analytics-consent { inset: auto 12px 12px; width: auto; max-height: calc(100dvh - 24px); padding: 18px; gap: 12px; }
 }
