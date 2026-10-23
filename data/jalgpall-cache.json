@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T06:39:24.885Z",
+  "updatedAt": "2026-10-23T12:34:39.324Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -2627,20 +2627,6 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196468"
     },
     {
-      "teamId": "u17",
-      "team": "U17",
-      "status": "upcoming",
-      "competition": "U-17.III",
-      "date": "24.10.2026",
-      "time": "11:30",
-      "startsAt": "2026-10-24T11:30:00+03:00",
-      "homeTeam": "U-17 Põhja-Tallinna JK Volta Sinine",
-      "awayTeam": "U-17 Rae Spordikool",
-      "opponent": "U-17 Põhja-Tallinna JK Volta Sinine",
-      "homeAway": "Võõrsil",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196466"
-    },
-    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -2653,6 +2639,20 @@
       "opponent": "JK Kuusalu Kalev",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/187875"
+    },
+    {
+      "teamId": "u17",
+      "team": "U17",
+      "status": "upcoming",
+      "competition": "U-17.III",
+      "date": "24.10.2026",
+      "time": "17:00",
+      "startsAt": "2026-10-24T17:00:00+03:00",
+      "homeTeam": "U-17 Põhja-Tallinna JK Volta Sinine",
+      "awayTeam": "U-17 Rae Spordikool",
+      "opponent": "U-17 Põhja-Tallinna JK Volta Sinine",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196466"
     },
     {
       "teamId": "u13-ii",
