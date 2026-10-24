@@ -6,15 +6,4 @@ METHOD:PUBLISH
 X-WR-CALNAME:Rae SK Rae I
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/rae-i.ics
-BEGIN:VEVENT
-UID:187875@fcrae.ee
-DTSTAMP:20261024T063547Z
-DTSTART:20261024T090000Z
-DTEND:20261024T110000Z
-SUMMARY:Rae Spordikool - JK Kuusalu Kalev
-DESCRIPTION:Rae I · II.B.S/E\nKodumäng\nEJL: https://jalgpall.ee/voistlu
- sed/match_info/187875
-LOCATION:Laste 3\, Jüri 75301
-URL:https://jalgpall.ee/voistlused/match_info/187875
-END:VEVENT
 END:VCALENDAR
