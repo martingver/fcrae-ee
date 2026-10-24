@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T12:31:21.861Z",
+  "updatedAt": "2026-10-24T18:27:15.059Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -160,8 +160,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 1,
-      "resultCount": 17,
+      "upcomingCount": 0,
+      "resultCount": 18,
       "playerCount": 29
     }
   ],
@@ -2644,7 +2644,7 @@
     {
       "teamId": "u17",
       "team": "U17",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U-17.III",
       "date": "24.10.2026",
       "time": "17:00",
@@ -2653,6 +2653,7 @@
       "awayTeam": "U-17 Rae Spordikool",
       "opponent": "U-17 Põhja-Tallinna JK Volta Sinine",
       "homeAway": "Võõrsil",
+      "score": "2 - 4",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196466"
     },
     {
@@ -5103,8 +5104,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 2,
-      "goals": 2,
+      "leagueGoals": 3,
+      "goals": 3,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49236/team/7012"
     },
     {
@@ -5145,8 +5146,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 14,
-      "goals": 14,
+      "leagueGoals": 15,
+      "goals": 15,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49106/team/7012"
     },
     {
@@ -5397,8 +5398,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 3,
-      "goals": 3,
+      "leagueGoals": 5,
+      "goals": 5,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/49495/team/7012"
     },
     {
@@ -5543,14 +5544,14 @@
           "teamId": 2327,
           "teamName": "JK Tallinna Kalev III",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/2327?season=2026",
-          "matches": 25,
-          "wins": 15,
+          "matches": 26,
+          "wins": 16,
           "draws": 6,
           "losses": 4,
-          "goals": "103:32",
-          "goalsFor": 103,
-          "goalsAgainst": 32,
-          "points": 51,
+          "goals": "115:35",
+          "goalsFor": 115,
+          "goalsAgainst": 35,
+          "points": 54,
           "isRaeTeam": false
         },
         {
@@ -5618,13 +5619,13 @@
           "teamId": 188,
           "teamName": "Raasiku FC Joker",
           "teamUrl": "https://jalgpall.ee/voistlused/538/team/188?season=2026",
-          "matches": 25,
+          "matches": 26,
           "wins": 9,
           "draws": 4,
-          "losses": 12,
-          "goals": "53:72",
-          "goalsFor": 53,
-          "goalsAgainst": 72,
+          "losses": 13,
+          "goals": "56:84",
+          "goalsFor": 56,
+          "goalsAgainst": 84,
           "points": 31,
           "isRaeTeam": false
         },
