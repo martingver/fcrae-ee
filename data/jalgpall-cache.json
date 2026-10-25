@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T06:36:12.062Z",
+  "updatedAt": "2026-10-25T12:31:30.726Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -70,7 +70,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Kindluse Spordihoone pneumohall",
       "venueAddress": "Roheluse tee 4, Järveküla, Rae vald",
-      "upcomingCount": 1,
+      "upcomingCount": 0,
       "resultCount": 17,
       "playerCount": 15
     },
@@ -2655,20 +2655,6 @@
       "homeAway": "Võõrsil",
       "score": "2 - 4",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/196466"
-    },
-    {
-      "teamId": "u13-ii",
-      "team": "U13 II",
-      "status": "upcoming",
-      "competition": "U13.VII",
-      "date": "25.10.2026",
-      "time": "14:00",
-      "startsAt": "2026-10-25T14:00:00+03:00",
-      "homeTeam": "Rae Spordikool II (14)",
-      "awayTeam": "JK Tallinna Kalev Kratid (14)",
-      "opponent": "JK Tallinna Kalev Kratid (14)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/190621"
     },
     {
       "teamId": "u15",
