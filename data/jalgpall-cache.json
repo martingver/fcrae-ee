@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T06:51:19.404Z",
+  "updatedAt": "2026-10-26T13:59:10.301Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,7 +16,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 0,
+      "upcomingCount": 1,
       "resultCount": 34,
       "playerCount": 16
     },
@@ -124,7 +124,7 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 3,
+      "upcomingCount": 2,
       "resultCount": 21,
       "playerCount": 24
     },
@@ -2676,20 +2676,6 @@
       "team": "U15",
       "status": "upcoming",
       "competition": "U15.III",
-      "date": "26.10.2026",
-      "time": "15:00",
-      "startsAt": "2026-10-26T15:00:00+03:00",
-      "homeTeam": "Rae Spordikool (12)",
-      "awayTeam": "Viljandi JK Tulevik Kollane (12)",
-      "opponent": "Viljandi JK Tulevik Kollane (12)",
-      "homeAway": "Kodu",
-      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197235"
-    },
-    {
-      "teamId": "u15",
-      "team": "U15",
-      "status": "upcoming",
-      "competition": "U15.III",
       "date": "29.10.2026",
       "time": "13:00",
       "startsAt": "2026-10-29T13:00:00+03:00",
@@ -2698,6 +2684,20 @@
       "opponent": "JK Vasalemma (12)",
       "homeAway": "Kodu",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197237"
+    },
+    {
+      "teamId": "rae-i",
+      "team": "Rae I",
+      "status": "upcoming",
+      "competition": "IIB liigavõitja",
+      "date": "01.11.2026",
+      "time": "17:00",
+      "startsAt": "2026-11-01T17:00:00+03:00",
+      "homeTeam": "Põhja-Tallinna JK Volta",
+      "awayTeam": "Rae Spordikool",
+      "opponent": "Põhja-Tallinna JK Volta",
+      "homeAway": "Võõrsil",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197339"
     },
     {
       "teamId": "u15",

@@ -6,4 +6,15 @@ METHOD:PUBLISH
 X-WR-CALNAME:Rae SK Rae I
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/rae-i.ics
+BEGIN:VEVENT
+UID:197339@fcrae.ee
+DTSTAMP:20261026T135910Z
+DTSTART:20261101T140000Z
+DTEND:20261101T160000Z
+SUMMARY:Põhja-Tallinna JK Volta - Rae Spordikool
+DESCRIPTION:Rae I · IIB liigavõitja\nVõõrsilmäng\nEJL: https://jalgpa
+ ll.ee/voistlused/match_info/197339
+LOCATION:Võõrsilmäng
+URL:https://jalgpall.ee/voistlused/match_info/197339
+END:VEVENT
 END:VCALENDAR
