@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T12:27:58.164Z",
+  "updatedAt": "2026-10-29T18:23:29.574Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -125,7 +125,7 @@
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
       "upcomingCount": 1,
-      "resultCount": 22,
+      "resultCount": 23,
       "playerCount": 24
     },
     {
@@ -2687,6 +2687,21 @@
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197235"
     },
     {
+      "teamId": "u15",
+      "team": "U15",
+      "status": "finished",
+      "competition": "U15.III",
+      "date": "29.10.2026",
+      "time": "13:00",
+      "startsAt": "2026-10-29T13:00:00+03:00",
+      "homeTeam": "Rae Spordikool (12)",
+      "awayTeam": "JK Vasalemma (12)",
+      "opponent": "JK Vasalemma (12)",
+      "homeAway": "Kodu",
+      "score": "3 - 1",
+      "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197237"
+    },
+    {
       "teamId": "rae-i",
       "team": "Rae I",
       "status": "upcoming",
@@ -4406,8 +4421,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 5,
-      "goals": 5,
+      "leagueGoals": 6,
+      "goals": 6,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66042/team/5883"
     },
     {
@@ -4602,8 +4617,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 22,
-      "goals": 22,
+      "leagueGoals": 24,
+      "goals": 24,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/51631/team/5883"
     },
     {
