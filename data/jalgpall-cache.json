@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T12:20:52.475Z",
+  "updatedAt": "2026-11-01T18:17:42.240Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -16,8 +16,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 1,
-      "resultCount": 34,
+      "upcomingCount": 0,
+      "resultCount": 35,
       "playerCount": 16
     },
     {
@@ -2704,7 +2704,7 @@
     {
       "teamId": "rae-i",
       "team": "Rae I",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "IIB liigavõitja",
       "date": "01.11.2026",
       "time": "17:00",
@@ -2713,6 +2713,7 @@
       "awayTeam": "Rae Spordikool",
       "opponent": "Põhja-Tallinna JK Volta",
       "homeAway": "Võõrsil",
+      "score": "3 - 3",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197339"
     },
     {
@@ -2797,8 +2798,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 3,
-      "leagueGoals": 7,
-      "goals": 10,
+      "leagueGoals": 8,
+      "goals": 11,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/36481/team/6795"
     },
     {
