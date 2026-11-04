@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T12:22:59.730Z",
+  "updatedAt": "2026-11-04T18:19:40.671Z",
   "source": "https://jalgpall.ee",
   "teams": [
     {
@@ -124,8 +124,8 @@
       "email": "martti.pent@jyri.edu.ee",
       "venue": "Jüri staadion",
       "venueAddress": "Laste 3, Jüri 75301",
-      "upcomingCount": 1,
-      "resultCount": 23,
+      "upcomingCount": 0,
+      "resultCount": 24,
       "playerCount": 24
     },
     {
@@ -2719,7 +2719,7 @@
     {
       "teamId": "u15",
       "team": "U15",
-      "status": "upcoming",
+      "status": "finished",
       "competition": "U15.III",
       "date": "04.11.2026",
       "time": "17:00",
@@ -2728,6 +2728,7 @@
       "awayTeam": "Rae Spordikool (12)",
       "opponent": "Pärnu JK Poseidon (12)",
       "homeAway": "Võõrsil",
+      "score": "0 - 1",
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/match_info/197239"
     }
   ],
@@ -4548,8 +4549,8 @@
       "citizenship": "Eesti",
       "club": "ETM",
       "cupGoals": 0,
-      "leagueGoals": 13,
-      "goals": 13,
+      "leagueGoals": 14,
+      "goals": 14,
       "jalgpallEeUrl": "https://jalgpall.ee/voistlused/player/66046/team/5883"
     },
     {

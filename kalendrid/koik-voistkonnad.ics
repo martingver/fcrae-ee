@@ -6,15 +6,4 @@ METHOD:PUBLISH
 X-WR-CALNAME:Rae SK kõik võistkonnad
 X-WR-TIMEZONE:Europe/Tallinn
 URL:https://fcrae.ee/kalendrid/koik-voistkonnad.ics
-BEGIN:VEVENT
-UID:197239@fcrae.ee
-DTSTAMP:20261104T122259Z
-DTSTART:20261104T140000Z
-DTEND:20261104T160000Z
-SUMMARY:Pärnu JK Poseidon (12) - Rae Spordikool (12)
-DESCRIPTION:U15 · U15.III\nVõõrsilmäng\nEJL: https://jalgpall.ee/voist
- lused/match_info/197239
-LOCATION:Võõrsilmäng
-URL:https://jalgpall.ee/voistlused/match_info/197239
-END:VEVENT
 END:VCALENDAR
