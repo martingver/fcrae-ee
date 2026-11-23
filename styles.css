@@ -16,6 +16,8 @@
 .team-news > h2 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 44px); margin: 0 0 28px; }
 .news-feature { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(24px, 4vw, 60px); align-items: center; }
 .news-feature-image img { display: block; width: 100%; height: auto; }
+.news-feature-image--team img { aspect-ratio: 2.7; object-fit: cover; object-position: center 55%; }
+.news-feature + .news-feature { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--line); }
 .news-feature time { color: #505762; font-size: 14px; }
 .news-feature h3 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 3vw, 42px); line-height: 1.2; margin: 14px 0; }
 .news-feature h3 a { color: inherit; }
